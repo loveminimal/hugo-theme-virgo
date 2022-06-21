@@ -11,6 +11,9 @@ First, let's try to start a interesting journey.
 ```sh
 cd YOUR_SITE_DIR	# your local site workspace
 git clone https://github.com/loveminimal/hugo-theme-virgo.git themes/virgo
+# OR
+cd YOUR_SITE_DIR/themes
+git submodule add https://github.com/loveminimal/hugo-theme-virgo.git virgo  # (Recommended) better for manage your site.
 ```
 
 Then, update your `config.toml` of site, like this:
