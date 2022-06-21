@@ -1,9 +1,4 @@
----
-date: 2022-06-21 21:02
-author: Jack Liu
----
-
-It's just a simple & pure theme.
+It's just a simple & pure theme. 🎉🎉🎉
 
 ## Overview
 
@@ -13,10 +8,9 @@ It's just a simple & pure theme.
 
 First, let's try to start a interesting journey.
 
-
 ```sh
 cd YOUR_SITE_DIR	# your local site workspace
-git clone https://github.com/loveminimal/virgo.git themes/virgo
+git clone https://github.com/loveminimal/hugo-theme-virgo.git themes/virgo
 ```
 
 Then, update your `config.toml` of site, like this:
