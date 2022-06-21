@@ -1,4 +1,4 @@
-import $ from 'jquery';
+import $ from '../libs/jquery.min';
 
 export default function () {
     // console.log('toglle toc...')
