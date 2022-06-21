@@ -1,4 +1,4 @@
-import $ from 'jquery';
+import $ from './libs/jquery.min';
 import toggleToc from './utils/toggleToc';
 
 export {
