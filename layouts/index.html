@@ -1,0 +1,79 @@
+{{ define "main" }}
+<div class="container-main container-home">
+    <!-- 第一层级 -->
+    <div class="menu">
+        <div class="item">
+            <!-- ⚓🐶🎉👀💡👓 -->
+            <a href="/nav">🎯 Nav</a>
+        </div>
+        <div class="item">
+            <a href="/posts/idea">🎉 Idea</a>
+        </div>
+        <div class="item">
+            <a href="/posts/wiki">🚀 Wiki</a>
+        </div>
+        {{ range where .Site.Pages "Kind" "section" }}
+            {{ if ne .Title "Secrets" }}
+                <div class="item">
+                    <a href="{{.Permalink}}">📜 {{.Title}}</a>
+                </div>
+            {{ end }}
+        {{ end }}
+        {{ range where .Site.Pages "Kind" "taxonomy" }}
+            {{ if ne .Title "Tags"}}
+            <div class="item">
+                <a href="{{.Permalink}}">{{.Title}}</a>
+            </div>
+            {{ end }}
+        {{ end }}
+    </div>
+
+<!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md-->
+<!--    <div class="content">-->
+<!--        {{.Content}}-->
+<!--    </div>-->
+
+    <div class="content">
+        <div class="desc">
+<!--             <img src="/imgs/lightcolor.jpg" /> -->
+<!--            <img src="/imgs/girl.jpg" />-->
+            <img src="/imgs/tux.png" />
+
+            <!-- <div>虛怀乃若谷，水深则流缓</div> -->
+        </div>
+        {{- partial "partials/_contact.html" . -}}
+    </div>
+    
+
+
+    <!-- 分类 -->
+    <!-- <div>Categories: </div>
+    <div class="categories">
+        {{ range .Site.Pages }}
+            {{ if and (eq .Type "categories") (ne .Title "Categories") (ne .Title "Secrets")}}
+                <div class="ctg-item">
+                    <a href="{{.Permalink}}">📜 {{ .Title }}</a>
+                    {{ range .Pages }}
+                    <div class="ctg-post-item">
+                        <a href="{{.Permalink}}">> {{ .Title }}</a>
+                    </div>
+                    {{ end }}
+                </div>
+            {{ end}}
+        {{ end }}
+    </div> -->
+
+    <!-- 标签 -->
+    <!-- <div class="tags">
+        <div>Tags: </div>
+        {{ range .Site.Pages }}
+            {{ if and (eq .Type "tags") (ne .Title "Tags")}}
+            <div>
+                <a href="{{.Permalink}}">{{ .Title }}</a>
+            </div>
+            {{ end}}
+        {{ end }}
+    </div> -->
+
+</div>
+{{ end }}

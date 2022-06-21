@@ -1,0 +1,15 @@
+#content {
+    background: $content-bg-color;
+    padding: 16px $site-padding-lr 32px;
+    // &-home/list/page/(nav)
+    .container-main {
+        //border: 2px solid #333;
+        //padding: 16px 80px 24px 80px;
+    }
+
+    @import "content/home";
+    @import "content/list";
+    @import "content/page";
+    @import "content/nav";
+
+}

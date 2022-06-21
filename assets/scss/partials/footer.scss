@@ -1,0 +1,15 @@
+#footer {
+    background: $footer-bg-color;
+    padding: 16px 0 32px 0;
+    padding: 16px $site-padding-lr 32px;
+
+    border-top: 1px solid #eee;
+    .container-footer {
+        clear: both;
+        font-size: 0.14rem;
+
+        a {
+            color: $link-color;
+        }
+    }
+}

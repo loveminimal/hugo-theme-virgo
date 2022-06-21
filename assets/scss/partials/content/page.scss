@@ -1,0 +1,111 @@
+.container-page {
+    position: relative;
+    font-size: 0.16rem;
+    margin: 0 auto;
+    padding: 0 20%;
+
+    .desc {
+        color: $gray-500;
+        font-size: 0.14rem;
+    }
+
+    .toc {
+        position: fixed;
+        border-left: 1px solid #ccc6;
+        width: 260px;
+        max-height: 566px;
+        top: 176px;
+        // margin-left: 840px;
+        right: 16px;
+        font-size: 0.14rem;
+        overflow: scroll;
+
+        // 滚动条宽度、颜色
+        &::-webkit-scrollbar {
+            width: 2px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #ccc6;
+        }
+
+        // 条目节点样式
+        li {
+            list-style: none;
+            a {
+                color: $gray-600;
+                &:hover {
+                    color: #e69;
+                }
+            }
+        }
+
+        .toc-link--active {
+            color: #d14;
+        }
+
+        .page-operation {
+            display: flex;
+            position: fixed;
+            top: 136px;
+            right: 144px;
+            a {
+                img {
+                    padding: 2px;
+                    width: 24px;
+                }
+            }
+        }
+    }
+
+    .content {
+        p,
+        li,
+        td {
+            & > code {
+                color: $code-inline-color; // $custom-green;
+            }
+        }
+    }
+
+    .content-card {
+        h3 {
+            color: #a1afc9;
+            font-size: 0.16rem;
+            font-weight: 400;
+
+            &::before {
+                display: block;
+                white-space: nowrap;
+                overflow: hidden;
+                content: '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~';
+            }
+        }
+    }
+
+    $highlight-color: #e9e7ef;
+
+    .highlight {
+        margin: 16px 0;
+        border-top: 2px solid $highlight-color;
+        border-bottom: 2px solid $highlight-color;
+        padding: 2px 0;
+        font-size: 0.14rem;
+    }
+
+    pre {
+        font-size: 0.14rem;
+        border-top: 1px solid $highlight-color;
+        border-bottom: 1px solid $highlight-color;
+
+        padding: 16px;
+        overflow: hidden;
+
+        &:hover {
+            overflow: auto;
+        }
+    }
+
+    em {
+        font-style: italic;
+    }
+}

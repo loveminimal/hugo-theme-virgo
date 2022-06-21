@@ -1,0 +1,43 @@
+#header {
+    // === doks header-bar ---
+    border-top: 4px solid;
+    border-image-source: linear-gradient(90deg, #0d6efd, #8ed6fb 50%, #d32e9d);
+    border-image-slice: 1;
+    // --- doks header-bar ---
+
+    z-index: 1000;
+    position: sticky;
+    top: -66px;
+    background: $header-bg-color;
+    padding: 0 $site-padding-lr;
+    //border-bottom: 1px solid;
+
+    .container-header {
+        // 面包屑导航条
+        .container-breadcrumb-nav {
+            padding-bottom: 8px;
+
+            .breadcrumb-nav-bar {
+                display: flex;
+                font-size: 0.12rem;
+
+                a {
+                    display: block;
+                    color: #5a29e4aa;
+                    background: #eee;
+                    margin-right: 8px;
+                    padding: 4px 8px;
+                    border-radius: 0 12px 0 8px;
+                }
+
+                .active a {
+                    color: #5a29e4;
+                }
+            }
+        }
+
+        #toc {
+            display: none;
+        }
+    }
+}

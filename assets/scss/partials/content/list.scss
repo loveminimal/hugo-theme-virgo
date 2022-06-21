@@ -1,0 +1,95 @@
+.container-list {
+    font-size: 0.16rem;
+    //column-count: 3;
+    //column-gap: 24px;
+    // column-rule: 1px dashed #9999;
+    //padding: 16px 240px;
+
+
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-shrink: 0;
+        $item-width: 360px;
+        .item {
+            //page-break-inside: avoid;
+            // -webkit-column-break-inside: avoid;
+            background: #efefef44;
+            border-radius: 0 16px 0 8px;
+            margin-right: 32px;
+            margin-top: 48px;
+            width: $item-width;
+            overflow: hidden;
+
+            >a {
+                box-sizing: border-box;
+                // float: left;
+                width: 100%;
+                display: block;
+                background: #efefef66;
+                margin-bottom: 8px;
+                padding: 6px 4px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                border-radius: 0 16px 0 8px;
+                transition: 0.3s all ease;
+
+                &:hover {
+                    // overflow: visible;
+                    // white-space: inherit;
+                    // margin-left: 4px;
+                    padding-left: 16px;
+                }
+
+                .date {
+                    color: #999;
+                    font-size: 0.12rem;
+                    font-family: $font-family--some;
+                    margin-right: 4px;
+                }
+            }
+
+            .summary {
+                // width: 500px;
+                // background: #fee;
+                padding: 16px 96px;
+            }
+        }
+
+        .item-term {
+            //page-break-inside: avoid;
+            margin: 4px;
+            // float: left;
+             width: $item-width;
+            a {
+                box-sizing: border-box;
+                height: 80px;
+                display: block;
+                background: #efefef66;
+                margin-bottom: 8px;
+                padding: 8px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                border-radius: 0 16px 0 16px;
+                transition: 0.3s all ease;
+
+                &:hover {
+                    // overflow: visible;
+                    // white-space: inherit;
+                    // margin-left: 4px;
+                    padding-top: 16px;
+                    //font-weight: 700;
+                }
+
+                .date {
+                    color: #999;
+                    font-size: 0.12rem;
+                    font-family: $font-family--some;
+                    margin-right: 4px;
+                }
+            }
+        }
+    }
+}

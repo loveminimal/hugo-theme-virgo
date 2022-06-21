@@ -1,0 +1,16 @@
+<head>
+    <!-- 所有头部元素的容器：
+     - 其中元素可以引用脚本、
+     - 指示浏览器在哪里找到样式表、
+     - 提供元信息等
+     -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>{{ .Title }}</title>
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    {{ $style := resources.Get "style.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    {{ $built := resources.Get "main.js" | js.Build "main.js" }}
+    <script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
+    <!-- <script type="module" src="/main.js"></script> -->
+</head>

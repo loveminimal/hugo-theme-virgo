@@ -1,0 +1,75 @@
+.container-home {
+    font-family: $font-family--some;
+
+    // === Menu Bar ---
+    .menu {
+        //box-sizing: border-box;
+        position: absolute;
+        right: $site-padding-lr - 8;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        font-size: 0.14rem;
+        .item {
+            a {
+                display: block;
+                margin: 4px 8px;
+                padding: 8px;
+                width: 96px;
+                background: #eee;
+                border-radius: 8px;
+                text-align: center;
+                transition: .3s all ease;
+
+               &:hover {
+                padding: 24px 8px;
+            }
+           }
+        }
+    }
+    // --- Menu Bar ===
+
+    .content {
+        text-align: center;
+        .desc {
+            padding-top: 96px; // 为了 Menu Bar
+            img {
+                max-width: 100%;
+                //height: 426px;
+            }
+        }
+    }
+
+    .categories {
+        $ctg-item-width: 200px;
+        $ctg-item-bg: #efefef66;
+        $ctg-post-item-bg: #fff;
+
+        .ctg-item {
+            font-weight: 700;
+            background: $ctg-item-bg;
+            width: $ctg-item-width;
+            min-height: 32px;
+            border: 1px solid #ccc;
+            margin: 8px;
+
+            &:hover .ctg-post-item {
+                display: block;
+            }
+
+            .ctg-post-item {
+                display: none;
+
+                a {
+                    font-weight: 400;
+                    display: block;
+                    width: $ctg-item-width - 4;
+                    min-height: 32px;
+                    margin: 4px 0;
+                    background: $ctg-post-item-bg;
+                    padding-left: 4px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.container-prevnext {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid $gray-100;
+    padding-top: 32px;
+
+    $a-height: 40px;
+    a {
+        display: block;
+        box-sizing: border-box;
+        border: 1px solid $gray-300;
+        min-width: 128px;
+        height: $a-height;
+        line-height: $a-height;
+        border-radius: 8px;
+        text-align: center;
+        padding: 0 16px;
+    }
+}

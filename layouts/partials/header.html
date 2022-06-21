@@ -1,0 +1,20 @@
+<div class="container-header">
+    <!-- 文档页眉 -->
+    <h1 class="title">{{ .Title }}</h1>
+    {{ if .IsHome }}
+    <div class="some">Life is just a joker.</div>
+    {{ else }}
+    {{- partial "_breadcrumb.html" . -}}
+    {{ if and .IsPage (ne .Title "Navigations")}}
+    <div id="toc">📜</div>
+    {{end}}
+    {{ end }}
+    <!--
+        <div class="helper" style="color: #999; fonts-size: 12px;">
+            [.Site] {{ .Site }} /-/ [.Type] {{ .Type }} /-/ [.Kind] {{.Kind }} /-/ [.Section] {{ .Section }} <br>
+            [.Pages] {{ .Pages }}  /-/  [.RegularPages] {{ .RegularPages }} /-/ [.Title] {{ .Title}}
+        </div>
+    -->
+
+
+</div>
