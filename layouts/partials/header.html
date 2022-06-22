@@ -5,7 +5,7 @@
     <div class="some">Life is just a joker.</div>
     {{ else }}
     {{- partial "_breadcrumb.html" . -}}
-    {{ if and .IsPage (ne .Title "Navigations")}}
+    {{ if and .IsPage (ne .Title "Navigations") (ne .Title "Search")}}
     <div id="toc">📜</div>
     {{end}}
     {{ end }}

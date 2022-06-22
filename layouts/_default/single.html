@@ -1,5 +1,6 @@
 {{ define "main" }}
 {{ $IsNav := eq .Title "Navigations"}}
+{{ $IsSearch := eq .Title "Search"}}
 <div class="container-main {{ with not $IsNav}} container-page {{ else }} container-nav {{ end }}">
     <!-- 文章页模板：
     - .Type/posts .Kind/page .Section/posts
@@ -7,13 +8,15 @@
 
 
     <div class="desc">
+        {{if not $IsSearch }}
         <span>{{ .Date.Format "2006-01-02" }}</span>
         <span>字数：{{ .WordCount }}</span>
         <span>阅读：{{ .ReadingTime }} 分钟</span>
+        {{ end }}
     </div>
     
     <div class="toc">
-        {{ if and .IsPage (ne .Title "Navigations")}}
+        {{ if and .IsPage (not $IsNav) (not $IsSearch) }}
         <div class="page-operation">
             <div><a href="#"><img src="/imgs/icons/arrow-up-circle.svg" alt=""></a></div>
             <div>{{with .NextInSection}}<a href="{{.Permalink}}"><img src="/imgs/icons/arrow-left-circle.svg" alt=""></a>{{end}}</div>
@@ -28,7 +31,9 @@
 
     </div>
 
-    {{- partial "partials/_prevnext.html" . -}}
+    {{ if and .IsPage (not $IsNav) (not $IsSearch) }}
+        {{- partial "partials/_prevnext.html" . -}}
+    {{ end }}
 
     <!-- 导航页设置 -->
     <!-- partial "nav.html" . -->

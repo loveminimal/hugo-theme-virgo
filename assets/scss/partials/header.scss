@@ -22,6 +22,10 @@
                 font-size: 0.12rem;
 
                 a {
+                    white-space: break-spaces;
+                    overflow: hidden;
+                    height: 18px;
+
                     display: block;
                     color: #5a29e4aa;
                     background: #eee;
