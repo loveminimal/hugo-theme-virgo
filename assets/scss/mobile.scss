@@ -36,6 +36,11 @@
                         padding-top: 24px;
                         .list .item {
                             margin: 8px;
+                            background: #ffffff;
+
+                            >a {
+                                background: #efefef;
+                            }
                         }
                     }
                 }
