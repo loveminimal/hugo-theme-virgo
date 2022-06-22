@@ -13,10 +13,12 @@ arr.forEach(item => {
     })
 })
 
-console.log(map)
+// console.log(map)
 let scInput = document.querySelector('#sc-input');
 let scRes = document.querySelector('#sc-res')
 let scVal = '';
+
+scInput.focus();
 
 
 

@@ -21,6 +21,27 @@
                 overflow: hidden;
             }
 
+            .container-search {
+                padding: 0 4px;
+                #search {
+                    .sc-icon {
+                        display: none;
+                    }
+
+                    #sc-input {
+                        width: 300px;
+                    }
+
+                    #sc-res {
+                        padding-top: 24px;
+                        .list .item {
+                            margin: 8px;
+                        }
+                    }
+                }
+
+            }
+
             .container-home {
                 .menu {
                     position: initial;
