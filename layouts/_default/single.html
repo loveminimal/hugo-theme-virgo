@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ $IsNav := eq .Title "Navigations"}}
 {{ $IsSearch := eq .Title "Search"}}
-<div class="container-main {{ with not $IsNav}} container-page {{ else }} container-nav {{ end }}">
+<div class="container-main {{ if $IsNav}} container-nav {{ else if $IsSearch }} container-search {{ else }} container-page {{ end }}">
     <!-- 文章页模板：
     - .Type/posts .Kind/page .Section/posts
     -->
@@ -28,8 +28,11 @@
 
     <div class='content {{with not $IsNav}} content {{ else }} content-nav {{end}}{{with .Params.card}} content-card {{ end }}'>
         {{ .Content }}
-
     </div>
+
+    {{ if $IsSearch }}
+        {{- partial "partials/_search.html" . -}}
+    {{ end }}
 
     {{ if and .IsPage (not $IsNav) (not $IsSearch) }}
         {{- partial "partials/_prevnext.html" . -}}

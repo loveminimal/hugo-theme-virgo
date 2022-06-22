@@ -8,4 +8,4 @@ import {
 greet();
 initEventBinding();
 initToc();
-initMouseClickAnimate();
+// initMouseClickAnimate();

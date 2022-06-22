@@ -1,0 +1,17 @@
+<div class="container-search">
+    <div id="data" style="display: none;">
+        {{ range where .Site.Pages "Kind" "section" }}
+            {{ if ne .Title "Secrets" }}
+                {{ range .Pages}}
+                    {{ .Title }}%%{{ .Permalink }}%%{{ .Date.Format "2006-01-02" }}%%{{ .Summary }}%%{{ .Content | plainify }}$$$
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    </div>
+
+    <div>
+        <input id="sc-input" oninput="search()" type="text" placeholder="here search search..." />
+        <div id="sc-res"></div>
+    </div>
+    <script src="/js/search.js"></script>
+</div>
