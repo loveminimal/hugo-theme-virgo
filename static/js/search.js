@@ -36,7 +36,7 @@ function search() {
             let _len = 100;  // 搜索字符前后截取的长度
             let _strStyle0 = '<span style="color: red;">'
             let _strStyle1 = '</span">'
-            let _str = '<br><hr>'
+            let _str = '<hr>'
 
 
             for (let i = 0, len = _arrIndex.length; i < len; i++) {
@@ -49,8 +49,9 @@ function search() {
                 // item.content = insertStr(item.content, _idx + (relidx + 1) * scVal.length + (relidx + 1) * _strStyle0.length + relidx * _strStyle1.length, _strStyle1);
 
                 // 概要显示
+                // _startIdx, _endIdx 会在超限时自动归限（默认，无需处理）
                 _strRes += _str;
-                let _startIdx = _idx < _len ? 0 : _idx - _len + (relidx + 1) * _str.length;
+                let _startIdx = _idx - _len + (relidx + 1) * _str.length;
                 let _endIdx = _idx + _len + (relidx + 1) * _str.length;
                 _strRes +=  item.content.substring(_startIdx, _endIdx);
             }
