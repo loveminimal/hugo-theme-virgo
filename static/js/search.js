@@ -39,12 +39,22 @@ function search() {
             let _strSeparator = '<hr>'
 
 
+            // 统计与首个与其前邻的索引（不妨称为基准索引）差值小于截取半径的索引位小于截取半径的索引的个数
+            // 如果差值小于半径，则表示当前索引内容已包括在概要范围内，则不重复截取，且
+            // 下次比较的索引应继续与基准索引比较，直到大于截取半径， _count重新置 为 0；
+            let _count = 0;
+
             for (let i = 0, len = _arrIndex.length; i < len; i++) {
                 let _idxItem = _arrIndex[i];
                 let _relidx = i;
 
+
                 // 如果相邻搜索词出现的距离小于截取半径，那么忽略后一个出现位置的内容截取（因为已经包含在内了）
-                if (_relidx > 0 && (_arrIndex[_relidx] - _arrIndex[_relidx - 1] < _radius)) continue;
+                if (_relidx > 0 && (_arrIndex[_relidx] - _arrIndex[_relidx - 1 - _count] < _radius)) {
+                    _count += 1;
+                    continue;
+                }
+                _count = 0;
 
                 // 概要显示
                 // _startIdx, _endIdx 会在超限时自动归限（默认，无需处理）
