@@ -32,30 +32,30 @@ function search() {
         if (!scVal) return;
         if (item.content.indexOf(scVal) > -1) {
             let _arrIndex = scanStr(item.content, scVal);
-            let _strRes = '';
-            let _len = 100;  // 搜索字符前后截取的长度
+            let strRes = '';
+            let _radius = 100;  // 搜索字符前后截取的长度
             let _strStyle0 = '<span style="color: red;">'
             let _strStyle1 = '</span">'
-            let _str = '<hr>'
+            let _strSeparator = '<hr>'
 
 
             for (let i = 0, len = _arrIndex.length; i < len; i++) {
-                let _idx = _arrIndex[i];
+                let _idxItem = _arrIndex[i];
                 let relidx = i;
 
-                if (relidx > 0 && (_arrIndex[relidx] - _arrIndex[relidx - 1] < _len)) continue;
+                if (relidx > 0 && (_arrIndex[relidx] - _arrIndex[relidx - 1] < _radius)) continue;
                 // 最好可以高亮当前搜索词
                 // item.content = insertStr(item.content, _idx + relidx * _strStyle0.length, _strStyle0);
                 // item.content = insertStr(item.content, _idx + (relidx + 1) * scVal.length + (relidx + 1) * _strStyle0.length + relidx * _strStyle1.length, _strStyle1);
 
                 // 概要显示
                 // _startIdx, _endIdx 会在超限时自动归限（默认，无需处理）
-                _strRes += _str;
-                let _startIdx = _idx - _len + (relidx + 1) * _str.length;
-                let _endIdx = _idx + _len + (relidx + 1) * _str.length;
-                _strRes +=  item.content.substring(_startIdx, _endIdx);
+                strRes += _strSeparator;
+                let _startIdx = _idxItem - _radius + (relidx + 1) * _strSeparator.length;
+                let _endIdx = _idxItem + _radius + (relidx + 1) * _strSeparator.length;
+                strRes +=  item.content.substring(_startIdx, _endIdx);
             }
-            
+
             // _arrIndex.forEach((_idx, relidx) => {
             //     if (relidx > 0) {
             //         let _distance = _arrIndex[relidx] - _arrIndex[relidx - 1]
@@ -78,7 +78,7 @@ function search() {
                         <span class="date">${item.date}</span>
                         <span>${item.title}</span>
                     </a>
-                    <div>${_strRes}</div>
+                    <div>${strRes}</div>
                 </div>
             `
             // <div>${item.summary}</div>
