@@ -25,7 +25,7 @@ scInput.focus();
 function search() {
     let post = '';
     scVal = scInput.value.trim().toLowerCase();
-    console.log(scVal);
+    // console.log(scVal);
     // if (scVal.length === 1) return;
 
     map.forEach(item => {
@@ -34,42 +34,38 @@ function search() {
             let _arrIndex = scanStr(item.content, scVal);
             let strRes = '';
             let _radius = 100;  // 搜索字符前后截取的长度
-            let _strStyle0 = '<span style="color: red;">'
-            let _strStyle1 = '</span">'
+            let _strStyle0 = '<span style="background: yellow;">'
+            let _strStyle1 = '</span>'
             let _strSeparator = '<hr>'
 
 
             for (let i = 0, len = _arrIndex.length; i < len; i++) {
                 let _idxItem = _arrIndex[i];
-                let relidx = i;
+                let _relidx = i;
 
-                if (relidx > 0 && (_arrIndex[relidx] - _arrIndex[relidx - 1] < _radius)) continue;
-                // 最好可以高亮当前搜索词
-                // item.content = insertStr(item.content, _idx + relidx * _strStyle0.length, _strStyle0);
-                // item.content = insertStr(item.content, _idx + (relidx + 1) * scVal.length + (relidx + 1) * _strStyle0.length + relidx * _strStyle1.length, _strStyle1);
+                // 如果相邻搜索词出现的距离小于截取半径，那么忽略后一个出现位置的内容截取（因为已经包含在内了）
+                if (_relidx > 0 && (_arrIndex[_relidx] - _arrIndex[_relidx - 1] < _radius)) continue;
 
                 // 概要显示
                 // _startIdx, _endIdx 会在超限时自动归限（默认，无需处理）
                 strRes += _strSeparator;
-                let _startIdx = _idxItem - _radius + (relidx + 1) * _strSeparator.length;
-                let _endIdx = _idxItem + _radius + (relidx + 1) * _strSeparator.length;
+                let _startIdx = _idxItem - _radius + (_relidx + 1) * _strSeparator.length;
+                let _endIdx = _idxItem + _radius + (_relidx + 1) * _strSeparator.length;
                 strRes +=  item.content.substring(_startIdx, _endIdx);
             }
 
-            // _arrIndex.forEach((_idx, relidx) => {
-            //     if (relidx > 0) {
-            //         let _distance = _arrIndex[relidx] - _arrIndex[relidx - 1]
-            //     }
-            //     // 最好可以高亮当前搜索词
-            //     // item.content = insertStr(item.content, _idx + relidx * _strStyle0.length, _strStyle0);
-            //     // item.content = insertStr(item.content, _idx + (relidx + 1) * scVal.length + (relidx + 1) * _strStyle0.length + relidx * _strStyle1.length, _strStyle1);
+            // 进一步对搜索摘要进行处理，高亮搜索词
+            let _arrStrRes = scanStr(strRes, scVal);
+            // console.log(_arrStrRes)
+            for (let i = 0, len = _arrStrRes.length; i < len; i++) {
+                let _idxItem = _arrStrRes[i];
+                let _realidx = i;
 
-            //     // 概要显示
-            //     _strRes += _str;
-            //     let _startIdx = _idx < _len ? 0 : _idx - _len + (relidx + 1) * _str.length;
-            //     let _endIdx = _idx + _len + (relidx + 1) * _str.length;
-            //     _strRes +=  item.content.substring(_startIdx, _endIdx);
-            // })
+                strRes =
+                    strRes.slice(0, (_idxItem + _realidx * (_strStyle0.length + _strStyle1.length))) + // 当前索引位置之前的部分
+                    _strStyle0 + scVal + _strStyle1 +
+                    strRes.slice(_idxItem + scVal.length + _realidx * (_strStyle0.length + _strStyle1.length)); // 之后的部分
+            }
 
             post += `
                 <div class="item" >
