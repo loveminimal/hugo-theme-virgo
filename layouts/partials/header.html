@@ -2,7 +2,7 @@
     <!-- 文档页眉 -->
     <h1 class="title">{{ .Title }}</h1>
     {{ if .IsHome }}
-    <div class="some">Life is just a joker.</div>
+    <div class="some">{{ .Site.Params.slogan }}</div>
     {{ else }}
     {{- partial "_breadcrumb.html" . -}}
     {{ if and .IsPage (ne .Title "Navigations") (ne .Title "Search")}}

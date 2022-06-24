@@ -1,20 +1,20 @@
 <div class="container-contact">
 	<div class="contact">
 		<div class="slogan"><b>Contact me via : )</b></div>
-		<a id="weibo" href="//weibo.com/u/6867589681" target="_blank">
+		<a id="weibo" href="//weibo.com/u/{{.Site.Params.contact.weibo}}" target="_blank">
 			<img src="/bg/icons/weibo.svg" />
 		</a>
 		<a id="wechat" href="">
 			<img src="/bg/icons/weixin.svg" />
-			<img class="qr" src="/bg/wechat.jpg" />
+			<img class="qr" src="{{.Site.Params.contact.wechat}}" />
 		</a>
-		<a id="email" href="mailto:loveminimal@outlook.com" target="_blank">
+		<a id="email" href="mailto:{{.Site.Params.contact.email}}" target="_blank">
 			<img src="/bg/icons/mailchimp.svg" />
 		</a>
-		<a id="github" href="//github.com/loveminimal" target="_blank">
+		<a id="github" href="//github.com/{{.Site.Params.contact.github}}" target="_blank">
 			<img src="/bg/icons/git.svg" />
 		</a>
-		<a id="bilibili" href="//space.bilibili.com/11608450" target="_blank">
+		<a id="bilibili" href="//space.bilibili.com/{{.Site.Params.contact.bilibili}}" target="_blank">
 			<img src="/bg/icons/bilibili.svg" />
 		</a>
 	</div>

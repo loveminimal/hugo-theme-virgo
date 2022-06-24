@@ -1,4 +1,10 @@
 <div class="container-footer">
     <!-- 文档页脚 -->
-    <a href="http://beian.miit.gov.cn" target="_blank">豫ICP备2022002918号</a>
+    <a href="http://beian.miit.gov.cn" target="_blank">
+        {{ with .Site.Params.contact.icp }}
+            {{ . }}
+        {{ else }}
+            <span class="some">enter your icp or a interesting slogan...<span>
+        {{ end }}
+    </a>
 </div>

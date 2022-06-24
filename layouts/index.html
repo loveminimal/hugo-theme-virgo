@@ -2,20 +2,22 @@
 <div class="container-main container-home">
     <!-- 第一层级 -->
     <div class="menu">
-        <div class="item">
-            <!-- 🔍 🔎-->
-            <a href="/search">🔎 Search</a>
-        </div>
-        <div class="item">
-            <!-- ⚓🐶🎉👀💡👓 -->
-            <a href="/nav">🎯 Nav</a>
-        </div>
-        <div class="item">
-            <a href="/posts/idea">🎉 Idea</a>
-        </div>
-        <div class="item">
-            <a href="/posts/wiki">🚀 Wiki</a>
-        </div>
+        {{ if .Site.Params.hasMoreMenuItems }}
+            <div class="item">
+                <a href="/search">🔎 Search</a>
+            </div>
+            <div class="item">
+                <!-- ⚓🐶🎉👀💡👓 -->
+                <a href="/nav">🎯 Nav</a>
+            </div>
+            <div class="item">
+                <a href="/posts/idea">🎉 Idea</a>
+            </div>
+            <div class="item">
+                <a href="/posts/wiki">🚀 Wiki</a>
+            </div>
+        {{ end }}
+
         {{ range where .Site.Pages "Kind" "section" }}
             {{ if ne .Title "Secrets" }}
                 <div class="item">
