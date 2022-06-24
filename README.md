@@ -13,8 +13,10 @@ cd YOUR_SITE_DIR	# your local site workspace
 git clone https://github.com/loveminimal/hugo-theme-virgo.git themes/virgo
 # OR
 cd YOUR_SITE_DIR/themes
-git submodule add https://github.com/loveminimal/hugo-theme-virgo.git virgo  # (Recommended) better for manage your site.
+git submodule add https://github.com/loveminimal/hugo-theme-virgo.git virgo
 ```
+
+> Which one to choose? If you have this question, just choose the first. 😏
 
 Then, update your `config.toml` of site, like this:
 
