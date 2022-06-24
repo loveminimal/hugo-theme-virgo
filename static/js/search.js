@@ -14,11 +14,14 @@ arr.forEach(item => {
 })
 
 // console.log(map)
+let scClear = document.querySelector('#sc-clear');
 let scInput = document.querySelector('#sc-input');
 let scRes = document.querySelector('#sc-res')
 let scVal = '';
 
+// 自动聚集搜索框
 scInput.focus();
+scClear.style = 'opacity: 0;'
 
 
 function search() {
@@ -107,6 +110,8 @@ function search() {
     if (scResPostsCounts == 0) {
         document.querySelector('.statistics').style = 'opacity: 0;'
     } 
+    // 同样无值时不显示清空符号
+    scClear.style = scVal ? 'opacity: 1' : 'opacity: 0';
 }
 
 // search()
@@ -131,4 +136,11 @@ function scanStr(content, str) {
 // 在字符串指定位置插入新的字符串
 function insertStr(str, start, newStr){   
     return str.slice(0, start) + newStr + str.slice(start);
+}
+
+// 清空搜索框
+function clearInputVal() {
+    if (!scInput.value) return;
+    scInput.value = '';    
+    search();
 }
