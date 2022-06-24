@@ -7,10 +7,16 @@
 		.slogan {
 			padding-right: 8px;
 		}
+
+		.icons {
+			padding: 4px 0;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+		}
+
         a {
             img {
-                width: 22px;
-                //margin-right: 5px;
 				padding: 0 4px;
             }
 

@@ -1,21 +1,28 @@
 <div class="container-contact">
 	<div class="contact">
 		<div class="slogan"><b>Contact me via : )</b></div>
-		<a id="weibo" href="//weibo.com/u/{{.Site.Params.contact.weibo}}" target="_blank">
-			<img src="/bg/icons/weibo.svg" />
-		</a>
-		<a id="wechat" href="">
-			<img src="/bg/icons/weixin.svg" />
-			<img class="qr" src="{{.Site.Params.contact.wechat}}" />
-		</a>
-		<a id="email" href="mailto:{{.Site.Params.contact.email}}" target="_blank">
-			<img src="/bg/icons/mailchimp.svg" />
-		</a>
-		<a id="github" href="//github.com/{{.Site.Params.contact.github}}" target="_blank">
-			<img src="/bg/icons/git.svg" />
-		</a>
-		<a id="bilibili" href="//space.bilibili.com/{{.Site.Params.contact.bilibili}}" target="_blank">
-			<img src="/bg/icons/bilibili.svg" />
-		</a>
+		<div class="icons">
+			<a id="weibo" href="//weibo.com/u/{{.Site.Params.contact.weibo}}" target="_blank">
+				<!-- <img src="/bg/icons/weibo.svg" /> -->
+				<img src="/imgs/icons/weibo.svg" width="24">
+			</a>
+			<a id="wechat" href="">
+				<!-- <img src="/bg/icons/weixin.svg" /> -->
+				<img src="/imgs/icons/wechat-line.svg" width="24">
+				<img class="qr" src="{{.Site.Params.contact.wechat}}" />
+			</a>
+			<a id="email" href="mailto:{{.Site.Params.contact.email}}" target="_blank">
+				<!-- <img src="/bg/icons/mailchimp.svg" /> -->
+				<img src="/imgs/icons/email.svg" width="24">
+			</a>
+			<a id="github" href="//github.com/{{.Site.Params.contact.github}}" target="_blank">
+				<!-- <img src="/bg/icons/git.svg" /> -->
+				<img src="/imgs/icons/github-circle.svg" width="20">
+			</a>
+			<a id="bilibili" href="//space.bilibili.com/{{.Site.Params.contact.bilibili}}" target="_blank">
+				<!-- <img src="/bg/icons/bilibili.svg" /> -->
+				<img src="/imgs/icons/bilibili-line.svg" width="24">
+			</a>
+		</div>
 	</div>
 </div>
