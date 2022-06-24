@@ -59,12 +59,20 @@
     
                 li {
                     list-style-type: none;
+                    border-bottom: 1px dashed #ddd;
+                    transition: .3s all linear;
+
                     &::before {
                         content: '➣ ';
                     }
+                    &:hover {
+                        padding-left: 20px;
+                    }
+
                     a {
                         display: inline-block;
                         width: 100%;
+                        padding: 4px 0;
                     }
                 }
             }
