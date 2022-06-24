@@ -90,6 +90,10 @@
         border-bottom: 2px solid $highlight-color;
         padding: 2px 0;
         font-size: 0.14rem;
+        overflow: hidden;
+        &:hover {
+            overflow: auto;
+        }
     }
 
     pre {
