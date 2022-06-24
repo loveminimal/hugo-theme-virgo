@@ -21,12 +21,16 @@ let scVal = '';
 scInput.focus();
 
 
-
 function search() {
     let post = '';
     scVal = scInput.value.trim().toLowerCase();
     // console.log(scVal);
     // if (scVal.length === 1) return;
+    let scResPostsCounts = 0, // 搜索结果所在页面数
+        scResScValCounts = 0; // 搜索词出现的总次数
+    
+        let timer;            // 强迫症定时器
+
 
     map.forEach(item => {
         if (!scVal) return;
@@ -37,7 +41,9 @@ function search() {
             let _strStyle0 = '<span style="background: yellow;">'
             let _strStyle1 = '</span>'
             let _strSeparator = '<hr>'
-
+            
+            scResPostsCounts += 1;
+            scResScValCounts += _arrIndex.length;
 
             // 统计与首个与其前邻的索引（不妨称为基准索引）差值小于截取半径的索引位小于截取半径的索引的个数
             // 如果差值小于半径，则表示当前索引内容已包括在概要范围内，则不重复截取，且
@@ -91,8 +97,23 @@ function search() {
         }
     })
 
-    let res = `<div class="list">${post}</div>`;
+    let res = `
+        <div class="statistics">条目： ${scResPostsCounts} &nbsp;&nbsp;次数： ${scResScValCounts}</div>
+        <div class="list">
+            ${post}
+        </div>
+    `;
     scRes.innerHTML = res;
+
+    // Hmm... 强迫症，为 0 的时候，不想统计条目显示
+    if (!timer) {
+        timer = setTimeout(() => {
+            if (scResPostsCounts == 0) {
+                document.querySelector('.statistics').style = 'opacity: 0;'
+            } 
+            clearTimeout(timer);
+        }, 1000 )
+    }
 }
 
 // search()

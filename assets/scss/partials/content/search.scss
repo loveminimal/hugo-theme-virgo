@@ -24,6 +24,11 @@
         }
 
         #sc-res {
+            .statistics {
+                padding: 16px 0 0 56px;
+                color: $gray-500;
+            }
+
             hr {
                 border: 1px dashed #ccc;
                 margin: 8px 0;
