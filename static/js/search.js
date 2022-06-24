@@ -28,10 +28,8 @@ function search() {
     // if (scVal.length === 1) return;
     let scResPostsCounts = 0, // 搜索结果所在页面数
         scResScValCounts = 0; // 搜索词出现的总次数
-    
-        let timer;            // 强迫症定时器
 
-
+        
     map.forEach(item => {
         if (!scVal) return;
         if (item.content.indexOf(scVal) > -1) {
@@ -106,14 +104,9 @@ function search() {
     scRes.innerHTML = res;
 
     // Hmm... 强迫症，为 0 的时候，不想统计条目显示
-    if (!timer) {
-        timer = setTimeout(() => {
-            if (scResPostsCounts == 0) {
-                document.querySelector('.statistics').style = 'opacity: 0;'
-            } 
-            clearTimeout(timer);
-        }, 1000 )
-    }
+    if (scResPostsCounts == 0) {
+        document.querySelector('.statistics').style = 'opacity: 0;'
+    } 
 }
 
 // search()
