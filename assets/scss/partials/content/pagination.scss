@@ -1,3 +1,26 @@
 .container-pagination {
-    background: #eee;
+    margin: 0 auto;
+    padding: 32px 0 48px;
+    position: relative;
+
+
+    ul.pagination {
+        list-style-type: none;
+        display: flex;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+
+        li.page-item {
+            padding: 8px;
+        }
+
+        li.active a {
+            font-weight: 700;
+        }
+
+        li.disabled a {
+            opacity: .3;
+        }
+    }
 }
