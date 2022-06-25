@@ -2,7 +2,18 @@ It's just a simple & pure theme. 🎉🎉🎉
 
 ## Overview
 
-![tn](./images/tn.png)
+![tn](images/tn.png)
+
+## Features In-built
+
+1、A highlight TOC with relative headline, like this:
+
+![toc highlight](images/hl-dir.jpg)
+
+2、A simple and realtime local search.
+
+![local search](images/search.jpg)
+
 
 ## Quick Start
 
@@ -41,7 +52,7 @@ paginate = 20
     slogan = 'Life is just a joker.'       # your site slogan below title
     [params.img]
         # Img of home page - if not jpg, rename it, and
-        # place it inio `static/imgs/` dir
+        # place it into `static/imgs/` dir
         # In-build : lightcolor, girl, and tux
         src = 'lightcolor'
         width = 880
