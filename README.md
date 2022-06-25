@@ -28,20 +28,29 @@ title = 'Virgo'
 theme = 'virgo'
 hasCJKLanguage = true
 summaryLength = 80    # default 70
-paginate = 12
+paginate = 20
 
 [params]
-    slogan = 'Life is just a joker.'       # your site slogan below title
     # like the following items that you need create a relative markdown file
     # Search - search.md
     # Nav - nav.md 
     # Idea posts/idea.md 
     # Wiki - posts/wiki.md
     hasMoreMenuItems = true
+
+    slogan = 'Life is just a joker.'       # your site slogan below title
+    [params.img]
+        # Img of home page - if not jpg, rename it, and
+        # place it inio `static/imgs/` dir
+        # In-build : lightcolor, girl, and tux
+        src = 'lightcolor'
+        width = 880
+
+
     [params.contact]
         icp = '豫ICP备2022002918号'          # beian number
         weibo = '6867589681'                # e.g. https://weibo.com/u/6867589681
-        wechat = 'bg/wechat.jpg'            # Wechat QR, chose your path
+        wechat = 'bg/wechat.jpg'            # Wechat QR, choose your path
         email = 'loveminimal@outlook.com'
         github = 'loveminimal'              # e.g. https://github.com/loveminimal
         bilibili = '11608450'               # e.g. https://space.bilibili.com/11608450
