@@ -15,6 +15,9 @@
                 <span class="date">{{.Date.Format "2006-01-02"}} </span>
                 <span> {{.Title}}</span>
             </a>
+
+            {{- partial "partials/_ctgtag.html" . -}}
+
             <div>{{ .Summary | markdownify  }}</div>
         </div>
         {{ end }}

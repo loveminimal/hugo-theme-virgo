@@ -1,0 +1,25 @@
+.container-ctgtag {
+	padding-bottom: 8px;
+	.taxonomy {
+		display: flex;
+
+		.ctg {
+			margin-right: 4px;
+		}
+
+		.ctg, .tag {
+			a {
+				font-size: .12rem;                
+				color: $gray-500;
+				background: #eee;
+				padding: 0px 8px;
+				border-radius: 4px;
+				margin-right: 4px;
+			}
+		}
+
+		.tag a {
+			border-radius: 0 8px 0 6px;
+		}
+	}
+}

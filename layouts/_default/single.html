@@ -9,14 +9,7 @@
         <span>字数：{{ .WordCount }}</span>
         <span>阅读：{{ .ReadingTime }} 分钟</span>
 
-        <div class="terms">
-            {{ range .Params.categories }}
-            📂 <a href="/categories/{{ . | urlize }}">{{ . }}</a>&nbsp;
-            {{ end }}
-            {{ range .Params.tags }}
-            🔖 <a href="/tags/{{ . | urlize }}">{{ . }}</a>&nbsp;
-            {{ end }}
-        </div>
+        {{- partial "partials/_ctgtag.html" . -}}
      
         {{ end }}
     </div>

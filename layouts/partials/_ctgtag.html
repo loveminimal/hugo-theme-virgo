@@ -1,0 +1,16 @@
+<div class="container-ctgtag">
+	<div class="taxonomy">
+		<!-- 📂 🔖 🏷️-->
+		<div class="ctg">
+			{{ range .Params.categories }}
+			<a href="/categories/{{ . | urlize }}">{{ . }}</a>
+			{{ end }}
+		</div>
+		<div class="tag">
+			{{ with .Params.tags }} - {{ end }}
+			{{ range .Params.tags }}
+			<a href="/tags/{{ . | urlize }}">{{ . }}</a>
+			{{ end }}
+		</div>
+	</div>
+</div>
