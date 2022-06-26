@@ -52,7 +52,8 @@
         $item-width: 360px;
 
         .item {
-            background: #efefef44;
+            // background: #efefef44;
+            background: rgba(239,239,239, .1);
             border-radius: 0 16px 0 8px;
             margin-right: 32px;
             margin-top: 48px;
@@ -85,7 +86,8 @@
             }
 
             .summary {
-                padding: 16px 96px;
+                padding: 8px;
+                color: $gray-600;
             }
         }
     }

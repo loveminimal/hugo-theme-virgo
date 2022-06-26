@@ -18,7 +18,7 @@
 
             {{- partial "partials/_ctgtag.html" . -}}
 
-            <div>{{ .Summary | markdownify  }}</div>
+            <div class="summary">{{ .Summary | markdownify  }}</div>
         </div>
         {{ end }}
     {{ end }}

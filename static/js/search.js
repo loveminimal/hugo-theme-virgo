@@ -91,7 +91,7 @@ function search() {
                         <span class="date">${item.date}</span>
                         <span>${item.title}</span>
                     </a>
-                    <div>${strRes}</div>
+                    <div class="summary">${strRes}</div>
                 </div>
             `
             // <div>${item.summary}</div>
