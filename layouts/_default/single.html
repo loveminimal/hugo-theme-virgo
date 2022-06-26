@@ -2,16 +2,22 @@
 {{ $IsNav := eq .Title "Navigations"}}
 {{ $IsSearch := eq .Title "Search"}}
 <div class="container-main {{ if $IsNav}} container-nav {{ else if $IsSearch }} container-search {{ else }} container-page {{ end }}">
-    <!-- 文章页模板：
-    - .Type/posts .Kind/page .Section/posts
-    -->
-
 
     <div class="desc">
         {{if not $IsSearch }}
         <span>{{ .Date.Format "2006-01-02" }}</span>
         <span>字数：{{ .WordCount }}</span>
         <span>阅读：{{ .ReadingTime }} 分钟</span>
+
+        <div class="terms">
+            {{ range .Params.categories }}
+            📂 <a href="/categories/{{ . | urlize }}">{{ . }}</a>&nbsp;
+            {{ end }}
+            {{ range .Params.tags }}
+            🔖 <a href="/tags/{{ . | urlize }}">{{ . }}</a>&nbsp;
+            {{ end }}
+        </div>
+     
         {{ end }}
     </div>
     
@@ -37,12 +43,5 @@
     {{ if and .IsPage (not $IsNav) (not $IsSearch) }}
         {{- partial "partials/_prevnext.html" . -}}
     {{ end }}
-
-    <!-- 导航页设置 -->
-    <!-- partial "nav.html" . -->
-    {{ if eq .Title "Navigations" }}
-
-    {{ end }}
-
 </div>
 {{ end }}

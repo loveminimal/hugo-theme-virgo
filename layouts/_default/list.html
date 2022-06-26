@@ -4,30 +4,6 @@
         {{ .Content }}
     </div>
 
-    <div class="list" style="display: none;">
-        <!-- Ranges through content/posts/*.md -->
-        {{ range .Pages }}
-            {{if ne .Title "Secrets" }}
-            <!-- 📄 ➣ -->
-                <div class="{{with .IsPage}}item{{ else }}item-term{{end}}" >
-                    <!-- if eq .Kind "page" -->
-                    <a href="{{.Permalink}}">
-                        <span>{{ with .IsPage}}📄{{else}}📂{{end}}</span>
-                        <span class="date">{{.Date.Format "2006-01-02"}} </span>
-                        <span> {{.Title}}</span>
-                    </a>
-                     <div>{{ .Summary | markdownify  }}</div>
-                    <!-- <div class="summary">{{ .Content | markdownify | truncate 160 }}</div> -->
-                    {{ if .Truncated }}
-                    <!-- This <div> includes a read more link, but only if the summary is truncated... -->
-                    <!-- <div> <a href="{{ .RelPermalink }}">Read More</a></div> -->
-                    {{ end }}
-                </div>
-            {{ end }}
-        {{ end }}
-    </div>
-
-
     <div class="list">
     {{ range .Paginator.Pages }}
         {{if ne .Title "Secrets" }}

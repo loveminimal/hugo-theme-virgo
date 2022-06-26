@@ -7,6 +7,10 @@
     .desc {
         color: $gray-500;
         font-size: 0.14rem;
+
+        .terms {
+            opacity: .6;
+        }
     }
 
     .toc {
