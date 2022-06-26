@@ -1,16 +1,35 @@
 @media screen and (max-width: 1026px) {
     body {
         $site-padding-lr: 0;
+        img {
+            // max-width: fit-content;
+        }
 
         #header {
             padding: 0 8px;
             background: rgba(255, 255, 255, .9);
 
-            .container-header #toc {
-                position: absolute;
-                right: 8px;
-                top: 81px;
-                display: initial;
+            .title {
+                white-space: nowrap;
+                overflow: hidden;
+                &:hover {
+                    overflow: auto;
+                }
+            }
+
+            .container-header {
+                .container-breadcrumb-nav {
+                    img { 
+                        max-width: fit-content;
+                    }
+                }
+
+                #toc {
+                   position: absolute;
+                   right: 8px;
+                   top: 81px;
+                   display: initial;
+               }
             }
 
         }
