@@ -101,6 +101,7 @@
                     .item, .item-term {
                         margin: 12px;
                         background: $post-item-bg-color;
+                        border-radius: 0 16px 0 16px;
 
                         >a {
                             background: #efefef;
