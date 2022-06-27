@@ -55,37 +55,6 @@
         </div>
         {{- partial "partials/_contact.html" . -}}
     </div>
-    
-
-
-    <!-- 分类 -->
-    <!-- <div>Categories: </div>
-    <div class="categories">
-        {{ range .Site.Pages }}
-            {{ if and (eq .Type "categories") (ne .Title "Categories") (ne .Title "Secrets")}}
-                <div class="ctg-item">
-                    <a href="{{.Permalink}}">📜 {{ .Title }}</a>
-                    {{ range .Pages }}
-                    <div class="ctg-post-item">
-                        <a href="{{.Permalink}}">> {{ .Title }}</a>
-                    </div>
-                    {{ end }}
-                </div>
-            {{ end}}
-        {{ end }}
-    </div> -->
-
-    <!-- 标签 -->
-    <!-- <div class="tags">
-        <div>Tags: </div>
-        {{ range .Site.Pages }}
-            {{ if and (eq .Type "tags") (ne .Title "Tags")}}
-            <div>
-                <a href="{{.Permalink}}">{{ .Title }}</a>
-            </div>
-            {{ end}}
-        {{ end }}
-    </div> -->
 
 </div>
 {{ end }}

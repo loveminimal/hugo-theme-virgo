@@ -1,0 +1,35 @@
+.container-archive {
+	font-family: $font-family--base;
+	.categories {
+        $ctg-item-width: 200px;
+        $ctg-item-bg: #efefef66;
+        $ctg-post-item-bg: #fff;
+
+        .ctg-item {
+            font-weight: 700;
+            background: $ctg-item-bg;
+            width: $ctg-item-width;
+            min-height: 32px;
+            border: 1px solid #ccc;
+            margin: 8px;
+
+            &:hover .ctg-post-item {
+                display: block;
+            }
+
+            .ctg-post-item {
+                display: none;
+
+                a {
+                    font-weight: 400;
+                    display: block;
+                    width: $ctg-item-width - 4;
+                    min-height: 32px;
+                    margin: 4px 0;
+                    background: $ctg-post-item-bg;
+                    padding-left: 4px;
+                }
+            }
+        }
+    }
+}
