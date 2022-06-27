@@ -1,6 +1,7 @@
 import $ from './libs/jquery.min';
 import toggleToc from './utils/toggleToc';
 import isMobile from './utils/isMobile';
+import toggleColor from "./utils/toggleColor";
 
 export {
 	greet,
@@ -54,6 +55,7 @@ function initEventBinding() {
 	$(window).bind('hashchange', fixAnchorTop);
 	$(window).bind('scroll', colorToc);
 	$('#toc').bind('click', toggleToc);
+	$('.title').bind('click', toggleColor);
 }
 
 // 修复点击大纲时对应元素距窗口顶部的高度
