@@ -9,16 +9,19 @@
         {{if ne .Title "Secrets" }}
         <!-- 📄 ➣ -->
         <div class="{{with .IsPage}}item{{ else }}item-term{{end}}" >
+
             <!-- if eq .Kind "page" -->
             <a href="{{.Permalink}}">
                 <span>{{ with .IsPage}}📄{{else}}📂{{end}}</span>
                 <span class="date">{{.Date.Format "2006-01-02"}} </span>
-                <span> {{.Title}}</span>
+                <span> {{.Title}} <sup>{{if not .IsPage}}{{len .Pages}}{{ end }}</sup></span>
             </a>
+            
+            {{ if .IsPage }}
+                {{- partial "partials/_ctgtag.html" . -}}
+                <div class="summary">{{ .Summary | markdownify  }}</div>
+            {{ end }}
 
-            {{- partial "partials/_ctgtag.html" . -}}
-
-            <div class="summary">{{ .Summary | markdownify  }}</div>
         </div>
         {{ end }}
     {{ end }}
