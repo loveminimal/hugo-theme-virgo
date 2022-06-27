@@ -4,6 +4,10 @@
         {{ .Content }}
     </div>
 
+    {{ if ne .Kind "taxonomy"}} 
+        <div class="count">共有 {{ len .Pages }} 篇文章</div>
+    {{ end }}
+    
     <div class="list">
     {{ range .Paginator.Pages }}
         {{if ne .Title "Secrets" }}
