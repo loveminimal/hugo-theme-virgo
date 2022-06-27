@@ -61,7 +61,7 @@ function fixAnchorTop() {
 	let _hash = decodeURIComponent(location.hash)
 	// 在移动设备上使用的距顶元素竟然还不一样……
 	let _ele = isMobile() ? $('body') : $('html')
-	if (_hash) _ele.scrollTop($(_hash).offset().top - 72);
+	if (_hash) _ele.scrollTop($(_hash).offset().top - 48);
 }
 
 
@@ -70,7 +70,7 @@ function fixAnchorTop() {
 // 结合元素块距离页面顶部高度与 window 滚动的高度对比，
 // 来获取当前元素块并进行相关操作
 function colorToc() {
-	let _curScroll = $(this).scrollTop() + 72; // window 滚动高度，`72` 表示距页面顶部的高度（默认为 0）
+	let _curScroll = $(this).scrollTop() + 48; // window 滚动高度，`48` 表示距页面顶部的高度（默认为 0）
 	let _curHeadline; // 当前标题块
 	let _arrTop = []; // 所有标题块距页面顶部高度的集合
 
