@@ -59,8 +59,8 @@
                         }
 
                         .list .item {
-                            margin: 8px;
-                            background: #ffffff;
+                            margin: 12px;
+                            background: $post-item-bg-color;
 
                             >a {
                                 background: #efefef;
@@ -99,8 +99,8 @@
             .container-list {
                 .list {
                     .item, .item-term {
-                        margin: 8px;
-                        background: #ffffff;
+                        margin: 12px;
+                        background: $post-item-bg-color;
 
                         >a {
                             background: #efefef;
