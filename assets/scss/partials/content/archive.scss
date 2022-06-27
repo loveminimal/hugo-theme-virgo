@@ -1,35 +1,46 @@
 .container-archive {
-	font-family: $font-family--base;
-	.categories {
-        $ctg-item-width: 200px;
-        $ctg-item-bg: #efefef66;
-        $ctg-post-item-bg: #fff;
+    .desc {
+        font-size: .20rem;
+    }
+
+    .categories {
+        display: flex;
+        flex-wrap: wrap;
 
         .ctg-item {
-            font-weight: 700;
-            background: $ctg-item-bg;
-            width: $ctg-item-width;
-            min-height: 32px;
-            border: 1px solid #ccc;
-            margin: 8px;
+            padding: 4px;
+            background: $gray-100;
+            margin: 12px 8px;
+            width: 31%;
+            box-sizing: border-box;
 
-            &:hover .ctg-post-item {
-                display: block;
+            .ctg-desc {
+                padding: 8px 0;
+                a {
+                    font-size: .16rem;
+
+                    sup {
+                        color: $gray-300;
+                    }
+                }
             }
 
-            .ctg-post-item {
-                display: none;
+            .ctg-post {
+                display: flex;
+                flex-wrap: wrap;
 
-                a {
-                    font-weight: 400;
-                    display: block;
-                    width: $ctg-item-width - 4;
-                    min-height: 32px;
-                    margin: 4px 0;
-                    background: $ctg-post-item-bg;
-                    padding-left: 4px;
+                .ctg-post-item {
+                    a {
+                        font-size: .14rem;
+                        display: inline-block;
+                        background: #eee;
+                        margin: 4px;
+                        padding: 4px 8px;
+                        border-radius: 4px;
+                    }
                 }
             }
         }
     }
+
 }

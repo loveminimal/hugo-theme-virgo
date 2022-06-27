@@ -2,7 +2,12 @@
 {{ $IsNav := eq .Title "Navigations"}}
 {{ $IsSearch := eq .Title "Search"}}
 {{ $IsArchive := eq .Title "Archive"}}
-<div class="container-main {{ if $IsNav}} container-nav {{ else if $IsSearch }} container-search {{ else }} container-page {{ end }}">
+<div class="container-main 
+    {{ if $IsNav}} container-nav 
+    {{ else if $IsSearch }} container-search 
+    {{ else if $IsArchive}} container-archive 
+    {{ else }} container-page 
+{{ end }}">
 
     <div class="desc">
         {{if and (not $IsSearch) (not $IsArchive) }}

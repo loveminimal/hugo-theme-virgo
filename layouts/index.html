@@ -11,7 +11,10 @@
                 <a href="/nav">🎯 Nav</a>
             </div>
             <div class="item">
-                <a href="/posts/idea">🎉 Idea</a>
+                <a href="/archive">🎉 Archive</a>
+            </div>
+            <div class="item">
+                <a href="/posts/idea">💡 Idea</a>
             </div>
             <div class="item">
                 <a href="/posts/wiki">🚀 Wiki</a>
@@ -26,7 +29,7 @@
             {{ end }}
         {{ end }}
         {{ range where .Site.Pages "Kind" "taxonomy" }}
-            {{ if ne .Title "Tags"}}
+            {{ if and (ne .Title "Categories") (ne .Title "Tags")}}
             <div class="item">
                 <a href="{{.Permalink}}">{{.Title}}</a>
             </div>

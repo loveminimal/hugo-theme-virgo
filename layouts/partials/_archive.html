@@ -1,30 +1,47 @@
 <div class="container-archive">
 	<!-- 分类 -->
+    <!-- <div class="desc">分类: </div> -->
+    <!-- 📂  📜-->
     <div class="categories">
-		<div>Categories: </div>
         {{ range .Site.Pages }}
             {{ if and (eq .Type "categories") (ne .Title "Categories") (ne .Title "Secrets")}}
                 <div class="ctg-item">
-                    <a href="{{.Permalink}}">📜 {{ .Title }}</a>
-                    {{ range .Pages }}
-                    <div class="ctg-post-item">
-                        <a href="{{.Permalink}}">> {{ .Title }}</a>
+                    <div class="ctg-desc">
+                        <a href="{{.Permalink}}">📂 {{ .Title }} <sup>{{len .Pages}}</sup></a>
                     </div>
-                    {{ end }}
+
+                    <div class="ctg-post">
+                        {{ range .Pages }}
+                        <div class="ctg-post-item">
+                            <a href="{{.Permalink}}">{{ .Title }}</a>
+                        </div>
+                        {{ end }}
+                    </div>
                 </div>
             {{ end}}
         {{ end }}
     </div>
 
-    <!-- 标签 -->
-    <div class="tags">
-        <div>Tags: </div>
+	<!-- 标签 -->
+    <!-- <div class="desc">标签: </div> -->
+    <div class="categories">
         {{ range .Site.Pages }}
-            {{ if and (eq .Type "tags") (ne .Title "Tags")}}
-            <div>
-                <a href="{{.Permalink}}">{{ .Title }}</a>
-            </div>
+            {{ if and (eq .Type "tags") (ne .Title "Tags") (ne .Title "Secrets")}}
+                <div class="ctg-item">
+                    <div class="ctg-desc">
+                        <a href="{{.Permalink}}">🔖 {{ .Title }} <sup>{{len .Pages}}</sup></a>
+                    </div>
+
+                    <div class="ctg-post">
+                        {{ range .Pages }}
+                        <div class="ctg-post-item">
+                            <a href="{{.Permalink}}">{{ .Title }}</a>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
             {{ end}}
         {{ end }}
     </div>
+
 </div>
