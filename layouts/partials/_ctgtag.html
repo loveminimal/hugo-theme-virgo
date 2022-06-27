@@ -2,11 +2,13 @@
 	<div class="taxonomy">
 		<!-- 📂 🔖 🏷️-->
 		<div class="ctg">
+			<!-- <img src="/imgs/icons/ctg.svg" width="16" /> -->
 			{{ range .Params.categories }}
 			<a href="/categories/{{ . | urlize }}">{{ . }}</a>
 			{{ end }}
 		</div>
 		<div class="tag">
+			<!-- {{ with .Params.tags }} <img src="/imgs/icons/tag.svg" width="16" /> {{ end }} -->
 			{{ with .Params.tags }} - {{ end }}
 			{{ range .Params.tags }}
 			<a href="/tags/{{ . | urlize }}">{{ . }}</a>

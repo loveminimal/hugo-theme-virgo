@@ -1,13 +1,13 @@
 <div class="container-archive">
 	<!-- 分类 -->
     <!-- <div class="desc">分类: </div> -->
-    <!-- 📂  📜-->
+    <!-- 📂 📜 🔖-->
     <div class="categories">
         {{ range .Site.Pages }}
             {{ if and (eq .Type "categories") (ne .Title "Categories") (ne .Title "Secrets")}}
                 <div class="ctg-item">
                     <div class="ctg-desc">
-                        <a href="{{.Permalink}}">📂 {{ .Title }} <sup>{{len .Pages}}</sup></a>
+                        <a href="{{.Permalink}}"><img src="/imgs/icons/ctg.svg" width="16" /> {{ .Title }} <sup>{{len .Pages}}</sup></a>
                     </div>
 
                     <div class="ctg-post">
@@ -29,7 +29,7 @@
             {{ if and (eq .Type "tags") (ne .Title "Tags") (ne .Title "Secrets")}}
                 <div class="ctg-item">
                     <div class="ctg-desc">
-                        <a href="{{.Permalink}}">🔖 {{ .Title }} <sup>{{len .Pages}}</sup></a>
+                        <a href="{{.Permalink}}"><img src="/imgs/icons/tag.svg" width="16" /> {{ .Title }} <sup>{{len .Pages}}</sup></a>
                     </div>
 
                     <div class="ctg-post">
