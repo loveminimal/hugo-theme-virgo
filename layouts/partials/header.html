@@ -5,7 +5,7 @@
     <div class="some">{{ .Site.Params.slogan }}</div>
     {{ else }}
     {{- partial "_breadcrumb.html" . -}}
-    {{ if and .IsPage (ne .Title "Navigations") (ne .Title "Search")}}
+    {{ if and .IsPage (ne .Title "Navigations") (ne .Title "Search") (ne .Title "Archive")}}
     <div id="toc">📜</div>
     {{end}}
     {{ end }}
