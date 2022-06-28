@@ -14,6 +14,15 @@ It's just a simple & pure theme. 🎉🎉🎉
 
 ![local search](images/search.jpg)
 
+## Tips
+
+Maybe you need to create some `.md` files which are necessary for right routes, like:
+
+| Markdown File        | Route      |
+| -------------------- | ---------- |
+| `content/nav.md`     | `/nav`     |
+| `content/search.md`  | `/search`  |
+| `content/archive.md` | `/archive` |
 
 ## Quick Start
 
@@ -43,18 +52,18 @@ paginate = 24         # better 4 * 3 * times
 
 [params]
     # active fadeIn animate when load page
-    hasActiveAnimate = true                  
+    hasActiveAnimate = true
 
     # like the following items that you need create a relative markdown file
     # Search - search.md
-    # Nav - nav.md 
-    # Idea posts/idea.md 
+    # Nav - nav.md
+    # Idea posts/idea.md
     # Wiki - posts/wiki.md
     hasMoreMenuItems = true
 
     slogan = 'Life is just a joker.'       # your site slogan below title
     [params.svg]
-        color = '#5d2f86'                  # icon color of breadcrumb '#666'  # '#5a29e4' 
+        color = '#5d2f86'                  # icon color of breadcrumb '#666'  # '#5a29e4'
     [params.img]
         # Img of home page - if not jpg, rename it, and
         # place it inio `static/imgs/` dir
