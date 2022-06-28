@@ -3,7 +3,7 @@
     <!-- <div class="desc">分类: </div> -->
     <!-- 📂 📜 🔖-->
     <div class="categories">
-        {{ range .Site.Pages }}
+        {{ range .Site.Pages.ByTitle }}
             {{ if and (eq .Type "categories") (ne .Title "Categories") (ne .Title "Secrets")}}
                 <div class="arc-item">
                     <div class="arc-desc">
@@ -25,7 +25,7 @@
 	<!-- 标签 -->
     <!-- <div class="desc">标签: </div> -->
     <div class="tags">
-        {{ range .Site.Pages }}
+        {{ range .Site.Pages.ByTitle }}
             {{ if and (eq .Type "tags") (ne .Title "Tags") (ne .Title "Secrets")}}
                 <div class="arc-item">
                     <div class="arc-desc">
