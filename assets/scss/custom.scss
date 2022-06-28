@@ -9,7 +9,9 @@ body {
     font-size: 0.16rem;
     line-height: 1.5;
 
-    animation: fadeIn 3s;
+    &.active-animate {
+        animation: fadeIn 3s;
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {

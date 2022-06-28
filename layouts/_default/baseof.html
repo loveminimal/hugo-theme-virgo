@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
     {{- partial "head.html" . -}}
-    <body>
+    <body class="{{ with .Site.Params.hasActiveAnimate }}active-animate{{ end }}">
         <div id="header">
             {{- partial "header.html" . -}}
         </div>
