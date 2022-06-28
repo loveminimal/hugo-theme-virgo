@@ -55,7 +55,8 @@ function initEventBinding() {
 	$(window).bind('hashchange', fixAnchorTop);
 	$(window).bind('scroll', colorToc);
 	$('#toc').bind('click', toggleToc);
-	$('.title').bind('click', toggleColor);
+	// $('.title').bind('click', toggleColor);
+	$('#light-dark').bind('click', toggleColor);
 }
 
 // 修复点击大纲时对应元素距窗口顶部的高度

@@ -1,11 +1,13 @@
 <div class="container-breadcrumb-nav">
     <!-- 面包屑导航🔎🎯 -->
     <div class="breadcrumb-nav-bar">
+        <div><a href="/"><img src="/imgs/icons/home.svg" width="16"></a></div>
         <div><a href="/nav"><img src="/imgs/icons/iov-navigate.svg" width="16"></a></div>
         <div><a href="/search"><img src="/imgs/icons/search-2-line.svg" width="14"></a></div>
         <div><a href="/posts"><img src="/imgs/icons/post.svg" width="12"></a></div>
         <div><a href="/archive"><img src="/imgs/icons/category.svg" width="12"></a></div>
-        {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
+        <div id="light-dark"><a><img src="/imgs/icons/dark.svg" width="12"></a></div>
+        <!-- {{ template "breadcrumbnav" (dict "p1" . "p2" .) }} -->
     </div>
 
     {{ define "breadcrumbnav" }}
