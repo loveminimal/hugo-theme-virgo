@@ -137,11 +137,13 @@
             }
 
             .container-archive {
-                .categories {
-                    .ctg-item {
+                .categories, .tags {
+                    .arc-item {
                         width: 96%;
                     }
                 }
+
+                padding-bottom: 8px;
             }
         }
 
