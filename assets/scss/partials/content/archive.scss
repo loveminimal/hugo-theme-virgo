@@ -3,18 +3,18 @@
         font-size: .20rem;
     }
 
-    .categories {
+    .categories, .tags {
         display: flex;
         flex-wrap: wrap;
 
-        .ctg-item {
+        .arc-item {
             padding: 4px;
             background: $gray-100;
-            margin: 12px 8px;
+            margin: 12px 12px 6px 0px;
             width: 31%;
             box-sizing: border-box;
 
-            .ctg-desc {
+            .arc-desc {
                 padding: 8px 0;
                 a {
                     font-size: .16rem;
@@ -25,11 +25,11 @@
                 }
             }
 
-            .ctg-post {
+            .arc-post {
                 display: flex;
                 flex-wrap: wrap;
 
-                .ctg-post-item {
+                .arc-post-item {
                     a {
                         font-size: .14rem;
                         display: inline-block;
@@ -43,4 +43,7 @@
         }
     }
 
+    .tags {
+        margin-top: 32px;
+    }
 }

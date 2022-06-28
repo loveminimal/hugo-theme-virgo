@@ -5,14 +5,14 @@
     <div class="categories">
         {{ range .Site.Pages }}
             {{ if and (eq .Type "categories") (ne .Title "Categories") (ne .Title "Secrets")}}
-                <div class="ctg-item">
-                    <div class="ctg-desc">
+                <div class="arc-item">
+                    <div class="arc-desc">
                         <a href="{{.Permalink}}"><img src="/imgs/icons/ctg.svg" width="16" /> {{ .Title }} <sup>{{len .Pages}}</sup></a>
                     </div>
 
-                    <div class="ctg-post">
+                    <div class="arc-post">
                         {{ range .Pages }}
-                        <div class="ctg-post-item">
+                        <div class="arc-post-item">
                             <a href="{{.Permalink}}">{{ .Title }}</a>
                         </div>
                         {{ end }}
@@ -24,17 +24,17 @@
 
 	<!-- 标签 -->
     <!-- <div class="desc">标签: </div> -->
-    <div class="categories">
+    <div class="tags">
         {{ range .Site.Pages }}
             {{ if and (eq .Type "tags") (ne .Title "Tags") (ne .Title "Secrets")}}
-                <div class="ctg-item">
-                    <div class="ctg-desc">
+                <div class="arc-item">
+                    <div class="arc-desc">
                         <a href="{{.Permalink}}"><img src="/imgs/icons/tag.svg" width="16" /> {{ .Title }} <sup>{{len .Pages}}</sup></a>
                     </div>
 
-                    <div class="ctg-post">
+                    <div class="arc-post">
                         {{ range .Pages }}
-                        <div class="ctg-post-item">
+                        <div class="arc-post-item">
                             <a href="{{.Permalink}}">{{ .Title }}</a>
                         </div>
                         {{ end }}
