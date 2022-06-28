@@ -55,6 +55,12 @@
                 }
             }
         }
+        
+        #TableOfContents {
+            ul, ol {
+                margin-bottom: 4px;
+            }
+        }
     }
 
     .content {
