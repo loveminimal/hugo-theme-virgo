@@ -39,9 +39,12 @@ title = 'Virgo'
 theme = 'virgo'
 hasCJKLanguage = true
 summaryLength = 80    # default 70
-paginate = 20
+paginate = 24         # better 4 * 3 * times
 
 [params]
+    # active fadeIn animate when load page
+    hasActiveAnimate = true                  
+
     # like the following items that you need create a relative markdown file
     # Search - search.md
     # Nav - nav.md 
@@ -50,11 +53,13 @@ paginate = 20
     hasMoreMenuItems = true
 
     slogan = 'Life is just a joker.'       # your site slogan below title
+    [params.svg]
+        color = '#5d2f86'                  # icon color of breadcrumb '#666'  # '#5a29e4' 
     [params.img]
         # Img of home page - if not jpg, rename it, and
-        # place it into `static/imgs/` dir
-        # In-build : lightcolor, girl, and tux
-        src = 'lightcolor'
+        # place it inio `static/imgs/` dir
+        # In-built : lightcolor, girl, and tux
+        src = 'tux'
         width = 880
 
 
@@ -65,6 +70,7 @@ paginate = 20
         email = 'loveminimal@outlook.com'
         github = 'loveminimal'              # e.g. https://github.com/loveminimal
         bilibili = '11608450'               # e.g. https://space.bilibili.com/11608450
+        color = '#5d2f86'                   # icon color of contact
 
 [markup]
     [markup.asciidocExt]
@@ -79,6 +85,7 @@ paginate = 20
     [markup.goldmark]
         [markup.goldmark.renderer]
             unsafe = true
+
 ```
 
 Now, just run `hugo server -D` to enjoy it.
