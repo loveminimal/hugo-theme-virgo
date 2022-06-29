@@ -66,12 +66,12 @@ $contact-bg-color: #eee;
 $img-border-color: #333;
 
 // --- 生产用色 ---
-$header-bg-color: #fffe;
-$content-bg-color: #fff0;
-$footer-bg-color: #fff0;
-$headline-bg-color: #fff0;
-$contact-bg-color: #fff0;
-$img-border-color: #fff0;
+$header-bg-color: rgba(255, 255, 255, 0.96);
+$content-bg-color: rgba(255, 255, 255, 0);
+$footer-bg-color: rgba(255, 255, 255, 0);
+$headline-bg-color: rgba(255, 255, 255, 0);
+$contact-bg-color: rgba(255, 255, 255, 0);
+$img-border-color: rgba(255, 255, 255, 0);
 // --- 测试用背景色 ===
 
 $site-padding-lr: 80px;
