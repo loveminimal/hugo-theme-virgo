@@ -53,7 +53,9 @@ paginate = 24         # better 4 * 3 * times
 [params]
     # active fadeIn animate when load page
     hasActiveAnimate = true                
-    # active cool style, be cool but take up more resources
+    # active cool style, be cool but take up more resources, and
+    # if you want to replace default background image, just 
+    # rename it `default.jpg` and place it into `/static/imgs/bg` dir, like `/static/imgs/bg/default.jpg`.
     hasActiveCool = true  
 
     # like the following items that you need create a relative markdown file
