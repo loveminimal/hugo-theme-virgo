@@ -7,13 +7,38 @@ body.cool {
 		min-height: 100%;
 		position: fixed;
 		z-index: -1;
+		// background: url('/imgs/girl.jpg') center center/cover no-repeat fixed;
 		background: url('/bg/cat.jpg') center center/cover no-repeat fixed;
 	}
 	
 	#header, #content, #footer {
-        background-color: rgba(255, 255, 255, 0.9);
+		background-color: rgba(255, 255, 255, 0.8);
         // backdrop-filter: saturate(180%) blur(5px); // saturate(180%)
     }
+
+	#content {
+		.container-archive {
+			.categories, .tags {
+				.arc-item {
+					background: rgba(245, 245, 245, 0.3);
+				}
+			}
+		}
+
+		.container-list {
+			.list {
+				.item {
+
+				}
+			}
+		}
+
+		padding-bottom: 627px;
+	}
+
+	#footer {
+		// padding-bottom: 686px;
+	}
 
 	pre {
 		background-color: rgba(255, 255, 255, 0.3) !important;

@@ -19,7 +19,6 @@
         .item {
             //page-break-inside: avoid;
             // -webkit-column-break-inside: avoid;
-            // background: #efefef44;
             background: $post-item-bg-color;
             border-radius: 0 16px 0 8px;
             margin-right: 32px;
@@ -32,7 +31,7 @@
                 // float: left;
                 width: 100%;
                 display: block;
-                background: #efefef66;
+                background: rgba(239, 239, 239, .5);
                 margin-bottom: 8px;
                 padding: 6px 4px;
                 white-space: nowrap;
@@ -70,7 +69,7 @@
                 box-sizing: border-box;
                 height: 80px;
                 display: block;
-                background: #efefef66;
+                background: rgba(239, 239, 239, .5);
                 margin-bottom: 8px;
                 padding: 8px;
                 white-space: nowrap;

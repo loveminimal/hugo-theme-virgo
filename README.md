@@ -52,18 +52,21 @@ paginate = 24         # better 4 * 3 * times
 
 [params]
     # active fadeIn animate when load page
-    hasActiveAnimate = true
+    hasActiveAnimate = true                
+    # active cool style, be cool but take up more resources
+    hasActiveCool = true  
 
     # like the following items that you need create a relative markdown file
     # Search - search.md
-    # Nav - nav.md
-    # Idea posts/idea.md
+    # Nav - nav.md 
+    # Archive - archive.md
+    # Idea posts/idea.md 
     # Wiki - posts/wiki.md
     hasMoreMenuItems = true
 
     slogan = 'Life is just a joker.'       # your site slogan below title
     [params.svg]
-        color = '#5d2f86'                  # icon color of breadcrumb '#666'  # '#5a29e4'
+        color = '#6c757d'                  # icon color of breadcrumb '#666'  # '#5a29e4' 
     [params.img]
         # Img of home page - if not jpg, rename it, and
         # place it inio `static/imgs/` dir
@@ -94,7 +97,6 @@ paginate = 24         # better 4 * 3 * times
     [markup.goldmark]
         [markup.goldmark.renderer]
             unsafe = true
-
 ```
 
 Now, just run `hugo server -D` to enjoy it.
