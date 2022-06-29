@@ -2,12 +2,14 @@ import $ from './libs/jquery.min';
 import toggleToc from './utils/toggleToc';
 import isMobile from './utils/isMobile';
 import toggleColor from "./utils/toggleColor";
+import enhanceOrgMode from "./utils/enhanceOrgMode";
 
 export {
 	greet,
 	initEventBinding,
 	initToc,
 	initMouseClickAnimate,
+	enhanceOrgMode
 }
 
 function greet() {
