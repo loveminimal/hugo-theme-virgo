@@ -80,7 +80,7 @@ paginate = 24         # better 4 * 3 * times
     [params.contact]
         icp = '豫ICP备2022002918号'          # beian number
         weibo = '6867589681'                # e.g. https://weibo.com/u/6867589681
-        wechat = 'bg/wechat.jpg'            # Wechat QR, choose your path
+        wechat = 'imgs/bg/wechat.jpg'       # Wechat QR, choose your path
         email = 'loveminimal@outlook.com'
         github = 'loveminimal'              # e.g. https://github.com/loveminimal
         bilibili = '11608450'               # e.g. https://space.bilibili.com/11608450
