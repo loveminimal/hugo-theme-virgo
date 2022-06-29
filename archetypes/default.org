@@ -1,4 +1,6 @@
 #+DATE: {{ .Date }}
 #+TITLE: {{ replace .Name "-" " " | title }}
-#+CATEGORIES: Misc
-#+TAGS: 
+#+CATEGORIES[]: Misc
+#+TAGS[]: 
+#+CARD: 
+
