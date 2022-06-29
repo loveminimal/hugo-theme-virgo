@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
     {{- partial "head.html" . -}}
-    <body class="{{ with .Site.Params.hasActiveAnimate }}active-animate{{ end }}">
+    <body class="{{ with .Site.Params.hasActiveAnimate }}active-animate{{ end }} {{ with .Site.Params.hasActiveCool }}cool{{ end }}">
         <div id="header">
             {{- partial "header.html" . -}}
         </div>

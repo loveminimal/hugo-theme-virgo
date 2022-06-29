@@ -1,0 +1,38 @@
+body.cool {
+
+	&::before {
+		content: '';
+		display: block;
+		width: 100%;
+		min-height: 100%;
+		position: fixed;
+		z-index: -1;
+		background: url('/bg/cat.jpg') center center/cover no-repeat fixed;
+	}
+	
+	#header, #content, #footer {
+        background-color: rgba(255, 255, 255, 0.9);
+        // backdrop-filter: saturate(180%) blur(5px); // saturate(180%)
+    }
+
+	pre {
+		background-color: rgba(255, 255, 255, 0.3) !important;
+	}
+	// 以下是为了保证 darkreader 暗色模式下，代码块样式也是透明
+	[data-darkreader-inline-bgcolor] {
+		background-color: rgba(255, 255, 255, 0.3) !important;
+	}
+	
+}
+
+@media screen and (max-width: 1026px) {
+	body.cool {
+		#content {
+			// min-height: 1080px;
+		}
+		#footer {
+			padding-bottom: 1080px;
+
+		}
+	}
+}
