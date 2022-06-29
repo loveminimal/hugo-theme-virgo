@@ -63,7 +63,7 @@
                             background: $post-item-bg-color;
 
                             >a {
-                                background: #efefef;
+                                background: rgba(239, 239, 239, .5);
                             }
                         }
                     }
@@ -108,7 +108,7 @@
                         border-radius: 0 16px 0 16px;
 
                         >a {
-                            background: #efefef;
+                            background: rgba(239, 239, 239, .5);
                         }
                     }
                 }
