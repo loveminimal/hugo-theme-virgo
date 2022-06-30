@@ -20,6 +20,8 @@
             //page-break-inside: avoid;
             // -webkit-column-break-inside: avoid;
             background: $post-item-bg-color;
+            // backdrop-filter: blur(10px);
+
             border-radius: 0 16px 0 8px;
             margin-right: 32px;
             margin-top: 48px;
@@ -31,7 +33,9 @@
                 // float: left;
                 width: 100%;
                 display: block;
-                background: rgba(239, 239, 239, .5);
+                background: rgba(239, 239, 239, .3);
+                // backdrop-filter: blur(10px);
+
                 margin-bottom: 8px;
                 padding: 6px 4px;
                 white-space: nowrap;
@@ -69,7 +73,9 @@
                 box-sizing: border-box;
                 height: 80px;
                 display: block;
-                background: rgba(239, 239, 239, .5);
+                background: rgba(239, 239, 239, .3);
+                // backdrop-filter: blur(10px);
+
                 margin-bottom: 8px;
                 padding: 8px;
                 white-space: nowrap;
