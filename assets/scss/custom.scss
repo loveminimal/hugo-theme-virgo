@@ -1,6 +1,6 @@
 html {
     font-size: 100px;
-    scroll-behavior: smooth; // 页面平滑滚动
+    scroll-behavior: smooth;
 }
 
 body {
@@ -16,7 +16,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     background: $headline-bg-color;
-    //margin: 16px 0;
     padding: 16px 0;
 
     a {
@@ -73,8 +72,6 @@ h6 {
 
 img {
     max-width: 100%;
-    //padding: 16px 0;
-    //box-shadow: 0 0 3px #999;
     border: 1px solid $img-border-color;
 }
 
@@ -83,8 +80,8 @@ a {
 
     &:hover {
         text-decoration: none;
-        color: #e69;
-        text-shadow: 0px 0px 1px #e69;
+        color: $link-hover-color;
+        text-shadow: 0px 0px 1px $link-hover-color;
     }
 }
 
@@ -117,11 +114,11 @@ table {
         border-right: 1px solid $table-color;
 
         &:first-child {
-            border-left: rgba(255, 255, 255, 0);
+            border-left: $white-000;
         }
 
         &:last-child {
-            border-right: rgba(255, 255, 255, 0);
+            border-right: $white-000;
         }
     }
 }
@@ -136,7 +133,6 @@ p,
 td,
 li {
     code {
-        // color: #D63384; // #D63384
         font-size: 0.14rem;
         font-family: $font-family--code;
     }
@@ -166,7 +162,7 @@ ol {
     position: relative;
     margin: 16px auto;
     padding: 8px 16px;
-    padding-left: 32px;
+    padding-left: 24px;
     font-size: 0.15rem;
     border-left: 1px dashed $essay-color;
     color: $essay-color;
@@ -175,7 +171,6 @@ ol {
         content: '🗨️';
         position: absolute;
         left: -32px;
-        // top: -16px;
     }
 
     p {

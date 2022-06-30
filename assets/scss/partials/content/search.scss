@@ -19,7 +19,7 @@
             padding-left: 32px;
             font-family: $font-family--base;
             width: 500px;
-            background: rgba(255, 255, 255, 0);
+            background: $white-000;
 
 
             &:focus-visible {
@@ -64,7 +64,7 @@
                 box-sizing: border-box;
                 width: 100%;
                 display: block;
-                background: rgba(239, 239, 239, .5);
+                background: $gray-white-500;
                 margin-bottom: 8px;
                 padding: 6px 4px;
                 white-space: nowrap;
