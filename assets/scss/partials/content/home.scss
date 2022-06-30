@@ -34,5 +34,17 @@
                 max-width: 100%;
             }
         }
+
+        .words {
+            font-size: .24rem;
+            color: $gray-500;
+            // padding: 200px 600px 300px 100px;
+            max-width: 600px;
+            padding: 16px 32px;
+            // background-color: $white-100;
+            // backdrop-filter: blur(10px);
+            border-radius: 10px;
+            margin: 64px 200px;
+        }
     }
 }

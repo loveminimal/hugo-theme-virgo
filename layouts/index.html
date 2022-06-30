@@ -49,6 +49,8 @@
             <!-- <img src="/imgs/tux.jpg" /> -->
             {{ if .Site.Params.img.src }}
             <img src="/imgs/{{ .Site.Params.img.src }}.jpg" width="{{ .Site.Params.img.width }}" />
+            {{ else if .Site.Params.img.words }}
+            <div class="words">{{ .Site.Params.img.words }}</div>
             {{ else }}
             <img src="/imgs/tux.jpg" width="880" />
             {{ end }}
