@@ -1,9 +1,5 @@
 .container-list {
     font-size: 0.16rem;
-    //column-count: 3;
-    //column-gap: 24px;
-    // column-rule: 1px dashed #9999;
-    //padding: 16px 240px;
 
     .count {
         color: $gray-600;
@@ -17,8 +13,6 @@
         $item-width: 360px;
 
         .item {
-            //page-break-inside: avoid;
-            // -webkit-column-break-inside: avoid;
             background: $post-item-bg-color;
             // backdrop-filter: blur(10px);
 
@@ -30,7 +24,6 @@
 
             >a {
                 box-sizing: border-box;
-                // float: left;
                 width: 100%;
                 display: block;
                 background: rgba(239, 239, 239, .3);
@@ -57,17 +50,13 @@
             }
 
             .summary {
-                // width: 500px;
-                // background: #fee;
                 padding: 8px;
                 color: $gray-600;
             }
         }
 
         .item-term {
-            //page-break-inside: avoid;
             margin: 4px;
-            // float: left;
              width: $item-width;
             a {
                 box-sizing: border-box;

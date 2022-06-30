@@ -1,14 +1,14 @@
 // === 通用字体设置 ---
 $font-family-sans-serif: 'Jost', jinkaiFont, 'kaiti',
--apple-system,
-blinkmacsystemfont, 'Segoe UI', roboto, 'Helvetica Neue',
-arial, 'Noto Sans', sans-serif,
-'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    -apple-system,
+    blinkmacsystemfont, 'Segoe UI', roboto, 'Helvetica Neue',
+    arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 $font-family-monospace: sfmono-regular, menlo, monaco, consolas, 'Liberation Mono', jinkaiFont, 'kaiti', 'Courier New', monospace;
 // --- 通用字体设置 ===
 
 $font-family--base: $font-family-sans-serif;
-$font-family--code: 'Courier New', $font-family-monospace; // 'Courier New',
+$font-family--code: 'Courier New', $font-family-monospace;
 $font-family--some: 'Segoe Script', segoeFont, 'Courier New';
 
 // === bootstrap colos ---
@@ -45,34 +45,50 @@ $light: $gray-100 !default;
 $dark: $gray-900 !default;
 // --- bootstrap colors ===
 
-$link-color: #5d2f86;//  #19f;
-$table-color: #e9e7ef;
-$blockquote-color: $gray-600;// #666b;
-$essay-color: #e84a5f;
+// === while opacity color ---
+$white-000: rgba(255, 255, 255, 0);
+$white-100: rgba(255, 255, 255, 0.1);
+$white-200: rgba(255, 255, 255, 0.2);
+$white-300: rgba(255, 255, 255, 0.3);
+$white-400: rgba(255, 255, 255, 0.4);
+$white-500: rgba(255, 255, 255, 0.5);
+$white-600: rgba(255, 255, 255, 0.6);
+$white-700: rgba(255, 255, 255, 0.7);
+$white-800: rgba(255, 255, 255, 0.8);
+$white-900: rgba(255, 255, 255, 0.9);
+// --- while opacity color ===
 
-$code-inline-color: #d63384;
+
+// === graywhile opacity color ---
+$gray-white-000: rgba(239, 239, 239, 0);
+$gray-white-100: rgba(239, 239, 239, 0.1);
+$gray-white-200: rgba(239, 239, 239, 0.2);
+$gray-white-300: rgba(239, 239, 239, 0.3);
+$gray-white-400: rgba(239, 239, 239, 0.4);
+$gray-white-500: rgba(239, 239, 239, 0.5);
+$gray-white-600: rgba(239, 239, 239, 0.6);
+$gray-white-700: rgba(239, 239, 239, 0.7);
+$gray-white-800: rgba(239, 239, 239, 0.8);
+$gray-white-900: rgba(239, 239, 239, 0.9);
+// --- graywhile opacity color ===
+
+
+// === 背景色 ---
+$header-bg-color: $white-900;
+$content-bg-color: $white-000;
+$footer-bg-color: $white-000;
+$headline-bg-color: $white-000;
+$contact-bg-color: $white-000;
+$img-border-color: $white-000;
+// --- 背景色 ===
+
 $custom-green: #57BF7D;
 
-// 布局分割线颜色
-$parting-line-start-color: #147;
-$parting-line-end-color: #f66;
-
-// === 测试用背景色 ---
-$header-bg-color: #fee;
-$content-bg-color: #efe;
-$footer-bg-color: #eef;
-$headline-bg-color: #eff;
-$contact-bg-color: #eee;
-$img-border-color: #333;
-
-// --- 生产用色 ---
-$header-bg-color: rgba(255, 255, 255, 0.96);
-$content-bg-color: rgba(255, 255, 255, 0);
-$footer-bg-color: rgba(255, 255, 255, 0);
-$headline-bg-color: rgba(255, 255, 255, 0);
-$contact-bg-color: rgba(255, 255, 255, 0);
-$img-border-color: rgba(255, 255, 255, 0);
-// --- 测试用背景色 ===
+$link-color: #5d2f86;
+$table-color: #e9e7ef;
+$blockquote-color: $gray-600;
+$essay-color: #e84a5f;
+$code-inline-color: #d63384;
 
 $site-padding-lr: 80px;
-$post-item-bg-color: rgba(239,239,239, .3);
+$post-item-bg-color: $gray-white-300;
