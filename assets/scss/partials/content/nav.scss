@@ -26,8 +26,9 @@
                             font-weight: 400;
                             text-align: center;
                             margin: 0 4px;
-                            border: 1px solid $gray-400; //#19f;
-                            border-radius: 3px;
+                            // border: 1px solid $gray-500;
+                            box-shadow: 0px 0px 1px $gray-700;
+                            border-radius: 1px;
                             white-space: nowrap;
                             &:hover {
                                 padding-left: 4px;
@@ -38,10 +39,9 @@
             }
         }
 
-        // Bookmarks
         >p {
             font-family: $font-family--some;
-            color: #ccc;
+            color: $gray-500;
             font-weight: 700;
         }
 
