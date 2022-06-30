@@ -7,7 +7,7 @@
 
         #header {
             padding: 0 8px;
-            background: rgba(255, 255, 255, .9);
+            background: $white-900;
 
             .title {
                 white-space: nowrap;
@@ -63,7 +63,7 @@
                             background: $post-item-bg-color;
 
                             >a {
-                                background: rgba(239, 239, 239, .5);
+                                background: $gray-white-500;
                             }
                         }
                     }
@@ -108,7 +108,7 @@
                         border-radius: 0 16px 0 16px;
 
                         >a {
-                            background: rgba(239, 239, 239, .5);
+                            background: $gray-white-500;
                         }
                     }
                 }
@@ -120,9 +120,8 @@
                 .toc {
                     transition: .3s all linear;
                     right: -300px;
-
                     z-index: 1000;
-                    background: rgba(250, 250, 250, .98);
+                    background: $white-900;
                     height: 400px;
                     top: 120px;
                     padding-top: 48px;
@@ -131,8 +130,7 @@
                     .page-operation {
                         transition: .5s all linear;
                         top: 128px;
-                        //right: 24px;
-                        background: rgba(250, 250, 250, .98);
+                        background: $white-900;
                         border-radius: 24px;
 
                         right: -300px;

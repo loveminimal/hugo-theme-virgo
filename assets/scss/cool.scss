@@ -8,7 +8,6 @@ body.cool {
 		min-height: 100%;
 		position: fixed;
 		z-index: -1;
-		// background: url('/imgs/girl.jpg') center center/cover no-repeat fixed;
 		background: url('/imgs/bg/default.jpg') center center/cover no-repeat fixed;
 	}
 	
@@ -29,9 +28,7 @@ body.cool {
 		padding-bottom: 627px;
 	}
 
-	#footer {
-		// padding-bottom: 686px;
-	}
+	// #footer { }
 
 	pre {
 		background-color: $white-300 !important;

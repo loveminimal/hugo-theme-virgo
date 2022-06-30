@@ -18,7 +18,7 @@
                     p {
                         margin: 4px 0;
                         a {
-                            transition: .3s all linear;
+                            transition: .3s padding linear;
                             display: inline-block;
                             width: 96%;
                             height: 32px;
@@ -58,7 +58,7 @@
                 li {
                     list-style-type: none;
                     border-bottom: 1px dashed #ddd;
-                    transition: .3s all linear;
+                    transition: .3s padding linear;
 
                     &::before {
                         content: '➣ ';
