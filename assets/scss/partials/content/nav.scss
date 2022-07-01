@@ -18,16 +18,19 @@
                     p {
                         margin: 4px 0;
                         a {
+                            font-family: $font-family--xiaobai;
+                            font-size: .18rem;
+                            color: $gray-600;
                             transition: .3s padding linear;
                             display: inline-block;
                             width: 96%;
                             height: 32px;
                             line-height: 32px;
                             font-weight: 400;
-                            text-align: center;
+                            // text-align: center;
                             margin: 0 4px;
                             // border: 1px solid $gray-500;
-                            box-shadow: 0px 0px 1px $gray-600;
+                            box-shadow: 1px 1px 1px $gray-500;
                             border-radius: 1px;
                             white-space: nowrap;
                             &:hover {
