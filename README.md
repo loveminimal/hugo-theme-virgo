@@ -1,4 +1,4 @@
-It's just a simple & pure theme. 🎉🎉🎉
+It's just a simple & pure theme. 🎉🎉🎉 Enjoy it.
 
 ## Overview
 
@@ -56,7 +56,7 @@ paginate = 24         # better 4 * 3 * times
     # active cool style, be cool but take up more resources, and
     # if you want to replace default background image, just 
     # rename it `default.jpg` and place it into `/static/imgs/bg` dir, like `/static/imgs/bg/default.jpg`.
-    hasActiveCool = true  
+    hasActiveCool = true
 
     # like the following items that you need create a relative markdown file
     # Search - search.md
@@ -73,8 +73,14 @@ paginate = 24         # better 4 * 3 * times
         # Img of home page - if not jpg, rename it, and
         # place it inio `static/imgs/` dir
         # In-built : lightcolor, girl, and tux
-        src = 'tux'
+        # src = 'tux'
         width = 880
+        # and if not want to show img but some words, just 
+        # comment `src = 'xxx'`, and input your words:
+        words = "Stay hungry, Stay foolish. Your time is limited, so don't waste it living someone else's life. Have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary. -- Steve Jobs."
+        # words = "多少事，从来急；天地转，光阴迫。一万年太久，只争朝夕。 -- 教员"
+        # words = "西风烈，长空雁叫霜晨月。霜晨月，马蹄声碎，喇叭声咽。雄关漫道真如铁，而今迈步从头越。从头越，苍山如海，残阳如血。"
+        # words = "风雨送春归，飞雪迎春到。已是悬崖百丈冰，犹有花枝俏。俏也不争春，只把春来报。待到山花烂漫时，她在丛中笑。"
 
 
     [params.contact]
@@ -84,7 +90,7 @@ paginate = 24         # better 4 * 3 * times
         email = 'loveminimal@outlook.com'
         github = 'loveminimal'              # e.g. https://github.com/loveminimal
         bilibili = '11608450'               # e.g. https://space.bilibili.com/11608450
-        color = '#5d2f86'                   # icon color of contact
+        color = '#696969'                   # icon color of contact #5d2f86
 
 [markup]
     [markup.asciidocExt]
