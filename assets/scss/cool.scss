@@ -17,6 +17,12 @@ body.cool {
     }
 
 	#content {
+		.container-home {
+			.content .words {
+				margin: 80px 0px 96px 0%;
+			}
+		}
+
 		.container-archive {
 			.categories, .tags {
 				.arc-item {

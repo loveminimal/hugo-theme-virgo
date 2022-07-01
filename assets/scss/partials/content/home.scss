@@ -36,15 +36,18 @@
         }
 
         .words {
-            font-family: $font-family--some, $font-family--base;
+            box-sizing: border-box;
+            font-family:$font-family--some, $font-family--xiaobai, $font-family--base;
             font-size: .24rem;
             color: $gray-500;
             max-width: 600px;
+            min-height: 269px;
             padding: 16px 32px;
-            // background-color: $white-100;
+            // background-color: $gray-white-300;
             // backdrop-filter: blur(10px);
             border-radius: 10px;
-            margin: 64px 0px 64px 10%;
+            // margin: 80px 0px 96px 0%;
+            margin: 80px auto;
         }
     }
 }
