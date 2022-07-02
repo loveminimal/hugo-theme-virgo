@@ -13,7 +13,7 @@
 
         .item {
             background: $post-item-bg-color;
-            // backdrop-filter: blur(10px);
+            // backdrop-filter: blur(5px);
 
             border-radius: 0 16px 0 8px;
             margin-right: 32px;
@@ -25,8 +25,7 @@
                 box-sizing: border-box;
                 width: 100%;
                 display: block;
-                background: $gray-white-300;
-                // backdrop-filter: blur(10px);
+                background: $gray-white-200;
 
                 margin-bottom: 8px;
                 padding: 6px 4px;
@@ -56,12 +55,12 @@
 
         .item-term {
             margin: 4px;
-             width: $item-width;
+            width: $item-width;
             a {
                 box-sizing: border-box;
                 height: 80px;
                 display: block;
-                background: $gray-white-300;
+                background: $gray-white-200;
                 // backdrop-filter: blur(10px);
 
                 margin-bottom: 8px;

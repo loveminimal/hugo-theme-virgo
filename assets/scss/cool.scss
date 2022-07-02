@@ -7,31 +7,58 @@ body.cool {
 		width: 100%;
 		min-height: 100%;
 		position: fixed;
+		top: 0;
+		left: 0;
 		z-index: -1;
 		background: url('/imgs/bg/default.jpg') center center/cover no-repeat fixed;
 	}
-	
-	#header, #content, #footer {
+
+	// 设置 body 遮罩
+	&::after {
+		content: '';
+		display: block;
+		width: 100%;
+		min-height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: -1;
 		background-color: $white-800;
-        // backdrop-filter: saturate(180%) blur(5px); // saturate(180%)
-    }
+	}
+	
+	// #header, #content, #footer {
+	// 	background-color: $white-800;
+    //     backdrop-filter: saturate(180%) blur(5px); // saturate(180%)
+    // }
 
 	#content {
 		.container-home {
 			.content .words {
-				margin: 80px 0 126px 0;
+				margin-left: 0;
 			}
 		}
 
 		.container-archive {
 			.categories, .tags {
 				.arc-item {
-					background: rgba(245, 245, 245, 0.3);
+					background: $white-300;
+            		backdrop-filter: blur(5px);
+
+					sup {
+						color: $gray-500;
+					}
 				}
 			}
 		}
 
-		padding-bottom: 646px;
+		.container-list {
+			.list {
+				.item, .item-term {
+            		backdrop-filter: blur(5px);
+				}
+			}
+		}
+
 	}
 
 	// #footer { }

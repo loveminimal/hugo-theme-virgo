@@ -12,7 +12,9 @@
     z-index: 1000;
     position: sticky;
     top: -66px;
-    background: $header-bg-color;
+    // background: $header-bg-color;
+    // backdrop-filter: blur(5px);
+
     padding: 0 $site-padding-lr;
 
     .container-header {
