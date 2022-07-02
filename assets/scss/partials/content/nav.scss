@@ -20,7 +20,7 @@
                         a {
                             font-family: $font-family--xianmo, $font-family--base;
                             font-size: .18rem;
-                            color: $gray-600;
+                            // color: $gray-600;
                             transition: .3s padding linear;
                             display: inline-block;
                             width: 96%;
@@ -30,7 +30,7 @@
                             // text-align: center;
                             margin: 0 4px;
                             // border: 1px solid $gray-500;
-                            box-shadow: 1px 1px 1px $gray-500;
+                            box-shadow: 1px 1px 1px $gray-300;
                             border-radius: 1px;
                             white-space: nowrap;
                             &:hover {
@@ -61,7 +61,7 @@
     
                 li {
                     list-style-type: none;
-                    border-bottom: 1px dashed $gray-500;
+                    border-bottom: 1px dashed $gray-300;
                     transition: .3s padding linear;
 
                     &::before {
