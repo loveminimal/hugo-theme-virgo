@@ -55,6 +55,7 @@ function initMouseClickAnimate() {
 // 为元素绑定相关事件
 function initEventBinding() {
 	$(window).bind('hashchange', fixAnchorTop);
+	$(window).bind('scroll', colorHeader);
 	$(window).bind('scroll', colorToc);
 	$('#toc').bind('click', toggleToc);
 	// $('.title').bind('click', toggleColor);
@@ -67,6 +68,17 @@ function fixAnchorTop() {
 	// 在移动设备上使用的距顶元素竟然还不一样……
 	let _ele = isMobile() ? $('body') : $('html')
 	if (_hash) _ele.scrollTop($(_hash).offset().top - 48);
+}
+
+// 定制页眉背景色
+function colorHeader() {
+	let _curScroll = $(this).scrollTop() + 48;
+	// console.log(_curScroll)
+	if (_curScroll > 120) {
+		$('#header').addClass('js-header')
+	} else {
+		$('#header').removeClass('js-header')
+	}
 }
 
 
