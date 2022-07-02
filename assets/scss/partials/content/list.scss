@@ -11,6 +11,16 @@
         flex-shrink: 0;
         $item-width: 360px;
 
+        .desc .date {
+            color: #999;
+            font-size: 0.12rem;
+            font-family: $font-family--some;
+            // margin-right: 4px;
+            &:first-child {
+                padding-left: 8px;
+            }
+        }
+
         .item {
             background: $post-item-bg-color;
             // backdrop-filter: blur(5px);
