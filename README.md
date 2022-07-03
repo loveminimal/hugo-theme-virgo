@@ -4,26 +4,34 @@ It's just a simple & pure theme. 🎉🎉🎉 Enjoy it.
 
 **Cool Style**
 
-<img src="images/1.jpg" width="48%" style="float: left;" />
-<img src="images/2.jpg" width="48%" style="float: left;" />
+<img src="images/1.jpg" width="" style="float: left;" />
+
+<img src="images/2.jpg" width="" style="float: left;" />
+
 
 **Pure Style**
 
-<img src="images/q1.jpg" width="48%" style="float: left;" />
-<img src="images/q2.jpg" width="48%" style="float: left;" />
+<img src="images/q1.jpg" width="" style="float: left;" />
+
+<img src="images/q2.jpg" width="" style="float: left;" />
+
 
 
 ## Features In-built
 
-1、A highlight TOC with relative headline, like this:
+**1、A highlight TOC with relative headline, like this:**
 
-<img src="images/d1.jpg" width="48%" style="float: left;" />
-<img src="images/d2.jpg" width="48%" style="float: left;" />
+<img src="images/d1.jpg" width="" style="float: left;" />
 
-2、A simple and realtime local search.
+<img src="images/d2.jpg" width="" style="float: left;" />
 
-<img src="images/7.jpg" width="48%" style="float: left;" />
-<img src="images/8.jpg" width="48%" style="float: left;" />
+
+**2、A simple and realtime local search.**
+
+<img src="images/7.jpg" width="" style="float: left;" />
+
+<img src="images/8.jpg" width="" style="float: left;" />
+
 
 
 ## Tips
