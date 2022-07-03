@@ -2,17 +2,29 @@ It's just a simple & pure theme. 🎉🎉🎉 Enjoy it.
 
 ## Overview
 
-![tn](images/tn.png)
+**Cool Style**
+
+<img src="images/1.jpg" width="48%" style="float: ;" />
+<img src="images/2.jpg" width="48%" style="float: ;" />
+
+**Pure Style**
+
+<img src="images/q1.jpg" width="48%" style="float: ;" />
+<img src="images/q2.jpg" width="48%" style="float: ;" />
+
 
 ## Features In-built
 
 1、A highlight TOC with relative headline, like this:
 
-![toc highlight](images/hl-dir.jpg)
+<img src="images/d1.jpg" width="48%" style="float: ;" />
+<img src="images/d2.jpg" width="48%" style="float: ;" />
 
 2、A simple and realtime local search.
 
-![local search](images/search.jpg)
+<img src="images/7.jpg" width="48%" style="float: ;" />
+<img src="images/8.jpg" width="48%" style="float: ;" />
+
 
 ## Tips
 
