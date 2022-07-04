@@ -1,7 +1,13 @@
 .container-404 {
     .content {
         width: 54%;
-        margin: 0 auto;
+        margin: 48px auto 56px;
+        
+        .words {
+            text-align: center;
+            font-family: $font-family--xianmo;
+            font-size: .18rem;
+        }
     }
     .desc {
         text-align: center;
