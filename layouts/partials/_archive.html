@@ -1,4 +1,17 @@
 <div class="container-archive">
+    <!-- 最近文章 -->
+    <div class="recentf">
+        {{  range first 5 .Site.RegularPages }}
+            {{ if eq .Type "posts" }}
+            <div class="rec-post">
+                <div class="rec-post-item">
+                    <a href="{{.Permalink}}">{{ .Title }}</a>
+                </div>
+            </div>
+            {{ end }}
+        {{ end }}
+    </div>
+
 	<!-- 分类 -->
     <!-- <div class="desc">分类: </div> -->
     <!-- 📂 📜 🔖-->

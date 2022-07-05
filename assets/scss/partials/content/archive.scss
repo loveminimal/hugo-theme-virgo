@@ -3,6 +3,24 @@
         font-size: .20rem;
     }
 
+    .recentf {
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+
+        .rec-post .rec-post-item {
+            a {
+                font-size: .14rem;
+                display: inline-block;
+                background: $gray-white-600;
+                margin: 4px;
+                padding: 4px 8px;
+                border-radius: 4px;
+            }
+        }
+
+    }
+
     .categories, .tags {
         display: flex;
         flex-wrap: wrap;
