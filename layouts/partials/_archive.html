@@ -1,7 +1,7 @@
 <div class="container-archive">
     <!-- 最近文章 -->
     <div class="recentf">
-        {{  range first 5 .Site.RegularPages }}
+        {{  range first 10 .Site.RegularPages.ByLastmod.Reverse }}
             {{ if eq .Type "posts" }}
             <div class="rec-post">
                 <div class="rec-post-item">
