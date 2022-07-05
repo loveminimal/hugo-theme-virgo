@@ -105,11 +105,18 @@
         border-top: 1px solid $highlight-color;
         border-bottom: 1px solid $highlight-color;
 
-        padding: 16px 12px;
+        padding: 0px 12px 12px 12px;
         overflow: hidden;
 
         &:hover {
             overflow: auto;
+        }
+
+        .lang {
+            cursor: pointer;
+            margin-bottom: 16px;
+            padding: 4px 0px;
+            border-bottom: 1px dashed $gray-500;
         }
     }
 

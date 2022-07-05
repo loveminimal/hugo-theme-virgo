@@ -2,6 +2,7 @@ import {
     greet,
     initEventBinding,
     initToc,
+    initCodeBlock,
     initMouseClickAnimate,
     enhanceOrgMode
 } from "./js/init";
@@ -9,5 +10,6 @@ import {
 greet();
 initEventBinding();
 initToc();
+initCodeBlock();
 // initMouseClickAnimate();
 enhanceOrgMode();
