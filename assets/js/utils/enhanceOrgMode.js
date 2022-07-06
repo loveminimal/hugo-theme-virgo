@@ -1,4 +1,3 @@
-import { initMouseClickAnimate } from 'js/init'
 import $ from 'js/libs/jquery.min'
 
 export default function() {
