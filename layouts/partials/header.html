@@ -1,4 +1,6 @@
 <div class="container-header">
+    <!-- 配置变量 -->
+    {{- partial "_vars.html" . -}}
     <!-- 文档页眉 -->
     <h1 class="title">{{ .Title }}</h1>
     {{ if .IsHome }}

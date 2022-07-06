@@ -1,10 +1,15 @@
 import $ from '../libs/jquery.min';
+import initVars from 'js/init/initVars';
+
+let varsDict = initVars();
 
 export default function initCodeBlock() {
+	console.log(varsDict.hasFoldAllCodeBlocks);
 	const _arr = $('.highlight pre code');
 
 	_arr.each(function(idx) {
-		let isShow = true;	// 初始化是否显示代码块
+		// let isShow = true;	// 初始化是否显示代码块
+		let isShow = !varsDict.hasFoldAllCodeBlocks;
 		
 		let _this = $(this);
 		let _lang = $(this).attr('data-lang');
