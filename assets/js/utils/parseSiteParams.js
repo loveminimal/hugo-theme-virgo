@@ -1,6 +1,6 @@
 import $ from '../libs/jquery.min';
 
-export default function initVars() {
+export default function parseSiteParams() {
 	let _vars = $('#vars');
 	// console.log(_vars.text());
 
