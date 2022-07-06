@@ -1,6 +1,5 @@
 <div id="vars" class="container-vars" style="display: none;">
 	{
-		"hasFoldAllCodeBlocks": {{if .Site.Params.hasFoldAllCodeBlocks}} {{ .Site.Params.hasFoldAllCodeBlocks }} {{ else }} false {{ end }}
+		"hasFoldAllCodeBlocks": {{with .Site.Params.hasFoldAllCodeBlocks}} {{ . }} {{ else }} false {{ end }}
 	}
-
 </div>
