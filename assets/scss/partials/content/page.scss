@@ -98,6 +98,10 @@
         &:hover {
             overflow: auto;
         }
+
+        pre {
+            padding-top: 0;
+        }
     }
 
     pre {
@@ -105,7 +109,7 @@
         border-top: 1px solid $highlight-color;
         border-bottom: 1px solid $highlight-color;
 
-        padding: 0px 12px 12px 12px;
+        padding: 12px;
         overflow: hidden;
 
         &:hover {
