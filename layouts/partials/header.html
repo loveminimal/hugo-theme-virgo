@@ -11,7 +11,7 @@
     </div>
     {{ else }}
     {{- partial "_breadcrumb.html" . -}}
-    {{ if and .IsPage (ne .Title "Navigations") (ne .Title "Search") (ne .Title "Archive")}}
+    {{ if and .IsPage (ne .Title "Nav") (ne .Title "Search") (ne .Title "Archive")}}
     <div id="toc">📜</div>
     {{end}}
     {{ end }}
