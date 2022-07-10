@@ -148,4 +148,32 @@ enableGitInfo = true
 
 ```
 
+And if you want to use nav page, you may need contruct it like this:
+
+```md
+---
+title: "Nav"
+draft: false
+---
+
+⚓ O virgo, just do theright things.
+<div class="nav">
+
+- [navitem one](/)
+- [navitem two](/archive)
+- [navitem three](https://nav-item-three.com)
+
+</div>
+
+🔖 Bookmarks InboX
+
+<div class="bookmark">
+
+- bookmark item one https://bookmark-item-one.com
+- bookmark item two https://bookmark-item-two.com
+- bookmark item three https://bookmark-item-three.com
+
+</div>
+```
+
 Now, just run `hugo server -D` to enjoy it.
