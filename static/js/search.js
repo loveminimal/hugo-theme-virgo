@@ -1,3 +1,5 @@
+let siteParams = parseSiteParams();
+
 let data = document.querySelector('#data').innerText;
 let arr = data.split('$$$');
 let map = [];
@@ -98,8 +100,10 @@ function search() {
         }
     })
 
+    let _total = siteParams.en ? 'Total' : '条目',
+        _times = siteParams.en ? 'Times' : '次数';
     let res = `
-        <div class="statistics">条目： ${scResPostsCounts} &nbsp;&nbsp;次数： ${scResScValCounts}</div>
+        <div class="statistics">${_total}： ${scResPostsCounts} &nbsp;&nbsp;${_times}： ${scResScValCounts}</div>
         <div class="list">
             ${post}
         </div>
@@ -143,4 +147,12 @@ function clearInputVal() {
     if (!scInput.value) return;
     scInput.value = '';    
     search();
+}
+
+
+function parseSiteParams() {
+	let _vars = document.querySelector('#vars');
+	console.log(_vars.innerText);
+
+	return JSON.parse(_vars.innerText)
 }
