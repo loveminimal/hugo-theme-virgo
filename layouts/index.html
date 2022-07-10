@@ -2,39 +2,37 @@
 <div class="container-main container-home">
     <!-- 第一层级 -->
     <div class="menu">
-        {{ if .Site.Params.hasMoreMenuItems }}
-            {{ if .Site.Params.menu.search }}
-            <div class="item">
-                <a href="/search">🔎 Search</a>
-            </div>
-            {{ end }}
-            
-            {{ if .Site.Params.menu.nav }}
-            <div class="item">
-                <!-- ⚓🐶🎉👀💡👓 -->
-                <a href="/nav">🎯 Nav</a>
-            </div>
-            {{ end }}
-
-            {{ if .Site.Params.menu.archive }}
-            <div class="item">
-                <a href="/archive">🎉 Archive</a>
-            </div>
-            {{ end }}
-
-            {{ if .Site.Params.menu.idea }}
-            <div class="item">
-                <a href="/posts/idea">💡 Idea</a>
-            </div>
-            {{ end }}
-
-            {{ if .Site.Params.menu.wiki }}
-            <div class="item">
-                <a href="/posts/wiki">🚀 Wiki</a>
-            </div>
-            {{ end }}
-
+        {{ if .Site.Params.menu.search }}
+        <div class="item">
+            <a href="/search">🔎 Search</a>
+        </div>
         {{ end }}
+        
+        {{ if .Site.Params.menu.nav }}
+        <div class="item">
+            <!-- ⚓🐶🎉👀💡👓 -->
+            <a href="/nav">🎯 Nav</a>
+        </div>
+        {{ end }}
+
+        {{ if .Site.Params.menu.archive }}
+        <div class="item">
+            <a href="/archive">🎉 Archive</a>
+        </div>
+        {{ end }}
+
+        {{ if .Site.Params.menu.idea }}
+        <div class="item">
+            <a href="/posts/idea">💡 Idea</a>
+        </div>
+        {{ end }}
+
+        {{ if .Site.Params.menu.wiki }}
+        <div class="item">
+            <a href="/posts/wiki">🚀 Wiki</a>
+        </div>
+        {{ end }}
+
 
         {{ range where .Site.Pages "Kind" "section" }}
             {{ if ne .Title "Secrets" }}
