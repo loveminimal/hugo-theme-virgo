@@ -148,7 +148,7 @@ enableGitInfo = true
 
 ```
 
-And if you want to use nav page, you may need contruct it like this:
+And if you want to use nav page, you may need construct it like this:
 
 ```md
 ---
@@ -156,7 +156,7 @@ title: "Nav"
 draft: false
 ---
 
-⚓ O virgo, just do theright things.
+⚓ O virgo, just do the right thingS.
 <div class="nav">
 
 - [navitem one](/)
