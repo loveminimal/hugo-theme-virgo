@@ -80,23 +80,32 @@ enableGitInfo = true
     # rename it `default.jpg` and place it into `/static/imgs/bg` dir, like `/static/imgs/bg/default.jpg`.
     hasActiveCool = true
 
+    # Fold/Unfold code blocks, default `false`, and
+    # if `true` ，all code blocks will be folded when page load.
+    # It will be always true in Mobile view no matter what's your setting.
+    hasFoldAllCodeBlocks = false
+
+    # active english view, default chinese
+    en = false
+
+    slogan = 'Life is just a joker.'        # your site slogan below title
+
     # like the following items that you need create a relative markdown file
     # Search - search.md
     # Nav - nav.md 
     # Archive - archive.md
     # Idea posts/idea.md 
     # Wiki - posts/wiki.md
-    hasMoreMenuItems = true
+    [params.menu]
+        search = true
+        nav = true
+        archive = true
+        idea = true
+        wiki = true
 
-    # Fold/Unfold code blocks, default `false`, and
-    # if `true` ，all code blocks will be folded when page load.
-    # It will be always true in Mobile view no matter what's your setting.
-    hasFoldAllCodeBlocks = false
 
-
-    slogan = 'Life is just a joker.'       # your site slogan below title
     [params.svg]
-        color = '#6c757d'                  # icon color of breadcrumb '#666'  # '#5a29e4' 
+        color = '#6c757d'                   # icon color of breadcrumb '#666'  # '#5a29e4' 
     [params.img]
         # Img of home page - if not jpg, rename it, and
         # place it inio `static/imgs/` dir
@@ -118,6 +127,9 @@ enableGitInfo = true
         email = 'loveminimal@outlook.com'
         github = 'loveminimal'              # e.g. https://github.com/loveminimal
         bilibili = '11608450'               # e.g. https://space.bilibili.com/11608450
+        # twitter = 'loveminimal'             # e.g. https://twitter.com/loveminimal
+        # facebook = 'loveminimal'            # e.g. https://facebook.com/loveminimal
+        # youtube = 'loveminimal'             # e.g. https://youtube.com/user/loveminimal
         color = '#696969'                   # icon color of contact #5d2f86
 
 [markup]
