@@ -122,6 +122,7 @@ enableGitInfo = true
 
     [params.contact]
         icp = '豫ICP备2022002918号'          # beian number
+        icplink = 'http://beian.miit.gov.cn'
         weibo = '6867589681'                # e.g. https://weibo.com/u/6867589681
         wechat = 'imgs/bg/wechat.jpg'       # Wechat QR, choose your path
         email = 'loveminimal@outlook.com'
@@ -145,7 +146,6 @@ enableGitInfo = true
     [markup.goldmark]
         [markup.goldmark.renderer]
             unsafe = true
-
 ```
 
 And if you want to use nav page, you may need construct it like this:
