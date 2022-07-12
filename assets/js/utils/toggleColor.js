@@ -36,16 +36,3 @@ export default function toggleColor() {
         $('#light-dark a').html(sun);
     }
 }
-
-export function initColor() {
-    let _isEnabled = isEnabled();
-
-    if (_isEnabled) {
-        enable({
-            brightness: 100,
-            contrast: 90,
-            sepia: 10,
-        });
-        $('#light-dark a').html(sun);
-    }
-}
