@@ -5,6 +5,7 @@
     <h1 class="title">
         {{ if .Site.Params.en }}{{ .Title }}{{ else }}
             {{ if eq .Title "Virgo"}}一晌贪欢
+            {{ else if eq .Title "Search"}}搜索
             {{ else if eq .Title "Nav"}}导航
             {{ else if eq .Title "Archive"}}归档
             {{ else if eq .Title "Idea"}}闪念
