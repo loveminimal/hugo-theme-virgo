@@ -4,32 +4,32 @@
     <div class="menu">
         {{ if .Site.Params.menu.search }}
         <div class="item">
-            <a href="/search">🔎 Search</a>
+            <a href="/search">🔎 {{if .Site.Params.en }}Search{{ else }}搜索{{ end }}</a>
         </div>
         {{ end }}
         
         {{ if .Site.Params.menu.nav }}
         <div class="item">
             <!-- ⚓🐶🎉👀💡👓 -->
-            <a href="/nav">🎯 Nav</a>
+            <a href="/nav">🎯 {{if .Site.Params.en }}Nav{{ else }}导航{{ end }}</a>
         </div>
         {{ end }}
 
         {{ if .Site.Params.menu.archive }}
         <div class="item">
-            <a href="/archive">🎉 Archive</a>
+            <a href="/archive">🎉 {{if .Site.Params.en }}Archive{{ else }}归档{{ end }}</a>
         </div>
         {{ end }}
 
         {{ if .Site.Params.menu.idea }}
         <div class="item">
-            <a href="/posts/idea">💡 Idea</a>
+            <a href="/posts/idea">💡 {{if .Site.Params.en }}Idea{{ else }}闪念{{ end }}</a>
         </div>
         {{ end }}
 
         {{ if .Site.Params.menu.wiki }}
         <div class="item">
-            <a href="/posts/wiki">🚀 Wiki</a>
+            <a href="/posts/wiki">🚀 {{if .Site.Params.en }}Wiki{{ else }}百科{{ end }}</a>
         </div>
         {{ end }}
 
@@ -37,7 +37,7 @@
         {{ range where .Site.Pages "Kind" "section" }}
             {{ if ne .Title "Secrets" }}
                 <div class="item">
-                    <a href="{{.Permalink}}">📜 {{.Title}}</a>
+                    <a href="{{.Permalink}}">📜 {{if .Site.Params.en }}{{.Title}}{{ else }}文章{{ end }}</a>
                 </div>
             {{ end }}
         {{ end }}

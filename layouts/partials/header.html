@@ -2,7 +2,20 @@
     <!-- 配置变量 -->
     {{- partial "_siteparams.html" . -}}
     <!-- 文档页眉 -->
-    <h1 class="title">{{ .Title }}</h1>
+    <h1 class="title">
+        {{ if .Site.Params.en }}{{ .Title }}{{ else }}
+            {{ if eq .Title "Virgo"}}一晌贪欢
+            {{ else if eq .Title "Nav"}}导航
+            {{ else if eq .Title "Archive"}}归档
+            {{ else if eq .Title "Idea"}}闪念
+            {{ else if eq .Title "Wiki"}}百科
+            {{ else if eq .Title "Posts"}}文章
+            {{ else if eq .Title "Categories"}}分类
+            {{ else if eq .Title "Tags"}}标签
+            {{ else }}{{.Title}}
+            {{ end }}
+        {{ end }}
+    </h1>
     {{ if .IsHome }}
     
     <div class="some">
