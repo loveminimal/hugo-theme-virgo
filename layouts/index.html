@@ -2,17 +2,25 @@
 <div class="container-main container-home">
     <!-- 第一层级 -->
     <div class="menu">
-        {{ if .Site.Params.menu.search }}
-        <div class="item">
-            <a href="/search">🔎 {{if .Site.Params.en }}Search{{ else }}搜索{{ end }}</a>
-        </div>
-        {{ end }}
-        
         {{ if .Site.Params.menu.nav }}
         <div class="item">
             <!-- ⚓🐶🎉👀💡👓 -->
             <a href="/nav">🎯 {{if .Site.Params.en }}Nav{{ else }}导航{{ end }}</a>
         </div>
+        {{ end }}
+
+        {{ if .Site.Params.menu.search }}
+        <div class="item">
+            <a href="/search">🔎 {{if .Site.Params.en }}Search{{ else }}搜索{{ end }}</a>
+        </div>
+        {{ end }}
+
+        {{ range where .Site.Pages "Kind" "section" }}
+        {{ if ne .Title "Secrets" }}
+            <div class="item">
+                <a href="{{.Permalink}}">📜 {{if .Site.Params.en }}{{.Title}}{{ else }}文章{{ end }}</a>
+            </div>
+        {{ end }}
         {{ end }}
 
         {{ if .Site.Params.menu.archive }}
@@ -34,13 +42,7 @@
         {{ end }}
 
 
-        {{ range where .Site.Pages "Kind" "section" }}
-            {{ if ne .Title "Secrets" }}
-                <div class="item">
-                    <a href="{{.Permalink}}">📜 {{if .Site.Params.en }}{{.Title}}{{ else }}文章{{ end }}</a>
-                </div>
-            {{ end }}
-        {{ end }}
+
         {{ range where .Site.Pages "Kind" "taxonomy" }}
             {{ if and (ne .Title "Categories") (ne .Title "Tags")}}
             <div class="item">
