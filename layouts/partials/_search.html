@@ -2,9 +2,14 @@
     <div id="data" style="display: none;">
         {{ range where .Site.Pages "Kind" "section" }}
             {{ if ne .Title "Secrets" }}
-                {{ range .Pages}}
-                    {{ .Title }}%%{{ .Permalink }}%%{{ .Date.Format "2006-01-02" }}%%{{ .Summary }}%%{{ .Content | plainify }}$$$
-                {{ end }}
+                [{{ range .Pages }}
+                    {{- dict 
+                        "title" (lower .Title) 
+                        "permalink" .Permalink 
+                        "date" (.Date | time.Format "2006-01-02")
+                        "summary" .Summary
+                        "content" (lower .Plain)
+                    | jsonify -}},{{ end }}]
             {{ end }}
         {{ end }}
     </div>

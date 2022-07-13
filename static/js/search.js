@@ -1,21 +1,9 @@
 let siteParams = parseSiteParams();
 
-let data = document.querySelector('#data').innerText;
-let arr = data.split('$$$');
-let map = [];
+let data = document.querySelector('#data').innerText.trim();
+data = data.slice(0, data.length - 2) + ']';
+let map = JSON.parse(data);
 
-arr.forEach(item => {
-    let _arr = item.split('%%');
-    map.push({
-        title: _arr[0].trim(),
-        permalink: _arr[1],
-        date: _arr[2],
-        summary: _arr[3],
-        content: item.trim().toLowerCase()
-    })
-})
-
-// console.log(map)
 let scClear = document.querySelector('#sc-clear');
 let scInput = document.querySelector('#sc-input');
 let scRes = document.querySelector('#sc-res')
@@ -37,7 +25,7 @@ function search() {
         
     map.forEach(item => {
         if (!scVal) return;
-        if (item.content.indexOf(scVal) > -1) {
+        if (item.content.indexOf(scVal) > -1 || item.title.indexOf(scVal) > -1) {
             let _arrIndex = scanStr(item.content, scVal);
             let strRes = '';
             let _radius = 100;  // 搜索字符前后截取的长度
