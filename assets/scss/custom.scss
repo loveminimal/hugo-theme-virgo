@@ -148,6 +148,10 @@ ol {
     list-style-position: outside;
     padding-left: 20px;
     margin-bottom: 16px;
+
+    li p {
+        margin: 0;
+    }
 }
 
 ol {
