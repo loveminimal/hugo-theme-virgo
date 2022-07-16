@@ -1,19 +1,20 @@
 // === 通用字体设置 ---
-$font-family-sans-serif: 'Jost', jinkaiFont, 'kaiti',
+$font-family-sans-serif:  'Jost', jinkaiFont, 'kaiti',
     -apple-system,
     blinkmacsystemfont, 'Segoe UI', roboto, 'Helvetica Neue',
     arial, 'Noto Sans', sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 $font-family-monospace: sfmono-regular, menlo, monaco, consolas, 'Liberation Mono', jinkaiFont, 'kaiti', 'Courier New', monospace;
 // --- 通用字体设置 ===
-
-$font-family--base: $font-family-sans-serif;
-$font-family--code: 'Courier New', $font-family-monospace;
-$font-family--some: 'Segoe Script', segoeFont, 'Courier New';
-
 $font-family--xiaobai: xiaobaiFont;
 $font-family--shoushu: shoushuFont;
 $font-family--xianmo: xianmoFont;
+$font-family--josefin: josefinSansFont;
+
+$font-family--base: $font-family-sans-serif;
+$font-family--code: $font-family--josefin, 'Courier New', $font-family-monospace;
+$font-family--some: 'Segoe Script', segoeFont, 'Courier New';
+
 
 // === bootstrap colos ---
 $white: #fff !default;
