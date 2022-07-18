@@ -2,6 +2,11 @@
 {{ $IsNav := eq .Title "Nav"}}
 {{ $IsSearch := eq .Title "Search"}}
 {{ $IsArchive := eq .Title "Archive"}}
+{{ $IsAbout := eq .Title "About"}}
+
+<!-- 那些不需要文章相关功能（如目录层级，文章切换、字数时长统计等）的页面 -->
+{{ $IsPurePage := or $IsNav $IsSearch $IsArchive $IsAbout }}
+
 <div class="container-main 
     {{ if $IsNav}} container-nav 
     {{ else if $IsSearch }} container-search 
@@ -10,7 +15,7 @@
 {{ end }}">
 
     <div class="desc">
-        {{if and (not $IsSearch) (not $IsArchive) }}
+        {{if not $IsPurePage }}
         <span>
             <!-- 创建： -->
             <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7409" width="12" height="12"><path d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z" p-id="7410" fill="#adb5bd"></path></svg>
@@ -36,7 +41,7 @@
     </div>
     
     <div class="toc">
-        {{ if and .IsPage (not $IsNav) (not $IsSearch) (not $IsArchive)}}
+        {{ if and .IsPage (not $IsPurePage)}}
         <div class="page-operation">
             <div><a href="#"><img src="/imgs/icons/arrow-up-circle.svg" alt=""></a></div>
             <div>{{with .NextInSection}}<a href="{{.Permalink}}"><img src="/imgs/icons/arrow-left-circle.svg" alt=""></a>{{end}}</div>
@@ -59,7 +64,7 @@
     {{ end }}
 
 
-    {{ if and .IsPage (not $IsNav) (not $IsSearch) (not $IsArchive)}}
+    {{ if and .IsPage (not $IsPurePage)}}
         {{- partial "partials/_prevnext.html" . -}}
     {{ end }}
 </div>
