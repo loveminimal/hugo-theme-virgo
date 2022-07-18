@@ -56,9 +56,13 @@ body.cool {
 				.arc-item {
 					background: $white-300;
             		backdrop-filter: blur(5px);
-
+					
 					sup {
 						color: $gray-500;
+					}
+					
+					.arc-post-item a {
+						box-shadow: 1px 1px 3px $gray-300;
 					}
 				}
 			}
@@ -69,6 +73,7 @@ body.cool {
 			.list {
 				.item, .item-term {
             		backdrop-filter: blur(5px);
+					box-shadow: 1px 1px 5px $gray-300;
 				}
 			}
 		}
