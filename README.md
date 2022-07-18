@@ -100,6 +100,7 @@ enableGitInfo = true
     # Search - search.md
     # Nav - nav.md 
     # Archive - archive.md
+    # About - about.md or about/index.md
     # Idea posts/idea.md 
     # Wiki - posts/wiki.md
     [params.menu]
@@ -108,6 +109,7 @@ enableGitInfo = true
         archive = true
         idea = true
         wiki = true
+        about = true
 
 
     [params.svg]
