@@ -17,6 +17,7 @@ if (dark && !getDarkOfLocalStorage()) {
         contrast: 90,
         sepia: 10,
     });
+    setDarkOfLocalStorage('on');
 }
 
 // 若存在本地存储，且状态：
