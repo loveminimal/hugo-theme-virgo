@@ -80,6 +80,12 @@ enableGitInfo = true
     # rename it `default.jpg` and place it into `/static/imgs/bg` dir, like `/static/imgs/bg/default.jpg`.
     hasActiveCool = true
 
+    # For a better experience, we use localstorage to keep theme dark status, so
+    # if you set dark as `true` but has no effect, you
+    # should clear local storage of current site. And
+    # in general, there has no any questions when you use it firstly.
+    dark = false
+
     # Fold/Unfold code blocks, default `false`, and
     # if `true` ，all code blocks will be folded when page load.
     # It will be always true in Mobile view no matter what's your setting.
@@ -115,14 +121,14 @@ enableGitInfo = true
         # and if not want to show img but some words, just 
         # comment `src = 'xxx'`, and input your words:
         # words = "Stay hungry, Stay foolish. Your time is limited, so don't waste it living someone else's life. Have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary. -- Steve Jobs."
-        # words = "多少事，从来急；天地转，光阴迫。一万年太久，只争朝夕。 -- 教员"
-        words = "西风烈，长空雁叫霜晨月。霜晨月，马蹄声碎，喇叭声咽。雄关漫道真如铁，而今迈步从头越。从头越，苍山如海，残阳如血。 -- 教员"
+        words = "多少事，从来急；天地转，光阴迫。一万年太久，只争朝夕。 -- 教员"
+        # words = "西风烈，长空雁叫霜晨月。霜晨月，马蹄声碎，喇叭声咽。雄关漫道真如铁，而今迈步从头越。从头越，苍山如海，残阳如血。 -- 教员"
         # words = "风雨送春归，飞雪迎春到。已是悬崖百丈冰，犹有花枝俏。俏也不争春，只把春来报。待到山花烂漫时，她在丛中笑。 -- 教员"
 
 
     [params.contact]
         icp = '豫ICP备2022002918号'          # beian number
-        icplink = 'http://beian.miit.gov.cn'
+        icplink = '//beian.miit.gov.cn'
         weibo = '6867589681'                # e.g. https://weibo.com/u/6867589681
         wechat = 'imgs/bg/wechat.jpg'       # Wechat QR, choose your path
         email = 'loveminimal@outlook.com'
@@ -146,6 +152,7 @@ enableGitInfo = true
     [markup.goldmark]
         [markup.goldmark.renderer]
             unsafe = true
+
 ```
 
 And if you want to use nav page, you may need construct it like this:
