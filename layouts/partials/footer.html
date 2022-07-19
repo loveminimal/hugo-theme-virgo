@@ -1,11 +1,11 @@
 <div class="container-footer">
     <!-- 文档页脚 -->
-    <a id="s" href="/secrets">&nbsp;</a>
     <a href="{{ .Site.Params.contact.icplink }}" target="_blank">
         {{ with .Site.Params.contact.icp }}
-            {{ . }}
+        {{ . }}
         {{ else }}
-            <span class="some">enter your icp or a interesting slogan...<span>
+        <span class="some">enter your icp or a interesting slogan...<span>
         {{ end }}
     </a>
+    <a id="s" href="/secrets">&nbsp;</a>
 </div>
