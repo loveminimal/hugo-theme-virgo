@@ -83,14 +83,23 @@
 
                     .desc {
                         padding-top: 32px;
+
+                        .words {
+                            width: 90%;
+                            padding: 16px 24px;
+                            margin: 24px 0px 28px 0px;
+                            font-size: .16rem;
+                            // color: $gray-500;
+                        }
                     }
 
-                    .words {
-                        width: 90%;
-                        padding: 16px 24px;
-                        margin: 24px 0px 28px 0px;
-                        font-size: .16rem;
-                        // color: $gray-500;
+                    .poem {
+
+                        .poem-item {
+                            // width: 48%;
+                            // width: 96%;
+                            width: 100%;
+                        }
                     }
                 }
                 
