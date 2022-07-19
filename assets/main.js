@@ -5,7 +5,7 @@ import initMouseClickAnimate from "js/init/initMouseClickAnimate";
 import enhanceOrgMode from './js/init/enhanceOrgMode';
 
 greet();
+enhanceOrgMode();
 initEventBinding();
 initCodeBlock();
 // initMouseClickAnimate();
-enhanceOrgMode();

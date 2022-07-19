@@ -20,7 +20,7 @@ export default function viewImage(e) {
 				overflow-y:auto; 
 				overflow-x: hidden; 
 				z-index: 2000; ">
-			<img src=${curImgSrc} style="display: block; margin: 0 auto; padding: 24px; max-width: 100%;" />
+			<img src=${curImgSrc} style="display: block; box-sizing: border-box; margin: 0 auto; padding: 24px; max-width: 100%;" />
 		</div>`
 	)
 }
