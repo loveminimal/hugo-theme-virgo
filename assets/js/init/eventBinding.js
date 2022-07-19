@@ -15,5 +15,5 @@ export default function initEventBinding() {
 	$('#toc').bind('click', toggleToc);
 	$('#light-dark').bind('click', toggleColor);
 	if (location.href.indexOf('ovirgo') > -1) $('#s').hide();
-	$('.content p img').bind('click', viewImage);
+	$('.content img').bind('click', viewImage);
 }
