@@ -5,6 +5,7 @@ import colorHeader from './colorHeader';
 import colorToc from './colorToc';
 import toggleToc from 'js/utils/toggleToc';
 import toggleColor from "../utils/toggleColor";
+import viewImage from "../utils/viewImage";
 
 
 export default function initEventBinding() {
@@ -14,4 +15,5 @@ export default function initEventBinding() {
 	$('#toc').bind('click', toggleToc);
 	$('#light-dark').bind('click', toggleColor);
 	if (location.href.indexOf('ovirgo') > -1) $('#s').hide();
+	$('.content img').bind('click', viewImage);
 }
