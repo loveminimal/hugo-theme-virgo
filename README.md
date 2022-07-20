@@ -75,6 +75,9 @@ enableGitInfo = true
     # active fadeIn animate when load page
     hasActiveAnimate = true      
 
+    # show poems of home page
+    showPoem = true
+
     # active cool style, be cool but take up more resources, and
     # if you want to replace default background image, just 
     # rename it `default.jpg` and place it into `/static/imgs/bg` dir, like `/static/imgs/bg/default.jpg`.
@@ -107,26 +110,27 @@ enableGitInfo = true
         search = true
         nav = true
         archive = true
-        idea = true
+        idea = false
         wiki = true
         about = true
 
 
     [params.svg]
         color = '#6c757d'                   # icon color of breadcrumb '#666'  # '#5a29e4' 
-    [params.img]
+    
+    # [[!!! deprecated]] - which may make homepage seems too blank
+    # --------------------------------
+    # [params.img]
         # Img of home page - if not jpg, rename it, and
         # place it inio `static/imgs/` dir
         # In-built : lightcolor, girl, and tux
         # src = 'tux'
-        width = 880
+        # width = 880
         # and if not want to show img but some words, just 
         # comment `src = 'xxx'`, and input your words:
         # words = "Stay hungry, Stay foolish. Your time is limited, so don't waste it living someone else's life. Have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary. -- Steve Jobs."
-        words = "多少事，从来急；天地转，光阴迫。一万年太久，只争朝夕。 -- 教员"
-        # words = "西风烈，长空雁叫霜晨月。霜晨月，马蹄声碎，喇叭声咽。雄关漫道真如铁，而今迈步从头越。从头越，苍山如海，残阳如血。 -- 教员"
-        # words = "风雨送春归，飞雪迎春到。已是悬崖百丈冰，犹有花枝俏。俏也不争春，只把春来报。待到山花烂漫时，她在丛中笑。 -- 教员"
-
+        # words = "多少事，从来急；天地转，光阴迫。一万年太久，只争朝夕。 -- 教员"
+    # --------------------------------
 
     [params.contact]
         icp = '豫ICP备2022002918号'          # beian number
