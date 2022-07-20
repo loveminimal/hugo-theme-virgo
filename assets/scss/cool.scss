@@ -33,9 +33,25 @@ body.cool {
 
 	#content {
 		.container-home {
-			.content .words {
-				margin-left: 0;
-			}
+			.content {
+				.desc {
+					.words {
+						margin-left: 0;
+					}
+				}
+
+				.poem {
+					.poem-item {
+						background: $white-300;
+						backdrop-filter: blur(3px);
+		
+						&:hover {
+							background: $white-600;
+						}
+					}
+				}
+			} 
+			
 		}
 
 		.container-nav {

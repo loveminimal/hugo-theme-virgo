@@ -110,6 +110,7 @@
         }
 
         .poem {
+            padding-bottom: 32px;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -119,15 +120,15 @@
                 color: $gray-500;
                 white-space:pre-line;
                 box-sizing: border-box;
-                background: $white-300;
+                background: $gray-white-300;
                 backdrop-filter: blur(3px);
                 width: 49%;
                 margin: 16px 0;
                 padding: 16px 16px 32px;
-                transition: .1s background-color linear;
+                transition: .3s background-color ease-in-out;
 
                 &:hover {
-                    background: $white-600;
+                    background: $gray-white-600;
                 }
             }
         }
