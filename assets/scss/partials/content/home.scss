@@ -3,10 +3,7 @@
 
     .menu {
         height: 108px;
-        // background: #000;
         box-sizing: border-box;
-        // position: absolute;
-        // right: $site-padding-lr;
         display: flex;
         justify-content: flex-end;
         flex-wrap: wrap;
@@ -21,7 +18,6 @@
                 border-radius: 6px;
                 text-align: center;
                 transition: .3s padding ease;
-                // box-shadow: 1px 1px 3px $gray-300;
 
                &:hover {
                 padding: 24px 8px;
@@ -30,9 +26,61 @@
         }
     }
 
-    .content-home-md {
-        // background: #ddd;
-        // padding: 16px ;
+    // style of `content/_index.md`
+    // some customizations of content of md
+    .content-md {
+        padding-top: 24px;
+
+        p,
+        li,
+        td {
+            & > code {
+                font-family: $font-family--xianmo;
+                color: $code-inline-color;
+            }
+        }
+
+        .highlight {
+            font-family: $font-family--xianmo;
+
+            margin: 16px 0;
+            border-top: 2px solid $highlight-color;
+            border-bottom: 2px solid $highlight-color;
+            padding: 2px 0;
+            font-size: 0.14rem;
+            overflow: hidden;
+            &:hover {
+                overflow: auto;
+            }
+    
+            pre {
+                padding-top: 0;
+            }
+        }
+    
+        pre {
+            font-size: 0.14rem;
+            border-top: 1px solid $highlight-color;
+            border-bottom: 1px solid $highlight-color;
+    
+            padding: 12px;
+            overflow: hidden;
+    
+            &:hover {
+                overflow: auto;
+            }
+    
+            .lang {
+                cursor: pointer;
+                margin-bottom: 16px;
+                padding: 4px 0px;
+                border-bottom: 1px dashed $gray-500;
+            }
+        }
+    
+        em {
+            font-style: italic;
+        }
     }
 
     .content {
