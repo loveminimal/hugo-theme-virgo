@@ -98,8 +98,6 @@
                     }
                 }
                 
-
-            
             }
 
             .container-nav {
@@ -123,11 +121,15 @@
                     .item, .item-term {
                         margin: 12px;
                         background: $post-item-bg-color;
-                        border-radius: 0 16px 0 16px;
+                        // border-radius: 0 16px 0 16px;
 
                         >a {
                             background: $gray-white-500;
                         }
+                    }
+
+                    .item-term {
+                        border-radius: 0 16px 0 16px;
                     }
                 }
             }

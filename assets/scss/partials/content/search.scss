@@ -54,7 +54,7 @@
 
         .item {
             background: $post-item-bg-color;
-            border-radius: 0 16px 0 8px;
+            // border-radius: 0 16px 0 8px;
             margin-right: 32px;
             margin-top: 48px;
             width: $item-width;
@@ -70,7 +70,7 @@
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                border-radius: 0 16px 0 8px;
+                // border-radius: 0 16px 0 8px;
                 transition: 0.3s padding ease;
 
                 &:hover {
@@ -86,6 +86,7 @@
             }
 
             .summary {
+                font-size: .15rem;
                 padding: 8px;
                 color: $gray-600;
             }
