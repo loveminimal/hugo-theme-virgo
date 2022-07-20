@@ -2,8 +2,11 @@
     font-family: $font-family--some, $font-family--xianmo, $font-family--base;
 
     .menu {
-        position: absolute;
-        right: $site-padding-lr - 8;
+        height: 108px;
+        // background: #000;
+        box-sizing: border-box;
+        // position: absolute;
+        // right: $site-padding-lr;
         display: flex;
         justify-content: flex-end;
         flex-wrap: wrap;
@@ -15,7 +18,7 @@
                 padding: 8px;
                 width: 96px;
                 background: $gray-white-400;
-                border-radius: 8px;
+                border-radius: 6px;
                 text-align: center;
                 transition: .3s padding ease;
                 // box-shadow: 1px 1px 3px $gray-300;
@@ -61,13 +64,13 @@
                 flex-shrink: 0;
                 font-size: .18rem;
                 color: $gray-500;
-                white-space:pre-wrap;
+                white-space:pre-line;
                 box-sizing: border-box;
                 background: $white-300;
                 backdrop-filter: blur(3px);
                 width: 49%;
                 margin: 16px 0;
-                padding: 16px;
+                padding: 16px 16px 32px;
                 transition: .1s background-color linear;
 
                 &:hover {
