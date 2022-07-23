@@ -6,6 +6,7 @@ import $ from '../libs/jquery.min';
 import initToc from './initToc';
 
 export default function colorToc() {
+	// console.log('color toc...');
 	initToc();
 	
 	let _curScroll = $(this).scrollTop() + 48; // window 滚动高度，`48` 表示距页面顶部的高度（默认为 0）
