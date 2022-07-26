@@ -55,9 +55,10 @@
                 }
             }
         }
-        
+
         #TableOfContents {
-            ul, ol {
+            ul,
+            ol {
                 margin-bottom: 4px;
             }
         }
@@ -76,7 +77,7 @@
     .content-card {
         h3 {
             color: $gray-500;
-            font-size: 0.16rem;
+            font-size: 0.18rem;
 
             &::before {
                 display: block;
@@ -86,6 +87,12 @@
                 border-top: 1px dashed $gray-500;
                 padding-top: 16px;
             }
+        }
+
+        h4 {
+            color: $gray-500;
+            font-size: 0.16rem;
+            // text-decoration: underline;
         }
     }
 
