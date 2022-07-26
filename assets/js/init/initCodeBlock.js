@@ -21,8 +21,8 @@ export default function initCodeBlock() {
 		// 模拟一个折叠板的功能，当
 		// _lang 为 'fold' 时，默认为折叠板
 		if (!_lang) return;
-		if (_lang === 'fold') {
-			_lang = '';
+		if (_lang[0] === '_') {
+			_lang = _lang.slice(1);
 			isShow = false;
 		}
 
