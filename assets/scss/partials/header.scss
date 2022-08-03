@@ -18,7 +18,7 @@
     padding: 0 $site-padding-lr;
 
     &.js-header {
-        // transition: .5s background-color linear;
+        transition: .2s background-color linear;
         background-color: $white-500;
         backdrop-filter: blur(5px);
         backdrop-filter: saturate(180%) blur(5px); // saturate(180%)
