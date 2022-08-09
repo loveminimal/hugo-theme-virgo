@@ -61,6 +61,11 @@
             ol {
                 margin-bottom: 4px;
             }
+
+            li a:not(:first-child){
+                color: $gray-300;
+                font-size: .01rem;
+            }
         }
     }
 
