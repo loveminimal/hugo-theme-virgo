@@ -11,7 +11,7 @@ import viewImage from "../utils/viewImage";
 
 export default function initEventBinding() {
 	$(window).bind('hashchange', fixAnchorTop);
-	$(window).bind('scroll', throttle(colorHeader, 200));
+	$(window).bind('scroll', throttle(colorHeader, 20));
 	$(window).bind('scroll', throttle(colorToc, 500));
 	$('#toc').bind('click', toggleToc);
 	$('#light-dark').bind('click', toggleColor);
