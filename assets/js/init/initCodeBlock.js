@@ -21,9 +21,16 @@ export default function initCodeBlock() {
 		// 模拟一个折叠板的功能，当
 		// _lang 类 `_xxx`时，默认为折叠板，其中 `xxx` 为折叠板描述
 		if (!_lang) return;
-		if (_lang[0] === '_') {
+		if (_lang[0] === '_' && _lang[1] !== '_') {
 			_lang = _lang.slice(1);
 			isShow = false;
+		}
+		
+		if (_lang[0] === '_' && _lang[1] === '_') {
+			_lang = _lang.slice(2);
+			isShow = false;
+			_this.addClass('oh-xyx')
+			_this.css('white-space', 'pre-wrap')
 		}
 
 		if (!isShow) _this.css('display', 'none');
