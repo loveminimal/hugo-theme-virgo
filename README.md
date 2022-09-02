@@ -76,12 +76,12 @@ enableGitInfo = true
     hasActiveAnimate = true      
 
     # show poems of home page
-    showPoem = true
+    showPoem = false
 
     # active cool style, be cool but take up more resources, and
     # if you want to replace default background image, just 
     # rename it `default.jpg` and place it into `/static/imgs/bg` dir, like `/static/imgs/bg/default.jpg`.
-    hasActiveCool = true
+    hasActiveCool = false
 
     # For a better experience, we use localstorage to keep theme dark status, so
     # if you set dark as `true` but has no effect, you
@@ -120,12 +120,12 @@ enableGitInfo = true
     
     # [[!!! deprecated]] - which may make homepage seems too blank
     # --------------------------------
-    # [params.img]
+    [params.img]
         # Img of home page - if not jpg, rename it, and
         # place it inio `static/imgs/` dir
-        # In-built : lightcolor, girl, and tux
-        # src = 'tux'
-        # width = 880
+        # In-built : lightcolor, girl, wukong, and tux
+        src = 'wukong'
+        width = 960
         # and if not want to show img but some words, just 
         # comment `src = 'xxx'`, and input your words:
         # words = "Stay hungry, Stay foolish. Your time is limited, so don't waste it living someone else's life. Have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary. -- Steve Jobs."
