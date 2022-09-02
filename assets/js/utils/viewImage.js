@@ -1,6 +1,9 @@
 import $ from '../libs/jquery.min';
 
 export default function viewImage(e) {
+
+	// 首页图片不执行任何动作
+	if (location.pathname === '/') return;
 	// console.log(e)
 	let curImgSrc = e.target.attributes.src.value;
 	console.log(curImgSrc)
