@@ -1,5 +1,6 @@
 .container-home {
-    font-family: $font-family--some, $font-family--xianmo, $font-family--base;
+    // font-family: $font-family--some, $font-family--xianmo, $font-family--base;
+    font-family: $font-family--some, $font-family--base;
 
     .menu {
         height: 108px;
@@ -118,7 +119,7 @@
             justify-content: space-between;
             .poem-item {
                 flex-shrink: 0;
-                font-size: .18rem;
+                // font-size: .18rem;
                 color: $gray-500;
                 white-space:pre-line;
                 box-sizing: border-box;
