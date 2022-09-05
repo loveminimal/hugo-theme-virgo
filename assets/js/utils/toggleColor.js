@@ -29,6 +29,8 @@ if (getDarkOfLocalStorage() === 'on') {
         contrast: 90,
         sepia: 10,
     });
+    
+    $('#light-dark a').html(sun);
 } else if (getDarkOfLocalStorage() === 'off') {
     disable();
 }
