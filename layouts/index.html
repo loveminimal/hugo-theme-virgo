@@ -61,12 +61,8 @@
        {{.Content}}
    </div>
 
-    <!-- [[!!! deprecated]] -->
     <div class="content" style="display: normal;">
         <div class="desc" style="display: normal;">
-            <!-- <img src="/imgs/lightcolor.jpg" /> -->
-            <!-- <img src="/imgs/girl.jpg" />-->
-            <!-- <img src="/imgs/tux.jpg" /> -->
             {{ if .Site.Params.img.src }}
             <img src="/imgs/{{ .Site.Params.img.src }}.jpg" width="{{ .Site.Params.img.width }}" />
             {{ else if .Site.Params.img.words }}
@@ -74,7 +70,6 @@
             {{ else }}
             <img src="/imgs/tux.jpg" width="880" />
             {{ end }}
-
 
             <!-- <div>虛怀乃若谷，水深则流缓</div> -->
         </div>

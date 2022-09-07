@@ -1,66 +1,3 @@
-It's just a simple & pure theme. 🎉🎉🎉 Enjoy it.
-
-## Overview
-
-**Cool Style**
-
-<img src="images/1.jpg" width="" style="float: left;" />
-
-<img src="images/2.jpg" width="" style="float: left;" />
-
-
-**Pure Style**
-
-<img src="images/q1.jpg" width="" style="float: left;" />
-
-<img src="images/q2.jpg" width="" style="float: left;" />
-
-
-
-## Features In-built
-
-**1、A highlight TOC with relative headline, like this:**
-
-<img src="images/d1.jpg" width="" style="float: left;" />
-
-<img src="images/d2.jpg" width="" style="float: left;" />
-
-
-**2、A simple and realtime local search.**
-
-<img src="images/7.jpg" width="" style="float: left;" />
-
-<img src="images/8.jpg" width="" style="float: left;" />
-
-
-
-## Tips
-
-Maybe you need to create some `.md` files which are necessary for right routes, like:
-
-| Markdown File        | Route      |
-| -------------------- | ---------- |
-| `content/nav.md`     | `/nav`     |
-| `content/search.md`  | `/search`  |
-| `content/archive.md` | `/archive` |
-
-## Quick Start
-
-First, let's try to start a interesting journey.
-
-```sh
-cd YOUR_SITE_DIR	# your local site workspace
-git clone https://github.com/loveminimal/hugo-theme-virgo.git themes/virgo
-# OR
-cd YOUR_SITE_DIR/themes
-git submodule add https://github.com/loveminimal/hugo-theme-virgo.git virgo
-```
-
-> Which one to choose? If you have this question, just choose the first. 😏
-
-Then, update your `config.toml` of site, like this:
-
-```
 baseURL = 'https://ovirgo.com/'
 languageCode = 'zh-cn'
 title = 'Virgo'
@@ -118,8 +55,6 @@ enableGitInfo = true
     [params.svg]
         color = '#6c757d'                   # icon color of breadcrumb '#666'  # '#5a29e4' 
     
-    # [[!!! deprecated]] - which may make homepage seems too blank
-    # --------------------------------
     [params.img]
         # Img of home page - if not jpg, rename it, and
         # place it inio `static/imgs/` dir
@@ -130,7 +65,6 @@ enableGitInfo = true
         # comment `src = 'xxx'`, and input your words:
         # words = "Stay hungry, Stay foolish. Your time is limited, so don't waste it living someone else's life. Have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary. -- Steve Jobs."
         # words = "多少事，从来急；天地转，光阴迫。一万年太久，只争朝夕。 -- 教员"
-    # --------------------------------
 
     [params.contact]
         icp = '豫ICP备2022002918号'          # beian number
@@ -158,35 +92,3 @@ enableGitInfo = true
     [markup.goldmark]
         [markup.goldmark.renderer]
             unsafe = true
-
-```
-
-And if you want to use nav page, you may need construct it like this:
-
-```md
----
-title: "Nav"
-draft: false
----
-
-⚓ O virgo, just do the right thingS.
-<div class="nav">
-
-- [navitem one](/)
-- [navitem two](/archive)
-- [navitem three](https://nav-item-three.com)
-
-</div>
-
-🔖 Bookmarks InboX
-
-<div class="bookmark">
-
-- bookmark item one https://bookmark-item-one.com
-- bookmark item two https://bookmark-item-two.com
-- bookmark item three https://bookmark-item-three.com
-
-</div>
-```
-
-Now, just run `hugo server -D` to enjoy it.
