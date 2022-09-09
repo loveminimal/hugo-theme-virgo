@@ -1,3 +1,66 @@
+It's just a simple & pure theme. 🎉🎉🎉 Enjoy it.
+
+## Overview
+
+**Cool Style**
+
+<img src="images/1.jpg" width="" style="float: left;" />
+
+<img src="images/2.jpg" width="" style="float: left;" />
+
+
+**Pure Style**
+
+<img src="images/q1.jpg" width="" style="float: left;" />
+
+<img src="images/q2.jpg" width="" style="float: left;" />
+
+
+
+## Features In-built
+
+**1、A highlight TOC with relative headline, like this:**
+
+<img src="images/d1.jpg" width="" style="float: left;" />
+
+<img src="images/d2.jpg" width="" style="float: left;" />
+
+
+**2、A simple and realtime local search.**
+
+<img src="images/7.jpg" width="" style="float: left;" />
+
+<img src="images/8.jpg" width="" style="float: left;" />
+
+
+
+## Tips
+
+Maybe you need to create some `.md` files which are necessary for right routes, like:
+
+| Markdown File        | Route      |
+| -------------------- | ---------- |
+| `content/nav.md`     | `/nav`     |
+| `content/search.md`  | `/search`  |
+| `content/archive.md` | `/archive` |
+
+## Quick Start
+
+First, let's try to start a interesting journey.
+
+```sh
+cd YOUR_SITE_DIR	# your local site workspace
+git clone https://github.com/loveminimal/hugo-theme-virgo.git themes/virgo
+# OR
+cd YOUR_SITE_DIR/themes
+git submodule add https://github.com/loveminimal/hugo-theme-virgo.git virgo
+```
+
+> Which one to choose? If you have this question, just choose the first. 😏
+
+Then, update your `config.toml` of site, like this:
+
+```
 baseURL = 'https://ovirgo.com/'
 languageCode = 'zh-cn'
 title = 'Virgo'
@@ -11,9 +74,6 @@ enableGitInfo = true
 [params]
     # active fadeIn animate when load page
     hasActiveAnimate = true      
-
-    # show poems of home page
-    showPoem = false
 
     # active cool style, be cool but take up more resources, and
     # if you want to replace default background image, just 
@@ -60,10 +120,10 @@ enableGitInfo = true
         # place it inio `static/imgs/` dir
         # In-built : lightcolor, girl, wukong, and tux
         src = 'wukong'
-        width = 960
+        width = 999
         # and if not want to show img but some words, just 
         # comment `src = 'xxx'`, and input your words:
-        # words = "Stay hungry, Stay foolish. Your time is limited, so don't waste it living someone else's life. Have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary. -- Steve Jobs."
+        words = "Stay hungry, Stay foolish. Your time is limited, so don't waste it living someone else's life. Have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary. -- Steve Jobs."
         # words = "多少事，从来急；天地转，光阴迫。一万年太久，只争朝夕。 -- 教员"
 
     [params.contact]
@@ -92,3 +152,36 @@ enableGitInfo = true
     [markup.goldmark]
         [markup.goldmark.renderer]
             unsafe = true
+
+
+```
+
+And if you want to use nav page, you may need construct it like this:
+
+```md
+---
+title: "Nav"
+draft: false
+---
+
+⚓ O virgo, just do the right thingS.
+<div class="nav">
+
+- [navitem one](/)
+- [navitem two](/archive)
+- [navitem three](https://nav-item-three.com)
+
+</div>
+
+🔖 Bookmarks InboX
+
+<div class="bookmark">
+
+- bookmark item one https://bookmark-item-one.com
+- bookmark item two https://bookmark-item-two.com
+- bookmark item three https://bookmark-item-three.com
+
+</div>
+```
+
+Now, just run `hugo server -D` to enjoy it.
