@@ -36,13 +36,13 @@
         li,
         td {
             & > code {
-                font-family: $font-family--xianmo;
+                // font-family: $font-family--xianmo;
                 color: $code-inline-color;
             }
         }
 
         .highlight {
-            font-family: $font-family--xianmo;
+            // font-family: $font-family--xianmo;
 
             margin: 16px 0;
             border-top: 2px solid $highlight-color;
@@ -94,8 +94,9 @@
 
             .words {
                 box-sizing: border-box;
-                font-family:$font-family--xianmo, $font-family--base;
-                font-size: .24rem;
+                // font-family:$font-family--xianmo, $font-family--base;
+                // font-size: .24rem;
+                font-size: .18rem;
                 color: $gray-500;
                 max-width: 600px;
                 min-height: 269px;
@@ -111,35 +112,5 @@
                 // margin-left: 64px;
             }
         }
-
-        .poem {
-            padding-bottom: 32px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            .poem-item {
-                flex-shrink: 0;
-                // font-size: .18rem;
-                color: $gray-500;
-                white-space:pre-line;
-                box-sizing: border-box;
-                background: $gray-white-300;
-                backdrop-filter: blur(3px);
-                width: 32%;
-                margin: 16px 0;
-                padding: 16px 16px 32px;
-                transition: .3s background-color ease-in-out;
-
-                &:hover {
-                    background: $gray-white-600;
-                }
-
-                .hl {
-                    color: #d14;
-                }
-            }
-        }
-        
-
     }
 }

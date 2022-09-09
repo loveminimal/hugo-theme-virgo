@@ -23,7 +23,7 @@ body.cool {
 		top: 0;
 		left: 0;
 		z-index: -1;
-		background-color: rgba(255, 255, 255, .86);	// $white-900;
+		background-color: rgba(255, 255, 255, .81);	// $white-900;
 	}
 	
 	// #header, #content, #footer {
@@ -39,19 +39,7 @@ body.cool {
 						margin-left: 0;
 					}
 				}
-
-				.poem {
-					.poem-item {
-						background: $white-300;
-						backdrop-filter: blur(3px);
-		
-						&:hover {
-							background: $white-600;
-						}
-					}
-				}
 			} 
-			
 		}
 
 		.container-nav {
