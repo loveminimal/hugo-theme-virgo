@@ -14,7 +14,12 @@ body {
     }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     background: $headline-bg-color;
     padding: 16px 0;
 
@@ -91,6 +96,10 @@ a {
 
 p {
     margin: 16px 0;
+}
+
+hr {
+    margin: 0.24rem 0;
 }
 
 table {
@@ -187,7 +196,7 @@ ol {
 }
 
 .oh-hl {
-    background:  #FEF9E7;
+    background: #fef9e7;
     // margin: 0 8px;
     // padding: 2px 8px;
     padding: 0 4px;
@@ -198,20 +207,20 @@ ol {
     margin: 16px 0;
     color: #ccc;
     background-image: linear-gradient(
-                    to right,
-                    red,
-                    orange,
-                    yellow,
-                    green,
-                    yellow,
-                    orange,
-                    red,
-                    orange,
-                    yellow,
-                    green,
-                    yellow,
-                    orange,
-                    red
+        to right,
+        red,
+        orange,
+        yellow,
+        green,
+        yellow,
+        orange,
+        red,
+        orange,
+        yellow,
+        green,
+        yellow,
+        orange,
+        red
     );
     -webkit-background-clip: text;
     animation: move 5s infinite;
