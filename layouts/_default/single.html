@@ -4,6 +4,8 @@
 {{ $IsArchive := eq .Title "Archive"}}
 {{ $IsAbout := eq .Title "About"}}
 
+{{ $IsSecrets := eq .Section "secrets"}}
+
 <!-- 那些不需要文章相关功能（如目录层级，文章切换、字数时长统计等）的页面 -->
 <!-- {{ $IsPurePage := or $IsNav $IsSearch $IsArchive $IsAbout }} -->
 <!-- 正常博文 -->
@@ -45,7 +47,7 @@
     </div>
     
     <div class="toc">
-        {{ if and .IsPage $IsPostPage}}
+        {{ if and .IsPage $IsPostPage (not $IsSecrets) }}
         <div class="page-operation">
             <div><a href="#"><img src="/imgs/icons/arrow-up-circle.svg" alt=""></a></div>
             <div>{{with .NextInSection}}<a href="{{.Permalink}}"><img src="/imgs/icons/arrow-left-circle.svg" alt=""></a>{{end}}</div>
@@ -68,7 +70,7 @@
     {{ end }}
 
 
-    {{ if and .IsPage $IsPostPage}}
+    {{ if and .IsPage $IsPostPage (not $IsSecrets) }}
         {{- partial "partials/_prevnext.html" . -}}
     {{ end }}
 </div>
