@@ -100,6 +100,8 @@ p {
 
 hr {
     margin: 0.24rem 0;
+    border-color: rgba(0, 0, 0, 0);
+    border-bottom-color: #eee;
 }
 
 table {
@@ -178,7 +180,7 @@ ol {
 .oh-essay {
     position: relative;
     margin: 16px auto;
-    padding: 8px 0 8px 24px;
+    padding: 8px 0 8px 16px;
     // padding-left: 24px;
     font-size: 0.15rem;
     border-left: 1px dashed $essay-color;
