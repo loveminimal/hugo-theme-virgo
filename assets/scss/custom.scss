@@ -180,10 +180,10 @@ ol {
 .oh-essay {
     position: relative;
     margin: 16px auto;
-    padding: 8px 0 8px 16px;
+    padding: 8px 0 8px 0px;
     // padding-left: 24px;
     font-size: 0.15rem;
-    border-left: 1px dashed $essay-color;
+    // border-left: 1px dashed $essay-color;
     color: $essay-color;
 
     &:before {
