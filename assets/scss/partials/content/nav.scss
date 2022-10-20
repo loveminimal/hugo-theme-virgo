@@ -4,7 +4,8 @@
     .toc {
         // background: #ccc;
         position: fixed;
-        right: 120px;
+        right: 100px;
+        top: 172px;
         li {
             width: 40px;
             height: 40px;
@@ -12,7 +13,7 @@
             list-style: none;
             border: 1px solid #eee;
             border-radius: 50%;
-            margin: 4px 0;
+            margin: 6px 0;
 
             a {
                 display: block;

@@ -101,6 +101,11 @@
 
             .container-nav {
                 padding: 0 4px;
+
+                .toc {
+                    display: none;
+                }
+                
                 .content-nav {
                     .nav ul {
                         justify-content: space-between;
