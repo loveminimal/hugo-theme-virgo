@@ -177,7 +177,9 @@ ol {
     font-family: $font-family--some;
 }
 
-h2, h3, h4, h5, h6, strong, u, .oh-hl, .oh-essay {
+h2, h3, h4, h5, h6, 
+strong, u, em, 
+.oh-hl, .oh-essay {
     code {
         color: $code-inline-color;
     }
