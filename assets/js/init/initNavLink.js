@@ -5,6 +5,8 @@ let blankLiItem = `<li><a></a></li>`
 let col = !isMobile() ? 5 : 2;
 
 export default function initNavLink() {
+	if (location.href.indexOf('nav') < 0) return;
+
 	// Navigation
 	$('.content-nav .nav ul').each((idx, item) => {
 
