@@ -177,6 +177,12 @@ ol {
     font-family: $font-family--some;
 }
 
+u, .oh-hl, .oh-essay {
+    code {
+        color: $code-inline-color;
+    }
+}
+
 .oh-essay {
     position: relative;
     margin: 16px auto;
