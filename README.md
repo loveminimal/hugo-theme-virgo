@@ -1,3 +1,5 @@
+> Of course, you can preview it via [一杯玺茶xt - ovirgo.com](https://ovirgo.com/) 🥳
+
 It's just a simple & pure theme. 🎉🎉🎉 Enjoy it.
 
 ## Overview
