@@ -72,7 +72,19 @@ export default function viewImage(e) {
 			<script>
 				var _wiWidth = document.getElementById('img').offsetWidth;
 				var _screenWidth = document.getElementById('mask').offsetWidth;
-				var _width = _screenWidth > 1026 ? _wiWidth : _screenWidth * 0.9 * 0.86;
+				// console.log(_wiWidth)
+				// console.log(_screenWidth)
+				var _width = 0;
+				if (_wiWidth > 2052) {
+					_width = _wiWidth / 3;
+				} else if (_wiWidth > 1026) {
+					_width = _wiWidth / 2;
+				} else {
+					_width = _wiWidth;
+				}
+
+				_width = _screenWidth > 1026 ? _width : _screenWidth * 0.9;
+				// console.log(_width);
 				document.getElementById('img').width = _width;
 			</script>
 		</div>
