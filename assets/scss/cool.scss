@@ -45,8 +45,8 @@ body.cool {
 		.container-nav {
 			.content-nav {
 
-				.nav li p a {
-					// box-shadow: 1px 1px 1px $gray-500;
+				.nav li a {
+					box-shadow: 1px 1px 5px rgba(230, 230, 230, .81);
 				}
 
 				.bookmark li {
