@@ -29,7 +29,8 @@ body.cool {
 		left: 0;
 		z-index: -1;
 		background-color: rgba(255, 255, 255, .81);	// $white-900;
-		// @include bg-cool;
+		// background: $white-700;
+		// backdrop-filter: saturate(180%) blur(3px);
 
 	}
 	
@@ -63,6 +64,11 @@ body.cool {
 		}
 
 		.container-nav {
+			.toc li {
+				border: 1px solid rgba(255, 255, 255, 0);
+				@include bg-cool;
+			}
+
 			.content-nav {
 
 				.nav li a {
