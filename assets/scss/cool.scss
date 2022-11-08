@@ -1,3 +1,8 @@
+@mixin bg-cool {
+	background: $white-500;
+	backdrop-filter: saturate(180%) blur(3px);
+}
+
 body.cool {
 	background-color: $white-000;
 
@@ -24,6 +29,8 @@ body.cool {
 		left: 0;
 		z-index: -1;
 		background-color: rgba(255, 255, 255, .81);	// $white-900;
+		// @include bg-cool;
+
 	}
 	
 	// #header, #content, #footer {
@@ -31,12 +38,25 @@ body.cool {
     //     backdrop-filter: saturate(180%) blur(5px); // saturate(180%)
     // }
 
+	#header {
+		.container-header {
+			.container-breadcrumb-nav .breadcrumb-nav-bar a {
+				@include bg-cool;
+			}
+		}
+	} 
+
 	#content {
 		.container-home {
+			.menu .item a {
+				@include bg-cool;
+			}
+
 			.content {
 				.desc {
 					.words {
 						// margin-left: 0;
+						@include bg-cool;
 					}
 				}
 			} 
@@ -46,27 +66,35 @@ body.cool {
 			.content-nav {
 
 				.nav li a {
-					// box-shadow: 1px 1px 3px rgba(230, 230, 230, .81);
+					@include bg-cool;
 				}
 
 				.bookmark li {
-                    // border-bottom: 1px dashed $gray-500;
+					&:nth-child(even) {
+						@include bg-cool;
+                    }
 				}
 			} 
 		}
 
 		.container-archive {
+
+			.rec-post .rec-post-item {
+				a {
+					@include bg-cool;
+				}
+			}
+
 			.categories, .tags {
 				.arc-item {
-					background: $white-300;
-            		backdrop-filter: blur(5px);
+					@include bg-cool;
 					
 					sup {
 						color: $gray-500;
 					}
 					
 					.arc-post-item a {
-						// box-shadow: 1px 1px 3px $gray-300;
+						@include bg-cool;
 					}
 				}
 			}
@@ -76,8 +104,27 @@ body.cool {
 		.container-list {
 			.list {
 				.item, .item-term {
-            		backdrop-filter: blur(5px);
-					// box-shadow: 1px 1px 5px $gray-300;
+					@include bg-cool;
+				}
+			}
+		}
+
+		.container-ctgtag {
+			.taxonomy {
+				.ctg, .tag {
+					a {
+						@include bg-cool;
+					}
+				}
+			}
+		}
+
+		.container-search {
+			#search {
+				#sc-input {
+					&::placeholder {
+						color: $white-900;
+					}
 				}
 			}
 		}
