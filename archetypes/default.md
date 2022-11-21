@@ -2,7 +2,7 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: false
-categories: [Misc]
+categories: [_Misc]
 tags: []
 card: false
 ---
