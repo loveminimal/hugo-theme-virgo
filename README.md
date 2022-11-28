@@ -74,13 +74,15 @@ paginate = 24         # better 4 * 3 * times
 enableGitInfo = true
 
 [params]
+    author = '一杯玺茶xt'
+
     # active fadeIn animate when load page
     hasActiveAnimate = true      
 
     # active cool style, be cool but take up more resources, and
     # if you want to replace default background image, just 
     # rename it `default.jpg` and place it into `/static/imgs/bg` dir, like `/static/imgs/bg/default.jpg`.
-    hasActiveCool = false
+    hasActiveCool = true
 
     # For a better experience, we use localstorage to keep theme dark status, so
     # if you set dark as `true` but has no effect, you
@@ -99,20 +101,54 @@ enableGitInfo = true
     slogan = 'Life is just a joker.'        # your site slogan below title
 
     # like the following items that you need create a relative markdown file
+    # -----------------------------------
     # Search - search.md
     # Nav - nav.md 
     # Archive - archive.md
     # About - about.md or about/index.md
     # Idea posts/idea.md 
     # Wiki - posts/wiki.md
+    # -----------------------------------
+    # Now, you can customize the menu as you want, and
+    # update the order index number like 00,01,23... you can sort the items.
+    # ⚓🐶🎉👀💡👓🐌
     [params.menu]
-        search = true
-        nav = true
-        archive = true
-        idea = false
-        wiki = true
-        about = true
-
+        [params.menu.00]
+            active = true
+            path = '/nav'
+            en = 'Nav'
+            zh = '导航'
+            icon = '🎯'
+        [params.menu.11]
+            active = true
+            path = '/search'
+            en = 'Search'
+            zh = '搜索'
+            icon = '🔎'
+        [params.menu.22]
+            active = true
+            path = '/posts'
+            en = 'Posts'
+            zh = '文章'
+            icon = '📜'
+        [params.menu.33]
+            active = true
+            path = '/archive'
+            en = 'Archive'
+            zh = '归档'
+            icon = '🎉'
+        [params.menu.44]
+            active = true
+            path = '/wiki'
+            en = 'Wiki'
+            zh = '百科'
+            icon = '🚀'
+        [params.menu.55]
+            active = true
+            path = '/about'
+            en = 'About'
+            zh = '关于'
+            icon = '🐌'
 
     [params.svg]
         color = '#6c757d'                   # icon color of breadcrumb '#666'  # '#5a29e4' 
@@ -121,15 +157,17 @@ enableGitInfo = true
         # Img of home page - if not jpg, rename it, and
         # place it inio `static/imgs/` dir
         # In-built : lightcolor, girl, wukong, and tux
-        src = 'wukong'
+        # src = 'wukong'
         width = 999
         # and if not want to show img but some words, just 
         # comment `src = 'xxx'`, and input your words:
-        words = "Stay hungry, Stay foolish. Your time is limited, so don't waste it living someone else's life. Have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary. -- Steve Jobs."
+        # words = "Stay hungry, Stay foolish. Your time is limited, so don't waste it living someone else's life. Have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary. -- Steve Jobs."
         # words = "多少事，从来急；天地转，光阴迫。一万年太久，只争朝夕。 -- 教员"
+        # words = "你当然会幸福，毕竟我双手合十的愿望都是你。"
+        words = "一个人能控制的，掌握最多主动权的，只是自己。 是的，‘控制’和‘影响’，这就是‘对已’和‘对人’的最大区别！"
 
     [params.contact]
-        icp = '豫ICP备2022002918号'          # beian number
+        icp = '豫ICP备2022002918号-1'          # beian number
         icplink = '//beian.miit.gov.cn'
         weibo = '6867589681'                # e.g. https://weibo.com/u/6867589681
         wechat = 'imgs/bg/wechat.jpg'       # Wechat QR, choose your path
@@ -154,6 +192,7 @@ enableGitInfo = true
     [markup.goldmark]
         [markup.goldmark.renderer]
             unsafe = true
+
 
 
 ```
