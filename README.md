@@ -1,17 +1,17 @@
-> Of course, you can preview it via [一杯玺茶xt - ovirgo.com](https://ovirgo.com/) 🥳
+> 预览站点 [一杯玺茶xt - ovirgo.com](https://ovirgo.com/) 🥳
 
-It's just a simple & pure theme. 🎉🎉🎉 Enjoy it.
+一个简单纯净的主题， 🎉🎉🎉 欢迎使用。
 
-## Overview
+## 预览
 
-**Cool Style**
+**Cool 模式**
 
 <img src="images/1.jpg" width="" style="float: left;" />
 
 <img src="images/2.jpg" width="" style="float: left;" />
 
 
-**Pure Style**
+**Pure 模式**
 
 <img src="images/q1.jpg" width="" style="float: left;" />
 
@@ -19,16 +19,16 @@ It's just a simple & pure theme. 🎉🎉🎉 Enjoy it.
 
 
 
-## Features In-built
+## 内置功能
 
-**1、A highlight TOC with relative headline, like this:**
+**1、即时高亮的目录层级：**
 
 <img src="images/d1.jpg" width="" style="float: left;" />
 
 <img src="images/d2.jpg" width="" style="float: left;" />
 
 
-**2、A simple and realtime local search.**
+**2、简单强大的本地文章实时搜索：**
 
 <img src="images/7.jpg" width="" style="float: left;" />
 
@@ -36,9 +36,9 @@ It's just a simple & pure theme. 🎉🎉🎉 Enjoy it.
 
 
 
-## Tips
+## 提示
 
-Maybe you need to create some `.md` files which are necessary for right routes, like:
+你需要创建相应的 `.md` 文件，以生成对应的页面，保证页面的正确跳转。
 
 | Markdown File        | Route      |
 | -------------------- | ---------- |
@@ -46,21 +46,21 @@ Maybe you need to create some `.md` files which are necessary for right routes, 
 | `content/search.md`  | `/search`  |
 | `content/archive.md` | `/archive` |
 
-## Quick Start
+## 快速开始
 
-First, let's try to start a interesting journey.
+首先，下载该主题。
 
 ```sh
-cd YOUR_SITE_DIR	# your local site workspace
+cd YOUR_SITE_DIR	# 本地站点目录
 git clone https://github.com/loveminimal/hugo-theme-virgo.git themes/virgo
 # OR
 cd YOUR_SITE_DIR/themes
 git submodule add https://github.com/loveminimal/hugo-theme-virgo.git virgo
 ```
 
-> Which one to choose? If you have this question, just choose the first. 😏
+>使用哪种方式呢？如果你有这个疑问，那么就选择第一种。 😏
 
-Then, update your `config.toml` of site, like this:
+然后，更新你站点的 `config.toml` 内容，如下（后续可按需修改）：
 
 ```
 baseURL = 'https://ovirgo.com/'
@@ -69,38 +69,50 @@ title = 'Virgo'
 
 theme = 'virgo'
 hasCJKLanguage = true
-summaryLength = 80    # default 70
-paginate = 24         # better 4 * 3 * times
+summaryLength = 80    # 默认 70
+paginate = 24         # 建议为 4 和 3 公倍数
 enableGitInfo = true
 
 [params]
     author = '一杯玺茶xt'
 
     # active fadeIn animate when load page
+    # 激活页面加载时的过渡动画
     hasActiveAnimate = true      
 
     # active cool style, be cool but take up more resources, and
     # if you want to replace default background image, just 
     # rename it `default.jpg` and place it into `/static/imgs/bg` dir, like `/static/imgs/bg/default.jpg`.
-    hasActiveCool = true
+    # 激活 cool 模式，相对美观但是消耗资源也更多，
+    # 如果想更换页面背景，只需要将图片命名为 `default.jpg` 后，置于 `/static/imgs/bg` 文件夹中即可，
+    # 浏览器有缓存，更换后强制页面刷新（快捷键为 Ctrl+Shift+R）一下即可
+    hasActiveCool = false
 
     # For a better experience, we use localstorage to keep theme dark status, so
     # if you set dark as `true` but has no effect, you
     # should clear local storage of current site. And
     # in general, there has no any questions when you use it firstly.
+    # 激活暗色模式，
+    # 由于静态页面的限制，我们使用浏览器本地存储来记忆该状态，
+    # 如果设置为 `true` 后，默认不是暗色模式，清除浏览器缓存后刷新页面即可
     dark = false
 
     # Fold/Unfold code blocks, default `false`, and
     # if `true` ，all code blocks will be folded when page load.
     # It will be always true in Mobile view no matter what's your setting.
+    # 展开/折叠代码块，默认不折叠，
+    # 设置为 `true` ，则默认折叠所有代码块，
+    # 提示，在移动设备中，系统设置为永久折叠代码块
     hasFoldAllCodeBlocks = false
 
     # active english view, default chinese
+    # 页面语言，默认中文
     en = false
 
     slogan = 'Life is just a joker.'        # your site slogan below title
 
     # like the following items that you need create a relative markdown file
+    # 如下导航链接，你应该创建对应的 markdown 文件，以生成对应的页面
     # -----------------------------------
     # Search - search.md
     # Nav - nav.md 
@@ -139,7 +151,7 @@ enableGitInfo = true
             icon = '🎉'
         [params.menu.44]
             active = true
-            path = '/wiki'
+            path = '/posts/wiki'
             en = 'Wiki'
             zh = '百科'
             icon = '🚀'
@@ -161,10 +173,9 @@ enableGitInfo = true
         width = 999
         # and if not want to show img but some words, just 
         # comment `src = 'xxx'`, and input your words:
-        # words = "Stay hungry, Stay foolish. Your time is limited, so don't waste it living someone else's life. Have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary. -- Steve Jobs."
-        # words = "多少事，从来急；天地转，光阴迫。一万年太久，只争朝夕。 -- 教员"
-        # words = "你当然会幸福，毕竟我双手合十的愿望都是你。"
-        words = "一个人能控制的，掌握最多主动权的，只是自己。 是的，‘控制’和‘影响’，这就是‘对已’和‘对人’的最大区别！"
+        # words = "Stay hungry, Stay foolish. <br>Your time is limited, so don't waste it living someone else's life. <br>Have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary. <br>-- Steve Jobs."
+        # words = "多少事，从来急；<br>天地转，光阴迫。<br>一万年太久，只争朝夕。<br>-- 教员"
+        words = "“照顾好自己的身体和情绪，<br>这场人生，<br>你就赢了一大半，<br>其余的其余，<br>人生自有安排。”"
 
     [params.contact]
         icp = '豫ICP备2022002918号-1'          # beian number
@@ -177,7 +188,9 @@ enableGitInfo = true
         # twitter = 'loveminimal'             # e.g. https://twitter.com/loveminimal
         # facebook = 'loveminimal'            # e.g. https://facebook.com/loveminimal
         # youtube = 'loveminimal'             # e.g. https://youtube.com/user/loveminimal
+        # telegram = 'https://web.telegram.org/z/'
         color = '#696969'                   # icon color of contact #5d2f86
+        isShowSlogan = true                 # e.g.  show 'Contact me via : )'
 
 [markup]
     [markup.asciidocExt]
@@ -193,11 +206,9 @@ enableGitInfo = true
         [markup.goldmark.renderer]
             unsafe = true
 
-
-
 ```
 
-And if you want to use nav page, you may need construct it like this:
+如果，你想使用导航页，那么就应该严格按照下面这种格式搭建你的 `nav.md` 文件结构：
 
 ```md
 ---
@@ -257,4 +268,4 @@ draft: false
 </div>
 ```
 
-Now, just run `hugo server -D` to enjoy it.
+现在，运行 `hugo server -D` 开始你的折腾之旅吧。
