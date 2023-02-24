@@ -2,11 +2,11 @@
     .content {
         width: 54%;
         margin: 48px auto 56px;
-        
+
         .words {
             text-align: center;
-            font-family: $font-family--xianmo;
-            font-size: .18rem;
+            font-family: xianmoFont;
+            font-size: 0.18rem;
         }
     }
     .desc {
@@ -14,7 +14,7 @@
         font-weight: 700;
 
         a {
-            font-size: .24rem;
+            font-size: 0.24rem;
         }
     }
 }

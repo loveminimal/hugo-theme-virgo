@@ -178,9 +178,16 @@ ol {
     font-family: $font-family--some;
 }
 
-h2, h3, h4, h5, h6, 
-strong, u, em, 
-.oh-hl, .oh-essay {
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+u,
+em,
+.oh-hl,
+.oh-essay {
     code {
         color: $code-inline-color;
     }
@@ -191,7 +198,7 @@ strong, u, em,
     margin: 16px auto;
     padding: 8px 0 8px 0px;
     // padding-left: 24px;
-    font-family: $font-family--xianmo;
+    font-family: xianmoFont;
     // font-family: kaiti;
     // font-size: 0.15rem;
     // border-left: 1px dashed $essay-color;

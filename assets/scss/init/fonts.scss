@@ -1,193 +1,117 @@
-// === Jost Front ---
-/* jost-regular - latin */
 @font-face {
-  font-family: Jost;
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src:
-    // Google Fonts Jost
-    local("Jost Regular Regular"),   // Full Name
-    local("Jost-Regular"),           // PostScript name
-    // indestructible Jost*
-    local("Jost* Book"),
-    local("Jost-Book"),
-    url("fonts/vendor/jost/jost-v4-latin-regular.woff2") format("woff2"),
-    url("fonts/vendor/jost/jost-v4-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-family: jostFont;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Jost Regular Regular'), local('Jost-Regular'), local('Jost* Book'),
+        local('Jost-Book'),
+        url('fonts/vendor/jost/jost-v4-latin-regular.woff2') format('woff2'),
+        url('fonts/vendor/jost/jost-v4-latin-regular.woff') format('woff');
 }
-
-/* jost-500 - latin */
 @font-face {
-  font-family: Jost;
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src:
-    // Google Fonts Jost
-    local("Jost Regular Medium"),
-    local("JostRoman-Medium"),
-    // indestructible Jost*
-    local("Jost* Medium"),
-    local("Jost-Medium"),
-    url("fonts/vendor/jost/jost-v4-latin-500.woff2") format("woff2"),
-    url("fonts/vendor/jost/jost-v4-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-family: jostFont;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local('Jost Regular Medium'), local('JostRoman-Medium'),
+        local('Jost* Medium'), local('Jost-Medium'),
+        url('fonts/vendor/jost/jost-v4-latin-500.woff2') format('woff2'),
+        url('fonts/vendor/jost/jost-v4-latin-500.woff') format('woff');
 }
-
-/* jost-700 - latin */
 @font-face {
-  font-family: Jost;
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src:
-    // Google Fonts Jost
-    local("Jost Regular Bold"),
-    local("JostRoman-Bold"),
-    // indestructible Jost*
-    local("Jost* Bold"),
-    local("Jost-Bold"),
-    url("fonts/vendor/jost/jost-v4-latin-700.woff2") format("woff2"),
-    url("fonts/vendor/jost/jost-v4-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-family: jostFont;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Jost Regular Bold'), local('JostRoman-Bold'), local('Jost* Bold'),
+        local('Jost-Bold'),
+        url('fonts/vendor/jost/jost-v4-latin-700.woff2') format('woff2'),
+        url('fonts/vendor/jost/jost-v4-latin-700.woff') format('woff');
 }
-
-/* jost-italic - latin */
 @font-face {
-  font-family: Jost;
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src:
-    // Google Fonts Jost
-    local("Jost Italic Italic"),
-    local("Jost-Italic"),
-    // indestructible Jost*
-    local("Jost* BookItalic"),
-    local("Jost-BookItalic"),
-    url("fonts/vendor/jost/jost-v4-latin-italic.woff2") format("woff2"),
-    url("fonts/vendor/jost/jost-v4-latin-italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-family: jostFont;
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Jost Italic Italic'), local('Jost-Italic'), local('Jost* BookItalic'),
+        local('Jost-BookItalic'),
+        url('fonts/vendor/jost/jost-v4-latin-italic.woff2') format('woff2'),
+        url('fonts/vendor/jost/jost-v4-latin-italic.woff') format('woff');
 }
-
-/* jost-500italic - latin */
 @font-face {
-  font-family: Jost;
-  font-style: italic;
-  font-weight: 500;
-  font-display: swap;
-  src:
-    // Google Fonts Jost
-    local("Jost Italic Medium Italic"),
-    local("JostItalic-Medium"),
-    // indestructible Jost*
-    local("Jost* Medium Italic"),
-    local("Jost-MediumItalic"),
-    url("fonts/vendor/jost/jost-v4-latin-500italic.woff2") format("woff2"),
-    url("fonts/vendor/jost/jost-v4-latin-500italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-family: jostFont;
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src: local('Jost Italic Medium Italic'), local('JostItalic-Medium'),
+        local('Jost* Medium Italic'), local('Jost-MediumItalic'),
+        url('fonts/vendor/jost/jost-v4-latin-500italic.woff2') format('woff2'),
+        url('fonts/vendor/jost/jost-v4-latin-500italic.woff') format('woff');
 }
-
-/* jost-700italic - latin */
 @font-face {
-  font-family: Jost;
-  font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-  src:
-    // Google Fonts Jost
-    local("Jost Italic Bold Italic"),
-    local("JostItalic-Bold"),
-    // indestructible Jost*
-    local("Jost* Bold Italic"),
-    local("Jost-BoldItalic"),
-    url("fonts/vendor/jost/jost-v4-latin-700italic.woff2") format("woff2"),
-    url("fonts/vendor/jost/jost-v4-latin-700italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-// --- Jost Font ===
-
-// === 中文字体 ---
-@font-face {
-  font-family: mottoFont;
-  src: url("fonts/SCRIPTIN.ttf") format("TrueType");
+    font-family: jostFont;
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Jost Italic Bold Italic'), local('JostItalic-Bold'),
+        local('Jost* Bold Italic'), local('Jost-BoldItalic'),
+        url('fonts/vendor/jost/jost-v4-latin-700italic.woff2') format('woff2'),
+        url('fonts/vendor/jost/jost-v4-latin-700italic.woff') format('woff');
 }
 
 @font-face {
-  font-family: angelinaFont;
-  src: url("fonts/cat/angelina.ttf") format("TrueType");
+    font-family: josefinSansFont;
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/josefin/lhLzTs.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+        U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+    font-family: josefinSansFont;
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/josefin/hhLzTs.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF,
+        U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+    font-family: josefinSansFont;
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/josefin/ZhLw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+        U+FEFF, U+FFFD;
 }
 
 @font-face {
-  font-family: jinkaiFont;
-  src: url("fonts/cat/jinkai.ttf") format("TrueType");
+    font-family: romanFont;
+    src: url('fonts/roman/Code-New-Roman-5.otf') format('TrueType'),
+        url('fonts/roman/Code-New-Roman-6.woff') format('TrueType'),
+        url('fonts/roman/Code-New-Roman-i-3.otf') format('TrueType'),
+        url('fonts/roman/Code-New-Roman-i-4.woff') format('TrueType'),
+        url('fonts/roman/Code-New-Roman-b-1.otf') format('TrueType'),
+        url('fonts/roman/Code-New-Roman-b-2.woff') format('TrueType');
 }
 
 @font-face {
-  font-family: xianmoFont;
-  src: url("fonts/self/xianmo.ttf") format("TrueType");
+    font-family: jinkaiFont;
+    src: url('fonts/ttfs/jinkai.ttf') format('TrueType');
 }
 
 @font-face {
-  font-family: daxiangFont;
-  src: url("fonts/self/daxiang.ttf") format("TrueType");
-}
-
-
-// --- 中文字体 ===
-
-
-// === 有趣的字体 ---
-@font-face {
-  font-family: segoeFont;
-  src: url("fonts/segoe/segoesc.ttf") format("TrueType"),
-       url("fonts/segoe/segoescb.ttf") format("TrueType");
-}
-
-// --- 有趣的字体 ===
-
-/* vietnamese */
-@font-face {
-  // font-family: 'Josefin Sans';
-  font-family: josefinSansFont;
-  font-style: normal;
-  font-weight: 400;
-  // src: url(https://fonts.gstatic.com/s/josefinsans/v25/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_DjQbMlhLzTs.woff2) format('woff2');
-  src: url(fonts/josefin/lhLzTs.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  // font-family: 'Josefin Sans';
-  font-family: josefinSansFont;
-  font-style: normal;
-  font-weight: 400;
-  // src: url(https://fonts.gstatic.com/s/josefinsans/v25/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_DjQbMhhLzTs.woff2) format('woff2');
-  src: url(fonts/josefin/hhLzTs.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  // font-family: 'Josefin Sans';
-  font-family: josefinSansFont;
-  font-style: normal;
-  font-weight: 400;
-  src: url(fonts/josefin/ZhLw.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* monoFont */
-@font-face {
-  font-family: monoFont;
-  src: 
-    url("fonts/mono/mononoki-Regular-3.ttf") format("TrueType"),
-    url("fonts/mono/mononoki-Italic-4.ttf") format("TrueType"),
-    url("fonts/mono/mononoki-Bold-6.ttf") format("TrueType"),
-    url("fonts/jfsansmono/mononoki-BoldItalic-5.ttf") format("TrueType");
+    font-family: xianmoFont;
+    src: url('fonts/ttfs/xianmo.ttf') format('TrueType');
 }
 
 @font-face {
-  font-family: romanFont;
-  src: 
-    url("fonts/roman/Code-New-Roman-5.otf") format("TrueType"),
-    url("fonts/roman/Code-New-Roman-6.woff") format("TrueType"),
-    url("fonts/roman/Code-New-Roman-i-3.otf") format("TrueType"),
-    url("fonts/roman/Code-New-Roman-i-4.woff") format("TrueType"),
-    url("fonts/roman/Code-New-Roman-b-1.otf") format("TrueType"),
-    url("fonts/roman/Code-New-Roman-b-2.woff") format("TrueType");
+    font-family: daxiangFont;
+    src: url('fonts/ttfs/daxiang.ttf') format('TrueType');
+}
+
+@font-face {
+    font-family: segoeFont;
+    src: url('fonts/segoe/segoesc.ttf') format('TrueType'),
+        url('fonts/segoe/segoescb.ttf') format('TrueType');
 }

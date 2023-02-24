@@ -1,5 +1,4 @@
 .container-home {
-    // font-family: $font-family--some, $font-family--xianmo, $font-family--base;
     font-family: $font-family--some, $font-family--base;
 
     .menu {
@@ -36,13 +35,11 @@
         li,
         td {
             & > code {
-                // font-family: $font-family--xianmo;
                 color: $code-inline-color;
             }
         }
 
         .highlight {
-            // font-family: $font-family--xianmo;
 
             margin: 16px 0;
             border-top: 2px solid $highlight-color;
@@ -94,7 +91,6 @@
 
             .words {
                 box-sizing: border-box;
-                // font-family: $font-family--xianmo, $font-family--base;
                 // font-size: .24rem;
                 font-size: .18rem;
                 color: $gray-500;

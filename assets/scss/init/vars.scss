@@ -1,22 +1,14 @@
-// === 通用字体设置 ---
-$font-family-sans-serif: 'Jost', jinkaiFont, 'kaiti', -apple-system,
-    blinkmacsystemfont, 'Segoe UI', roboto, 'Helvetica Neue', arial, 'Noto Sans',
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-    'Noto Color Emoji';
+$font-family-sans-serif: -apple-system, blinkmacsystemfont, 'Segoe UI', roboto,
+    'Helvetica Neue', arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 $font-family-monospace: sfmono-regular, menlo, monaco, consolas, 'Liberation Mono',
-    jinkaiFont, 'kaiti', 'Courier New', monospace;
-// --- 通用字体设置 ===
-$font-family--xianmo: xianmoFont;
-$font-family--daxiang: daxiangFont;
-$font-family--josefin: josefinSansFont;
-$font-family--mono: monoFont;
-$font-family--roman: romanFont;
+    'Courier New', monospace;
 
-$font-family--base: $font-family-sans-serif;
-$font-family--code: $font-family--roman, $font-family--josefin, 'Courier New', $font-family-monospace;
-$font-family--some: 'Segoe Script', segoeFont, 'Courier New';
+$font-family--base: jostFont, jinkaiFont, 'kaiti', $font-family-sans-serif;
+$font-family--code: romanFont, jinkaiFont, 'kaiti', $font-family-monospace;
+$font-family--some: 'Segoe Script', segoeFont;
 
-// === bootstrap colos ---
+// bootstrap colos
 $white: #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
@@ -48,9 +40,8 @@ $warning: $yellow !default;
 $danger: $red !default;
 $light: $gray-100 !default;
 $dark: $gray-900 !default;
-// --- bootstrap colors ===
 
-// === while opacity color ---
+//while opacity color
 $white-000: rgba(255, 255, 255, 0);
 $white-100: rgba(255, 255, 255, 0.1);
 $white-200: rgba(255, 255, 255, 0.2);
@@ -61,9 +52,8 @@ $white-600: rgba(255, 255, 255, 0.6);
 $white-700: rgba(255, 255, 255, 0.7);
 $white-800: rgba(255, 255, 255, 0.8);
 $white-900: rgba(255, 255, 255, 0.9);
-// --- while opacity color ===
 
-// === graywhile opacity color ---
+// graywhile opacity color
 $gray-white-000: rgba(239, 239, 239, 0);
 $gray-white-100: rgba(239, 239, 239, 0.1);
 $gray-white-200: rgba(239, 239, 239, 0.2);
@@ -74,16 +64,14 @@ $gray-white-600: rgba(239, 239, 239, 0.6);
 $gray-white-700: rgba(239, 239, 239, 0.7);
 $gray-white-800: rgba(239, 239, 239, 0.8);
 $gray-white-900: rgba(239, 239, 239, 0.9);
-// --- graywhile opacity color ===
 
-// === 背景色 ---
+// element color
 $header-bg-color: $white-000;
 $content-bg-color: $white-000;
 $footer-bg-color: $white-000;
 $headline-bg-color: $white-000;
 $contact-bg-color: $white-000;
 $img-border-color: $white-000;
-// --- 背景色 ===
 
 $custom-green: #57bf7d;
 
