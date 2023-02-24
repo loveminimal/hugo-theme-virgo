@@ -5,8 +5,8 @@
     font-display: swap;
     src: local('Jost Regular Regular'), local('Jost-Regular'), local('Jost* Book'),
         local('Jost-Book'),
-        url('fonts/vendor/jost/jost-v4-latin-regular.woff2') format('woff2'),
-        url('fonts/vendor/jost/jost-v4-latin-regular.woff') format('woff');
+        url('fonts/jost/jost-v4-latin-regular.woff2') format('woff2'),
+        url('fonts/jost/jost-v4-latin-regular.woff') format('woff');
 }
 @font-face {
     font-family: jostFont;
@@ -15,8 +15,8 @@
     font-display: swap;
     src: local('Jost Regular Medium'), local('JostRoman-Medium'),
         local('Jost* Medium'), local('Jost-Medium'),
-        url('fonts/vendor/jost/jost-v4-latin-500.woff2') format('woff2'),
-        url('fonts/vendor/jost/jost-v4-latin-500.woff') format('woff');
+        url('fonts/jost/jost-v4-latin-500.woff2') format('woff2'),
+        url('fonts/jost/jost-v4-latin-500.woff') format('woff');
 }
 @font-face {
     font-family: jostFont;
@@ -25,8 +25,8 @@
     font-display: swap;
     src: local('Jost Regular Bold'), local('JostRoman-Bold'), local('Jost* Bold'),
         local('Jost-Bold'),
-        url('fonts/vendor/jost/jost-v4-latin-700.woff2') format('woff2'),
-        url('fonts/vendor/jost/jost-v4-latin-700.woff') format('woff');
+        url('fonts/jost/jost-v4-latin-700.woff2') format('woff2'),
+        url('fonts/jost/jost-v4-latin-700.woff') format('woff');
 }
 @font-face {
     font-family: jostFont;
@@ -35,8 +35,8 @@
     font-display: swap;
     src: local('Jost Italic Italic'), local('Jost-Italic'), local('Jost* BookItalic'),
         local('Jost-BookItalic'),
-        url('fonts/vendor/jost/jost-v4-latin-italic.woff2') format('woff2'),
-        url('fonts/vendor/jost/jost-v4-latin-italic.woff') format('woff');
+        url('fonts/jost/jost-v4-latin-italic.woff2') format('woff2'),
+        url('fonts/jost/jost-v4-latin-italic.woff') format('woff');
 }
 @font-face {
     font-family: jostFont;
@@ -45,8 +45,8 @@
     font-display: swap;
     src: local('Jost Italic Medium Italic'), local('JostItalic-Medium'),
         local('Jost* Medium Italic'), local('Jost-MediumItalic'),
-        url('fonts/vendor/jost/jost-v4-latin-500italic.woff2') format('woff2'),
-        url('fonts/vendor/jost/jost-v4-latin-500italic.woff') format('woff');
+        url('fonts/jost/jost-v4-latin-500italic.woff2') format('woff2'),
+        url('fonts/jost/jost-v4-latin-500italic.woff') format('woff');
 }
 @font-face {
     font-family: jostFont;
@@ -55,8 +55,8 @@
     font-display: swap;
     src: local('Jost Italic Bold Italic'), local('JostItalic-Bold'),
         local('Jost* Bold Italic'), local('Jost-BoldItalic'),
-        url('fonts/vendor/jost/jost-v4-latin-700italic.woff2') format('woff2'),
-        url('fonts/vendor/jost/jost-v4-latin-700italic.woff') format('woff');
+        url('fonts/jost/jost-v4-latin-700italic.woff2') format('woff2'),
+        url('fonts/jost/jost-v4-latin-700italic.woff') format('woff');
 }
 
 @font-face {
