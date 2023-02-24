@@ -1,4 +1,4 @@
-> 预览站点 [一杯玺茶xt - ovirgo.com](https://loveminimal.github.io/virgo) 🥳
+> 预览站点 [一杯玺茶xt - ovirgo.com](https://loveminimal.github.io/) 🥳
 
 一个简单纯净的主题， 🎉🎉🎉 欢迎使用。
 
