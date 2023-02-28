@@ -22,6 +22,8 @@
         }
 
         .item {
+			position: relative;
+			padding-bottom: 32px;
             background: $post-item-bg-color;
             // backdrop-filter: blur(5px);
 
@@ -62,6 +64,24 @@
                 padding: 8px;
                 color: $gray-600;
             }
+
+			.read-more {
+				text-align: right;
+				background: $gray-white-200;
+				width: 100%;
+				position: absolute;
+				bottom: 0;
+				a {
+					display: block;
+					padding: 2px 4px;
+					transition: 0.3s padding ease;
+					color: $gray-400;
+
+					&:hover {
+						padding-right: 16px;
+					}
+				}
+			}
         }
 
         .item-term {

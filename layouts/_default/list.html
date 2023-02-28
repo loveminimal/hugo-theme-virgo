@@ -38,6 +38,12 @@
             {{ if .IsPage }}
                 {{- partial "partials/_ctgtag.html" . -}}
                 <div class="summary">{{ .Summary | markdownify  }}</div>
+				{{ if .Truncated }}
+				<!-- This <div> includes a read more link, but only if the summary is truncated... -->
+				<div class="read-more">
+				  <a href="{{ .RelPermalink }}">Read More…</a>
+				</div>
+				{{ end }}
             {{ end }}
 
         </div>
