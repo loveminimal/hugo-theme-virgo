@@ -109,6 +109,9 @@ body.cool {
 		.container-search,
 		.container-list {
 			.list {
+				.item-term {
+            		border-radius: 0 16px 0 16px;
+				}
 				.item, .item-term {
 					@include bg-cool;
 				}
