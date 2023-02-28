@@ -22,6 +22,7 @@
         }
 
         .item {
+            box-shadow: 3px 3px 5px #eee;
 			position: relative;
 			padding-bottom: 32px;
             background: $post-item-bg-color;
@@ -96,7 +97,7 @@
                 box-sizing: border-box;
                 height: 80px;
                 display: block;
-                background: $gray-white-200;
+                background: $gray-white-300;
                 // backdrop-filter: blur(10px);
 
                 margin-bottom: 8px;
