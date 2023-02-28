@@ -92,7 +92,7 @@ function search() {
         _times = siteParams.en ? 'Times' : '次数';
     let res = `
         <div class="statistics">${_total}： ${scResPostsCounts} &nbsp;&nbsp;${_times}： ${scResScValCounts}</div>
-        <div class="list">
+        <div class="list ${siteParams.isSingleColumnOfPostList ? 'list-single-col' : ''}">
             ${post}
         </div>
     `;

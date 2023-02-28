@@ -53,6 +53,7 @@
         $item-width: 360px;
 
         .item {
+            box-shadow: 3px 3px 5px #eee;
             background: $post-item-bg-color;
             // border-radius: 0 16px 0 8px;
             margin-right: 32px;
@@ -90,6 +91,13 @@
                 padding: 8px;
                 color: $gray-600;
             }
+        }
+    }
+    .list-single-col {
+        .item {
+            width: 760px;
+            // margin-left: 24%;
+            margin: 24px auto;
         }
     }
 }
