@@ -124,4 +124,12 @@
             }
         }
     }
+
+    .list-single-col {
+        .item {
+            width: 760px;
+            // margin-left: 24%;
+            margin: 24px auto;
+        }
+    }
 }
