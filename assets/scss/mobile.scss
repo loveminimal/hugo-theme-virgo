@@ -136,6 +136,12 @@
                         border-radius: 0 16px 0 16px;
                     }
                 }
+
+                .list-single-col {
+                    .item {
+                        width: 100%;
+                    }
+                }
             }
 
             .container-page {
