@@ -145,12 +145,14 @@ blockquote {
     color: $blockquote-color;
 }
 
+.summary,
 p,
 td,
 li {
     code {
         font-size: 0.14rem;
         font-family: $font-family--code;
+        color: $code-inline-color;
     }
 }
 
