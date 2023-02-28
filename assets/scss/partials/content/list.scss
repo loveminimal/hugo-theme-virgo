@@ -72,6 +72,7 @@
             }
 
 			.read-more {
+                font-size: .13rem;
 				text-align: right;
 				background: $gray-white-200;
 				width: 100%;
@@ -79,7 +80,7 @@
 				bottom: 0;
 				a {
 					display: block;
-					padding: 2px 4px;
+					padding: 2px 6px;
 					transition: 0.3s padding ease;
 					color: $gray-400;
 

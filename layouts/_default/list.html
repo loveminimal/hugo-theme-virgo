@@ -41,7 +41,7 @@
 				{{ if .Truncated }}
 				<!-- This <div> includes a read more link, but only if the summary is truncated... -->
 				<div class="read-more">
-				  <a href="{{ .RelPermalink }}">Read More…</a>
+				  <a href="{{ .RelPermalink }}">{{if .Site.Params.en}}Read More{{else}}查看更多{{end}}…</a>
 				</div>
 				{{ end }}
             {{ end }}
