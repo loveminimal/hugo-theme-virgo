@@ -1,8 +1,6 @@
 <div class="container-contact">
 	<div class="contact">
-		{{ if .Site.Params.contact.isShowSlogan }}
-		<div class="slogan"><b>Contact me via : )</b></div>
-		{{ end }}
+		<div class="slogan"><b>{{ .Site.Params.contact.slogan }}</b></div>
 
 		<div class="icons">
 			{{ if .Site.Params.contact.weibo }}
