@@ -9,20 +9,20 @@
         flex-wrap: wrap;
         font-size: 0.14rem;
         .item {
-            a {
-                display: block;
-                margin: 4px 8px;
-                padding: 8px;
-                width: 96px;
-                background: $gray-white-400;
-                border-radius: 6px;
-                text-align: center;
-                transition: .3s padding ease;
+                a {
+                    display: block;
+                    margin: 4px 8px;
+                    padding: 8px;
+                    width: 96px;
+                    background: $gray-white-400;
+                    border-radius: 6px;
+                    text-align: center;
+                    transition: .3s padding ease;
 
-               &:hover {
-                padding: 24px 8px;
+                &:hover {
+                    padding: 24px 8px;
+                    }
             }
-           }
         }
     }
 
@@ -84,25 +84,20 @@
     .content {
         text-align: center;
         .desc {
-            // padding-top: 16px; // For Menu Bar
             img {
                 max-width: 100%;
             }
 
             .words {
                 box-sizing: border-box;
-                // font-size: .24rem;
                 font-size: .18rem;
                 color: $gray-500;
                 max-width: 600px;
-                min-height: 269px;
+                // min-height: 269px;
                 padding: 48px 32px;
                 border-radius: 10px;
-                // margin: 80px 0px 96px 0%;
                 margin: 120px 0 160px;
-                // background: yellow;
                 background: $gray-white-400;
-                // margin-left: 64px;
             }
         }
     }
