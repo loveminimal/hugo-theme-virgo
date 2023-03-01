@@ -54,6 +54,8 @@
         $item-width: 360px;
 
         .item {
+            animation: slideInUp 1s;
+
             box-shadow: 3px 3px 5px #eee;
             background: $post-item-bg-color;
             // border-radius: 0 16px 0 8px;
@@ -96,8 +98,6 @@
     }
     .list-single-col {
         .item {
-            animation: slideInUp 1s;
-
             width: 60%;
             // margin-left: 24%;
             margin: 24px auto;

@@ -11,9 +11,6 @@
     }
 
     .toc {
-        animation: slideInRight 1s;
-
-
         position: fixed;
         border-left: 1px solid $gray-300;
         width: 260px;
@@ -47,7 +44,7 @@
         }
 
         .page-operation {
-            animation: slideInLeft 2s;
+            animation: slideInLeft 1s;
 
             display: flex;
             position: fixed;
