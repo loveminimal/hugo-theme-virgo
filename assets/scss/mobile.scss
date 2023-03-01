@@ -66,6 +66,14 @@
                                 background: $gray-white-500;
                             }
                         }
+
+                        .list-single-col {
+                            display: flex;
+                            .item {
+                                width: 100%;
+                                margin: 6px 0;
+                            }
+                        }
                     }
                 }
 
