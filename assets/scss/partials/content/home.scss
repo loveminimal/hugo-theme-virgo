@@ -9,19 +9,21 @@
         flex-wrap: wrap;
         font-size: 0.14rem;
         .item {
-                a {
-                    display: block;
-                    margin: 4px 8px;
-                    padding: 8px;
-                    width: 96px;
-                    background: $gray-white-400;
-                    border-radius: 6px;
-                    text-align: center;
-                    transition: .3s padding ease;
+            animation: slideInDown 1s;
+            
+            a {
+                display: block;
+                margin: 4px 8px;
+                padding: 8px;
+                width: 96px;
+                background: $gray-white-400;
+                border-radius: 6px;
+                text-align: center;
+                transition: .3s padding ease;
 
-                &:hover {
-                    padding: 24px 8px;
-                    }
+            &:hover {
+                padding: 24px 8px;
+                }
             }
         }
     }
@@ -84,6 +86,8 @@
     .content {
         text-align: center;
         .desc {
+            animation: zoomIn 1s;
+
             img {
                 max-width: 100%;
             }
