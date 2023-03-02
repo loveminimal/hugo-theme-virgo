@@ -202,9 +202,8 @@ em,
     margin: 16px auto;
     padding: 8px 0 8px 0px;
     // padding-left: 24px;
-    // font-family: xianmoFont;
-    font-size: 0.15rem;
     // border-left: 1px dashed $essay-color;
+    font-size: 0.15rem;
     color: $essay-color;
 
     &:before {
@@ -220,44 +219,6 @@ em,
 
 .oh-hl {
     background: #fef9e7;
-    // margin: 0 8px;
-    // padding: 2px 8px;
     padding: 0 4px;
     border-radius: 4px;
-}
-
-.oh-rainbow {
-    margin: 16px 0;
-    color: #ccc;
-    background-image: linear-gradient(
-        to right,
-        red,
-        orange,
-        yellow,
-        green,
-        yellow,
-        orange,
-        red,
-        orange,
-        yellow,
-        green,
-        yellow,
-        orange,
-        red
-    );
-    -webkit-background-clip: text;
-    animation: move 5s infinite;
-    color: transparent;
-}
-
-@keyframes move {
-    0% {
-        background-position: 0 0;
-    }
-    50% {
-        background-position: -500px 0;
-    }
-    100% {
-        background-position: 0 0;
-    }
 }

@@ -34,11 +34,6 @@ body.cool {
 
 	}
 	
-	// #header, #content, #footer {
-	// 	background-color: $white-800;
-    //     backdrop-filter: saturate(180%) blur(5px); // saturate(180%)
-    // }
-
 	#header {
 		.container-header {
 			.container-breadcrumb-nav .breadcrumb-nav-bar a {
@@ -149,9 +144,4 @@ body.cool {
 	pre {
 		background-color: $white-300 !important;
 	}
-	// 以下是为了保证 darkreader 暗色模式下，代码块样式也是透明
-	// [data-darkreader-inline-bgcolor] {
-	// 	background-color: $white-300 !important;
-	// }
-	
 }

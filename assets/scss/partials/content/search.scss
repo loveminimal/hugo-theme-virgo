@@ -3,7 +3,6 @@
 
     #search {
         animation: slideInLeft 1s;
-        // background: #000;
         padding: 32px 0;
         position: relative;
         #sc-clear {
@@ -58,7 +57,6 @@
 
             box-shadow: 3px 3px 5px #eee;
             background: $post-item-bg-color;
-            // border-radius: 0 16px 0 8px;
             margin-right: 32px;
             margin-top: 48px;
             width: $item-width;
@@ -74,7 +72,6 @@
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                // border-radius: 0 16px 0 8px;
                 transition: 0.3s padding ease;
 
                 &:hover {
