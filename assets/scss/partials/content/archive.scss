@@ -9,8 +9,6 @@
         box-sizing: border-box;
 
         .rec-post .rec-post-item {
-            animation: slideInLeft 1s;
-
             a {
                 font-size: .14rem;
                 display: inline-block;
@@ -34,7 +32,6 @@
             width: 31%;
             box-sizing: border-box;
             // backdrop-filter: blur(10px);
-            animation: slideInUp 1s;
 
             .arc-desc {
                 padding: 8px 0;
@@ -52,8 +49,6 @@
                 flex-wrap: wrap;
 
                 .arc-post-item {
-                    animation: slideInRight 1s;
-
                     a {
                         font-size: .14rem;
                         display: inline-block;

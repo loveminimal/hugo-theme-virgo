@@ -1,0 +1,56 @@
+body.active-animate {
+    animation: fadeIn 2s;
+
+    p {
+        animation: slideInUp 0.6s;
+    }
+
+    .container-home {
+        .menu .item {
+            animation: slideInDown 1s;
+        }
+
+        .content .desc {
+            animation: slideInUp 1s;
+        }
+    }
+
+    .container-nav .content-nav .nav ul {
+        animation: slideInUp 1s;
+    }
+
+    .container-search {
+        #search {
+            animation: slideInLeft 1s;
+        }
+
+        .list .item {
+            animation: slideInUp 1s;
+        }
+    }
+
+    .container-list .list .item {
+        animation: slideInUp 1s;
+    }
+
+    .container-archive {
+        .recentf .rec-post .rec-post-item {
+            animation: slideInLeft 1s;
+        }
+
+        .categories,
+        .tags {
+            .arc-item {
+                animation: slideInUp 1s;
+
+                .arc-post .arc-post-item {
+                    animation: slideInRight 1s;
+                }
+            }
+        }
+    }
+
+    .container-page .toc .page-operation {
+        animation: slideInLeft 1s;
+    }
+}

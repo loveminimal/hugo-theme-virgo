@@ -2,7 +2,6 @@
     font-size: 0.16rem;
 
     #search {
-        animation: slideInLeft 1s;
         padding: 32px 0;
         position: relative;
         #sc-clear {
@@ -53,8 +52,6 @@
         $item-width: 360px;
 
         .item {
-            animation: slideInUp 1s;
-
             box-shadow: 3px 3px 5px #eee;
             background: $post-item-bg-color;
             margin-right: 32px;

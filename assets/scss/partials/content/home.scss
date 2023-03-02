@@ -9,8 +9,6 @@
         flex-wrap: wrap;
         font-size: 0.14rem;
         .item {
-            animation: slideInDown 1s;
-            
             a {
                 display: block;
                 margin: 4px 8px;
@@ -86,8 +84,6 @@
     .content {
         text-align: center;
         .desc {
-            animation: slideInUp 1s;
-
             img {
                 max-width: 100%;
             }

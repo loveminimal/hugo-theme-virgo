@@ -9,10 +9,6 @@ body {
     font-family: $font-family--base;
     font-size: 0.16rem;
     line-height: 1.5;
-
-    &.active-animate {
-        animation: fadeIn 2s;
-    }
 }
 
 h1,
@@ -97,8 +93,6 @@ a {
 
 p {
     margin: 16px 0;
-    animation: slideInUp .6s;
-
 }
 
 hr {
