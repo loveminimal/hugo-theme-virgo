@@ -5,24 +5,47 @@
         position: fixed;
         right: 100px;
         top: 172px;
+        height: 468px;
+        overflow: auto;
+        padding: 4px 12px 0px;
+
+        &::-webkit-scrollbar {
+            width: 2px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: $gray-200;
+        }
+        
         li {
-            width: 64px;
-            height: 28px;
-            line-height: 20px;
+            width: 84px;
+            height: 36px;
+            line-height: 28px;
             list-style: none;
             border-radius: 8px;
             margin: 6px 0;
             border-style: double;
             border-color: $gray-white-800;
+            box-sizing: border-box;
+            overflow: hidden;
+            transition: .2s all linear;
+
+            em {
+                color: #666;
+            }
 
             a {
                 display: block;
                 padding: 4px 8px;
-                transition: .3s padding ease;
+                transition: .1s all linear;
+                color: #666;
 
                 &:hover {
                     padding-left: 28px;
                     background: $gray-white-500;
+
+                    em {
+                        opacity: 0;
+                    }
                 }
             }
         }
@@ -34,6 +57,7 @@
         padding: 0;
         font-size: 12px;
         visibility: hidden;
+        height: 0;
     }
 
     .content-nav {
