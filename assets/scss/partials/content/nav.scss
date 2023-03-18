@@ -6,17 +6,24 @@
         right: 100px;
         top: 172px;
         li {
-            width: 40px;
-            height: 40px;
-            line-height: 32px;
+            width: 64px;
+            height: 28px;
+            line-height: 20px;
             list-style: none;
-            border: 1px solid #eee;
-            border-radius: 50%;
+            border-radius: 8px;
             margin: 6px 0;
+            border-style: double;
+            border-color: $gray-white-800;
 
             a {
                 display: block;
                 padding: 4px 8px;
+                transition: .3s padding ease;
+
+                &:hover {
+                    padding-left: 28px;
+                    background: $gray-white-500;
+                }
             }
         }
         
