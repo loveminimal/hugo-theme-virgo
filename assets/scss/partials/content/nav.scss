@@ -4,7 +4,7 @@
     .toc {
         position: fixed;
         right: 100px;
-        top: 172px;
+        top: 190px;
         height: 468px;
         overflow: auto;
         padding: 4px 12px 0px;
@@ -81,7 +81,6 @@
                         box-sizing: border-box;
                         font-family:  $font-family--base;
                         font-size: .16rem;
-                        // color: $gray-600;
                         transition: .3s padding linear;
                         display: inline-block;
                         width: 96%;
@@ -102,9 +101,9 @@
         }
 
         >p {
-            font-family: $font-family--some;
             color: $gray-500;
-            font-weight: 700;
+            margin-right: 1%;
+            padding: 8px 4px 2px;
         }
 
         .bookmark {
