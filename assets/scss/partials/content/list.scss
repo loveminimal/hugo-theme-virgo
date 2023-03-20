@@ -12,13 +12,12 @@
         $item-width: 360px;
 
         .recentf {
-            display: flex;
-            flex-wrap: wrap;
             box-sizing: border-box;
-            width: 760px;
-            margin: 24px auto;
-            padding: 8px 4px;
-            background: $gray-white-200;
+            width: $item-width;
+            padding: 8px 4px 32px;
+            margin-right: 32px;
+            margin-top: 48px;
+            background: $post-item-bg-color;
             box-shadow: 3px 3px 5px #eee;
 
             .desc {
@@ -150,9 +149,16 @@
 
     .list-single-col {
         display: block;
+
+        .recentf {
+            width: 760px;
+            margin: 24px auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
         .item {
             width: 760px;
-            // margin-left: 24%;
             margin: 24px auto;
         }
     }
