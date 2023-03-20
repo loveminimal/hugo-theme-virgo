@@ -104,6 +104,13 @@ body.cool {
 		.container-search,
 		.container-list {
 			.list {
+				.recentf {
+					@include bg-cool;
+					.rec-post-item a {
+						background: $white-300;
+					}
+				}
+
 				.item-term {
             		border-radius: 0 16px 0 16px;
 				}

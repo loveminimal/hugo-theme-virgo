@@ -11,6 +11,36 @@
         flex-shrink: 0;
         $item-width: 360px;
 
+        .recentf {
+            display: flex;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            width: 760px;
+            margin: 24px auto;
+            padding: 8px 4px;
+            background: $gray-white-200;
+            box-shadow: 3px 3px 5px #eee;
+
+            .desc {
+                width: 100%;
+                padding: 8px 0;
+                color: #999;
+            }
+
+            .rec-post .rec-post-item {
+                a {
+                    font-size: .14rem;
+                    display: inline-block;
+                    background: $gray-white-300;
+                    margin: 4px;
+                    padding: 4px 8px;
+                    border-radius: 4px;
+                }
+            }
+    
+        }
+
+
         .desc .date {
             color: #999;
             font-size: 0.12rem;
