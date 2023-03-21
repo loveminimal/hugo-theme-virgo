@@ -53,20 +53,17 @@
     }
 
     h2 {
-        background: #000;
-        padding: 0;
-        font-size: 12px;
-        visibility: hidden;
-        height: 0;
+        font-size: 16px;
+        color: $gray-500;
+        font-weight: 400;
+
+        &::before {
+            content: '';
+        }
     }
 
     .content-nav {
         .nav {
-            >p {
-                margin-right: 1%;
-                padding: 8px 4px 2px;
-                color: $gray-500;
-            }
             ul {
                 display: flex;
                 flex-wrap: wrap;
@@ -100,7 +97,7 @@
             }
         }
 
-        >p {
+        p {
             color: $gray-500;
             margin-right: 1%;
             padding: 8px 4px 2px;
