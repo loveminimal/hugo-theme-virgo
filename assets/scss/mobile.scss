@@ -130,6 +130,10 @@
                 }
 
                 .list {
+                    .recentf {
+                        margin: 12px;
+                    }
+
                     .item, .item-term {
                         margin: 12px;
                         background: $post-item-bg-color;
@@ -146,6 +150,7 @@
 
                 .list-single-col {
                     display: flex;
+
                     .item {
                         width: 100%;
                     }
