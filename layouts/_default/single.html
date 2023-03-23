@@ -74,7 +74,7 @@
         {{- partial "partials/_prevnext.html" . -}}
     {{ end }}
     
-    {{ if and .IsPage $IsPostPage (not $IsSecrets) }}
+    {{ if and .IsPage $IsPostPage (not $IsSecrets) .Site.Params.utterances.active }}
         {{- partial "partials/_comment.html" . -}}
     {{ end }}
 </div>
