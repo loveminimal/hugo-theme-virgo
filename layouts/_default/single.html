@@ -73,5 +73,9 @@
     {{ if and .IsPage $IsPostPage (not $IsSecrets) }}
         {{- partial "partials/_prevnext.html" . -}}
     {{ end }}
+    
+    {{ if and .IsPage $IsPostPage (not $IsSecrets) }}
+        {{- partial "partials/_comment.html" . -}}
+    {{ end }}
 </div>
 {{ end }}
