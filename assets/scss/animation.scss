@@ -29,8 +29,10 @@ body.active-animate {
         }
     }
 
-    .container-list .list .item {
-        animation: slideInUp 1s;
+    .container-list .list {
+        .recentf, .item {
+            animation: slideInUp 1s;
+        }
     }
 
     .container-archive {
