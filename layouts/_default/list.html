@@ -10,6 +10,7 @@
     
     <div class="list {{if .Site.Params.isSingleColumnOfPostList}}list-single-col{{end}}">
         <!-- 最近文章 -->
+        {{ if ne .Title "Secrets" }}
         <div class="recentf">
             <div class="desc">📅 {{ if .Site.Params.en }} Recent updates {{ else }} 最近更新 {{ end }}</div>
             {{  range first 8 .Site.RegularPages.ByLastmod.Reverse }}
@@ -22,6 +23,7 @@
                 {{ end }}
             {{ end }}
         </div>
+        {{ end }}
     {{ range .Paginator.Pages }}
         {{if ne .Title "Secrets" }}
         <!-- 📄 ➣ 📂 -->
