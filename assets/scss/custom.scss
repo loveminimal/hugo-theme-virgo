@@ -195,16 +195,17 @@ em,
     position: relative;
     margin: 16px auto;
     padding: 8px 0 8px 0px;
-    // padding-left: 24px;
-    // border-left: 1px dashed $essay-color;
+    padding-left: 16px;
+    border-left: 1px dashed $essay-color;
     font-size: 0.15rem;
     color: $essay-color;
+    font-family: 'kaiti', $font-family--base;
 
-    &:before {
-        content: '🗨️';
-        position: absolute;
-        left: -32px;
-    }
+    // &:before {
+    //     content: '🗨️';
+    //     position: absolute;
+    //     left: -32px;
+    // }
 
     p {
         margin-bottom: 0;
