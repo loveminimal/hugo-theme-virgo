@@ -11,6 +11,10 @@ body {
     line-height: 1.5;
 }
 
+li::marker {
+    color: #ccc;
+}
+
 h1,
 h2,
 h3,
