@@ -69,7 +69,6 @@
         {{- partial "partials/_archive.html" . -}}
     {{ end }}
 
-
     {{ if and .Site.Params.isShowPrevNextLink .IsPage $IsPostPage (not $IsSecrets) }}
         {{- partial "partials/_prevnext.html" . -}}
     {{ end }}
@@ -77,5 +76,9 @@
     {{ if and .IsPage $IsPostPage (not $IsSecrets) .Site.Params.utterances.active }}
         {{- partial "partials/_comment.html" . -}}
     {{ end }}
+
+    <!-- {{ if  $IsAbout }}
+        {{- partial "partials/_media.html" . -}}
+    {{ end }} -->
 </div>
 {{ end }}
