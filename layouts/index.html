@@ -71,7 +71,7 @@
             {{ if .Site.Params.img.notImgButWords }} 
                 <div class="words">{{ .Site.Params.img.words | markdownify }}</div>
             {{ else if .Site.Params.img.src }}
-                <img src="/imgs/{{ .Site.Params.img.src }}" width="{{ .Site.Params.img.width }}" />
+                <img src="/imgs/{{ .Site.Params.img.src }}" width="{{ with .Site.Params.img.width }}{{.}}{{end}}" />
             {{ else }}
                 <img src="/imgs/tux.jpg" width="880" />
             {{ end }}
