@@ -9,7 +9,7 @@ import enhanceMarkdown from './js/init/enhanceMarkdown';
 greet();
 enhanceOrgMode();
 initNavLink();
-initEventBinding();
 initCodeBlock();
 enhanceMarkdown();
 // initMouseClickAnimate();
+initEventBinding();
