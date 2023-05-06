@@ -20,4 +20,36 @@ export default function() {
 			item.outerHTML = `<div class="oh-essay">${_innerText.slice(1)}</div>`
 		}
 	})
+
+	// 标识渲染 Obsidian 等 Wiki 语法的图片、链接
+	// 支持中文路径
+	$('p').each((idx, item) => {
+		// console.log(item.outerHTML)
+		// console.log(item.innerHTML)
+		let _innerHtml = item.innerHTML;
+
+		if(_innerHtml.indexOf('[[') > -1) {
+			// console.log('>>>', _innerHtml)
+
+			// 1. 先匹配替换图片
+			// let _re = /!\[\[(\w*\/?\w+\.\w+)\|?(\d*)\]\]/
+			let _re = /!\[\[(([\/\-\.\*\$]|\w|\s|[^\x00-\xff])*\.\w+)\s*\|?\s*(\d*)\]\]/g;
+			// let _str = _innerHtml.match(_re, "$1, $3");
+			let _str = _innerHtml.replace(_re, '<img src="$1" alt="$1" width="$3" />');
+			// item.innerHTML = _str;
+
+			// 2. 后匹配替换链接
+			let _reLink = /\[\[(([\/\-\.\*\$\:]|\w|\s|[^\x00-\xff])*)\|?(([\/\-\.\*\$]|\w|\s|[^\x00-\xff])*)\]\]/g;
+			// let _strLink = _str.match(_reLink);
+			// let _strLink = _str.replace(_reLink, '<a href="$1">$3</a>');
+			let _strLink = _str.replace(_reLink, (val) => {
+				val = val.replace(/[\[\]]/g, '')
+				let _arr = val.split(/\s*\|\s*/)
+				let _desc = _arr[1] ? _arr[1] : _arr[0]
+				return `<a href="${_arr[0]}">${_desc}</a>`
+			});
+
+			item.innerHTML = _strLink;
+		}
+	})
 }
