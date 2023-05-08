@@ -10,14 +10,25 @@ export default function() {
 			// ^ *_xxx* 转译为 <u>xxx</u>
 			item.outerHTML = `<u>${_innerText.slice(1)}</u>`
 
-		} else if (_innerText.indexOf('-') === 0) {
+		} else if (_innerText.indexOf('=') === 0) {
 			// ^ *-xxx* 转译为 <span class="oh-hl">xxx</span>
 			item.outerHTML = `<span class="oh-hl">${_innerText.slice(1)}</span>`
 			console.log($('.oh-hl')[idx]);
 
-		} else if (_innerText.indexOf('=') === 0) {
+		} 
+		// else if (_innerText.indexOf('=') === 0) {
+		// 	// ^ *=xxx* 转译为 <div class="oh-essay">xxx</div>
+		// 	item.outerHTML = `<div class="oh-essay">${_innerText.slice(1)}</div>`
+		// }
+	})
+
+	$('blockquote p').each((idx, item) => {
+		let _innerHtml = item.innerHTML;
+		console.log(_innerHtml);
+
+		if (_innerHtml.indexOf('=') === 0) {
 			// ^ *=xxx* 转译为 <div class="oh-essay">xxx</div>
-			item.outerHTML = `<div class="oh-essay">${_innerText.slice(1)}</div>`
+			item.outerHTML = `<div class="oh-essay">${_innerHtml.slice(1)}</div>`
 		}
 	})
 
