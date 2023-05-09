@@ -13,8 +13,7 @@ export default function() {
 		} else if (_innerText.indexOf('=') === 0) {
 			// ^ *-xxx* 转译为 <span class="oh-hl">xxx</span>
 			item.outerHTML = `<span class="oh-hl">${_innerText.slice(1)}</span>`
-			console.log($('.oh-hl')[idx]);
-
+			// console.log($('.oh-hl')[idx]);
 		} 
 		// else if (_innerText.indexOf('=') === 0) {
 		// 	// ^ *=xxx* 转译为 <div class="oh-essay">xxx</div>
@@ -24,10 +23,10 @@ export default function() {
 
 	$('blockquote p').each((idx, item) => {
 		let _innerHtml = item.innerHTML;
-		console.log(_innerHtml);
+		// console.log(_innerHtml);
 
 		if (_innerHtml.indexOf('=') === 0) {
-			// ^ *=xxx* 转译为 <div class="oh-essay">xxx</div>
+			// ^ >=xxx 转译为 <blockquote><div class="oh-essay">xxx</div></blockquote>
 			item.outerHTML = `<div class="oh-essay">${_innerHtml.slice(1)}</div>`
 		}
 	})

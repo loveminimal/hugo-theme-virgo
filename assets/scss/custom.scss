@@ -141,7 +141,7 @@ table {
 
 blockquote {
     padding-left: 16px;
-    border-left: 1px solid $blockquote-color;
+    border-left: 1px solid $gray-500; //$blockquote-color;
     color: $blockquote-color;
 }
 
