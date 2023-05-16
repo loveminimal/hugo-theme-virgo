@@ -1,4 +1,4 @@
-[hugo-theme-virgo](https://themes.gohugo.io/themes/hugo-theme-virgo/)
+[🎨 hugo-theme-virgo](https://themes.gohugo.io/themes/hugo-theme-virgo/)
 
 ## 简介
 
