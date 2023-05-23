@@ -27,7 +27,7 @@ export default function() {
 
 		if (_innerHtml.indexOf('=') === 0) {
 			// ^ >=xxx 转译为 <blockquote><div class="oh-essay">xxx</div></blockquote>
-			item.outerHTML = `<div class="oh-essay">${_innerHtml.slice(1)}</div>`
+			item.parentNode.outerHTML = `<div class="oh-essay">${_innerHtml.slice(1)}</div>`
 		}
 	})
 

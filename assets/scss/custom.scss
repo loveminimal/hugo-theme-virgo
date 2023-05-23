@@ -145,6 +145,7 @@ blockquote {
     color: $blockquote-color;
 }
 
+.oh-essay,
 .summary,
 blockquote,
 p,
@@ -201,16 +202,16 @@ em,
     margin: 16px auto;
     // padding: 8px 0 8px 0px;
     padding-left: 16px;
-    // border-left: 1px dashed $essay-color;
+    border-left: 1px dashed $essay-color;
     // border-left: 3px double $essay-color;
     font-size: 0.15rem;
     color: $essay-color;
     // font-family: 'kaiti', $font-family--base;
 
     &:before {
-        content: '💭'; //'💬'; //'🗨️';
+        content: '🗨️'; //'💭'; //'💬'; //'🗨️';
         position: absolute;
-        left: -8px; // -32px;
+        left: -32px;// -8px; // -32px;
     }
 
     p {
