@@ -25,9 +25,13 @@ export default function() {
 		let _innerHtml = item.innerHTML;
 		// console.log(_innerHtml);
 
-		if (_innerHtml.indexOf('=') === 0) {
+		if (_innerHtml.indexOf('::') === 0) {
+			console.log(_innerHtml);
+			item.parentNode.setAttribute('class', 'oh-essay')
+
 			// ^ >=xxx 转译为 <blockquote><div class="oh-essay">xxx</div></blockquote>
-			item.parentNode.outerHTML = `<div class="oh-essay">${_innerHtml.slice(1)}</div>`
+			// item.parentNode.outerHTML = `<div class="oh-essay">${_innerHtml.slice(2)}</div>`
+			item.outerHTML = `<div>${_innerHtml.slice(2)}</div>`
 		}
 	})
 
