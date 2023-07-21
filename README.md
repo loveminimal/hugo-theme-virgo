@@ -1,5 +1,7 @@
 [🎨 hugo-theme-virgo](https://themes.gohugo.io/themes/hugo-theme-virgo/)
 
+[🧪 Demo / 演示](https://loveminimal.github.io/)
+
 ## 简介
 
 一个简单纯净的主题，欢迎使用。🎉🎉🎉 
