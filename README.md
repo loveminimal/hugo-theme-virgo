@@ -41,9 +41,9 @@ git submodule add https://github.com/loveminimal/hugo-theme-virgo.git themes/vir
 然后，更新你站点的 `config.toml` 内容，如下（后续可按需修改）：
 
 ```toml
-baseURL = 'https://ovirgo.com/'
+baseURL = 'https://walkssi.com/'
 languageCode = 'zh-cn'
-title = 'Virgo'
+title = 'Walkssi'
 
 # 启用主题
 theme = 'virgo'
@@ -60,9 +60,9 @@ enableGitInfo = true
     # 页面语言，默认中文
     en = false
     # 英文首页标题，默认 'Virgo'
-    homeTitleEn = 'Virgo'
+    homeTitleEn = 'Walkssi'
     # 中文首页标题，默认 ‘一晌贪欢’
-    homeTitleZh = '一晌贪欢'
+    homeTitleZh = '遛达西'
 
     # 激活暗色模式，
     # 由于静态页面的限制，我们使用浏览器本地存储来记忆该状态，
@@ -81,12 +81,12 @@ enableGitInfo = true
     # 激活 cool 模式，酷爽但是消耗资源也更多，
     # 如果想更换页面背景，只需要将图片命名为 `default.jpg` 后，置于 `/static/imgs/bg` 文件夹中即可，
     # 浏览器有缓存，更换后强制页面刷新（快捷键为 Ctrl+Shift+R）一下即可
-    hasActiveCool = true
+    hasActiveCool = false
 
     # 展开/折叠代码块，默认不折叠，
     # 设置为 `true` ，则默认折叠所有代码块，
     # 提示，在移动设备中，系统设置为永久折叠代码块
-    # （该项设置不重要，完全是个人喜好）
+    # (该项设置不重要，完全是个人喜好)
     hasFoldAllCodeBlocks = false
 
     # 如下导航链接，你应该创建对应的 `.md` 文件，以生成对应的页面
@@ -126,10 +126,10 @@ enableGitInfo = true
             icon = '🎉'
         [params.menu.44]
             active = true
-            path = '/posts/wiki'
-            en = 'Wiki'
-            zh = '百科'
-            icon = '🚀'
+            path = '/notes'
+            en = 'Notes'
+            zh = '草稿'
+            icon = '⚗️'
         [params.menu.55]
             active = true
             path = '/about'
@@ -143,7 +143,7 @@ enableGitInfo = true
         # 设置 `noImgButWords` 为 true 即可
         notImgButWords = false
         # 内置了 `girl.jpg, wukong.jpg, and tux.jpg, cat.svg ……`，当然你可以
-        # 把自己喜欢图片放在 `static/imgs/` 目录中，并在 `src` 引用它，
+        # 把自己喜欢图片放在 `static/imgs/` 目录中，并在 `src` 引用它,
         # 你还可以通过 `width` 调整引入图片的显示大小，
         # 如果，将 `width` 设置为 '' 或 0 ，
         # 将默认使用图片自身分辨率尺寸
@@ -154,29 +154,29 @@ enableGitInfo = true
         words = "“照顾好自己的身体和情绪，<br>这场人生，<br>你就赢了一大半，<br>其余的其余，<br>人生自有安排。”"
 
     [params.contact]
-        icp = '<你的备案号>'                        # 备案号，如果你不想显示，设置为 '' 空即可
-        icplink = '//beian.miit.gov.cn'             # 备案链接
-        weibo = '<YOUR_CUSTOM_ID>'                  # e.g. https://weibo.com/u/<YOUR_CUSTOM_ID>
-        wechat = 'imgs/bg/wechat.jpg'               # 微信二维码地址，位于 static 目录下
-        # zhihu = '<YOUR_CUSTOM_ID>'                # e.g. https://www.zhihu.com/people/<YOUR_CUSTOM_ID>
-        # jianshu = '<YOUR_CUSTOM_ID>'              # e.g. https://www.jianshu.com/u/<YOUR_CUSTOM_ID>
-        email = '<YOUR_CUSTOM_ID>@outlook.com'
-        github = '<YOUR_CUSTOM_ID>'                 # e.g. https://github.com/<YOUR_CUSTOM_ID>
-        bilibili = '<YOUR_CUSTOM_ID>'                # e.g. https://space.bilibili.com/<YOUR_CUSTOM_ID>
-        # twitter = '<YOUR_CUSTOM_ID>'              # e.g. https://twitter.com/<YOUR_CUSTOM_ID>
-        # facebook = '<YOUR_CUSTOM_ID>'             # e.g. https://facebook.com/<YOUR_CUSTOM_ID>
-        # instagram = '<YOUR_CUSTOM_ID>'            # e.g. https://www.instagram.com/<YOUR_CUSTOM_ID>
-        # youtube = '<YOUR_CUSTOM_ID>'              # e.g. https://www.youtube.com/channel/<YOUR_CUSTOM_ID>
-        # telegram = '<YOUR_CUSTOM_ID>'             # e.g. https://web.telegram.org/k/#@<YOUR_CUSTOM_ID>
-        color = '#696969'                           # 图标颜色，默认为浅灰色
-        slogan = 'Find me via : )'                  # 联系标语，不想显示，可以置空
+        icp = '豫ICP备2022002918号-1'             # 备案号，如果你不想显示，设置为 '' 空即可
+        icplink = '//beian.miit.gov.cn'           # 备案链接
+        weibo = '6867589681'                     # e.g. https://weibo.com/u/6867589681
+        wechat = 'imgs/bg/wechat.jpg'           # 微信二维码地址
+        # zhihu = 'loveminimal'                   # e.g. https://www.zhihu.com/people/loveminimal
+        # jianshu = 'eebcc2974936'                # e.g. https://www.jianshu.com/u/eebcc2974936
+        email = 'loveminimal@outlook.com'
+        github = 'loveminimal'                  # e.g. https://github.com/loveminimal
+        bilibili = '11608450'                   # e.g. https://space.bilibili.com/11608450
+        # twitter = 'loveminimal163'                 # e.g. https://twitter.com/loveminimal163
+        # facebook = 'loveminimal'              # e.g. https://facebook.com/loveminimal
+        # instagram = 'loveminimal163'          # e.g. https://www.instagram.com/loveminimal163
+        # youtube = 'UCkWIBwe3rZTDAmBs0GJngkA' # e.g. https://www.youtube.com/channel/UCkWIBwe3rZTDAmBs0GJngkA
+        # telegram = 'loveminimal'                # e.g. https://web.telegram.org/k/#@loveminimal
+        color = '#696969'                        # 图标颜色，默认为浅灰色
+        slogan = 'Find me via : )'               # 联系标语，不想显示，可以置空
 
     # 在开发环境下（http://localhost:1313/），不再启用评论插件，
     # 如果想在开发环境下启用它，修改服务端口即可，如下
     # hugo server -p=1314
     [params.utterances]
         active = true                             # 是否启用评论插件
-        repo = "<YOUR_GITHUB_REPO>"               # 输入你的仓库名称
+        repo = "loveminimal/comment"               # 输入你的仓库名称
         issueTerm = "pathname"
         theme = "github-light"
         crossorigin = "anonymous"
