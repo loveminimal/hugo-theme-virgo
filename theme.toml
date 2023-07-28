@@ -6,16 +6,16 @@ license = "MIT"
 licenselink = "https://github.com/loveminimal/virgo/blob/master/LICENSE"
 description = "Just for fun."
 
-homepage = "https://ovirgo.com"
+homepage = "https://walkssi.com"
 tags = ["blog", "chinese", 'pure']
 features = []
 min_version = "0.41.0"
 
-demosite = "https://ovirgo.com"
+demosite = "https://walkssi.com"
 
 [author]
   name = "Jack Liu"
-  homepage = "https://ovirgo.com"
+  homepage = "https://walkssi.com"
 
 # If porting an existing theme
 [original]
