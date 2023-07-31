@@ -21,15 +21,16 @@
 
     }
 
-    .categories, .tags {
+    .tags {
         display: flex;
         flex-wrap: wrap;
+        margin-top: 32px;
 
         .arc-item {
             padding: 4px;
             background: $gray-100;
             margin: 12px 12px 6px 0px;
-            width: 31%;
+            width: 32.3%;
             box-sizing: border-box;
             // backdrop-filter: blur(10px);
 
@@ -60,9 +61,5 @@
                 }
             }
         }
-    }
-
-    .tags {
-        margin-top: 32px;
     }
 }

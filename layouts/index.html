@@ -1,34 +1,5 @@
 {{ define "main" }}
 <div class="container-main container-home">
-    <!-- 第一层级 -->
-    <div class="menu" style="display: none;">
-        {{with .Site.Params.menu}}
-            <!-- 自定义 Menu -->
-            {{range .}}
-                {{if .active}}
-                <div class="item">
-                    <!-- ⚓🐶🎉👀💡👓🐌 -->
-                    <a href={{.path}}>
-                        {{.icon}} 
-                        {{if .Site.Params.en }}{{.en}}
-                        {{ else }}{{.zh}}
-                        {{ end }}
-                    </a>
-                </div>
-                {{end}}
-            {{end}}
-        {{end}}
-
-
-        {{ range where .Site.Pages "Kind" "taxonomy" }}
-            {{ if and (ne .Title "Categories") (ne .Title "Tags")}}
-            <div class="item">
-                <a href="{{.Permalink}}">{{.Title}}</a>
-            </div>
-            {{ end }}
-        {{ end }}
-    </div>
-
 <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md-->
    <div class="content-md">
        {{.Content}}
@@ -36,18 +7,15 @@
 
     <div class="content" style="display: none;">
         <div class="desc" style="display: normal;">
-            {{ if .Site.Params.img.notImgButWords }} 
-                <div class="words">{{ .Site.Params.img.words | markdownify }}</div>
-            {{ else if .Site.Params.img.src }}
+            {{if .Site.Params.img.src }}
                 <img src="/imgs/{{ .Site.Params.img.src }}" width="{{ with .Site.Params.img.width }}{{.}}{{end}}" />
             {{ else }}
                 <img src="/imgs/tux.jpg" width="880" />
             {{ end }}
         </div>
     </div>
-    <!-- {{- partial "partials/_media.html" . -}} -->
     <!-- {{- partial "partials/_search.html" . -}} -->
-    <!-- <div class="count">共有 {{ len .Site.RegularPages }} 篇文章</div> -->
+    {{- partial "partials/_media.html" . -}}
     <div class="count">{{ if .Site.Params.en }}Total{{ else }}共有{{ end }} {{ len .Pages }} {{ if .Site.Params.en }}pages{{ else }}篇文章{{ end }}</div>
     {{- partial "partials/_archive.html" . -}}
 
