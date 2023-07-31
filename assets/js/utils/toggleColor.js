@@ -29,18 +29,19 @@ if (getDarkOfLocalStorage() === 'on') {
         sepia: 10,
     });
     
-    $('#light-dark a').html(sun);
+    // $('#light-dark a').html(sun);
 } else if (getDarkOfLocalStorage() === 'off') {
     disable();
 }
 
 export default function toggleColor() {
     let _isEnabled = isEnabled();
+    console.log('.........');
 
     if (_isEnabled) {
         disable();
         setDarkOfLocalStorage('off');
-        $('#light-dark a').html(moon);
+        // $('#light-dark a').html(moon);
 
     } else {
 
@@ -50,7 +51,7 @@ export default function toggleColor() {
             sepia: 10,
         });
         setDarkOfLocalStorage('on');
-        $('#light-dark a').html(sun);
+        // $('#light-dark a').html(sun);
     }
 }
 
