@@ -1,6 +1,4 @@
 <div class="container-header">
-    <!-- 配置变量 -->
-    {{- partial "_siteparams.html" . -}}
     <!-- 文档页眉 -->
     <h1 class="title">{{ .Title }}</h1>
 
@@ -15,10 +13,4 @@
             <div id="toc">📜</div>
         {{end}}
     {{ end }}
-    <!--
-        <div class="helper" style="color: #999; fonts-size: 12px;">
-            [.Site] {{ .Site }} /-/ [.Type] {{ .Type }} /-/ [.Kind] {{.Kind }} /-/ [.Section] {{ .Section }} <br>
-            [.Pages] {{ .Pages }}  /-/  [.RegularPages] {{ .RegularPages }} /-/ [.Title] {{ .Title}}
-        </div>
-    -->
 </div>

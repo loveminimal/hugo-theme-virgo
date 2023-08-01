@@ -16,7 +16,7 @@
     </div>
     <!-- {{- partial "partials/_media.html" . -}} -->
     {{- partial "partials/_contact.html" . -}}
-    <div class="count">{{ if .Site.Params.en }}Total{{ else }}共有{{ end }} {{ len .Pages }} {{ if .Site.Params.en }}pages{{ else }}篇文章{{ end }}</div>
+    <div class="count">共有 {{ len .Pages }} 篇文章</div>
     {{- partial "partials/_archive.html" . -}}
 
 

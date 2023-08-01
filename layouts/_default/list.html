@@ -1,11 +1,35 @@
 {{ define "main" }}
 <div class="container-main container-list">
+    <div class="toc">
+        <div class="page-operation">
+            <div><a href="/"><img src="/imgs/icons/home-2.svg" alt=""></a></div>
+            <div><a href="/to/nav"><img src="/imgs/icons/iov-navigate-1.svg" alt=""></a></div>
+            <div><a href="#"><img src="/imgs/icons/up2.svg" alt=""></a></div>
+        </div>
+        
+        <div class="list post-list">
+            {{ range .Paginator.Pages }}
+                {{if ne .Title "Secrets" }}
+                <!-- 📄 ➣ 📂 -->
+                <div class="{{with .IsPage}}item{{ else }}item-term{{end}}" >
+                   
+                    <!-- if eq .Kind "page" -->
+                    <a href="{{.Permalink}}">
+                        <span>{{ with .IsPage}} <img src="/imgs/icons/post-3.svg" width="16" /> {{else}} <img src="/imgs/icons/ctg.svg" width="16" /> {{end}}</span>
+                        <span> {{.Title}} <sup>{{if not .IsPage}}{{len .Pages}}{{ end }}</sup></span>
+                    </a>
+                </div>
+                {{ end }}
+            {{ end }}
+            </div>
+    </div>
+
     <div class="content">
         {{ .Content }}
     </div>
 
     {{ if ne .Kind "taxonomy"}} 
-        <div class="count">{{ if .Site.Params.en }}Total{{ else }}共有{{ end }} {{ len .Pages }} {{ if .Site.Params.en }}pages{{ else }}篇文章{{ end }}</div>
+        <div class="count">共有 {{ len .Pages }} 篇文章</div>
     {{ end }}
     
     <div class="list list-single-col">
@@ -36,7 +60,7 @@
 				{{ if .Truncated }}
 				<!-- This <div> includes a read more link, but only if the summary is truncated... -->
 				<div class="read-more">
-				  <a href="{{ .RelPermalink }}">{{if .Site.Params.en}}Read More{{else}}查看更多{{end}}…</a>
+				  <a href="{{ .RelPermalink }}">查看更多…</a>
 				</div>
 				{{ end }}
             {{ end }}

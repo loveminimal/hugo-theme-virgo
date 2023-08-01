@@ -1,6 +1,66 @@
 .container-list {
     font-size: 0.16rem;
 
+    .toc {
+        position: fixed;
+        border-left: 1px solid $gray-300;
+        width: 260px;
+        max-height: 566px;
+        top: 176px;
+        right: 16px;
+        font-size: 0.14rem;
+        overflow: scroll;
+
+        // 滚动条宽度、颜色
+        &::-webkit-scrollbar {
+            width: 2px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: $gray-300;
+        }
+
+        // 条目节点样式
+        li {
+            list-style: none;
+            a {
+                color: $gray-600;
+                &:hover {
+                    color: $link-hover-color;
+                }
+            }
+        }
+
+        .toc-link--active {
+            color: #d14;
+        }
+
+        .page-operation {
+            display: flex;
+            position: fixed;
+            top: 136px;
+            right: 144px;
+            a {
+                img, svg {
+                    padding: 2px;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+
+        .post-list {
+            padding-left: 8px;
+            .item {
+                margin: 0;
+                padding: 0;
+
+                a {
+                    color: $gray-600;
+                }
+            }
+        }
+    }
+
     .count {
         color: $gray-600;
     }
