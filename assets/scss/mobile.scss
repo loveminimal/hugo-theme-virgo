@@ -1,13 +1,30 @@
 @media screen and (max-width: 1026px) {
+    @mixin toc {
+        transition: .3s all linear;
+        right: -300px;
+        z-index: 1000;
+        background: $white-900;
+        height: 400px;
+        top: 120px;
+        padding-top: 48px;
+        border-radius: 8px;
+
+        .page-operation {
+            z-index: 1001;
+            transition: .5s all linear;
+            top: 128px;
+            background: $white-900;
+            border-radius: 24px;
+
+            right: -300px;
+        }
+    }
+
     body {
         $site-padding-lr: 0;
-        img {
-            // max-width: fit-content;
-        }
 
         #header {
             padding: 0 8px;
-            // background: $white-900;
 
             .title {
                 white-space: nowrap;
@@ -18,18 +35,18 @@
             }
 
             .container-header {
-                .container-breadcrumb-nav {
-                    img { 
-                        max-width: fit-content;
-                    }
-                }
-
                 #toc {
-                   position: absolute;
-                   right: 8px;
-                   top: 81px;
-                   display: initial;
-               }
+                    z-index: 10000;
+                    position: fixed;
+                    right: 0px;
+                    top: 81px;
+                    display: initial;
+                    background: $white-900;
+                    width: 36px;
+                    border-radius: 12px 0 0 12px;
+                    padding-left: 12px;
+                    box-shadow: -1px 1px 1px #ccc;
+                }
             }
 
         }
@@ -38,14 +55,11 @@
             padding: 0;
             .container-main {
                 overflow: hidden;
+
             }
 
             .container-nav {
                 padding: 0 4px;
-
-                .toc {
-                    display: none;
-                }
                 
                 .content-nav {
                     .nav ul {
@@ -58,6 +72,10 @@
             }
 
             .container-list {
+                .toc {
+                    @include toc;
+                }
+
                 .count {
                     padding-left: 12px;
                 }
@@ -94,23 +112,7 @@
                 padding: 0 8px 16px;
 
                 .toc {
-                    transition: .3s all linear;
-                    right: -300px;
-                    z-index: 1000;
-                    background: $white-900;
-                    height: 400px;
-                    top: 120px;
-                    padding-top: 48px;
-                    border-radius: 8px;
-
-                    .page-operation {
-                        transition: .5s all linear;
-                        top: 128px;
-                        background: $white-900;
-                        border-radius: 24px;
-
-                        right: -300px;
-                    }
+                    @include toc;
                 }
             }
 

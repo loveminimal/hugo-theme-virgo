@@ -9,8 +9,6 @@
         </div>
     {{ else }}
         <!-- {{- partial "_breadcrumb.html" . -}} -->
-        {{ if and .IsPage (ne .Title "Nav") (ne .Title "Search") (ne .Title "Archive") (ne .Title "About")}}
-            <div id="toc">📜</div>
-        {{end}}
+        <div id="toc">📜</div>
     {{ end }}
 </div>
