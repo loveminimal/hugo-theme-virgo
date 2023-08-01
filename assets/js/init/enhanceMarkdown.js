@@ -63,8 +63,8 @@ export default function() {
 				let _arr = val.split(/\s*\|\s*/)
 				let _desc = _arr[1] ? _arr[1] : _arr[0]
 				
-				console.log(_arr);
-				console.log(_desc);
+				// console.log(_arr);
+				// console.log(_desc);
 				// return `<a href="${_arr[0]}">${_desc}</a>`
 				return `<a href="/${_arr[0].replace(/\s/g, '-').toLowerCase()}">${_desc}</a>`
 			// });
