@@ -26,7 +26,7 @@ export default function() {
 		// console.log(_innerHtml);
 
 		if (_innerHtml.indexOf('::') === 0) {
-			console.log(_innerHtml);
+			// console.log(_innerHtml);
 			item.parentNode.setAttribute('class', 'oh-essay')
 
 			// ^ >=xxx 转译为 <blockquote><div class="oh-essay">xxx</div></blockquote>
