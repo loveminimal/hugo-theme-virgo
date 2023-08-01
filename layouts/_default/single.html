@@ -1,25 +1,16 @@
 {{ define "main" }}
-{{ $IsNav := eq .Title "Nav"}}
-{{ $IsSearch := eq .Title "Search"}}
-{{ $IsArchive := eq .Title "Archive"}}
-{{ $IsAbout := eq .Title "About"}}
-
+<!-- {{ $IsNav := eq .Title "Nav"}} -->
+{{ $IsNav := eq .Title "🌞 导航"}}
 {{ $IsSecrets := eq .Section "secrets"}}
 
 <!-- 那些不需要文章相关功能（如目录层级，文章切换、字数时长统计等）的页面 -->
-<!-- {{ $IsPurePage := or $IsNav $IsSearch $IsArchive $IsAbout }} -->
 <!-- 正常博文 -->
-{{ $IsPostPage := and (not $IsNav) (not $IsSearch) (not $IsArchive) (not $IsAbout) }}
+{{ $IsPostPage := and (not $IsNav) }}
 
 {{ $IS_DEV_ENV := eq .Site.BaseURL "http://localhost:1313/"}}
 
 
-<div class="container-main 
-    {{ if $IsNav}} container-nav 
-    {{ else if $IsSearch }} container-search 
-    {{ else if $IsArchive}} container-archive 
-    {{ else }} container-page 
-{{ end }}">
+<div class="container-main container-page {{if $IsNav}}container-nav{{ end }}">
 
     <div class="desc">
         {{if $IsPostPage }}
@@ -44,7 +35,7 @@
     </div>
     
     <div class="toc">
-        {{ if and .IsPage $IsPostPage (not $IsSecrets) }}
+        {{ if and .IsPage (not $IsSecrets) }}
         <div class="page-operation">
             <div><a href="/"><img src="/imgs/icons/home-2.svg" alt=""></a></div>
             <div><a href="/to/nav"><img src="/imgs/icons/iov-navigate-1.svg" alt=""></a></div>
@@ -54,24 +45,12 @@
         {{ $.TableOfContents }}
     </div>
 
-    <div class='content {{with not $IsNav}} content {{ else }} content-nav {{end}}{{with .Params.card}} content-card {{ end }}'>
+    <div class='content {{with $IsNav}}content-nav{{end}} {{with .Params.card}}content-card{{ end }}'>
         {{ .Content }}
     </div>
-
-    {{ if $IsSearch }}
-        {{- partial "partials/_search.html" . -}}
-    {{ end }}
-
-    {{ if $IsArchive}}
-        {{- partial "partials/_archive.html" . -}}
-    {{ end }}
     
     {{ if and .IsPage $IsPostPage (not $IsSecrets) .Site.Params.utterances.active (not $IS_DEV_ENV) }}
         {{- partial "partials/_comment.html" . -}}
     {{ end }}
-
-    <!-- {{ if  $IsAbout }}
-        {{- partial "partials/_media.html" . -}}
-    {{ end }} -->
 </div>
 {{ end }}

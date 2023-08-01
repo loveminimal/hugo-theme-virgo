@@ -2,29 +2,16 @@
     padding: 0 16%;
 
     .toc {
-        position: fixed;
-        right: 100px;
-        top: 183px;
-        height: 468px;
-        overflow: auto;
-        padding: 4px 12px 0px;
+        border-width: 0;
+        right: 72px;
 
-        &::-webkit-scrollbar {
-            width: 2px;
-        }
-        &::-webkit-scrollbar-thumb {
-            background-color: $gray-200;
-        }
-        
-        li {
-            width: 84px;
-            height: 36px;
+        ul > li > ul > li {
             line-height: 28px;
             list-style: none;
             border-radius: 8px;
             margin: 6px 0;
             border-style: double;
-            border-color: $gray-white-800;
+            border: 1px dashed $gray-white-900;
             box-sizing: border-box;
             overflow: hidden;
             transition: .2s all linear;
@@ -49,93 +36,54 @@
                 }
             }
         }
-        
-    }
 
-    h2 {
-        font-size: 16px;
-        color: $gray-500;
-        font-weight: 400;
-
-        &::before {
-            content: '';
-        }
     }
 
     .content-nav {
-        .nav {
-            ul {
-                display: flex;
-                flex-wrap: wrap;
-                padding: 0;
-
-                li {
-                    box-sizing: border-box;
-                    list-style-type: none;
-                    width: 20%;
-                    margin: 4px 0;
-                    a {
-                        box-sizing: border-box;
-                        font-family:  $font-family--base;
-                        font-size: .16rem;
-                        transition: .3s padding linear;
-                        display: inline-block;
-                        width: 96%;
-                        height: 36px;
-                        line-height: 36px;
-                        font-weight: 400;
-                        padding: 2px 6px;
-                        background: $gray-white-500;
-                        border-radius: 1px 5px 1px 5px;
-                        white-space: nowrap;
-                        &:hover {
-                            padding-left: 12px;
-                            background-color: $white-500;
-                        }
-                    }
-                }
+        h3 {
+            font-size: .16rem;
+            padding-top: 0;
+            padding-bottom: 16px;
+            &::before {
+                content: '';
             }
         }
 
-        p {
-            color: $gray-500;
-            margin-right: 1%;
-            padding: 8px 4px 2px;
+        table {
+            width: 100%;
         }
 
-        .bookmark {
-            ul {
-                padding: 4px;
-                overflow: hidden;
-                white-space: nowrap;
-    
-                &:hover {
-                    overflow: auto;
+        ul {
+            padding: 4px;
+            overflow: hidden;
+            white-space: nowrap;
+
+            &:hover {
+                overflow: auto;
+            }
+
+            li {
+                list-style-type: none;
+                transition: .3s padding linear;
+                border-radius: 1px 5px 1px 5px;
+                padding-left: 4px;
+
+                &::before {
+                    content: '➣ ';
                 }
-    
-                li {
-                    list-style-type: none;
-                    transition: .3s padding linear;
-                    border-radius: 1px 5px 1px 5px;
-                    padding-left: 4px;
+                &:hover {
+                    padding-left: 16px;
+                }
 
-                    &::before {
-                        content: '➣ ';
-                    }
-                    &:hover {
-                        padding-left: 16px;
-                    }
+                a {
+                    display: inline-block;
+                    width: 100%;
+                    padding: 6px 0;
+                }
 
-                    a {
-                        display: inline-block;
-                        width: 100%;
-                        padding: 6px 0;
-                    }
+                &:nth-child(even) {
+                    background: $gray-white-600;
 
-                    &:nth-child(even) {
-                        background: $gray-white-600;
-
-                    }
                 }
             }
         }
