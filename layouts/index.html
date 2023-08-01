@@ -5,7 +5,10 @@
        {{.Content}}
    </div>
 
-    <div class="content" style="display: none;">
+    <!-- {{- partial "partials/_media.html" . -}} -->
+    {{- partial "partials/_contact.html" . -}}
+
+    <div class="content" style="display: normal;">
         <div class="desc" style="display: normal;">
             {{if .Site.Params.img.src }}
                 <img src="/imgs/{{ .Site.Params.img.src }}" width="{{ with .Site.Params.img.width }}{{.}}{{end}}" />
@@ -14,8 +17,6 @@
             {{ end }}
         </div>
     </div>
-    <!-- {{- partial "partials/_media.html" . -}} -->
-    {{- partial "partials/_contact.html" . -}}
     <div class="count">共有 {{ len .Pages }} 篇文章</div>
     {{- partial "partials/_archive.html" . -}}
 
