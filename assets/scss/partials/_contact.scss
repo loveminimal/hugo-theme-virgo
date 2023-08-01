@@ -2,7 +2,7 @@
     position: relative;
     background: $contact-bg-color;
     text-align: right;
-	margin-top: 128px;
+	padding-right: 10px;
 
     .contact {
 		.slogan {
@@ -18,7 +18,7 @@
 
         a {
             svg {
-				padding: 0 5px;
+				padding: 0 3px;
 				opacity: .5;
             }
 
@@ -27,7 +27,7 @@
 				height: 160px;
 				opacity: 0;
 				position: absolute;
-				top: -200px;
+				top: 0;
 				transform: translate(-50%);
 				transition: .3s all ease;
 			}
@@ -37,6 +37,7 @@
 			z-index: 1;
 			width: 160px;
 			opacity: 1;
+			top: 48px;
 		}
     }
 

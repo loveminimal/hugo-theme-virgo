@@ -8,7 +8,7 @@
         <div class="count">{{ if .Site.Params.en }}Total{{ else }}共有{{ end }} {{ len .Pages }} {{ if .Site.Params.en }}pages{{ else }}篇文章{{ end }}</div>
     {{ end }}
     
-    <div class="list {{if .Site.Params.isSingleColumnOfPostList}}list-single-col{{end}}">
+    <div class="list list-single-col">
     {{ range .Paginator.Pages }}
         {{if ne .Title "Secrets" }}
         <!-- 📄 ➣ 📂 -->
