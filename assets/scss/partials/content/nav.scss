@@ -51,6 +51,10 @@
 
         table {
             width: 100%;
+
+            thead {
+                display: none;
+            }
         }
 
         ul {
