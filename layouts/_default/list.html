@@ -6,8 +6,13 @@
             <div><a href="/to/nav"><img src="/imgs/icons/iov-navigate-1.svg" alt=""></a></div>
             <div><a href="#"><img src="/imgs/icons/up2.svg" alt=""></a></div>
         </div>
-        
+
         <div class="list post-list">
+
+            {{ if ne .Kind "taxonomy"}} 
+            <div class="count">文章列表： {{ len .Pages }} 篇</div>
+            {{ end }}
+            
             {{ range .Paginator.Pages }}
                 {{if ne .Title "Secrets" }}
                 <!-- 📄 ➣ 📂 -->
