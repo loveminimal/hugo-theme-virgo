@@ -6,6 +6,7 @@ export default function viewImage(e) {
 	if (location.pathname === '/') return;
 	// console.log(e)
 	let curImgSrc = e.target.attributes.src.value;
+	curImgSrc = encodeURI(curImgSrc)
 	console.log(curImgSrc)
 
 	// backdrop-filter: blur(5px);

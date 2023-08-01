@@ -14,7 +14,6 @@
             {{ end }}
         </div>
     </div>
-    <!-- {{- partial "partials/_search.html" . -}} -->
     {{- partial "partials/_media.html" . -}}
     <div class="count">{{ if .Site.Params.en }}Total{{ else }}共有{{ end }} {{ len .Pages }} {{ if .Site.Params.en }}pages{{ else }}篇文章{{ end }}</div>
     {{- partial "partials/_archive.html" . -}}
