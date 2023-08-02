@@ -103,22 +103,24 @@
 
     .highlight {
         margin: 16px 0;
-        border-top: 1px solid $highlight-color;
+        // border-top: 1px solid $highlight-color;
         // border-bottom: 2px solid $highlight-color;
-        padding: 2px 0;
+        border-radius: 8px;
+        // padding: 2px 0;
         font-size: 0.14rem;
         overflow: hidden;
         &:hover {
             overflow: auto;
         }
     }
-
+    
     pre {
+        background: $gray-white-500 !important;
         font-size: 0.14rem;
-        border-top: 1px solid $highlight-color;
-        border-bottom: 1px solid $highlight-color;
+        // border-top: 1px solid $highlight-color;
+        // border-bottom: 1px solid $highlight-color;
 
-        padding: 12px 0;
+        padding: 12px 10px;
         overflow: hidden;
 
         &:hover {
