@@ -11,7 +11,8 @@
     z-index: 1000;
     // position: sticky;
     // top: 0px;
-    padding: 0 $site-padding-lr;
+    // padding: 0 $site-padding-lr;
+    text-align: center;
 
     &.js-header {
         transition: .2s background-color linear;
