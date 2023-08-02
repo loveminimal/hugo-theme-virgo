@@ -1,4 +1,8 @@
 .container-archive {
+    .count {
+        padding: 16px 8px;
+    }
+
     .desc {
         font-size: .20rem;
     }
@@ -24,7 +28,7 @@
     .tags {
         display: flex;
         flex-wrap: wrap;
-        margin-top: 32px;
+        // margin-top: 32px;
 
         .arc-item {
             padding: 4px;

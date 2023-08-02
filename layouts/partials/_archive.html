@@ -1,17 +1,20 @@
 <div class="container-archive">
+    <div class="count">共有 {{ len .Pages }} 篇文章</div>
+    
     <!-- 最近文章 -->
     <div class="recentf">
         {{  range first 8 .Site.RegularPages.ByLastmod.Reverse }}
-            {{ if eq .Type "posts" }}
-            <div class="rec-post">
-                <div class="rec-post-item">
-                    <a href="{{.Permalink}}">{{ .Title }}</a>
-                </div>
+        <!-- {{.Type}} -->
+        {{ if eq .Type "page" }}
+        <div class="rec-post">
+            <div class="rec-post-item">
+                <a href="{{.Permalink}}">{{ .Title }}</a>
             </div>
-            {{ end }}
+        </div>
+        {{ end }}
         {{ end }}
     </div>
-
+    
 	<!-- 标签 -->
     <!-- <div class="desc">标签: </div> -->
     <div class="tags">
