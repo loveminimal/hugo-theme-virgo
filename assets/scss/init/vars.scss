@@ -83,3 +83,39 @@ $code-inline-color: #d63384;
 
 $site-padding-lr: 80px;
 $post-item-bg-color: $gray-white-200;
+
+
+@mixin primary {
+	background: #cfe2ff;
+    color: #0a58ca;
+}
+@mixin success {
+	background: #d1e7dd;
+    color: #146c43;
+}
+@mixin danger {
+	background: #f8d7da;
+    color: #c02a37;
+}
+@mixin warning {
+	background: #fff3cd;
+    color: #c48804;
+}
+ 
+@mixin info {
+	background: #cff4fc;
+    color: #48b8e7;
+}
+@mixin light {
+	background: #f8f9fa;
+    color: #6c757d;
+}
+@mixin dark {
+	background: #ced4da;
+    color: #495057;
+}
+ 
+
+ 
+
+ 

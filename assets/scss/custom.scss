@@ -172,14 +172,21 @@ ol {
     position: relative;
     margin: 16px auto;
     padding-left: 16px;
-    border-left: 1px dashed $essay-color;
+    border-left: 0px dashed $essay-color;
     font-size: 0.15rem;
-    color: $essay-color;
+    // color: $essay-color;
+    
+   @include light;
+
+    padding: 16px;
+    border-radius: 8px;
 
     &:before {
-        content: '🗨️'; //'💭'; //'💬'; //'🗨️';
-        position: absolute;
-        left: -32px;
+        content: '💭'; //'💭'; //'💬'; //'🗨️';
+        // position: absolute;
+        // left: -32px;
+        float: left;
+        padding-right: 12px;
     }
 
     p {
