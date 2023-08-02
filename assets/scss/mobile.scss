@@ -107,6 +107,8 @@
 
                 .list-single-col {
                     display: flex;
+                    width: 100%;
+                    padding: 0;
 
                     .item {
                         width: 100%;
@@ -130,6 +132,13 @@
                 }
 
                 padding-bottom: 8px;
+            }
+
+            .container-contact {
+                .contact .icons {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
             }
         }
 
