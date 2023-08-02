@@ -1,10 +1,10 @@
+$animation-duration: 2s;
 body.active-animate {
-    animation: fadeIn 2s;
-    animation: bounceInRight 1.5s;
+    animation: fadeIn $animation-duration;
+    animation: bounceInRight $animation-duration;
 
     #header {
-        animation: bounceInLeft 1.5s;
-        // animation-delay: 1.5s;
+        animation: bounceInLeft $animation-duration;
     }
 
     // p {
