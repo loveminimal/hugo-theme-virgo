@@ -8,9 +8,10 @@
         </div>
 
         <div class="list post-list">
-
             {{ if ne .Kind "taxonomy"}} 
             <div class="count">文章列表： {{ len .Pages }} 篇</div>
+            {{else}}
+            <div class="count">标签列表： {{ len .Pages }} 枚</div>
             {{ end }}
             
             {{ range .Paginator.Pages }}
@@ -36,8 +37,8 @@
     {{ if ne .Kind "taxonomy"}} 
         <!-- <div class="count">共有 {{ len .Pages }} 篇文章</div> -->
     {{ end }}
-    
-    <div class="list list-single-col">
+
+    <div class="list list-single-col {{if eq .Kind "taxonomy"}}list-taxonomy{{end}}">
     {{ range .Paginator.Pages }}
         {{if ne .Title "Secrets" }}
         <!-- 📄 ➣ 📂 -->

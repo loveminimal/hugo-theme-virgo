@@ -6,7 +6,7 @@
         border-left: 1px solid $gray-300;
         width: 260px;
         max-height: 566px;
-        top: 176px;
+        top: 156px;
         right: 16px;
         font-size: 0.14rem;
         overflow: scroll;
@@ -60,6 +60,16 @@
                 padding: 0;
 
                 a {
+                    color: $gray-600;
+                }
+            }
+
+            .item-term {
+                margin: 0;
+                padding: 0;
+                
+                a {
+                    height: 48px;
                     color: $gray-600;
                 }
             }
@@ -214,6 +224,9 @@
 
     .list-single-col {
         display: block;
+        width: 776px;
+        padding: 0 24% 0 16%;
+        
 
         .recentf {
             width: 760px;
@@ -226,5 +239,15 @@
             width: 760px;
             margin: 24px auto;
         }
+
+        .item-term {
+            width: 249px;
+        }
+    }
+
+    // 标签列表
+    .list-taxonomy {
+        display: flex;
+        min-height: 520px;
     }
 }
