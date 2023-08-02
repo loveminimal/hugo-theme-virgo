@@ -5,10 +5,35 @@
     // some customizations of content of md
 
     .content {
-        text-align: right;
         .desc {
-            img {
-                max-width: 100%;
+            .img-wrapper {
+                position: absolute;
+                top: 12px;
+                left: 50%;
+                background: #000;
+                display: flex;
+                justify-content: center;
+                border-radius: 50%;
+                padding: 5px;
+                width: 100px;
+                height: 100px;
+                box-sizing: border-box;
+
+                transition: 0.5s all ease;
+
+                transform: translateX(-200%);
+
+                &:hover {
+                    box-shadow: 5px 0 6px #999;
+                    transform: translateX(-210%) rotate(360deg);
+                }
+
+                img {
+                    border-radius: 50%;
+                    max-width: 100%;
+                    height: auto;
+
+                }
             }
         }
     }

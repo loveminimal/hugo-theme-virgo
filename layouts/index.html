@@ -8,13 +8,15 @@
     <!-- {{- partial "partials/_media.html" . -}} -->
     {{- partial "partials/_contact.html" . -}}
 
-    <div class="content" style="display: normal;">
-        <div class="desc" style="display: normal;">
-            {{if .Site.Params.img.src }}
+    <div class="content">
+        <div class="desc">
+            <div class="img-wrapper" style="background: {{ with .Site.Params.img.background }}{{.}}{{end}};">
+                {{if .Site.Params.img.src }}
                 <img src="/imgs/{{ .Site.Params.img.src }}" width="{{ with .Site.Params.img.width }}{{.}}{{end}}" />
-            {{ else }}
-                <img src="/imgs/tux.jpg" width="880" />
-            {{ end }}
+                {{ else }}
+                <img src="/imgs/cat.svg" width="100" />
+                {{ end }}
+            </div>
         </div>
     </div>
     <!-- <div class="count">共有 {{ len .Pages }} 篇文章</div> -->
