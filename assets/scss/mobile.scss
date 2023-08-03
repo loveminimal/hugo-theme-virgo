@@ -145,6 +145,13 @@
         #footer {
             padding: 16px 8px;
             margin-top: 64px;
+
+            .beian {
+                flex-wrap: wrap;
+                justify-content: center;
+
+                height: 48px;
+            }
         }
 
         .oh-essay {

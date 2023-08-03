@@ -1,12 +1,38 @@
 <div class="container-footer">
     <!-- 文档页脚 -->
-    <a href="{{ .Site.Params.contact.icplink }}" target="_blank">
-        {{ with .Site.Params.contact.icp }}
-        {{ . }}
-        {{ else }}
-        <span class="some">enter your icp or a interesting slogan...<span>
-        {{ end }}
-    </a>
-    <a id="s" href="/secrets">&nbsp;</a>
+    <!-- <div class="icp">
+        <a href="{{ .Site.Params.contact.icplink }}" target="_blank">
+            {{ with .Site.Params.contact.icp }}
+            {{ . }}
+            {{ else }}
+            <span class="some">icp...<span>
+            {{ end }}
+        </a>
+        <a id="s" href="/secrets">&nbsp;</a>
+    </div> -->
+
     <!-- {{- partial "partials/_media.html" . -}} -->
+
+    <div class="beian">
+        <!-- <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41092802000242">
+            <img src="/imgs/beian.png" />
+            <p>豫公网安备 41092802000242号</p>
+        </a> -->
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode={{ .Site.Params.contact.beiancode }}">
+            {{ with .Site.Params.contact.beian }}
+            <img src="/imgs/beian.png" />
+            <p>{{ . }}</p>
+            {{ end }}
+
+        </a>
+
+        <a href="{{ .Site.Params.contact.icplink }}" target="_blank">
+            {{ with .Site.Params.contact.icp }}
+            {{ . }}
+            {{ else }}
+            <span class="some">icp...<span>
+            {{ end }}
+        </a>
+    </div>
+
 </div>
