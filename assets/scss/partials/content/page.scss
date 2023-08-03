@@ -112,6 +112,10 @@
         &:hover {
             overflow: auto;
         }
+
+        pre {
+            border-radius: 0;
+        }
     }
     
     pre {
@@ -119,6 +123,7 @@
         font-size: 0.14rem;
         // border-top: 1px solid $highlight-color;
         // border-bottom: 1px solid $highlight-color;
+        border-radius: 8px;
 
         padding: 12px 10px;
         overflow: hidden;
