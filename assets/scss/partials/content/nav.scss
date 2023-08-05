@@ -23,7 +23,7 @@
             a {
                 display: block;
                 padding: 4px 8px;
-                transition: .1s all linear;
+                transition: .1s padding linear;
                 color: #666;
 
                 &:hover {
@@ -58,6 +58,17 @@
 
             td {
                 width: 20%;
+                transition: .1s padding linear;
+
+                a {
+                    display: inline-block;
+                    width: 100%;
+                }
+
+                &:hover {
+                    padding-left: 16px;
+                    background: $gray-white-500;
+                }
             }
         }
 
