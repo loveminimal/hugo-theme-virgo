@@ -1,6 +1,5 @@
 {{ define "main" }}
-<!-- {{ $IsNav := eq .Title "Nav"}} -->
-{{ $IsNav := eq .Title "🌞 导航"}}
+{{ $IsNav := eq .Params.type "nav"}}
 {{ $IsSecrets := eq .Section "secrets"}}
 
 <!-- 那些不需要文章相关功能（如目录层级，文章切换、字数时长统计等）的页面 -->
