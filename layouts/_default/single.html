@@ -51,5 +51,9 @@
     {{ if and .IsPage $IsPostPage (not $IsSecrets) .Site.Params.utterances.active (not $IS_DEV_ENV) }}
         {{- partial "partials/_comment.html" . -}}
     {{ end }}
+
+    {{ if and .IsPage $IsPostPage (not $IsSecrets) .Site.Params.giscus.active (not $IS_DEV_ENV) }}
+    {{- partial "partials/_comment-giscus.html" . -}}
+    {{ end }}
 </div>
 {{ end }}
