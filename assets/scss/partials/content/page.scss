@@ -125,18 +125,24 @@
         // border-bottom: 1px solid $highlight-color;
         border-radius: 8px;
 
-        padding: 12px 10px;
+        padding: 20px 10px;
         overflow: hidden;
+        position: relative;
 
         &:hover {
             overflow: auto;
         }
 
         .lang {
-            cursor: pointer;
-            margin-bottom: 16px;
-            padding: 4px 0px;
-            border-bottom: 1px dashed $gray-200;
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 4px 12px;
+            font-family: $font-family--some;
+            font-weight: 700;
+            color: #999;
+            z-index: 9999;
+            // text-shadow: 0 0 2px #333;
         }
     }
 
