@@ -10,13 +10,15 @@
 
     <div class="content">
         <div class="desc">
-            <div class="img-wrapper" style="background: {{ with .Site.Params.img.background }}{{.}}{{end}};">
-                {{if .Site.Params.img.src }}
-                <img src="/imgs/{{ .Site.Params.img.src }}" width="{{ with .Site.Params.img.width }}{{.}}{{end}}" />
-                {{ else }}
-                <img src="/imgs/cat.svg" width="100" />
-                {{ end }}
-            </div>
+            <a href="{{ with .Site.Params.img.link }}{{.}}{{else}}/about{{end}}">
+                <div class="img-wrapper" style="background: {{ with .Site.Params.img.background }}{{.}}{{end}};">
+                    {{if .Site.Params.img.src }}
+                    <img src="/imgs/{{ .Site.Params.img.src }}" width="{{ with .Site.Params.img.width }}{{.}}{{end}}" />
+                    {{ else }}
+                    <img src="/imgs/cat.svg" width="100" />
+                    {{ end }}
+                </div>
+            </a>
         </div>
     </div>
     <!-- <div class="count">共有 {{ len .Pages }} 篇文章</div> -->
