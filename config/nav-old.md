@@ -1,6 +1,8 @@
 ---
-title: "Nav"
-draft: false
+title: Nav
+aliases: [nav]
+type: nav
+date: 2023-05-26 14:11
 ---
 
 <div class="nav">
