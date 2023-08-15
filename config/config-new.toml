@@ -1,0 +1,109 @@
+baseURL = 'https://walkssi.com/'
+languageCode = 'zh-cn'
+title = 'Walkssi'
+
+# 启用主题
+theme = 'virgo'
+
+hasCJKLanguage = true
+summaryLength = 80
+paginate = 10000
+enableGitInfo = true
+
+[params]
+    author = 'Jack'
+    slogan = 'Life should be interesting.' # 'Life is just a joker.'
+
+    # 激活页面加载时的过渡动画
+    hasActiveAnimate = true
+
+    # 激活 cool 模式，酷爽但是消耗资源也更多，
+    # 如果想更换页面背景，只需要将图片命名为 `default.jpg` 后，置于 `/static/imgs/bg` 文件夹中即可，
+    # 浏览器有缓存，更换后强制页面刷新（快捷键为 Ctrl+Shift+R）一下即可
+    hasActiveCool = false
+    
+    # 首页图片/文字
+    [params.img]
+        # 内置默认为 `cat.svg ……`，当然你可以
+        # 把自己喜欢图片放在 `static/imgs/` 目录中，并在 `src` 引用它,
+        # ❌ 你还可以通过 `width` 调整引入图片的显示大小，
+        # ❌ 如果，将 `width` 设置为 '' 或 0 ，
+        # ❌ 将默认使用图片自身分辨率尺寸
+        # ❌ width = 90
+        # 🔔 图标用途发生变化，不再支持此处设置尺寸，但
+        # 新增支持设置背景色，
+        # 将 background 设置为 ''，默认为 `#000`
+        # ！ 为保证显示效果，建议选用 1：1 比例图片
+        # src = 'cat.svg'
+        src = 'messi.png'
+        background = '#0003'
+        # 为该图片附加一个点击链接功能，缺省为 `/about`，当然
+        # 你也可以定义为任何你相要的超链接
+        link = '/about'
+
+    [params.contact]
+        icp = '豫ICP备2023017189号-1'             # 备案号，如果你不想显示，设置为 '' 空即可
+        icplink = '//beian.miit.gov.cn'           # 备案链接
+        beian = '豫公网安备 41092802000242号'      # 公安备案，如果你不想显示，设置为 '' 空即可
+        beiancode = '41092802000242'             # 公安备案识别码
+        weibo = '6867589681'                     # e.g. https://weibo.com/u/6867589681
+        wechat = 'imgs/bg/wechat.jpg'            # 微信二维码地址
+        zhihu = 'loveminimal'                    # e.g. https://www.zhihu.com/people/loveminimal
+        jianshu = 'eebcc2974936'                 # e.g. https://www.jianshu.com/u/eebcc2974936
+        email = 'loveminimal@163.com'
+        github = 'loveminimal'                   # e.g. https://github.com/loveminimal
+        bilibili = '11608450'                    # e.g. https://space.bilibili.com/11608450
+        douyin = 'self'                          # e.g. https://www.douyin.com/user/self
+        xiaohongshu = '60004c750000000001002065' #e.g. https://www.xiaohongshu.com/user/profile/60004c750000000001002065
+        twitter = 'loveminimal163'                 # e.g. https://twitter.com/loveminimal163
+        facebook = 'loveminimal'               # e.g. https://facebook.com/loveminimal
+        instagram = 'loveminimal163'            # e.g. https://www.instagram.com/loveminimal163
+        youtube = 'walkssi'                     # e.g. https://www.youtube.com/@walkssi
+        telegram = 'loveminimal'                # e.g. https://web.telegram.org/k/#@loveminimal
+        color = '#696969'                        # 图标颜色，默认为浅灰色
+        slogan = ''               # 联系标语，不想显示，可以置空
+
+    # 在开发环境下（http://localhost:1313/），不再启用评论插件，
+    # 如果想在开发环境下启用它，修改服务端口即可，如下
+    # hugo server -p=1314
+    [params.utterances]
+        active = false                             # 是否启用评论插件
+        repo = "loveminimal/comment"               # 输入你的仓库名称
+        issueTerm = "pathname"
+        theme = "github-light"
+        crossorigin = "anonymous"
+
+    # 在开发环境下（http://localhost:1313/），不再启用评论插件，
+    # 如果想在开发环境下启用它，修改服务端口即可，如下
+    # hugo server -p=1314
+    # ---------
+    # 在 https://giscus.app/ 中，选择配置后会自动生成，如 data-*
+    # 默认开启 data-loading="lazy"
+    [params.giscus]
+        active = true                             # 是否启用评论插件
+        repo = "loveminimal/comment"               # 输入你的仓库名称
+        repoId = "R_kgDOJNJQ8g"
+        category="General"
+        categoryId="DIC_kwDOJNJQ8s4CYl0m"
+        mapping = "title"
+        inputPosition = "bottom"
+        theme = "noborder_light"
+        crossorigin = "anonymous"
+        lang = "zh-CN"
+
+# 以下为 Markdown 解析擎的一些设置，
+# 建议保持不变
+[markup]
+    [markup.asciidocExt]
+        preserveTOC = true
+    [markup.highlight]
+        # 代码块显示风格、行号显示
+        style = "github"
+        lineNos = true
+    [markup.tableOfContents]
+        endLevel = 3
+        ordered = false
+        startLevel = 2
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true

@@ -1,0 +1,156 @@
+baseURL = 'https://walkssi.com/'
+languageCode = 'zh-cn'
+title = 'Walkssi'
+
+# 启用主题
+theme = 'virgo'
+
+hasCJKLanguage = true
+summaryLength = 80
+paginate = 11
+enableGitInfo = true
+
+[params]
+    author = 'Jack'
+    slogan = 'Life should be interesting.' # 'Life is just a joker.'
+
+    # 页面语言，默认中文
+    en = false
+    # 英文首页标题，默认 'Virgo'
+    homeTitleEn = 'Walkssi'
+    # 中文首页标题，默认 ‘一晌贪欢’
+    homeTitleZh = '遛达西'
+
+    # 激活暗色模式，
+    # 由于静态页面的限制，我们使用浏览器本地存储来记忆该状态，
+    # 如果设置为 `true` 后，默认不是暗色模式，清除浏览器缓存后刷新页面即可
+    dark = false
+
+    # 文章列表页单列显示
+    isSingleColumnOfPostList = true
+
+    # 是否显示相邻页链接
+    isShowPrevNextLink = true
+
+    # 激活页面加载时的过渡动画
+    hasActiveAnimate = true
+
+    # 激活 cool 模式，酷爽但是消耗资源也更多，
+    # 如果想更换页面背景，只需要将图片命名为 `default.jpg` 后，置于 `/static/imgs/bg` 文件夹中即可，
+    # 浏览器有缓存，更换后强制页面刷新（快捷键为 Ctrl+Shift+R）一下即可
+    hasActiveCool = false
+
+    # 展开/折叠代码块，默认不折叠，
+    # 设置为 `true` ，则默认折叠所有代码块，
+    # 提示，在移动设备中，系统设置为永久折叠代码块
+    # (该项设置不重要，完全是个人喜好)
+    hasFoldAllCodeBlocks = false
+
+    # 如下导航链接，你应该创建对应的 `.md` 文件，以生成对应的页面
+    # -----------------------------------
+    # Nav - nav.md or nav/index.md 
+    # Search - search.md or search/index.md
+    # Archive - archive.md or archive/index.md
+    # Wiki - posts/wiki.md or wiki/index.md
+    # About - about.md or about/index.md
+    # -----------------------------------
+    # 菜单选项定制，使用 `00、01、23` 等进行选项顺序调整
+    # 🐶🎉👀💡👓🐌
+    [params.menu]
+        [params.menu.00]
+            active = true
+            path = '/nav'
+            en = 'Nav'
+            zh = '导航'
+            icon = '🎯'
+        [params.menu.11]
+            active = true
+            path = '/search'
+            en = 'Search'
+            zh = '搜索'
+            icon = '🔎'
+        [params.menu.22]
+            active = true
+            path = '/posts'
+            en = 'Posts'
+            zh = '文章'
+            icon = '📜'
+        [params.menu.33]
+            active = true
+            path = '/archive'
+            en = 'Archive'
+            zh = '归档'
+            icon = '🎉'
+        [params.menu.44]
+            active = true
+            path = '/notes'
+            en = 'Notes'
+            zh = '草稿'
+            icon = '⚗️'
+        [params.menu.55]
+            active = true
+            path = '/about'
+            en = 'About'
+            zh = '关于'
+            icon = '🐌' 
+    
+    # 首页图片/文字
+    [params.img]
+        # 如果你不想显示图片，想显示一段话，只需要
+        # 设置 `noImgButWords` 为 true 即可
+        notImgButWords = false
+        # 内置了 `girl.jpg, wukong.jpg, and tux.jpg, cat.svg ……`，当然你可以
+        # 把自己喜欢图片放在 `static/imgs/` 目录中，并在 `src` 引用它,
+        # 你还可以通过 `width` 调整引入图片的显示大小，
+        # 如果，将 `width` 设置为 '' 或 0 ，
+        # 将默认使用图片自身分辨率尺寸
+        src = 'cat.svg'
+        width = 0
+        # words = "Stay hungry, Stay foolish. <br>Your time is limited, so don't waste it living someone else's life. <br>Have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary. <br>-- Steve Jobs."
+        # words = "多少事，从来急；<br>天地转，光阴迫。<br>一万年太久，只争朝夕。<br>-- 教员"
+        words = "“照顾好自己的身体和情绪，<br>这场人生，<br>你就赢了一大半，<br>其余的其余，<br>人生自有安排。”"
+
+    [params.contact]
+        icp = '豫ICP备2022002918号-1'             # 备案号，如果你不想显示，设置为 '' 空即可
+        icplink = '//beian.miit.gov.cn'           # 备案链接
+        weibo = '6867589681'                     # e.g. https://weibo.com/u/6867589681
+        wechat = 'imgs/bg/wechat.jpg'           # 微信二维码地址
+        # zhihu = 'loveminimal'                   # e.g. https://www.zhihu.com/people/loveminimal
+        # jianshu = 'eebcc2974936'                # e.g. https://www.jianshu.com/u/eebcc2974936
+        email = 'loveminimal@outlook.com'
+        github = 'loveminimal'                  # e.g. https://github.com/loveminimal
+        bilibili = '11608450'                   # e.g. https://space.bilibili.com/11608450
+        # twitter = 'loveminimal163'                 # e.g. https://twitter.com/loveminimal163
+        # facebook = 'loveminimal'              # e.g. https://facebook.com/loveminimal
+        # instagram = 'loveminimal163'          # e.g. https://www.instagram.com/loveminimal163
+        # youtube = 'UCkWIBwe3rZTDAmBs0GJngkA' # e.g. https://www.youtube.com/channel/UCkWIBwe3rZTDAmBs0GJngkA
+        # telegram = 'loveminimal'                # e.g. https://web.telegram.org/k/#@loveminimal
+        color = '#696969'                        # 图标颜色，默认为浅灰色
+        slogan = 'Find me via : )'               # 联系标语，不想显示，可以置空
+
+    # 在开发环境下（http://localhost:1313/），不再启用评论插件，
+    # 如果想在开发环境下启用它，修改服务端口即可，如下
+    # hugo server -p=1314
+    [params.utterances]
+        active = true                             # 是否启用评论插件
+        repo = "loveminimal/comment"               # 输入你的仓库名称
+        issueTerm = "pathname"
+        theme = "github-light"
+        crossorigin = "anonymous"
+
+# 以下为 Markdown 解析擎的一些设置，
+# 建议保持不变
+[markup]
+    [markup.asciidocExt]
+        preserveTOC = true
+    [markup.highlight]
+        # 代码块显示风格、行号显示
+        style = "github"
+        lineNos = false
+    [markup.tableOfContents]
+        endLevel = 3
+        ordered = false
+        startLevel = 2
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true
