@@ -59,18 +59,22 @@ body.cool {
 		}
 
 		.container-nav {
-			.toc li {
-				border: 1px solid rgba(255, 255, 255, 0);
-				@include bg-cool;
-			}
+			.toc {
+				ul > li > ul > li {
+					border: 1px solid rgba(255, 255, 255, 0);
+					@include bg-cool;
+				}
+			} 
 
 			.content-nav {
 
-				.nav li a {
+				table {
 					@include bg-cool;
+
+
 				}
 
-				.bookmark li {
+				li {
 					&:nth-child(even) {
 						@include bg-cool;
                     }
@@ -101,7 +105,6 @@ body.cool {
 			}
 		}
 
-		.container-search,
 		.container-list {
 			.list {
 				.recentf {
@@ -133,17 +136,6 @@ body.cool {
 				}
 			}
 		}
-
-		.container-search {
-			#search {
-				#sc-input {
-					&::placeholder {
-						color: $white-900;
-					}
-				}
-			}
-		}
-
 	}
 
 	// #footer { }

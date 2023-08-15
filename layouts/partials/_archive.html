@@ -1,40 +1,20 @@
 <div class="container-archive">
+    <div class="count">共有 {{ len .Pages }} 篇文章</div>
+    
     <!-- 最近文章 -->
     <div class="recentf">
         {{  range first 8 .Site.RegularPages.ByLastmod.Reverse }}
-            {{ if eq .Type "posts" }}
-            <div class="rec-post">
-                <div class="rec-post-item">
-                    <a href="{{.Permalink}}">{{ .Title }}</a>
-                </div>
+        <!-- {{.Type}} -->
+        {{ if eq .Type "page" }}
+        <div class="rec-post">
+            <div class="rec-post-item">
+                <a href="{{.Permalink}}">{{ .Title }}</a>
             </div>
-            {{ end }}
+        </div>
+        {{ end }}
         {{ end }}
     </div>
-
-	<!-- 分类 -->
-    <!-- <div class="desc">分类: </div> -->
-    <!-- 📂 📜 🔖-->
-    <div class="categories">
-        {{ range .Site.Pages.ByTitle }}
-            {{ if and (eq .Type "categories") (ne .Title "Categories") (ne .Title "Secrets")}}
-                <div class="arc-item">
-                    <div class="arc-desc">
-                        <a href="{{.Permalink}}"><img src="/imgs/icons/ctg.svg" width="16" /> {{ .Title }} <sup>{{len .Pages}}</sup></a>
-                    </div>
-
-                    <div class="arc-post">
-                        {{ range .Pages }}
-                        <div class="arc-post-item">
-                            <a href="{{.Permalink}}">{{ .Title }}</a>
-                        </div>
-                        {{ end }}
-                    </div>
-                </div>
-            {{ end}}
-        {{ end }}
-    </div>
-
+    
 	<!-- 标签 -->
     <!-- <div class="desc">标签: </div> -->
     <div class="tags">

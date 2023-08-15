@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    color: $gray-800;
+    // color: $gray-800;
     font-family: $font-family--base;
     font-size: 0.16rem;
     line-height: 1.5;
@@ -21,7 +21,7 @@ h3,
 h4,
 h5,
 h6 {
-    background: $headline-bg-color;
+    // background: $headline-bg-color;
     padding: 16px 0;
 
     a {
@@ -29,17 +29,12 @@ h6 {
         margin: 4px;
         font-size: 0.14rem;
     }
-
-    code {
-        font-family: $font-family--code;
-    }
 }
 
 h1 {
     font-size: 0.32rem;
 }
 
-// ♬ ♪ №
 h2 {
     font-size: 0.28rem;
 
@@ -83,6 +78,7 @@ h6 {
 img {
     max-width: 100%;
     border: 1px solid $img-border-color;
+    border-radius: 8px;
 }
 
 a {
@@ -107,7 +103,8 @@ hr {
 
 table {
     margin: 0.24rem 0;
-
+    width: 100%;
+    
     thead tr {
         border-top: 2px solid $table-color;
     }
@@ -141,26 +138,15 @@ table {
 
 blockquote {
     padding-left: 16px;
-    border-left: 1px solid $gray-500; //$blockquote-color;
+    border-left: 1px solid $gray-500;
     color: $blockquote-color;
 }
 
-.oh-essay,
-.summary,
-blockquote,
-p,
-td,
-li {
-    code {
-        font-size: 0.14rem;
-        font-family: $font-family--code;
-        color: $code-inline-color;
-    }
-}
-
 pre,
-pre code {
+* code {
     font-family: $font-family--code;
+    font-size: 0.14rem;
+    // color: $code-inline-color;
 }
 
 ul,
@@ -182,36 +168,25 @@ ol {
     font-family: $font-family--some;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6,
-strong,
-u,
-em,
-.oh-hl,
-.oh-essay {
-    code {
-        color: $code-inline-color;
-    }
-}
-
 .oh-essay {
     position: relative;
     margin: 16px auto;
-    // padding: 8px 0 8px 0px;
     padding-left: 16px;
-    border-left: 1px dashed $essay-color;
-    // border-left: 3px double $essay-color;
+    border-left: 0px dashed $essay-color;
     font-size: 0.15rem;
-    color: $essay-color;
-    // font-family: 'kaiti', $font-family--base;
+    // color: $essay-color;
+    
+   @include light;
+
+    padding: 16px;
+    border-radius: 8px;
 
     &:before {
-        content: '🗨️'; //'💭'; //'💬'; //'🗨️';
-        position: absolute;
-        left: -32px;// -8px; // -32px;
+        content: '💭'; //'💭'; //'💬'; //'🗨️';
+        // position: absolute;
+        // left: -32px;
+        float: left;
+        padding-right: 12px;
     }
 
     p {

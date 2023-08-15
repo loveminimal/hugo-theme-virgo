@@ -1,58 +1,64 @@
+$animation-duration: 2s;
 body.active-animate {
-    animation: fadeIn 2s;
+    animation: fadeIn $animation-duration;
+    animation: bounceInRight $animation-duration;
 
-    p {
-        animation: slideInUp 0.6s;
+    #header {
+        animation: bounceInLeft $animation-duration;
     }
 
-    .container-home {
-        .menu .item {
-            animation: slideInDown 1s;
-        }
+    // p {
+    //     animation: slideInUp 0.6s;
+    // }
 
-        .content .desc {
-            animation: slideInUp 1s;
-        }
-    }
+    // .container-home {
+    //     .menu .item {
+    //         animation: slideInDown 1s;
+    //     }
 
-    .container-nav .content-nav .nav ul {
-        animation: slideInUp 1s;
-    }
+    //     .content .desc {
+    //         animation: slideInUp 1s;
+    //     }
+    // }
 
-    .container-search {
-        #search {
-            animation: slideInLeft 1s;
-        }
+    // .container-nav .content-nav .nav ul {
+    //     animation: slideInUp 1s;
+    // }
 
-        .list .item {
-            animation: slideInUp 1s;
-        }
-    }
+    // .container-search {
+    //     #search {
+    //         animation: slideInLeft 1s;
+    //     }
 
-    .container-list .list {
-        .recentf, .item {
-            animation: slideInUp 1s;
-        }
-    }
+    //     .list .item {
+    //         animation: slideInUp 1s;
+    //     }
+    // }
 
-    .container-archive {
-        .recentf .rec-post .rec-post-item {
-            animation: slideInLeft 1s;
-        }
+    // .container-list .list {
+    //     .recentf, .item {
+    //         animation: slideInUp 1s;
+    //     }
+    // }
 
-        .categories,
-        .tags {
-            .arc-item {
-                animation: slideInUp 1s;
+    // .container-archive {
+    //     .recentf .rec-post .rec-post-item {
+    //         animation: slideInLeft 1s;
+    //     }
 
-                .arc-post .arc-post-item {
-                    animation: slideInRight 1s;
-                }
-            }
-        }
-    }
+    //     .categories,
+    //     .tags {
+    //         .arc-item {
+    //             animation: slideInUp 1s;
 
-    .container-page .toc .page-operation {
-        animation: slideInLeft 1s;
-    }
+    //             .arc-post .arc-post-item {
+    //                 animation: slideInRight 1s;
+    //             }
+    //         }
+    //     }
+    // }
+
+    // .container-page .toc .page-operation {
+    //     animation: slideInLeft 1s;
+    // }
 }

@@ -9,9 +9,10 @@
     -webkit-border-image-slice: 1;
 
     z-index: 1000;
-    position: sticky;
-    top: -66px;
-    padding: 0 $site-padding-lr;
+    // position: sticky;
+    // top: 0px;
+    // padding: 0 $site-padding-lr;
+    text-align: center;
 
     &.js-header {
         transition: .2s background-color linear;
@@ -29,33 +30,6 @@
                 position: absolute; 
                 left: 4px; 
                 top: 4px;
-            }
-        }
-
-        // 面包屑导航条
-        .container-breadcrumb-nav {
-            padding-bottom: 8px;
-
-            .breadcrumb-nav-bar {
-                display: flex;
-                font-size: 0.12rem;
-
-                a {
-                    white-space: break-spaces;
-                    overflow: hidden;
-                    height: 18px;
-
-                    display: block;
-                    color: rgba(90,41,228, .8);
-                    background: $gray-white-300;
-                    margin-right: 8px;
-                    padding: 4px 8px;
-                    border-radius: 0 12px 0 8px;
-                }
-
-                .active a {
-                    color: #5a29e4;
-                }
             }
         }
 

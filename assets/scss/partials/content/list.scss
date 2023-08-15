@@ -1,6 +1,81 @@
 .container-list {
     font-size: 0.16rem;
 
+    .toc {
+        position: fixed;
+        border-left: 1px solid $gray-300;
+        width: 260px;
+        max-height: 566px;
+        top: 156px;
+        right: 16px;
+        font-size: 0.14rem;
+        overflow: scroll;
+
+        // 滚动条宽度、颜色
+        &::-webkit-scrollbar {
+            width: 2px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: $gray-300;
+        }
+
+        // 条目节点样式
+        li {
+            list-style: none;
+            a {
+                color: $gray-600;
+                &:hover {
+                    color: $link-hover-color;
+                }
+            }
+        }
+
+        .toc-link--active {
+            color: #d14;
+        }
+
+        .page-operation {
+            display: flex;
+            position: fixed;
+            top: 126px;
+            right: 144px;
+            a {
+                img, svg {
+                    padding: 2px;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+
+        .post-list {
+            padding-left: 8px;
+
+            .count {
+                margin: 8px 0;
+            }
+
+            .item {
+                margin: 0;
+                padding: 0;
+
+                a {
+                    color: $gray-600;
+                }
+            }
+
+            .item-term {
+                margin: 0;
+                padding: 0;
+                
+                a {
+                    height: 48px;
+                    color: $gray-600;
+                }
+            }
+        }
+    }
+
     .count {
         color: $gray-600;
     }
@@ -149,6 +224,10 @@
 
     .list-single-col {
         display: block;
+        width: 776px;
+        // padding: 0 24% 0 16%;
+        margin: 0 auto;
+        
 
         .recentf {
             width: 760px;
@@ -161,5 +240,15 @@
             width: 760px;
             margin: 24px auto;
         }
+
+        .item-term {
+            width: 249px;
+        }
+    }
+
+    // 标签列表
+    .list-taxonomy {
+        display: flex;
+        min-height: 520px;
     }
 }

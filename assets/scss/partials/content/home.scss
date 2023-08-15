@@ -1,103 +1,39 @@
 .container-home {
-    font-family: $font-family--some, $font-family--base;
-
-    .menu {
-        height: 108px;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: flex-end;
-        flex-wrap: wrap;
-        font-size: 0.14rem;
-        .item {
-            a {
-                display: block;
-                margin: 4px 8px;
-                padding: 8px;
-                width: 96px;
-                background: $gray-white-400;
-                border-radius: 6px;
-                text-align: center;
-                transition: .3s padding ease;
-
-            &:hover {
-                padding: 24px 8px;
-                }
-            }
-        }
-    }
+    // font-family: $font-family--some, $font-family--base;
 
     // style of `content/_index.md`
     // some customizations of content of md
-    .content-md {
-        padding-top: 24px;
-
-        p,
-        li,
-        td {
-            & > code {
-                color: $code-inline-color;
-            }
-        }
-
-        .highlight {
-
-            margin: 16px 0;
-            border-top: 2px solid $highlight-color;
-            border-bottom: 2px solid $highlight-color;
-            padding: 2px 0;
-            font-size: 0.14rem;
-            overflow: hidden;
-            &:hover {
-                overflow: auto;
-            }
-    
-            pre {
-                padding-top: 0;
-            }
-        }
-    
-        pre {
-            font-size: 0.14rem;
-            border-top: 1px solid $highlight-color;
-            border-bottom: 1px solid $highlight-color;
-    
-            padding: 12px;
-            overflow: hidden;
-    
-            &:hover {
-                overflow: auto;
-            }
-    
-            .lang {
-                cursor: pointer;
-                margin-bottom: 16px;
-                padding: 4px 0px;
-                border-bottom: 1px dashed $gray-500;
-            }
-        }
-    
-        em {
-            font-style: italic;
-        }
-    }
 
     .content {
-        text-align: center;
         .desc {
-            img {
-                max-width: 100%;
-            }
-
-            .words {
+            .img-wrapper {
+                position: absolute;
+                top: 12px;
+                left: 50%;
+                background: #000;
+                display: flex;
+                justify-content: center;
+                border-radius: 50%;
+                padding: 5px;
+                width: 100px;
+                height: 100px;
                 box-sizing: border-box;
-                font-size: .18rem;
-                color: $gray-500;
-                max-width: 600px;
-                // min-height: 269px;
-                padding: 48px 32px;
-                border-radius: 10px;
-                margin: 120px 0 160px;
-                background: $gray-white-400;
+
+                transition: 0.5s all ease;
+
+                transform: translateX(-200%);
+
+                &:hover {
+                    box-shadow: 5px 0 6px #999;
+                    transform: translateX(-210%) rotate(360deg);
+                }
+
+                img {
+                    border-radius: 50%;
+                    max-width: 100%;
+                    height: auto;
+
+                }
             }
         }
     }

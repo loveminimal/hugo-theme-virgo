@@ -2,7 +2,7 @@
     position: relative;
     font-size: 0.16rem;
     margin: 0 auto;
-    padding: 0 24% 0 16%;
+    // padding: 0 24% 0 16%;
     max-width: 760px;
 
     .desc {
@@ -49,9 +49,10 @@
             top: 136px;
             right: 144px;
             a {
-                img {
+                img, svg {
                     padding: 2px;
-                    width: 24px;
+                    width: 20px;
+                    height: 20px;
                 }
             }
         }
@@ -102,9 +103,10 @@
 
     .highlight {
         margin: 16px 0;
-        border-top: 1px solid $highlight-color;
+        // border-top: 1px solid $highlight-color;
         // border-bottom: 2px solid $highlight-color;
-        padding: 2px 0;
+        border-radius: 8px;
+        // padding: 2px 0;
         font-size: 0.14rem;
         overflow: hidden;
         &:hover {
@@ -112,27 +114,35 @@
         }
 
         pre {
-            padding-top: 0;
+            border-radius: 0;
         }
     }
-
+    
     pre {
+        background: $gray-white-500 !important;
         font-size: 0.14rem;
-        border-top: 1px solid $highlight-color;
-        border-bottom: 1px solid $highlight-color;
+        // border-top: 1px solid $highlight-color;
+        // border-bottom: 1px solid $highlight-color;
+        border-radius: 8px;
 
-        padding: 12px 0;
+        padding: 20px 10px;
         overflow: hidden;
+        position: relative;
 
         &:hover {
             overflow: auto;
         }
 
         .lang {
-            cursor: pointer;
-            margin-bottom: 16px;
-            padding: 4px 0px;
-            border-bottom: 1px dashed $gray-200;
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 4px 12px;
+            font-family: $font-family--some;
+            font-weight: 700;
+            color: #999;
+            z-index: 9999;
+            // text-shadow: 0 0 2px #333;
         }
     }
 

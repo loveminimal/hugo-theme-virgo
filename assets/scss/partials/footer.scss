@@ -2,14 +2,50 @@
     background: $footer-bg-color;
     padding: 16px 0 32px 0;
     padding: 16px $site-padding-lr 32px;
+    margin-top: 64px;
 
     border-top: 1px solid #eee;
     .container-footer {
         clear: both;
         font-size: 0.14rem;
+        .icp {
+            a {
+                color: $link-color;
+            }
+        }
 
-        a {
-            color: $link-color;
+        .beian {
+            // width: 300px;
+            margin: 0 auto;
+            padding: 20px 0;
+            
+            display: flex;
+            justify-content: center;
+
+            a {
+                display: inline-block;
+                text-decoration: none;
+                height: 20px;
+                line-height: 20px;
+
+                padding-right: 12px;
+
+                img {
+                    float: left;
+                }
+
+                p {
+                    float: left;
+                    height: 20px;
+                    line-height: 20px;
+                    margin: 0px 0px 0px 5px;
+                    color: #939393;
+                }
+
+             
+                color: #939393;
+                
+            }
         }
     }
 }

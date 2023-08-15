@@ -1,84 +1,30 @@
 {{ define "main" }}
 <div class="container-main container-home">
-    <!-- 第一层级 -->
-    <div class="menu">
-        {{with .Site.Params.menu}}
-            <!-- 自定义 Menu -->
-            {{range .}}
-            {{if .active}}
-            <div class="item">
-                <!-- ⚓🐶🎉👀💡👓🐌 -->
-                <a href={{.path}}>
-                    {{.icon}} 
-                    {{if .Site.Params.en }}{{.en}}
-                    {{ else }}{{.zh}}
-                    {{ end }}
-                </a>
-            </div>
-            {{end}}
-            {{end}}
-        {{else}}
-            <!-- 默认 Menu -->
-            <div class="item">
-                <!-- ⚓🐶🎉👀💡👓🐌 -->
-                <a href="/nav">🎯 {{if .Site.Params.en }}Nav{{ else }}导航{{ end }}</a>
-            </div>
-
-            <div class="item">
-                <a href={{.Site.Params.menu.search.path}}>🔎 {{if .Site.Params.en }}Search{{ else }}搜索{{ end }}</a>
-            </div>
-
-            {{ range where .Site.Pages "Kind" "section" }}
-            {{ if ne .Title "Secrets" }}
-                <div class="item">
-                    <a href="{{.Permalink}}">📜 {{if .Site.Params.en }}{{.Title}}{{ else }}文章{{ end }}</a>
-                </div>
-            {{ end }}
-            {{ end }}
-
-            <div class="item">
-                <a href="/archive">🎉 {{if .Site.Params.en }}Archive{{ else }}归档{{ end }}</a>
-            </div>
-
-            <div class="item">
-                <a href="/posts/wiki">🚀 {{if .Site.Params.en }}Wiki{{ else }}百科{{ end }}</a>
-            </div>
-
-            {{ if .Site.Params.menu.about }}
-            <div class="item">
-                <a href="/about">🐌 {{if .Site.Params.en }}About{{ else }}关于{{ end }}</a>
-            </div>
-            {{ end }}
-        {{end}}
-
-
-        {{ range where .Site.Pages "Kind" "taxonomy" }}
-            {{ if and (ne .Title "Categories") (ne .Title "Tags")}}
-            <div class="item">
-                <a href="{{.Permalink}}">{{.Title}}</a>
-            </div>
-            {{ end }}
-        {{ end }}
-    </div>
-
 <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md-->
    <div class="content-md">
        {{.Content}}
    </div>
 
-    <div class="content" style="display: normal;">
-        <div class="desc" style="display: normal;">
-            {{ if .Site.Params.img.notImgButWords }} 
-                <div class="words">{{ .Site.Params.img.words | markdownify }}</div>
-            {{ else if .Site.Params.img.src }}
-                <img src="/imgs/{{ .Site.Params.img.src }}" width="{{ with .Site.Params.img.width }}{{.}}{{end}}" />
-            {{ else }}
-                <img src="/imgs/tux.jpg" width="880" />
-            {{ end }}
-        </div>
+    <!-- {{- partial "partials/_media.html" . -}} -->
+    {{- partial "partials/_contact.html" . -}}
 
-        {{- partial "partials/_contact.html" . -}}
+    <div class="content">
+        <div class="desc">
+            <a href="{{ with .Site.Params.img.link }}{{.}}{{else}}/about{{end}}">
+                <div class="img-wrapper" style="background: {{ with .Site.Params.img.background }}{{.}}{{end}};">
+                    {{if .Site.Params.img.src }}
+                    <img src="/imgs/{{ .Site.Params.img.src }}" width="{{ with .Site.Params.img.width }}{{.}}{{end}}" />
+                    {{ else }}
+                    <img src="/imgs/cat.svg" width="100" />
+                    {{ end }}
+                </div>
+            </a>
+        </div>
     </div>
+    <!-- <div class="count">共有 {{ len .Pages }} 篇文章</div> -->
+    {{- partial "partials/_archive.html" . -}}
+
+
 
 </div>
 {{ end }}
