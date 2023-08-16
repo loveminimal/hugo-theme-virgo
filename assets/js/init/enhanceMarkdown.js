@@ -37,7 +37,7 @@ export default function() {
 
 	// 标识渲染 Obsidian 等 Wiki 语法的图片、链接
 	// 支持中文路径
-	$('#content').each((idx, item) => {
+	$('.content, .list').each((idx, item) => {
 		// console.log(item.outerHTML)
 		// console.log(item.innerHTML)
 		let _innerHtml = item.innerHTML;
