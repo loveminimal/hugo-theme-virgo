@@ -35,7 +35,7 @@ enableGitInfo = true
         # 将 background 设置为 ''，默认为 `#000`
         # ！ 为保证显示效果，建议选用 1：1 比例图片
         # src = 'cat.svg'
-        src = 'messi.png'
+        src = 'messi1.png'
         background = '#0003'
         # 为该图片附加一个点击链接功能，缺省为 `/about`，当然
         # 你也可以定义为任何你相要的超链接
@@ -56,6 +56,7 @@ enableGitInfo = true
         douyin = 'self'                          # e.g. https://www.douyin.com/user/self
         xiaohongshu = '60004c750000000001002065' #e.g. https://www.xiaohongshu.com/user/profile/60004c750000000001002065
         twitter = 'loveminimal163'                 # e.g. https://twitter.com/loveminimal163
+        mastodon = 'loveminimal'                   #e.g. https://mastodon.social/@loveminimal
         facebook = 'loveminimal'               # e.g. https://facebook.com/loveminimal
         instagram = 'loveminimal163'            # e.g. https://www.instagram.com/loveminimal163
         youtube = 'walkssi'                     # e.g. https://www.youtube.com/@walkssi
