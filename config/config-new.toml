@@ -44,25 +44,26 @@ enableGitInfo = true
     [params.contact]
         icp = '豫ICP备2023017189号-1'             # 备案号，如果你不想显示，设置为 '' 空即可
         icplink = '//beian.miit.gov.cn'           # 备案链接
-        beian = '豫公网安备 41092802000242号'      # 公安备案，如果你不想显示，设置为 '' 空即可
-        beiancode = '41092802000242'             # 公安备案识别码
-        weibo = '6867589681'                     # e.g. https://weibo.com/u/6867589681
-        wechat = 'imgs/bg/wechat.jpg'            # 微信二维码地址
-        zhihu = 'loveminimal'                    # e.g. https://www.zhihu.com/people/loveminimal
-        jianshu = 'eebcc2974936'                 # e.g. https://www.jianshu.com/u/eebcc2974936
+        beian = '豫公网安备 41092802000242号'     # 公安备案，如果你不想显示，设置为 '' 空即可
+        beiancode = '41092802000242'              # 公安备案识别码
+        weibo = '6867589681'                      # e.g. https://weibo.com/u/6867589681
+        wechat = 'imgs/bg/wechat.jpg'             # 微信二维码地址
+        zhihu = 'loveminimal'                     # e.g. https://www.zhihu.com/people/loveminimal
+        jianshu = 'eebcc2974936'                  # e.g. https://www.jianshu.com/u/eebcc2974936
         email = 'loveminimal@163.com'
-        github = 'loveminimal'                   # e.g. https://github.com/loveminimal
-        bilibili = '11608450'                    # e.g. https://space.bilibili.com/11608450
-        douyin = 'self'                          # e.g. https://www.douyin.com/user/self
-        xiaohongshu = '60004c750000000001002065' #e.g. https://www.xiaohongshu.com/user/profile/60004c750000000001002065
-        twitter = 'loveminimal163'                 # e.g. https://twitter.com/loveminimal163
-        mastodon = 'loveminimal'                   #e.g. https://mastodon.social/@loveminimal
-        facebook = 'loveminimal'               # e.g. https://facebook.com/loveminimal
-        instagram = 'loveminimal163'            # e.g. https://www.instagram.com/loveminimal163
-        youtube = 'walkssi'                     # e.g. https://www.youtube.com/@walkssi
-        telegram = 'loveminimal'                # e.g. https://web.telegram.org/k/#@loveminimal
-        color = '#696969'                        # 图标颜色，默认为浅灰色
-        slogan = ''               # 联系标语，不想显示，可以置空
+        github = 'loveminimal'                    # e.g. https://github.com/loveminimal
+        bilibili = '11608450'                     # e.g. https://space.bilibili.com/11608450
+        douyin = 'self'                           # e.g. https://www.douyin.com/user/self
+        xiaohongshu = '60004c750000000001002065'  # e.g. https://www.xiaohongshu.com/user/profile/60004c750000000001002065
+        reddit = 'walkssi'                        # e.g. https://www.reddit.com/user/walkssi
+        twitter = 'loveminimal163'                # e.g. https://twitter.com/loveminimal163
+        mastodon = 'loveminimal'                  #e.g. https://mastodon.social/@loveminimal
+        facebook = 'loveminimal'                  # e.g. https://facebook.com/loveminimal
+        instagram = 'loveminimal163'              # e.g. https://www.instagram.com/loveminimal163
+        youtube = 'walkssi'                       # e.g. https://www.youtube.com/@walkssi
+        telegram = 'loveminimal'                  # e.g. https://web.telegram.org/k/#@loveminimal
+        color = '#696969'                         # 图标颜色，默认为浅灰色
+        slogan = ''                               # 联系标语，不想显示，可以置空
 
     # https://utteranc.es/
     # 在开发环境下（http://localhost:1313/），不再启用评论插件，
