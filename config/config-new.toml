@@ -12,8 +12,8 @@ enableGitInfo = true
 
 [params]
     author = 'Jack'
-    slogan = 'Life should be interesting.' # 'Life is just a joker.'
-
+    slogan = 'Life should be interesting.'  # 'Life is just a joker.'
+    startDate = 2016                        # 'Copyright © 2016 - now'
     # 激活页面加载时的过渡动画
     hasActiveAnimate = true
 
@@ -47,7 +47,7 @@ enableGitInfo = true
         beian = '豫公网安备 41092802000242号'     # 公安备案，如果你不想显示，设置为 '' 空即可
         beiancode = '41092802000242'              # 公安备案识别码
         weibo = '6867589681'                      # e.g. https://weibo.com/u/6867589681
-        wechat = 'imgs/bg/wechat.jpg'             # 微信二维码地址
+        # wechat = 'imgs/bg/wechat.jpg'             # 微信二维码地址
         zhihu = 'loveminimal'                     # e.g. https://www.zhihu.com/people/loveminimal
         jianshu = 'eebcc2974936'                  # e.g. https://www.jianshu.com/u/eebcc2974936
         email = 'loveminimal@163.com'
@@ -55,10 +55,10 @@ enableGitInfo = true
         bilibili = '11608450'                     # e.g. https://space.bilibili.com/11608450
         douyin = 'self'                           # e.g. https://www.douyin.com/user/self
         xiaohongshu = '60004c750000000001002065'  # e.g. https://www.xiaohongshu.com/user/profile/60004c750000000001002065
-        reddit = 'walkssi'                        # e.g. https://www.reddit.com/user/walkssi
+        # reddit = 'walkssi'                        # e.g. https://www.reddit.com/user/walkssi
         twitter = 'loveminimal163'                # e.g. https://twitter.com/loveminimal163
-        mastodon = 'loveminimal'                  #e.g. https://mastodon.social/@loveminimal
-        facebook = 'loveminimal'                  # e.g. https://facebook.com/loveminimal
+        # mastodon = 'loveminimal'                  #e.g. https://mastodon.social/@loveminimal
+        # facebook = 'loveminimal'                  # e.g. https://facebook.com/loveminimal
         instagram = 'loveminimal163'              # e.g. https://www.instagram.com/loveminimal163
         youtube = 'walkssi'                       # e.g. https://www.youtube.com/@walkssi
         telegram = 'loveminimal'                  # e.g. https://web.telegram.org/k/#@loveminimal
@@ -70,8 +70,8 @@ enableGitInfo = true
     # 如果想在开发环境下启用它，修改服务端口即可，如下
     # hugo server -p=1314
     [params.utterances]
-        active = false                             # 是否启用评论插件
-        repo = "loveminimal/comment"               # 输入你的仓库名称
+        active = false                            # 是否启用评论插件
+        repo = "loveminimal/comment"              # 输入你的仓库名称
         issueTerm = "pathname"
         theme = "github-light"
         crossorigin = "anonymous"
@@ -84,7 +84,7 @@ enableGitInfo = true
     # 默认开启 data-loading="lazy"
     [params.giscus]
         active = true                             # 是否启用评论插件
-        repo = "loveminimal/comment"               # 输入你的仓库名称
+        repo = "loveminimal/comment"              # 输入你的仓库名称
         repoId = "R_kgDOJNJQ8g"
         category="General"
         categoryId="DIC_kwDOJNJQ8s4CYl0m"

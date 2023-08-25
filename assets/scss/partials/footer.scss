@@ -17,7 +17,7 @@
         .beian {
             // width: 300px;
             margin: 0 auto;
-            padding: 20px 0;
+            padding: 20px 0 4px;
             
             display: flex;
             justify-content: center;
@@ -46,6 +46,16 @@
                 color: #939393;
                 
             }
+        }
+
+        .info {
+            color: #939393;
+            text-align: center;
+
+            a {
+                color: #939393;
+            }
+            
         }
     }
 }
