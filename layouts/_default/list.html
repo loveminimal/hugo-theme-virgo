@@ -15,7 +15,7 @@
             {{ end }}
             
             {{ range .Paginator.Pages }}
-                {{if ne .Title "Secrets" }}
+                {{if and .Title (ne .Title "Secrets") }}
                 <!-- 📄 ➣ 📂 -->
                 <div class="{{with .IsPage}}item{{ else }}item-term{{end}}" >
                    
@@ -40,7 +40,7 @@
 
     <div class="list list-single-col {{if eq .Kind "taxonomy"}}list-taxonomy{{end}}">
     {{ range .Paginator.Pages }}
-        {{if ne .Title "Secrets" }}
+        {{if and .Title (ne .Title "Secrets") }}
         <!-- 📄 ➣ 📂 -->
         <div class="{{with .IsPage}}item{{ else }}item-term{{end}}" >
            
