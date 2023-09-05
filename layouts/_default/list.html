@@ -4,6 +4,7 @@
         <div class="page-operation">
             <div><a href="/"><img src="/imgs/icons/home-2.svg" alt=""></a></div>
             <div><a href="/nav"><img src="/imgs/icons/iov-navigate-1.svg" alt=""></a></div>
+            <div><a href="/tags"><img src="/imgs/icons/treetags.svg" alt=""></a></div>
             <div><a href="#"><img src="/imgs/icons/up2.svg" alt=""></a></div>
         </div>
 
@@ -14,7 +15,7 @@
             <div class="count">标签列表： {{ len .Pages }} 枚</div>
             {{ end }}
             
-            {{ range .Paginator.Pages }}
+            {{ range .Paginator.Pages.ByTitle }}
                 {{if and .Title (ne .Title "Secrets") }}
                 <!-- 📄 ➣ 📂 -->
                 <div class="{{with .IsPage}}item{{ else }}item-term{{end}}" >
