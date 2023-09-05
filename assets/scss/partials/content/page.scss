@@ -116,6 +116,13 @@
         pre {
             border-radius: 0;
         }
+
+        table {
+            overflow: hidden !important;
+            &:hover {
+                overflow: auto !important;
+            }
+        }
     }
     
     pre {
