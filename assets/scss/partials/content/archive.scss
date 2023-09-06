@@ -29,12 +29,13 @@
         display: flex;
         flex-wrap: wrap;
         // margin-top: 32px;
+        box-sizing: border-box;
 
         .arc-item {
             padding: 4px;
             background: $gray-100;
-            margin: 12px 12px 6px 0px;
-            width: 32.3%;
+            margin: 4px;
+            width: 32.6%;
             box-sizing: border-box;
             // backdrop-filter: blur(10px);
 
