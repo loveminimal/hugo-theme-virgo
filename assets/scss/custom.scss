@@ -32,11 +32,15 @@ h6 {
 }
 
 h1 {
-    font-size: 0.32rem;
+    &, & code {
+        font-size: 0.32rem;
+    }
 }
 
 h2 {
-    font-size: 0.28rem;
+    &, & code {
+        font-size: 0.28rem;
+    }
 
     &:before {
         content: '♪² ';
@@ -44,7 +48,9 @@ h2 {
 }
 
 h3 {
-    font-size: 0.24rem;
+    &, & code {
+        font-size: 0.24rem;
+    }
 
     &:before {
         content: '♪³ ';
@@ -52,7 +58,9 @@ h3 {
 }
 
 h4 {
-    font-size: 0.2rem;
+    &, & code {
+        font-size: 0.2rem;
+    }
 
     &:before {
         content: '♪⁴ ';
@@ -60,7 +68,9 @@ h4 {
 }
 
 h5 {
-    font-size: 0.2rem;
+    &, & code {
+        font-size: 0.2rem;
+    }
 
     &:before {
         content: '♪⁵ ';
@@ -68,7 +78,9 @@ h5 {
 }
 
 h6 {
-    font-size: 0.2rem;
+    &, & code {
+        font-size: 0.2rem;
+    }
 
     &:before {
         content: '♪⁶ ';
