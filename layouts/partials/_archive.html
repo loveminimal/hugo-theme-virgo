@@ -27,10 +27,13 @@
 
                     <div class="arc-post">
                         {{ range .Pages }}
+                        <!-- 适配 Obsidian 的 Templater 插件的 Front Matter -->
+                        {{if (ne .Title "<% tp.file.title %>")}}
                         <div class="arc-post-item">
                             <a href="{{.Permalink}}">{{ .Title }}</a>
                         </div>
                         {{ end }}
+                        {{end}}
                     </div>
                 </div>
             {{ end}}
