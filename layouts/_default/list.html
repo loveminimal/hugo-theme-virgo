@@ -16,7 +16,7 @@
             {{ end }}
             
             {{ range .Paginator.Pages.ByTitle }}
-                {{if and .Title (ne .Title "Secrets") }}
+                {{if and .Title (ne .Title "<% tp.file.title %>") (ne .Title "Secrets") }}
                 <!-- 📄 ➣ 📂 -->
                 <div class="{{with .IsPage}}item{{ else }}item-term{{end}}" >
                    
