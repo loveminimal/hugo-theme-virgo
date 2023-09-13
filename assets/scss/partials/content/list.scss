@@ -165,6 +165,10 @@
                 font-size: .15rem;
                 padding: 8px;
                 color: $gray-600;
+
+                h1, h2, h3, h4, h5, h6 {
+                    font-size: .16rem;
+                }
             }
 
 			.read-more {
