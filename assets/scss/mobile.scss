@@ -109,9 +109,15 @@
                     display: flex;
                     width: 100%;
                     padding: 0;
+                    border-left-width: 0;
 
                     .item {
                         width: 100%;
+                        overflow: hidden;
+
+                        .desc {
+                            display: block;
+                        }
                     }
                 }
             }

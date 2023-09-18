@@ -231,6 +231,8 @@
         width: 776px;
         // padding: 0 24% 0 16%;
         margin: 0 auto;
+
+        border-left: 2px solid $gray-300;
         
 
         .recentf {
@@ -243,6 +245,26 @@
         .item {
             width: 700px;
             margin: 24px auto;
+
+            // border-top: 1px solid #333;
+            position: relative;
+            overflow: visible;
+
+            .desc {
+                display: none;
+            }
+
+            .c-date {
+                position: absolute;
+                top: 8px;
+                left: -160px;
+                // z-index: 99;
+                // font-size: .18rem;
+                color: $gray-500;
+                // font-weight: 900;
+                // font-style: italic;
+
+            }
         }
 
         .item-term {

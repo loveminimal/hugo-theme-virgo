@@ -44,7 +44,8 @@
         {{if and .Title (ne .Title "Secrets") (ne .Title "<% tp.file.title %>")}}
         <!-- 📄 ➣ 📂 -->
         <div class="{{with .IsPage}}item{{ else }}item-term{{end}}" >
-           
+            <div class="c-date">{{ .Date.Format "2006-01-02" }}</div>
+
             <!-- if eq .Kind "page" -->
             <a href="{{.Permalink}}">
                 <span>{{ with .IsPage}} <img src="/imgs/icons/post-3.svg" width="16" /> {{else}} <img src="/imgs/icons/ctg.svg" width="16" /> {{end}}</span>
