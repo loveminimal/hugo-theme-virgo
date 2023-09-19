@@ -3,6 +3,7 @@
     
     <!-- 最近文章 -->
     <div class="recentf">
+        <span class="desc">- 最近更新 ➭</span>
         {{  range first 8 .Site.RegularPages.ByLastmod.Reverse }}
         <!-- {{.Type}} -->
         {{ if eq .Type "page" }}

@@ -232,7 +232,7 @@
         // padding: 0 24% 0 16%;
         margin: 0 auto;
 
-        border-left: 2px solid $gray-300;
+        border-left: 2px dotted $gray-300;
         
 
         .recentf {
@@ -276,5 +276,6 @@
     .list-taxonomy {
         display: flex;
         min-height: 520px;
+        border-left-width: 0;
     }
 }

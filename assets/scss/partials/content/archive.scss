@@ -12,6 +12,11 @@
         flex-wrap: wrap;
         box-sizing: border-box;
 
+        .desc {
+            font-size: .12rem;
+            padding: 8px;
+        }
+
         .rec-post .rec-post-item {
             a {
                 font-size: .14rem;

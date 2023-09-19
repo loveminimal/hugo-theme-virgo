@@ -44,7 +44,7 @@
         {{if and .Title (ne .Title "Secrets") (ne .Title "<% tp.file.title %>")}}
         <!-- 📄 ➣ 📂 -->
         <div class="{{with .IsPage}}item{{ else }}item-term{{end}}" >
-            <div class="c-date">{{ .Date.Format "2006-01-02" }}</div>
+            {{if .IsPage}}<div class="c-date">{{ .Date.Format "2006-01-02" }}</div>{{end}}
 
             <!-- if eq .Kind "page" -->
             <a href="{{.Permalink}}">
