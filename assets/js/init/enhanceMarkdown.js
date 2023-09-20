@@ -81,7 +81,7 @@ export default function() {
 						_relLink = _desc.replace('#','/#')
 						
 						// 2.2
-						_relLink = _relLink.replace(/\./g, '')
+						_relLink = _relLink.replace(/[\.\、]/g, '')
 					}
 				}
 
