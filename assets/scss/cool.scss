@@ -69,9 +69,24 @@ body.cool {
 			.content-nav {
 
 				table {
-					@include bg-cool;
+					// @include bg-cool;
 
 
+				}
+
+				table {
+					tr:nth-child(odd) {
+						a {
+							background: $white-500;
+						}
+					}
+		
+					td {
+						a {
+							// width: 136px;
+							background: $white-500;
+						}
+					}
 				}
 
 				li {
