@@ -121,6 +121,14 @@ body.cool {
 		}
 
 		.container-list {
+			// .toc {
+			// 	.list {
+			// 		.item, .item-term {
+			// 			margin-bottom: 8px;
+			// 		}
+			// 	}
+			// }
+
 			.list {
 				.recentf {
 					@include bg-cool;
