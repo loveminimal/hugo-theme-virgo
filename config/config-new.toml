@@ -9,6 +9,7 @@ hasCJKLanguage = true
 summaryLength = 80
 paginate = 10000
 enableGitInfo = true
+timeZone = 'Asia/Shanghai'
 
 [params]
     author = 'Jack'
