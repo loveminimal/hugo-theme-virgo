@@ -1,10 +1,8 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-draft: false
-categories: [_Misc]
-tags: []
-card: false
-weight: 0
+aliases: 
+tags: [_Misc]
+date: {{ .Date | time.Format "2006-01-02" }}
+time: {{ .Date | time.Format "15:04" }}
 ---
 
