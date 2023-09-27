@@ -30,7 +30,21 @@ body.cool {
 	// }
 
 	// 设置 body 遮罩
-	&::after {
+	// &::after {
+	// 	content: '';
+	// 	display: block;
+	// 	width: 100%;
+	// 	min-height: 100%;
+	// 	position: fixed;
+	// 	top: 0;
+	// 	left: 0;
+	// 	z-index: -1;
+	// 	background-color: rgba(255, 255, 255, .81);	// $white-900;
+	// 	// background: $white-700;
+	// 	// backdrop-filter: saturate(180%) blur(3px);
+	// }
+
+	.cool-after {
 		content: '';
 		display: block;
 		width: 100%;
@@ -42,7 +56,6 @@ body.cool {
 		background-color: rgba(255, 255, 255, .81);	// $white-900;
 		// background: $white-700;
 		// backdrop-filter: saturate(180%) blur(3px);
-
 	}
 	
 	#header {
