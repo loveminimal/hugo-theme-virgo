@@ -2,6 +2,7 @@
     font-size: 0.16rem;
 
     .toc {
+        padding-right: 6px;
         position: fixed;
         border-left: 1px solid $gray-300;
         width: 260px;
@@ -78,7 +79,7 @@
 
         .list {
             .item, .item-term {
-                margin-bottom: 4px;
+                margin-bottom: 8px;
             }
         }
     }
@@ -148,7 +149,7 @@
                 display: block;
                 background: $gray-white-200;
 
-                margin-bottom: 8px;
+                // margin-bottom: 8px;
                 padding: 6px 4px;
                 white-space: nowrap;
                 overflow: hidden;
@@ -203,11 +204,11 @@
             width: $item-width;
             a {
                 box-sizing: border-box;
-                height: 80px;
+                height: 86px;
                 display: block;
                 background: $gray-white-300;
 
-                margin-bottom: 8px;
+                // margin-bottom: 8px;
                 padding: 8px;
                 white-space: nowrap;
                 overflow: hidden;
