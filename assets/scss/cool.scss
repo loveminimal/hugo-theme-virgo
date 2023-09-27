@@ -6,8 +6,7 @@
 body.cool {
 	background-color: $white-000;
 
-	&::before {
-		content: '';
+	.cool-before {
 		display: block;
 		width: 100%;
 		min-height: 100%;
@@ -17,6 +16,18 @@ body.cool {
 		z-index: -1;
 		background: url('/imgs/bg/default.jpg') center center/cover no-repeat fixed;
 	}
+
+	// &::before {
+	// 	content: '';
+	// 	display: block;
+	// 	width: 100%;
+	// 	min-height: 100%;
+	// 	position: fixed;
+	// 	top: 0;
+	// 	left: 0;
+	// 	z-index: -1;
+	// 	background: url('/imgs/bg/default.jpg') center center/cover no-repeat fixed;
+	// }
 
 	// 设置 body 遮罩
 	&::after {
