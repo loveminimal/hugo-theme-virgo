@@ -19,9 +19,14 @@ timeZone = 'Asia/Shanghai'
     hasActiveAnimate = true
 
     # 激活 cool 模式，酷爽但是消耗资源也更多，
-    # 如果想更换页面背景，只需要将图片命名为 `default.jpg` 后，置于 `/static/imgs/bg` 文件夹中即可，
-    # 浏览器有缓存，更换后强制页面刷新（快捷键为 Ctrl+Shift+R）一下即可
-    hasActiveCool = false
+    # 浏览器有缓存，更换后强制页面刷新（快捷键为 Ctrl+Shift+R）一下或重启本地服务即可，
+    # ------------------
+    # <更新> 现在可以直接在这里修改背景壁纸并调整壁纸遮罩透明度
+    # - coolBackground 文件位于 `/static/imgs/bg` 文件夹中，默认为 `default.jpg`
+    # - coolOpacity 默认为 0.81 ，在 0 ~ 1 之间
+    hasActiveCool = true
+    coolBackground = 'foxgirl.jpg'
+    coolOpacity = 0.81
     
     # 首页图片/文字
     [params.img]

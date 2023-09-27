@@ -2,7 +2,7 @@
 <html lang="zh-CN">
     {{- partial "head.html" . -}}
     <body class="{{ with .Site.Params.hasActiveAnimate }}active-animate{{ end }} {{ with .Site.Params.hasActiveCool }}cool{{ end }}">
-        <div class="cool-before" style="{{ if .Site.Params.hasActiveCool }}background: url('/imgs/bg/{{.Site.Params.coolBackground}}') center center/cover no-repeat fixed;{{ end }}"></div>
+        <div class="cool-before" style="{{ if .Site.Params.hasActiveCool }}background: url('/imgs/bg/{{with .Site.Params.coolBackground}}{{.}}{{else}}default.jpg{{end}}') center center/cover no-repeat fixed;{{ end }}"></div>
         <div id="header">
             {{- partial "header.html" . -}}
         </div>
@@ -12,6 +12,6 @@
         <div id="footer">
             {{- partial "footer.html" . -}}
         </div>
-        <div class="cool-after" style="{{ if .Site.Params.hasActiveCool }}background-color: rgba(255, 255, 255, {{.Site.Params.coolOpacity}});{{end}}"></div>
+        <div class="cool-after" style="{{ if .Site.Params.hasActiveCool }}background-color: rgba(255, 255, 255, {{with .Site.Params.coolOpacity}}{{.}}{{else}}0.81{{end}});{{end}}"></div>
     </body>
 </html>
