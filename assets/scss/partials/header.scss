@@ -52,7 +52,6 @@
 
 
         .right {
-            max-width: 30%;
             .some {
                 position: relative;
                 padding: 4px 0px 6px 0px;
@@ -64,6 +63,12 @@
             #toc {
                 display: none;
             }
+        }
+    }
+    
+    &.header-home {
+        .container-header .right {
+            max-width: 30%;
         }
     }
 }
