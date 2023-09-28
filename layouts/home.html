@@ -9,7 +9,7 @@
     {{- partial "partials/_contact.html" . -}}
 
     <div class="content">
-        <div class="desc">
+        <!-- <div class="desc">
             <a href="{{ with .Site.Params.img.link }}{{.}}{{else}}/about{{end}}">
                 <div class="img-wrapper" style="background: {{ with .Site.Params.img.background }}{{.}}{{end}};">
                     {{if .Site.Params.img.src }}
@@ -19,7 +19,7 @@
                     {{ end }}
                 </div>
             </a>
-        </div>
+        </div> -->
     </div>
     <!-- <div class="count">共有 {{ len .Pages }} 篇文章</div> -->
     {{- partial "partials/_archive.html" . -}}

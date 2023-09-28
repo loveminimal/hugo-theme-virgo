@@ -26,26 +26,34 @@
         #header {
             padding: 0 8px;
 
-            .title {
-                white-space: nowrap;
-                overflow: hidden;
-                &:hover {
-                    overflow: auto;
-                }
-            }
-
+            
             .container-header {
-                #toc {
-                    z-index: 10000;
-                    position: fixed;
-                    right: 0px;
-                    top: 81px;
-                    display: initial;
-                    background: $white-900;
-                    width: 36px;
-                    border-radius: 12px 0 0 12px;
-                    padding-left: 12px;
-                    box-shadow: -1px 1px 1px #ccc;
+                .left {
+                    display: none;
+                }
+                
+                .right {
+                    max-width: 100%;
+                    .title {
+                        white-space: nowrap;
+                        overflow: hidden;
+                        &:hover {
+                            overflow: auto;
+                        }
+                    }
+
+                    #toc {
+                        z-index: 10000;
+                        position: fixed;
+                        right: 0px;
+                        top: 81px;
+                        display: initial;
+                        background: $white-900;
+                        width: 36px;
+                        border-radius: 12px 0 0 12px;
+                        padding-left: 12px;
+                        box-shadow: -1px 1px 1px #ccc;
+                    }
                 }
             }
 
@@ -135,6 +143,10 @@
 
             .container-page {
                 padding: 0 8px 16px;
+
+                .desc {
+                    font-size: .13rem;
+                }
 
                 .toc {
                     @include toc;
