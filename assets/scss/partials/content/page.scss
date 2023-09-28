@@ -114,6 +114,11 @@
             overflow: auto;
         }
 
+        // 代码块背景半透明
+        > div {
+            background-color: #fff0 !important;
+        }
+
         pre {
             border-radius: 0;
         }
