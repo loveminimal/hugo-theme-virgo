@@ -55,8 +55,13 @@
                         box-shadow: -1px 1px 1px #ccc;
                     }
                 }
-            }
 
+            }
+            &.header-home {
+                .container-header .right {
+                    max-width: 100%;
+                }
+            }
         }
 
         #content {
