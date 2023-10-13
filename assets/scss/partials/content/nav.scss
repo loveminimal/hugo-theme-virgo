@@ -43,6 +43,7 @@
 
     }
 
+    $oh-my-icon: '〰️';
     .content-nav {
         h3 {
             font-size: .16rem;
@@ -50,7 +51,10 @@
             padding-bottom: 16px;
             color: #666b;
             &::before {
-                content: '';
+                content: $oh-my-icon$oh-my-icon$oh-my-icon' ';
+            }
+            &::after {
+                content: ' '$oh-my-icon$oh-my-icon$oh-my-icon;
             }
         }
 
