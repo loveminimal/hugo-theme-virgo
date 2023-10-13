@@ -43,18 +43,19 @@
 
     }
 
-    $oh-my-icon: '〰️';
     .content-nav {
         h3 {
-            font-size: .16rem;
+            text-align: right;
+            font-size: .12rem;
+
             padding-top: 0;
-            padding-bottom: 16px;
-            color: #666b;
+            padding-bottom: 6px;
+            color: #6669;
             &::before {
-                content: $oh-my-icon$oh-my-icon$oh-my-icon' ';
+                content: '◺ '; // 『』◝◟◜◞◸◹◺◿ˇˆ
             }
             &::after {
-                content: ' '$oh-my-icon$oh-my-icon$oh-my-icon;
+                content: ' ◝';
             }
         }
 
