@@ -13,10 +13,11 @@ let initColor = {
 };
 
 // 初始化主题色（当前尚未设置 `dark` 本地存储）
-if (!getDarkOfLocalStorage()) {
-    enable(initColor);
-    setDarkOfLocalStorage('on');
-}
+// ❌ 废弃，默认设置亮色
+// if (!getDarkOfLocalStorage()) {
+//     enable(initColor);
+//     setDarkOfLocalStorage('on');
+// }
 
 // 若存在本地存储，且状态：
 // 为 `on`  ，激活暗色模式，
