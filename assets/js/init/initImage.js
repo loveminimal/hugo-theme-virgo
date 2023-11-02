@@ -13,7 +13,7 @@ export default function initImage() {
 		let src = $(item).attr('src');
 		// console.log(src);
 
-		if (!src.startsWith('/')) {
+		if (!src.startsWith('http') && !src.startsWith('/')) {
 			// console.log('!!!!!!!!!');
 			$(item).attr('src', '/' + src);
 		}
