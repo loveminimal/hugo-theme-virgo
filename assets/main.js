@@ -6,8 +6,8 @@ import enhanceOrgMode from './js/init/enhanceOrgMode';
 import enhanceMarkdown from './js/init/enhanceMarkdown';
 
 greet();
-initImage();
 enhanceOrgMode();
 initCodeBlock();
 enhanceMarkdown();
+initImage();
 initEventBinding();

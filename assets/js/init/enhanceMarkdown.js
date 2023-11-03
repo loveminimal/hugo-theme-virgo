@@ -43,15 +43,15 @@ export default function() {
 		let _innerHtml = item.innerHTML;
 
 		if(_innerHtml.indexOf('[[') > -1) {
-			// console.log('>>>', _innerHtml)
+			console.log('>>>', _innerHtml)
 
 			// 1. 先匹配替换图片
 			// let _re = /!\[\[(\w*\/?\w+\.\w+)\|?(\d*)\]\]/
-			let _re = /!\[\[(([\/\-\.\*\$\&]|\w|\s|[^\x00-\xff])*\.\w+)\s*\|?\s*(\d*)\]\]/g;
+			let _re = /!\[\[(([\/\-\.\*\$\&\:]|\w|\s|[^\x00-\xff])*\.\w+)\s*\|?\s*(\d*)\]\]/g;
 			// let _str = _innerHtml.match(_re, "$1, $3");
 			// 此处默认图片链接为根引用方式，即 /assets/*
 			// let _str = _innerHtml.replace(_re, '<img src="$1" alt="$1" width="$3" />');
-			let _str = _innerHtml.replace(_re, '<img src="/$1" alt="$1" width="$3" />');
+			let _str = _innerHtml.replace(_re, '<img src="$1" alt="$1" width="$3" />');
 			// item.innerHTML = _str;
 
 			// 2. 后匹配替换链接

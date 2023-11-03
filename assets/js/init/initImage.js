@@ -15,6 +15,7 @@ export default function initImage() {
 
 		if (!src.startsWith('http') && !src.startsWith('/')) {
 			// console.log('!!!!!!!!!');
+			// console.log(src);
 			$(item).attr('src', '/' + src);
 		}
 
