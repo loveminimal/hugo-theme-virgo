@@ -19,6 +19,12 @@ export default function initImage() {
 			$(item).attr('src', '/' + src);
 		}
 
+		// 修复 ![xy|300](http://xxx.com/xx.jpg) 格式图片尺寸显示问题
+		let _alt = $(item).attr('alt') || '';
+		if (_alt.indexOf('|') > -1) {
+			$(item).attr('width', _alt.split('|')[1])
+		}
+
 	})
 }
 
