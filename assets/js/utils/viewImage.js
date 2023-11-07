@@ -77,8 +77,8 @@ export default function viewImage(e) {
 
 				var _wiWidth = document.getElementById('img').offsetWidth;
 				var _screenWidth = document.getElementById('mask').offsetWidth;
-				// console.log(_wiWidth)
-				// console.log(_screenWidth)
+				console.log(_wiWidth)
+				console.log(_screenWidth)
 				var _width = 0;
 				if (_wiWidth > 2052) {
 					_width = _wiWidth / 3;
@@ -87,9 +87,10 @@ export default function viewImage(e) {
 				} else {
 					_width = _wiWidth;
 				}
-
 				_width = _screenWidth > 1026 ? _width : _screenWidth * 0.9;
-				// console.log(_width);
+				// 读取 http 图片的时候，其默认尺寸为 18 ，好奇怪
+				console.log(_width);
+				if (_width < 30) { _width = 618 }
 				document.getElementById('img').width = _width;
 			</script>
 		</div>
