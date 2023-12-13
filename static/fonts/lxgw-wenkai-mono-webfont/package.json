@@ -1,0 +1,62 @@
+{
+  "_from": "lxgw-wenkai-webfont",
+  "_id": "lxgw-wenkai-webfont@1.7.0",
+  "_inBundle": false,
+  "_integrity": "sha512-kVJmT4xMAyOLhG6q0w63wJkVU7RP8UMQRGoAWj9tnpzL7sWFFYiEHBdUQyW9myqBQFa5SQfWfa2VLYF4IJBL5g==",
+  "_location": "/lxgw-wenkai-webfont",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "lxgw-wenkai-webfont",
+    "name": "lxgw-wenkai-webfont",
+    "escapedName": "lxgw-wenkai-webfont",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmmirror.com/lxgw-wenkai-webfont/-/lxgw-wenkai-webfont-1.7.0.tgz",
+  "_shasum": "72ef4ef9d00fd185a2ed8898d1a60f73ab732f97",
+  "_spec": "lxgw-wenkai-webfont",
+  "_where": "C:\\Users\\jack\\Desktop\\i",
+  "author": {
+    "name": "Chawye Hsu",
+    "email": "chawyehsu@hotmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/chawyehsu/lxgw-wenkai-webfont/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "webfont package for the LXGW WenKai typeface",
+  "files": [
+    "CHANGELOG.md",
+    "files",
+    "*.css",
+    "OFL.txt",
+    "VERSION"
+  ],
+  "homepage": "https://github.com/chawyehsu/lxgw-wenkai-webfont",
+  "keywords": [
+    "cjk",
+    "lxgw-wenkai",
+    "kaiti",
+    "font",
+    "typeface",
+    "webfont",
+    "css"
+  ],
+  "license": "MIT",
+  "main": "style.css",
+  "name": "lxgw-wenkai-webfont",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chawyehsu/lxgw-wenkai-webfont.git"
+  },
+  "style": "style.css",
+  "version": "1.7.0"
+}
