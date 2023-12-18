@@ -7,4 +7,9 @@
 
 .container-comment-giscus {
 	margin-top: 96px;
+	opacity: .5;
+	transition: .3s opacity linear;
+	&:hover {
+		opacity: .8;
+	}
 }
