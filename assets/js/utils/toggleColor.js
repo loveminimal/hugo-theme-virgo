@@ -18,6 +18,10 @@ let initColor = {
 //     enable(initColor);
 //     setDarkOfLocalStorage('on');
 // }
+// ✔️ 新的初始化颜色配置
+if (DARK && getDarkOfLocalStorage() !== 'off') {
+    setDarkOfLocalStorage('on');
+}
 
 // 若存在本地存储，且状态：
 // 为 `on`  ，激活暗色模式，

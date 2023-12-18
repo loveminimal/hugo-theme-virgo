@@ -13,6 +13,8 @@
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.7.0/style.min.css"> -->
     {{ $style := resources.Get "style.scss" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <!-- 传递配置参数 -->
+    <script>const DARK = {{.Site.Params.dark}};</script>
     {{ $built := resources.Get "main.js" | js.Build "main.js" }}
     <script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
     <!-- <script type="module" src="/main.js"></script> -->
