@@ -192,5 +192,13 @@
             padding-left: 16px;
             // border-left: 1px dashed $essay-color;
         }
+
+        // 修复移动端下背景图片没有 cover 的问题
+        &.cool {
+            .cool-before {
+                background-position: center center !important;
+                background-size: cover !important;
+            }
+        }
     }
 }
