@@ -1,6 +1,6 @@
-baseURL = 'https://walkssi.com/'
+baseURL = 'https://aituyaa.com/'
 languageCode = 'zh-cn'
-title = 'Walkssi'
+title = '爱涂鸦啊'
 
 # 启用主题
 theme = 'virgo'
@@ -26,7 +26,7 @@ timeZone = 'Asia/Shanghai'
     # - coolBackground 文件位于 `/static/imgs/bg` 文件夹中，默认为 `default.jpg`
     # - coolOpacity 默认为 0.81 ，在 0 ~ 1 之间
     hasActiveCool = true
-    coolBackground = 'messi/2.jpg'
+    coolBackground = 'color.jpg'
     coolOpacity = 0.86
     
     # 首页图片/文字
@@ -42,7 +42,7 @@ timeZone = 'Asia/Shanghai'
         # 将 background 设置为 ''，默认为 `#000`
         # ！ 为保证显示效果，建议选用 1：1 比例图片
         # src = 'cat.svg'
-        src = 'messi1.png'
+        src = 'manyi.jpg'
         background = '#0003'
         # 为该图片附加一个点击链接功能，缺省为 `/about`，当然
         # 你也可以定义为任何你相要的超链接
@@ -53,7 +53,7 @@ timeZone = 'Asia/Shanghai'
         icplink = '//beian.miit.gov.cn'           # 备案链接
         beian = '豫公网安备 41092802000242号'     # 公安备案，如果你不想显示，设置为 '' 空即可
         beiancode = '41092802000242'              # 公安备案识别码
-        weibo = '6867589681'                      # e.g. https://weibo.com/u/6867589681
+        weibo = '7905794994'                      # e.g. https://weibo.com/u/7905794994
         # wechat = 'imgs/bg/wechat.jpg'             # 微信二维码地址
         zhihu = 'loveminimal'                     # e.g. https://www.zhihu.com/people/loveminimal
         jianshu = 'eebcc2974936'                  # e.g. https://www.jianshu.com/u/eebcc2974936
@@ -62,12 +62,12 @@ timeZone = 'Asia/Shanghai'
         bilibili = '11608450'                     # e.g. https://space.bilibili.com/11608450
         douyin = 'self'                           # e.g. https://www.douyin.com/user/self
         xiaohongshu = '60004c750000000001002065'  # e.g. https://www.xiaohongshu.com/user/profile/60004c750000000001002065
-        # reddit = 'walkssi'                        # e.g. https://www.reddit.com/user/walkssi
+        # reddit = 'aituyaa'                        # e.g. https://www.reddit.com/user/aituyaa
         twitter = 'loveminimal163'                # e.g. https://twitter.com/loveminimal163
         # mastodon = 'loveminimal'                  #e.g. https://mastodon.social/@loveminimal
         # facebook = 'loveminimal'                  # e.g. https://facebook.com/loveminimal
         # instagram = 'loveminimal163'              # e.g. https://www.instagram.com/loveminimal163
-        youtube = 'walkssi'                       # e.g. https://www.youtube.com/@walkssi
+        youtube = 'aituyaa'                       # e.g. https://www.youtube.com/@aituyaa
         telegram = 'loveminimal'                  # e.g. https://web.telegram.org/k/#@loveminimal
         color = '#696969'                         # 图标颜色，默认为浅灰色
         slogan = ''                               # 联系标语，不想显示，可以置空
