@@ -169,7 +169,9 @@ blockquote,
 }
 
 // 用于文章随笔中的时间戳样式
-.oh-essay code {
+// .oh-essay code
+// 标签钉样式，类似于 `> *` 的格式
+.oh-tag {
     padding: 2px 4px;
     border-radius: 4px;
     font-size: 0.1rem;

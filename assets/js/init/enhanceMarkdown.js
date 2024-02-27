@@ -35,6 +35,17 @@ export default function() {
 		}
 	})
 
+	// 标签钉样式，类似于 `> *` 的格式，
+	// 标识 .oh-tag ，渲染样式 
+	$('code').each((idx, item) => {
+		let _innerHtml = item.innerHTML;
+		// console.log('>>> ', _innerHtml);
+		if (_innerHtml.indexOf('&gt; ') === 0) {
+			console.log(_innerHtml);
+			item.setAttribute('class', 'oh-tag')
+		}
+	})
+
 	// 标识渲染 Obsidian 等 Wiki 语法的图片、链接
 	// 支持中文路径
 	$('.content, .list').each((idx, item) => {
@@ -43,7 +54,7 @@ export default function() {
 		let _innerHtml = item.innerHTML;
 
 		if(_innerHtml.indexOf('[[') > -1) {
-			console.log('>>>', _innerHtml)
+			// console.log('>>>', _innerHtml)
 
 			// 1. 先匹配替换图片
 			// let _re = /!\[\[(\w*\/?\w+\.\w+)\|?(\d*)\]\]/
