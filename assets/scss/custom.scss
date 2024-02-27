@@ -161,6 +161,24 @@ pre,
     // color: $code-inline-color;
 }
 
+blockquote,
+.oh-essay {
+    code {
+        color: $code-inline-color;
+    }
+}
+
+// 用于文章随笔中的时间戳样式
+.oh-essay code {
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 0.1rem;
+
+    color: #f56c6c;
+    background: #fef0f0;
+    border-color: #fbc4c4;
+}
+
 ul,
 ol {
     list-style-position: outside;
