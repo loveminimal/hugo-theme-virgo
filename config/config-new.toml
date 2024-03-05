@@ -53,7 +53,7 @@ timeZone = 'Asia/Shanghai'
         icplink = '//beian.miit.gov.cn'           # 备案链接
         beian = '豫公网安备 41092802000242号'     # 公安备案，如果你不想显示，设置为 '' 空即可
         beiancode = '41092802000242'              # 公安备案识别码
-        weibo = '7905794994'                      # e.g. https://weibo.com/u/7905794994
+        weibo = '6867589681'                      # e.g. https://weibo.com/u/6867589681
         # wechat = 'imgs/bg/wechat.jpg'             # 微信二维码地址
         zhihu = 'loveminimal'                     # e.g. https://www.zhihu.com/people/loveminimal
         jianshu = 'eebcc2974936'                  # e.g. https://www.jianshu.com/u/eebcc2974936
@@ -69,8 +69,11 @@ timeZone = 'Asia/Shanghai'
         # instagram = 'loveminimal163'              # e.g. https://www.instagram.com/loveminimal163
         youtube = 'aituyaa'                       # e.g. https://www.youtube.com/@aituyaa
         telegram = 'loveminimal'                  # e.g. https://web.telegram.org/k/#@loveminimal
-        color = '#696969'                         # 图标颜色，默认为浅灰色
-        slogan = ''                               # 联系标语，不想显示，可以置空
+
+        [params.contact.config]
+            color = '#696969'                         # 图标颜色，默认为浅灰色
+            slogan = ''                               # 联系标语，不想显示，可以置空
+            ship = '/ship'                            # 联系栏 icon ，允许自定义该图标链接（/ship 为外链的个人定制化搜索页）；隐藏，设置为 '' 空即可
 
     # https://utteranc.es/
     # 在开发环境下（http://localhost:1313/），不再启用评论插件，
