@@ -11,12 +11,6 @@
     z-index: 1000;
     text-align: center;
 
-    &.js-header {
-        transition: .2s background-color linear;
-        background-color: $white-500;
-        backdrop-filter: blur(5px);
-        backdrop-filter: saturate(180%) blur(5px); // saturate(180%)
-    }
 
     .container-header {
         display: flex;
@@ -60,6 +54,7 @@
                 }
             }
     
+            // 仅在移动端设备显示
             #toc {
                 display: none;
             }
