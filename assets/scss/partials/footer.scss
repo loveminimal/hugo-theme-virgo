@@ -3,8 +3,8 @@
     padding: 16px 0 32px 0;
     padding: 16px $site-padding-lr 32px;
     margin-top: 64px;
-
     border-top: 1px solid #eee;
+
     .container-footer {
         clear: both;
         font-size: 0.14rem;
@@ -15,10 +15,8 @@
         }
 
         .beian {
-            // width: 300px;
             margin: 0 auto;
             padding: 20px 0 4px;
-            
             display: flex;
             justify-content: center;
 
@@ -27,7 +25,6 @@
                 text-decoration: none;
                 height: 20px;
                 line-height: 20px;
-
                 padding-right: 12px;
 
                 img {
@@ -42,9 +39,7 @@
                     color: #939393;
                 }
 
-             
                 color: #939393;
-                
             }
         }
 
@@ -55,7 +50,6 @@
             a {
                 color: #939393;
             }
-            
         }
     }
 }
