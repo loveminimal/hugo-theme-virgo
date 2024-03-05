@@ -33,7 +33,6 @@
     .tags {
         display: flex;
         flex-wrap: wrap;
-        // margin-top: 32px;
         box-sizing: border-box;
 
         .arc-item {
@@ -42,7 +41,6 @@
             margin: 4px;
             width: 32.6%;
             box-sizing: border-box;
-            // backdrop-filter: blur(10px);
 
             .arc-desc {
                 padding: 8px 0;

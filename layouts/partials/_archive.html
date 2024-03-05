@@ -5,19 +5,18 @@
     <div class="recentf">
         <span class="desc">- 最近更新 ➭</span>
         {{  range first 8 .Site.RegularPages.ByLastmod.Reverse }}
-        <!-- {{.Type}} -->
-        {{ if eq .Type "page" }}
-        <div class="rec-post">
-            <div class="rec-post-item">
-                <a href="{{.Permalink}}">{{ .Title }}</a>
+            <!-- {{.Type}} -->
+            {{ if eq .Type "page" }}
+            <div class="rec-post">
+                <div class="rec-post-item">
+                    <a href="{{.Permalink}}">{{ .Title }}</a>
+                </div>
             </div>
-        </div>
-        {{ end }}
+            {{ end }}
         {{ end }}
     </div>
     
 	<!-- 标签 -->
-    <!-- <div class="desc">标签: </div> -->
     <div class="tags">
         {{ range .Site.Pages.ByTitle }}
             {{ if and (eq .Type "tags") (ne .Title "Tags") (ne .Title "Secrets")}}
@@ -34,7 +33,7 @@
                             <a href="{{.Permalink}}">{{ .Title }}</a>
                         </div>
                         {{ end }}
-                        {{end}}
+                        {{ end }}
                     </div>
                 </div>
             {{ end}}
