@@ -1,6 +1,6 @@
-baseURL = 'https://aituyaa.com/'
+baseURL = 'https://walkssi.com/'
 languageCode = 'zh-cn'
-title = '爱涂鸦啊'
+title = '遛达西'
 
 # 启用主题
 theme = 'virgo'
@@ -24,10 +24,14 @@ timeZone = 'Asia/Shanghai'
     # ------------------
     # <更新> 现在可以直接在这里修改背景壁纸并调整壁纸遮罩透明度
     # - coolBackground 文件位于 `/static/imgs/bg` 文件夹中，默认为 `default.jpg`
-    # - coolOpacity 默认为 0.81 ，在 0 ~ 1 之间
+    # - coolOpacity 默认为 0.81 ，背景色彩透明度，在 0 ~ 1 之间
+    # - coolSaturate 默认为 180% ，背景色彩饱和度，在 0% ~ 200% 之间
+    # - coolBlur 默认为 6px ，背景色彩模糊度，数值越大越模糊
     hasActiveCool = true
     coolBackground = 'color.jpg'
-    coolOpacity = 0.86
+    coolOpacity = 0.69 # 0.86
+    coolSaturate = '180%'
+    coolBlur = '6px'
     
     # 首页图片/文字
     [params.img]

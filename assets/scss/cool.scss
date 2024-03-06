@@ -55,7 +55,8 @@ body.cool {
 		z-index: -1;
 		background-color: rgba(255, 255, 255, .81);	// $white-900;
 		// background: $white-700;
-		// backdrop-filter: saturate(180%) blur(3px);
+		// 毛玻璃化页面背景
+		backdrop-filter: saturate(180%) blur(6px);
 	}
 	
 	#header {

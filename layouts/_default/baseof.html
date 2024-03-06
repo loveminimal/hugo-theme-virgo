@@ -12,6 +12,11 @@
         <div id="footer">
             {{- partial "footer.html" . -}}
         </div>
-        <div class="cool-after" style="{{ if .Site.Params.hasActiveCool }}background-color: rgba(255, 255, 255, {{with .Site.Params.coolOpacity}}{{.}}{{else}}0.81{{end}});{{end}}"></div>
+        <div class="cool-after" style="
+            {{ if .Site.Params.hasActiveCool }}
+                background-color: rgba(255, 255, 255, {{with .Site.Params.coolOpacity}}{{.}}{{else}}0.81{{end}}); 
+                backdrop-filter: saturate({{with .Site.Params.coolSaturate}}{{.}}{{else}}180%{{end}}) blur({{with .Site.Params.coolBlur}}{{.}}{{else}}6px{{end}});
+            {{end}}
+            "></div>
     </body>
 </html>
