@@ -186,6 +186,9 @@
 				width: 100%;
 				position: absolute;
 				bottom: 0;
+
+                animation: breath-animate 3s infinite linear;
+
 				a {
 					display: block;
 					padding: 2px 6px;
