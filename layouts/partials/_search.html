@@ -1,15 +1,14 @@
 <div class="container-search">
     <div id="data" style="display: none;">
-        {{ range .Site.Pages }}
-            {{ if ne .Title "Secrets" }}
-                [{{ range .Pages }}
-                    {{- dict 
+        {{ range where .Site.Pages "Kind" "page" }}
+            {{ if (and (ne .Section "snippets"))}}
+                [{{- dict 
                         "title" (lower .Title) 
                         "permalink" .Permalink 
                         "date" (.Date | time.Format "2006-01-02")
                         "summary" .Summary
                         "content" (lower .Plain)
-                    | jsonify -}},{{ end }}]
+                    | jsonify -}},]
             {{ end }}
         {{ end }}
     </div>
