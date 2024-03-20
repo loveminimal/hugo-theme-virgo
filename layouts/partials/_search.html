@@ -1,6 +1,6 @@
 <div class="container-search">
     <div id="data" style="display: none;">
-        {{ range where .Site.Pages "Kind" "section" }}
+        {{ range .Site.Pages }}
             {{ if ne .Title "Secrets" }}
                 [{{ range .Pages }}
                     {{- dict 

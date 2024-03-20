@@ -2,6 +2,7 @@ let siteParams = parseSiteParams();
 
 let data = document.querySelector('#data').innerText.trim();
 data = data.slice(0, data.length - 2) + ']';
+data = data.replace(/\]\s+\[/g, '');
 let map = JSON.parse(data);
 
 let scClear = document.querySelector('#sc-clear');
