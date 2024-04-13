@@ -36,6 +36,10 @@ $box-offset: $box-border-length / 2;
         animation-name: animation11;
         animation-delay: 1s;
     }
+    .box12 {
+        animation-name: animation12;
+        animation-delay: 0.5s;
+    }
     .box2 {
         animation-name: animation2;
         animation-delay: 2s;
@@ -104,6 +108,18 @@ $box-offset: $box-border-length / 2;
     100% {
         bottom: calc((100% / #{$count-vertical}) * (#{$count-vertical} - 0) - #{$box-height});
         left: calc((100% / #{$count-horizontal}) * 1.5 - #{$box-offset});
+        @include end;
+    }
+}
+@keyframes animation12 {
+    0% {
+        bottom: calc((100% / #{$count-vertical}) * 3);
+        left: calc((100% / #{$count-horizontal}) * 0.5);
+        @include start;
+    }
+    100% {
+        bottom: calc((100% / #{$count-vertical}) * (#{$count-vertical} - 1) - #{$box-height});
+        left: calc((100% / #{$count-horizontal}) * 0.5 - #{$box-offset});
         @include end;
     }
 }
