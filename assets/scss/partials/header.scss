@@ -3,7 +3,7 @@
     border-top: 4px solid;
     border-image-source: linear-gradient(90deg, #0d6efd, #8ed6fb 50%, #d32e9d);
     border-image-slice: 1;
-    
+
     -webkit-border-top: 4px solid;
     -webkit-border-image-source: linear-gradient(90deg, #0d6efd, #8ed6fb 50%, #d32e9d);
     -webkit-border-image-slice: 1;
@@ -11,10 +11,10 @@
     z-index: 1000;
     text-align: center;
 
-
     .container-header {
         display: flex;
         justify-content: center;
+        position: relative;
 
         .left {
             .desc {
@@ -26,24 +26,22 @@
                     width: 100px;
                     height: 100px;
                     box-sizing: border-box;
-    
+
                     transition: 0.5s all ease;
-    
+
                     &:hover {
                         box-shadow: 5px 0 6px #999;
                         transform: translateX(-6%) rotate(360deg);
                     }
-    
+
                     img {
                         border-radius: 50%;
                         max-width: 100%;
                         height: auto;
-    
                     }
                 }
             }
         }
-
 
         .right {
             .some {
@@ -53,14 +51,14 @@
                     cursor: pointer;
                 }
             }
-    
+
             // 仅在移动端设备显示
             #toc {
                 display: none;
             }
         }
     }
-    
+
     &.header-home {
         .container-header .right {
             max-width: 30%;
