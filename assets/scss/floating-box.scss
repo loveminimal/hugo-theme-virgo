@@ -1,0 +1,205 @@
+$box-border-length: 60px;
+$count-horizontal: 10;
+$count-vertical: 5;
+$box-border-color: #9896f099;
+
+// 用正方形
+$box-width: $box-border-length;
+$box-height: $box-border-length;
+$box-offset: $box-border-length / 2;
+
+.container-floating-box {
+    z-index: -1;
+
+    position: fixed;
+    display: block;
+    width: 100%;
+    min-height: 100%;
+    height: 600px;
+
+    .box {
+        position: absolute;
+        border-width: 1px;
+        border-style: solid;
+        border-color: $box-border-color;
+
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+
+    .box1 {
+        animation-name: animation1;
+        animation-duration: 6s;
+    }
+    .box11 {
+        animation-name: animation11;
+        animation-delay: 1s;
+    }
+    .box2 {
+        animation-name: animation2;
+        animation-delay: 2s;
+        animation-duration: 8s;
+    }
+    .box3 {
+        animation-name: animation3;
+        animation-delay: 0.5s;
+    }
+    .box4 {
+        animation-name: animation4;
+        animation-delay: 1s;
+    }
+    .box5 {
+        animation-name: animation5;
+        animation-delay: 2.5s;
+    }
+    .box6 {
+        animation-name: animation6;
+        animation-delay: 2s;
+    }
+    .box7 {
+        animation-name: animation7;
+        animation-delay: 1.5s;
+    }
+    .box8 {
+        animation-name: animation8;
+    }
+    .box9 {
+        animation-name: animation9;
+    }
+}
+
+@mixin start {
+    width: 0;
+    height: 0;
+    opacity: 1;
+}
+
+@mixin end {
+    width: #{$box-width};
+    height: #{$box-height};
+    opacity: 0;
+    transform: rotate(360deg);
+    border-width: 3px;
+}
+
+@keyframes animation1 {
+    0% {
+        bottom: calc((100% / #{$count-vertical}) * 0);
+        left: calc(100% / #{$count-horizontal});
+        @include start;
+    }
+    100% {
+        bottom: calc((100% / #{$count-vertical}) * (#{$count-vertical} - 0) - #{$box-height});
+        left: calc((100% / #{$count-horizontal}) - #{$box-offset});
+        @include end;
+    }
+}
+@keyframes animation11 {
+    0% {
+        bottom: calc((100% / #{$count-vertical}) * 0);
+        left: calc((100% / #{$count-horizontal}) * 1.5);
+        @include start;
+    }
+    100% {
+        bottom: calc((100% / #{$count-vertical}) * (#{$count-vertical} - 0) - #{$box-height});
+        left: calc((100% / #{$count-horizontal}) * 1.5 - #{$box-offset});
+        @include end;
+    }
+}
+@keyframes animation2 {
+    0% {
+        bottom: calc((100% / #{$count-vertical}) * 2);
+        left: calc((100% / #{$count-horizontal}) * 3);
+        @include start;
+    }
+    100% {
+        bottom: calc((100% / #{$count-vertical}) * (#{$count-vertical} - 2) - #{$box-height});
+        left: calc((100% / #{$count-horizontal}) * 3 - #{$box-offset});
+        @include end;
+    }
+}
+@keyframes animation3 {
+    0% {
+        bottom: calc((100% / #{$count-vertical}) * 4);
+        left: calc((100% / #{$count-horizontal}) * 2);
+        @include start;
+    }
+    100% {
+        bottom: calc((100% / #{$count-vertical}) * (#{$count-vertical} - 4) - #{$box-height});
+        left: calc((100% / #{$count-horizontal}) * 2 - #{$box-offset});
+        @include end;
+    }
+}
+@keyframes animation4 {
+    0% {
+        bottom: calc((100% / #{$count-vertical}) * 0);
+        left: calc((100% / #{$count-horizontal}) * 4);
+        @include start;
+    }
+    100% {
+        bottom: calc((100% / #{$count-vertical}) * (#{$count-vertical}) - #{$box-height});
+        left: calc((100% / #{$count-horizontal}) * 4 - #{$box-offset});
+        @include end;
+    }
+}
+@keyframes animation5 {
+    0% {
+        bottom: calc((100% / #{$count-vertical}) * 0);
+        left: calc((100% / #{$count-horizontal}) * 5);
+        @include start;
+    }
+    100% {
+        bottom: calc((100% / #{$count-vertical}) * (#{$count-vertical} - 2) - #{$box-height});
+        left: calc((100% / #{$count-horizontal}) * 5 - #{$box-offset});
+        @include end;
+    }
+}
+@keyframes animation6 {
+    0% {
+        bottom: calc((100% / #{$count-vertical}) * 4);
+        left: calc((100% / #{$count-horizontal}) * 6);
+        @include start;
+    }
+    100% {
+        bottom: calc((100% / #{$count-vertical}) * (#{$count-vertical} - 2) - #{$box-height});
+        left: calc((100% / #{$count-horizontal}) * 6 - #{$box-offset});
+        @include end;
+    }
+}
+@keyframes animation7 {
+    0% {
+        bottom: calc((100% / #{$count-vertical}) * 0);
+        left: calc((100% / #{$count-horizontal}) * 7);
+        @include start;
+    }
+    100% {
+        bottom: calc((100% / #{$count-vertical}) * (#{$count-vertical} - 1) - #{$box-height});
+        left: calc((100% / #{$count-horizontal}) * 7 - #{$box-offset});
+        @include end;
+    }
+}
+@keyframes animation8 {
+    0% {
+        bottom: calc((100% / #{$count-vertical}) * 3);
+        left: calc((100% / #{$count-horizontal}) * 8);
+        @include start;
+    }
+    100% {
+        bottom: calc((100% / #{$count-vertical}) * (#{$count-vertical} - 2) - #{$box-height});
+        left: calc((100% / #{$count-horizontal}) * 8 - #{$box-offset});
+        @include end;
+    }
+}
+@keyframes animation9 {
+    0% {
+        bottom: calc((100% / #{$count-vertical}) * 0);
+        left: calc((100% / #{$count-horizontal}) * 9);
+        @include start;
+    }
+    100% {
+        bottom: calc((100% / #{$count-vertical}) * (#{$count-vertical}) - #{$box-height});
+        left: calc((100% / #{$count-horizontal}) * 9 - #{$box-offset});
+        @include end;
+    }
+}

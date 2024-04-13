@@ -1,6 +1,6 @@
-baseURL = 'https://walkssi.com/'
+baseURL = 'https://aituyaa.com/'
 languageCode = 'zh-cn'
-title = '遛达西'
+title = '爱涂鸦啊'
 
 # 启用主题
 theme = 'virgo'
@@ -18,6 +18,8 @@ timeZone = 'Asia/Shanghai'
     startDate = 2016                        # 'Copyright © 2016 - now'
     # 激活页面加载时的过渡动画
     hasActiveAnimate = true
+    # 激活页面浮动盒子动画
+    hasActiveAnimationBox = true
 
     # 激活 cool 模式，酷爽但是消耗资源也更多，
     # 浏览器有缓存，更换后强制页面刷新（快捷键为 Ctrl+Shift+R）一下或重启本地服务即可，
@@ -53,7 +55,7 @@ timeZone = 'Asia/Shanghai'
         link = '/about'
 
     [params.contact]
-        icp = '豫ICP备2023017189号-1'             # 备案号，如果你不想显示，设置为 '' 空即可
+        icp = '豫ICP备2023017189号-2'             # 备案号，如果你不想显示，设置为 '' 空即可
         icplink = '//beian.miit.gov.cn'           # 备案链接
         beian = '豫公网安备 41092802000242号'     # 公安备案，如果你不想显示，设置为 '' 空即可
         beiancode = '41092802000242'              # 公安备案识别码

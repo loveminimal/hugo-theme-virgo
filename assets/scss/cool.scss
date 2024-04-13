@@ -6,6 +6,10 @@
 body.cool {
 	background-color: $white-000;
 
+	.container-floating-box {
+		z-index: 0;
+	}
+
 	.cool-before {
 		display: block;
 		width: 100%;
