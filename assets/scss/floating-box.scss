@@ -9,8 +9,6 @@ $box-height: $box-border-length;
 $box-offset: $box-border-length / 2;
 
 .container-floating-box {
-    z-index: -1;
-
     position: fixed;
     display: block;
     width: 100%;

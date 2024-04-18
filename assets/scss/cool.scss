@@ -1,205 +1,159 @@
 @mixin bg-cool {
-	background: $white-500;
-	backdrop-filter: saturate(180%) blur(3px);
+    background: $white-500;
+    backdrop-filter: saturate(180%) blur(3px);
 }
 
 body.cool {
-	background-color: $white-000;
+    background-color: $white-000;
 
-	.container-floating-box {
-		z-index: 0;
-	}
+    .cool-before {
+        display: block;
+        width: 100%;
+        min-height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background: url('/imgs/bg/default.jpg') center center/cover no-repeat fixed;
+    }
 
-	.cool-before {
-		display: block;
-		width: 100%;
-		min-height: 100%;
-		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: -1;
-		background: url('/imgs/bg/default.jpg') center center/cover no-repeat fixed;
-	}
+    .cool-after {
+        content: '';
+        display: block;
+        width: 100%;
+        min-height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-color: rgba(255, 255, 255, 0.81); // $white-900;
+        // 毛玻璃化页面背景
+        backdrop-filter: saturate(180%) blur(6px);
+    }
 
-	// &::before {
-	// 	content: '';
-	// 	display: block;
-	// 	width: 100%;
-	// 	min-height: 100%;
-	// 	position: fixed;
-	// 	top: 0;
-	// 	left: 0;
-	// 	z-index: -1;
-	// 	background: url('/imgs/bg/default.jpg') center center/cover no-repeat fixed;
-	// }
+    #header {
+        .container-header {
+            .container-breadcrumb-nav .breadcrumb-nav-bar a {
+                @include bg-cool;
+            }
+        }
+    }
 
-	// 设置 body 遮罩
-	// &::after {
-	// 	content: '';
-	// 	display: block;
-	// 	width: 100%;
-	// 	min-height: 100%;
-	// 	position: fixed;
-	// 	top: 0;
-	// 	left: 0;
-	// 	z-index: -1;
-	// 	background-color: rgba(255, 255, 255, .81);	// $white-900;
-	// 	// background: $white-700;
-	// 	// backdrop-filter: saturate(180%) blur(3px);
-	// }
+    #content {
+        .container-home {
+            .menu .item a {
+                @include bg-cool;
+            }
 
-	.cool-after {
-		content: '';
-		display: block;
-		width: 100%;
-		min-height: 100%;
-		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: -1;
-		background-color: rgba(255, 255, 255, .81);	// $white-900;
-		// background: $white-700;
-		// 毛玻璃化页面背景
-		backdrop-filter: saturate(180%) blur(6px);
-	}
-	
-	#header {
-		.container-header {
-			.container-breadcrumb-nav .breadcrumb-nav-bar a {
-				@include bg-cool;
-			}
-		}
-	} 
-
-	#content {
-		.container-home {
-			.menu .item a {
-				@include bg-cool;
-			}
-
-			.content {
-				.desc {
-					.words {
-						// margin-left: 0;
-						@include bg-cool;
-					}
-				}
-			} 
-		}
-
-		.container-nav {
-			.toc {
-				ul > li > ul > li {
-					border: 1px solid rgba(255, 255, 255, 0);
-					@include bg-cool;
-				}
-			} 
-
-			.content-nav {
-
-				table {
-					// @include bg-cool;
-
-
-				}
-
-				table {
-					tr:nth-child(odd) {
-						a {
-							background: $white-500;
-						}
-					}
-		
-					td {
-						a {
-							// width: 136px;
-							background: $white-500;
-						}
-					}
-				}
-
-				li {
-					&:nth-child(even) {
-						@include bg-cool;
+            .content {
+                .desc {
+                    .words {
+                        @include bg-cool;
                     }
-				}
-			} 
-		}
+                }
+            }
+        }
 
-		.container-archive {
+        .container-nav {
+            .toc {
+                ul > li > ul > li {
+                    border: 1px solid rgba(255, 255, 255, 0);
+                    @include bg-cool;
+                }
+            }
 
-			.rec-post .rec-post-item {
-				a {
-					@include bg-cool;
-				}
-			}
+            .content-nav {
+                table {
+                    tr:nth-child(odd) {
+                        a {
+                            background: $white-500;
+                        }
+                    }
 
-			.categories, .tags {
-				.arc-item {
-					@include bg-cool;
-					
-					sup {
-						color: $gray-500;
-					}
-					
-					.arc-post-item a {
-						@include bg-cool;
-					}
-				}
-			}
-		}
+                    td {
+                        a {
+                            background: $white-500;
+                        }
+                    }
+                }
 
-		.container-list {
-			// .toc {
-			// 	.list {
-			// 		.item, .item-term {
-			// 			margin-bottom: 8px;
-			// 		}
-			// 	}
-			// }
+                li {
+                    &:nth-child(even) {
+                        @include bg-cool;
+                    }
+                }
+            }
+        }
 
-			.list {
-				.recentf {
-					@include bg-cool;
-					.rec-post-item a {
-						background: $white-300;
-					}
-				}
+        .container-archive {
+            .rec-post .rec-post-item {
+                a {
+                    @include bg-cool;
+                }
+            }
 
-				.item-term {
-            		border-radius: 0 16px 0 16px;
-				}
-				.item, .item-term {
-					@include bg-cool;
-				}
-			}
-		}
+            .categories,
+            .tags {
+                .arc-item {
+                    @include bg-cool;
 
-		.container-page {
+                    sup {
+                        color: $gray-500;
+                    }
 
-			pre {
-				padding: 12px 16px;
-			}
+                    .arc-post-item a {
+                        @include bg-cool;
+                    }
+                }
+            }
+        }
 
-			.oh-essay {
-				background: #f8f9fa66;
-			}
-		} 
+        .container-list {
+            .list {
+                .recentf {
+                    @include bg-cool;
+                    .rec-post-item a {
+                        background: $white-300;
+                    }
+                }
 
-		.container-ctgtag {
-			.taxonomy {
-				.ctg, .tag {
-					a {
-						@include bg-cool;
-					}
-				}
-			}
-		}
-	}
+                .item-term {
+                    border-radius: 0 16px 0 16px;
+                }
+                .item,
+                .item-term {
+                    @include bg-cool;
+                }
+            }
+        }
 
-	// #footer { }
+        .container-page {
+            pre {
+                padding: 12px 16px;
+            }
 
-	pre {
-		background-color: $white-300 !important;
-	}
+            .oh-essay {
+                background: #f8f9fa66;
+            }
+        }
+
+        .container-ctgtag {
+            .taxonomy {
+                .ctg,
+                .tag {
+                    a {
+                        @include bg-cool;
+                    }
+                }
+            }
+        }
+    }
+
+    #footer {
+        position: relative;
+    }
+
+    pre {
+        background-color: $white-300 !important;
+    }
 }
