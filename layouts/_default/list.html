@@ -10,7 +10,9 @@
             <div class="count">标签列表： {{ len .Pages }} 枚</div>
             {{ end }}
             
-            {{ range .Paginator.Pages.ByTitle }}
+            <!-- {{ range .Paginator.Pages.ByTitle }} -->
+            <!-- {{ end }} -->
+            {{ range .Paginator.Pages }}
                 {{if and .Title (ne .Title "<% tp.file.title %>") (ne .Title "Secrets") }}
                 <!-- 📄 ➣ 📂 -->
                 <div class="{{with .IsPage}}item{{ else }}item-term{{end}}" >

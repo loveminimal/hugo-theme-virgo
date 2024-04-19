@@ -12,7 +12,7 @@ enableGitInfo = true
 timeZone = 'Asia/Shanghai'
 
 [params]
-    dark = true                             # 默认开启暗色主题
+    dark = false                             # 默认开启暗色主题
     author = 'Jack'
     slogan = 'Life should be interesting.'  # 'Life is just a joker.'
     startDate = 2016                        # 'Copyright © 2016 - now'
@@ -20,6 +20,8 @@ timeZone = 'Asia/Shanghai'
     hasActiveAnimate = true
     # 激活页面浮动盒子动画
     hasActiveAnimationBox = true
+    # 文章页是否显示其相关系列文章（页面左侧区域）
+    isShowRelativePosts = true
 
     # 激活 cool 模式，酷爽但是消耗资源也更多，
     # 浏览器有缓存，更换后强制页面刷新（快捷键为 Ctrl+Shift+R）一下或重启本地服务即可，

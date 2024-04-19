@@ -7,36 +7,48 @@
 
     .rel {
         position: fixed;
-        border-left: 1px solid $gray-300;
         width: 260px;
         max-height: 566px;
         top: 176px;
         left: 16px;
         font-size: 0.14rem;
         overflow: scroll;
-        background: $gray-white-300;
         z-index: 999;
-        
+
         .curtag-desc {
-            padding: 12px 0;
+            padding-bottom: 12px;
+            a {
+                color: $gray-500;
+                font-weight: 700;
+            }
         }
-        
+
         .curtag-post {
             .curtag-post-item {
-                // @include doks-bar;
-                // border-width: 1px;
-                border-top: 1px dashed $gray-400;
-                // margin: 8px 8px;
+                // border-top: 1px solid $gray-white-300;
+                // background: $gray-white-300;
+                margin: 2px 0;
+                overflow-x: hidden;
+                
+
                 a {
                     display: inline-block;
                     width: 100%;
                     color: $gray-600;
-                    padding: 8px 0;
+                    // padding: 2px;
+                    line-height: 1.5;
+                }
+            }
+
+            .curtag-post-item--active {
+                a {
+                    color: $link-hover-color;
+                    &::before {
+                        content: '➭ ';
+                    }
                 }
             }
         }
-        
-
 
         // 滚动条宽度、颜色
         &::-webkit-scrollbar {
@@ -85,6 +97,7 @@
         li {
             list-style: none;
             a {
+                line-height: 1.5;
                 color: $gray-600;
                 &:hover {
                     color: $link-hover-color;
@@ -103,7 +116,8 @@
             right: 144px;
             a {
                 cursor: pointer;
-                img, svg {
+                img,
+                svg {
                     padding: 2px;
                     width: 20px;
                     height: 20px;
@@ -117,9 +131,9 @@
                 margin-bottom: 4px;
             }
 
-            li a:not(:first-child){
+            li a:not(:first-child) {
                 color: $gray-300;
-                font-size: .01rem;
+                font-size: 0.01rem;
             }
         }
     }
@@ -183,7 +197,7 @@
             }
         }
     }
-    
+
     pre {
         background: $gray-white-500 !important;
         font-size: 0.14rem;

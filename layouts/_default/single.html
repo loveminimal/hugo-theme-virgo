@@ -12,22 +12,25 @@
 <div class="container-main container-page {{if $IsNav}}container-nav{{ end }}">
 
     <!-- 同一标签下的系列文章（按名称排序） -->
+    {{ if .Site.Params.isShowRelativePosts }}
     {{ if .Params.tags }}
     <div class="rel">
         {{ $CurTag := index .Params.tags 0 }}
         <!-- {{ $CurTag }} -->
+        {{ $CurTitle := .Title }}
+        <!-- {{ $CurTitle }} -->
         {{ range .Site.Pages.ByTitle }}
             {{ if and (eq .Type "tags") (ne .Title "Tags") (ne .Title "Secrets")}}
                 {{ if eq .Title $CurTag }}
                     <div class="curtag-desc">
-                        <a href="{{.Permalink}}"><img src="/imgs/icons/tag.svg" width="16" /> {{ .Title }} <sup>{{len .Pages}}</sup></a>
+                        <a href="{{.Permalink}}"><img src="/imgs/icons/tag.svg" width="16" /> 相关文章：{{ .Title }} <sup>{{len .Pages}}</sup></a>
                     </div>
 
                     <div class="curtag-post">
                         {{ range .Pages }}
                         <!-- 适配 Obsidian 的 Templater 插件的 Front Matter -->
                         {{if (ne .Title "<% tp.file.title %>")}}
-                        <div class="curtag-post-item">
+                        <div class="curtag-post-item {{ with eq $CurTitle .Title}}curtag-post-item--active{{ end }}">
                             <a href="{{.Permalink}}">{{ .Title }}</a>
                         </div>
                         {{ end }}
@@ -37,6 +40,7 @@
             {{ end }}
         {{ end }}
     </div>
+    {{ end }}
     {{ end }}
 
     <div class="desc">
