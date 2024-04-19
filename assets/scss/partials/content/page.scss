@@ -42,7 +42,7 @@
 
             .curtag-post-item--active {
                 a {
-                    color: $link-hover-color;
+                    color: $blue;
                     &::before {
                         content: '➭ ';
                     }
