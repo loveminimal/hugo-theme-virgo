@@ -27,7 +27,7 @@
                     </div>
 
                     <div class="curtag-post">
-                        {{ range .Pages }}
+                        {{ range .Pages.ByTitle }}
                         <!-- 适配 Obsidian 的 Templater 插件的 Front Matter -->
                         {{if (ne .Title "<% tp.file.title %>")}}
                         <div class="curtag-post-item {{ with eq $CurTitle .Title}}curtag-post-item--active{{ end }}">
