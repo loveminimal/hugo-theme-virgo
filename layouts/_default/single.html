@@ -11,6 +11,34 @@
 
 <div class="container-main container-page {{if $IsNav}}container-nav{{ end }}">
 
+    <!-- 同一标签下的系列文章（按名称排序） -->
+    {{ if .Params.tags }}
+    <div class="rel">
+        {{ $CurTag := index .Params.tags 0 }}
+        <!-- {{ $CurTag }} -->
+        {{ range .Site.Pages.ByTitle }}
+            {{ if and (eq .Type "tags") (ne .Title "Tags") (ne .Title "Secrets")}}
+                {{ if eq .Title $CurTag }}
+                    <div class="curtag-desc">
+                        <a href="{{.Permalink}}"><img src="/imgs/icons/tag.svg" width="16" /> {{ .Title }} <sup>{{len .Pages}}</sup></a>
+                    </div>
+
+                    <div class="curtag-post">
+                        {{ range .Pages }}
+                        <!-- 适配 Obsidian 的 Templater 插件的 Front Matter -->
+                        {{if (ne .Title "<% tp.file.title %>")}}
+                        <div class="curtag-post-item">
+                            <a href="{{.Permalink}}">{{ .Title }}</a>
+                        </div>
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    </div>
+    {{ end }}
+
     <div class="desc">
         {{if $IsPostPage }}
         <span>

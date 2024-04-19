@@ -1,4 +1,5 @@
-$font-family-sans-serif: -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, 'Helvetica Neue', arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+$font-family-sans-serif: -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, 'Helvetica Neue', arial, 'Noto Sans',
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 $font-family-monospace: sfmono-regular, menlo, monaco, consolas, 'Liberation Mono', 'Courier New', monospace;
 
 $font-lxgw: 'LXGW WenKai Screen';
@@ -78,58 +79,65 @@ $link-hover-color: #e69;
 $table-color: #e9e7ef;
 $highlight-color: #e9e7ef;
 $blockquote-color: $gray-600;
-$essay-color: #969696; 
+$essay-color: #969696;
 $code-inline-color: #d63384;
 
 $site-padding-lr: 80px;
 $post-item-bg-color: $gray-white-200;
 
-
 @mixin primary {
-	background: #cfe2ff;
+    background: #cfe2ff;
     color: #0a58ca;
 }
 @mixin success {
-	background: #d1e7dd;
+    background: #d1e7dd;
     color: #146c43;
 }
 @mixin danger {
-	background: #f8d7da;
+    background: #f8d7da;
     color: #c02a37;
 }
 @mixin warning {
-	background: #fff3cd;
+    background: #fff3cd;
     color: #c48804;
 }
- 
+
 @mixin info {
-	background: #cff4fc;
+    background: #cff4fc;
     color: #48b8e7;
 }
 @mixin light {
-	background: #f8f9fa;
+    background: #f8f9fa;
     color: #6c757d;
 }
 @mixin dark {
-	background: #ced4da;
+    background: #ced4da;
     color: #495057;
 }
- 
+
+@mixin doks-bar {
+    // doks header-bar
+    border-top: 4px solid;
+    border-image-source: linear-gradient(90deg, #0d6efd, #8ed6fb 50%, #d32e9d);
+    border-image-slice: 1;
+
+    -webkit-border-top: 4px solid;
+    -webkit-border-image-source: linear-gradient(90deg, #0d6efd, #8ed6fb 50%, #d32e9d);
+    -webkit-border-image-slice: 1;
+}
+
 // 呼吸动画
 @keyframes breath-animate {
-	0% {
-		transform: translate3d(0, 0%, 0);
-	}
-	25% {
-		transform: translate3d(0, 6%, 0);
-	}
-	75% {
-		transform: translate3d(0, -6%, 0);
-	}
-	100% {
-		transform: translate3d(0, 0%, 0);
-	}
+    0% {
+        transform: translate3d(0, 0%, 0);
+    }
+    25% {
+        transform: translate3d(0, 6%, 0);
+    }
+    75% {
+        transform: translate3d(0, -6%, 0);
+    }
+    100% {
+        transform: translate3d(0, 0%, 0);
+    }
 }
- 
-
- 

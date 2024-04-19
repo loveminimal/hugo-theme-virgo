@@ -1,12 +1,6 @@
 #header {
     // doks header-bar
-    border-top: 4px solid;
-    border-image-source: linear-gradient(90deg, #0d6efd, #8ed6fb 50%, #d32e9d);
-    border-image-slice: 1;
-
-    -webkit-border-top: 4px solid;
-    -webkit-border-image-source: linear-gradient(90deg, #0d6efd, #8ed6fb 50%, #d32e9d);
-    -webkit-border-image-slice: 1;
+    @include doks-bar;
 
     z-index: 1000;
     text-align: center;

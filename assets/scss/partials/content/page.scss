@@ -5,6 +5,59 @@
     // padding: 0 24% 0 16%;
     max-width: 700px;
 
+    .rel {
+        position: fixed;
+        border-left: 1px solid $gray-300;
+        width: 260px;
+        max-height: 566px;
+        top: 176px;
+        left: 16px;
+        font-size: 0.14rem;
+        overflow: scroll;
+        background: $gray-white-300;
+        z-index: 999;
+        
+        .curtag-desc {
+            padding: 12px 0;
+        }
+        
+        .curtag-post {
+            .curtag-post-item {
+                // @include doks-bar;
+                // border-width: 1px;
+                border-top: 1px dashed $gray-400;
+                // margin: 8px 8px;
+                a {
+                    display: inline-block;
+                    width: 100%;
+                    color: $gray-600;
+                    padding: 8px 0;
+                }
+            }
+        }
+        
+
+
+        // 滚动条宽度、颜色
+        &::-webkit-scrollbar {
+            width: 2px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: $gray-300;
+        }
+
+        // 条目节点样式
+        // li {
+        //     list-style: none;
+        //     a {
+        //         color: $gray-600;
+        //         &:hover {
+        //             color: $link-hover-color;
+        //         }
+        //     }
+        // }
+    }
+
     .desc {
         color: $gray-500;
         font-size: 0.14rem;
