@@ -11,6 +11,5 @@ export default function initEventBinding() {
 	$(window).bind('scroll', throttle(colorToc, 500));
 	$('#toc').bind('click', toggleToc);
 	$('#light-dark').bind('click', toggleColor);
-	if (location.href.indexOf('walkssi') > -1) $('#s').hide();
 	$('.content img').bind('click', viewImage);
 }
