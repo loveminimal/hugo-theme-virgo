@@ -1,0 +1,79 @@
+.container-ship {
+    background: $white-500;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px 0;
+    position: relative;
+
+    > .contact {
+        .container-contact {
+            .icons {
+                // 使联系栏图标居中
+                justify-content: center;
+            }
+        }
+    }
+
+    .ship {
+        > #search {
+            text-align: center;
+            padding: 32px 0;
+            position: relative;
+
+            #sc-clear {
+                cursor: pointer;
+                transition: 0.5s opacity ease;
+                position: absolute;
+                top: 45px;
+            }
+
+            #sc-input {
+                text-align: center;
+                font-family: $font-family--base;
+                color: #333;
+                outline-style: none;
+                border: 0px;
+                border-bottom: 1px solid #0d6efd;
+                padding: 12px 0;
+                width: 500px;
+                background: rgba(255, 255, 255, 0);
+
+                &:focus {
+                    border-color: #0dcaf0;
+                }
+
+                &::placeholder {
+                    color: rgba(0, 0, 0, 0.3);
+                    font-family: $font-family--some;
+                }
+            }
+        }
+
+        > #engine {
+            padding: 16px 0;
+            text-align: center;
+
+            .activated {
+                position: relative;
+                background: $gray-300;
+                &::before {
+                    content: '➭ ';
+                }
+            }
+
+            span {
+                cursor: pointer;
+                display: inline-block;
+                background: $gray-200;
+                padding: 2px 4px;
+                border-radius: 4px;
+                width: 64px;
+                // white-space: nowrap;
+
+                &:hover {
+                    box-shadow: 0 0 3px #666;
+                }
+            }
+        }
+    }
+}

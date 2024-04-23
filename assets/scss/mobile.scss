@@ -1,6 +1,6 @@
 @media screen and (max-width: 1026px) {
     @mixin toc {
-        transition: .3s all linear;
+        transition: 0.3s all linear;
         right: -300px;
         z-index: 1000;
         background: $white-900;
@@ -11,7 +11,7 @@
 
         .page-operation {
             z-index: 1001;
-            transition: .5s all linear;
+            transition: 0.5s all linear;
             top: 128px;
             background: $white-900;
             border-radius: 24px;
@@ -29,12 +29,11 @@
         #header {
             padding: 0 8px;
 
-            
             .container-header {
                 .left {
                     display: none;
                 }
-                
+
                 .right {
                     max-width: 100%;
                     .title {
@@ -58,7 +57,6 @@
                         box-shadow: -1px 1px 1px #ccc;
                     }
                 }
-
             }
             &.header-home {
                 .container-header .right {
@@ -71,7 +69,6 @@
             padding: 0;
             .container-main {
                 overflow: hidden;
-
             }
 
             .container-home {
@@ -82,7 +79,7 @@
 
             .container-nav {
                 padding: 0 4px;
-                
+
                 .content-nav {
                     .nav ul {
                         justify-content: space-between;
@@ -118,11 +115,12 @@
                         margin: 12px;
                     }
 
-                    .item, .item-term {
+                    .item,
+                    .item-term {
                         margin: 12px;
                         background: $post-item-bg-color;
 
-                        >a {
+                        > a {
                             background: $gray-white-500;
                         }
                     }
@@ -152,12 +150,19 @@
             .container-page {
                 padding: 0 8px 16px;
 
+                .ship {
+                    #search #sc-input {
+                        max-width: 80%;
+                        min-width: 260px;
+                    }
+                }
+
                 .rel {
                     display: none;
                 }
 
                 .desc {
-                    font-size: .13rem;
+                    font-size: 0.13rem;
                 }
 
                 .toc {
@@ -166,7 +171,8 @@
             }
 
             .container-archive {
-                .categories, .tags {
+                .categories,
+                .tags {
                     .arc-item {
                         width: 96%;
                     }

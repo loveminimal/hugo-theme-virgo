@@ -11,6 +11,13 @@
 
 <div class="container-main container-page {{if $IsNav}}container-nav{{ end }}">
 
+    <!-- 搜索区域 -->
+    {{ if .Site.Params.isShowShipBoxOfNav }}
+    <div class="ship">
+        {{- partial "partials/_ship.html" . -}}
+    </div>
+    {{ end }}
+
     <!-- 同一标签下的系列文章（按名称排序） -->
     {{ if .Site.Params.isShowRelativePosts }}
     {{ if .Params.tags }}

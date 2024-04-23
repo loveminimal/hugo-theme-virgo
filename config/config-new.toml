@@ -22,6 +22,8 @@ timeZone = 'Asia/Shanghai'
     hasActiveAnimationBox = true
     # 文章页是否显示其相关系列文章（页面左侧区域）
     isShowRelativePosts = true
+    # 导航页是否显示顶部搜索栏
+    isShowShipBoxOfNav = true
 
     # 激活 cool 模式，酷爽但是消耗资源也更多，
     # 浏览器有缓存，更换后强制页面刷新（快捷键为 Ctrl+Shift+R）一下或重启本地服务即可，
@@ -50,7 +52,7 @@ timeZone = 'Asia/Shanghai'
         # 将 background 设置为 ''，默认为 `#000`
         # ！ 为保证显示效果，建议选用 1：1 比例图片
         # src = 'cat.svg'
-        src = 'manyi.jpg'
+        src = 'manyi1.jpg'
         background = '#0003'
         # 为该图片附加一个点击链接功能，缺省为 `/about`，当然
         # 你也可以定义为任何你相要的超链接
