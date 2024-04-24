@@ -83,7 +83,9 @@ timeZone = 'Asia/Shanghai'
         [params.contact.config]
             color = '#696969'                         # 图标颜色，默认为浅灰色
             slogan = ''                               # 联系标语，不想显示，可以置空
-            ship = '/ship'                            # 联系栏 icon ，允许自定义该图标链接（/ship 为外链的个人定制化搜索页）；隐藏，设置为 '' 空即可
+            isShowNavLink = true                      # 是否在联系栏左侧显示快捷导航链接（PS：站点首页总会显示）
+            target = '_self'                          # 定义左侧快捷导航链接打开方式，_blank 在新标签页 _self 在当前标签页
+            ship = ''                                 # 联系栏 icon ，允许自定义该图标链接（/ship 为外链的个人定制化搜索页）；隐藏，设置为 '' 空即可
 
     # https://utteranc.es/
     # 在开发环境下（http://localhost:1313/），不再启用评论插件，
