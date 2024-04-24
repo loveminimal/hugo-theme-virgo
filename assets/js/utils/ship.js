@@ -18,14 +18,15 @@ let defaultId = '#' + config.engine;
 
 let urlRegexp = /^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\*\+,;=.]+$/;
 
+init();
 function init() {
-	scInput.focus();
-	scClear.style = 'opacity: 0;'
+	scInput && scInput.focus();
+	scClear && (scClear.style = 'opacity: 0;');
 
 	let curId = localStorage.getItem('curId')
 	cur = curId ? document.querySelector(curId) : document.querySelector(defaultId);
 
-	cur.className = 'activated';
+	cur && (cur.className = 'activated');
 }
 
 function search(e) {
@@ -81,7 +82,7 @@ function reactive() {
 	scInput.focus();
 }
 
-export default  {
+export default {
 	init,
 	select,
 	search,

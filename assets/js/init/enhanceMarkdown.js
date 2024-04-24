@@ -40,8 +40,8 @@ export default function() {
 	$('code').each((idx, item) => {
 		let _innerHtml = item.innerHTML;
 		// console.log('>>> ', _innerHtml);
-		if (_innerHtml.indexOf('&gt; ') === 0) {
-			console.log(_innerHtml);
+		if (_innerHtml.indexOf('&gt; ') === 0 || _innerHtml.indexOf('> ') === 0) {
+			// console.log(_innerHtml);
 			item.setAttribute('class', 'oh-tag')
 		}
 	})

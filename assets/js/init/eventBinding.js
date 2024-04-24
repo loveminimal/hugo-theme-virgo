@@ -15,8 +15,7 @@ export default function initEventBinding() {
 	$('#light-dark').bind('click', toggleColor);
 	$('.content img').bind('click', viewImage);
 
-	// 快捷 ship 初始化及事件绑定
-	ship.init();
+	// 快捷 ship 事件绑定
 	$('#engine').bind('click', ship.select);
 	$('#sc-clear').bind('click', ship.clearVal);
 	$('#sc-input').bind('input', ship.reactive).bind('keypress', ship.search);
