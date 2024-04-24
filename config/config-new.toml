@@ -19,7 +19,7 @@ timeZone = 'Asia/Shanghai'
     # 激活页面加载时的过渡动画
     hasActiveAnimate = true
     # 激活页面浮动盒子动画
-    hasActiveAnimationBox = true
+    hasActiveFloatingBox = true
     # 文章页是否显示其相关系列文章（页面左侧区域）
     isShowRelativePosts = true
     # 导航页是否显示顶部搜索栏

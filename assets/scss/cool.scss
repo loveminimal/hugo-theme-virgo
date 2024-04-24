@@ -147,10 +147,14 @@ body.cool {
                 }
             }
         }
-    }
 
-    #footer {
-        position: relative;
+        .container-ship {
+            background: $white-500;
+
+            .ship > #engine .activated {
+                background: $gray-300;
+            }
+        }
     }
 
     pre {

@@ -11,8 +11,8 @@
 
 <div class="container-main container-page {{if $IsNav}}container-nav{{ end }}">
 
-    <!-- 搜索区域 -->
-    {{ if .Site.Params.isShowShipBoxOfNav }}
+    <!-- 搜索区域（仅作用于导航页） -->
+    {{ if and $IsNav .Site.Params.isShowShipBoxOfNav }}
     <div class="ship">
         {{- partial "partials/_ship.html" . -}}
     </div>

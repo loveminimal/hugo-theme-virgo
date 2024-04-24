@@ -1,5 +1,5 @@
 .container-ship {
-    background: $white-500;
+    background: $gray-white-300;
     border-radius: 10px;
     padding: 16px;
     margin: 16px 0;
@@ -17,7 +17,7 @@
     .ship {
         > #search {
             text-align: center;
-            padding: 32px 0;
+            padding: 16px 0;
             position: relative;
 
             #sc-clear {
@@ -55,7 +55,7 @@
 
             .activated {
                 position: relative;
-                background: $gray-300;
+                background: $gray-200;
                 &::before {
                     content: '➭ ';
                 }
