@@ -40,11 +40,29 @@
 
                 &:focus {
                     border-color: #0dcaf0;
+                    animation: oh-my-line 0.8s;
+
+                    &::placeholder {
+                        // color: $gray-300;
+						opacity: 0;
+                    }
                 }
 
                 &::placeholder {
-                    color: rgba(0, 0, 0, 0.3);
+                    color: $gray-400;
                     font-family: $font-family--some;
+                }
+
+                @keyframes oh-my-line {
+                    0% {
+                    }
+                    50% {
+                        width: 0px;
+                        border-color: #0d6efd;
+                    }
+                    100% {
+                        border-color: #0dcaf0;
+                    }
                 }
             }
         }
