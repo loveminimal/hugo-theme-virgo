@@ -1,4 +1,12 @@
 <div class="container-ship">
+	{{ if .Site.Params.contact.github }}
+	<div class="github-star">
+		<a href="https://github.com/{{.Site.Params.contact.github}}">
+			<img src="https://img.shields.io/github/stars/{{.Site.Params.contact.github}}?affiliations=OWNER&style=social" alt="">
+		</a>
+	</div>
+	{{ end }}
+
 	<div class="contact">
 		{{- partial "partials/_contact.html" . -}}
 	</div>
@@ -17,5 +25,7 @@
 			<span style="width: 36px;" id="go"> ☁️ </span>
 			<span id="bd">Baidu</span>
 		</div>
+
+
 	</div>
 </div>
