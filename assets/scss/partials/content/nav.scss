@@ -58,12 +58,12 @@
             // border: 1px solid #f00000;
             // background : linear-gradient(45deg, #dd669966, #eedbdb66 50%, #8cc6d166);
             border-radius: 8px;
-            width: 228px;
+            width: 169px;
             height: 100px;
             margin: 4px 8px 4px 0;
             padding: 4px 8px;
 
-            &:nth-child(3n + 0) {
+            &:nth-child(4n + 0) {
                 margin-right: 0;
             }
 
