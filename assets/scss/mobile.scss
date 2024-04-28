@@ -80,6 +80,18 @@
             .container-nav {
                 padding: 0 4px;
 
+                .freq {
+                    justify-content: space-between;
+                    a {
+                        width: 48%;
+
+                        &:nth-child(even) {
+                            margin-right: 0;
+                        }
+                    }
+
+                }
+
                 .content-nav {
                     .nav ul {
                         justify-content: space-between;
