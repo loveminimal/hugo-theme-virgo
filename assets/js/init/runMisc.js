@@ -1,12 +1,38 @@
 import $ from 'js/libs/jquery.min';
+import MD5 from 'js/libs/md5-es.min';
+
+// 根据输入文本生成一个 16 进制的颜色
+function getMD5Color(str, len = 6) {
+	return '#' + MD5.hash(str).slice(0, len);
+}
 
 export default function () {
 
+	let freqNavLinkEle = `<div class="freq"></div>`;
+	$('.content-nav').prepend(freqNavLinkEle);
 	// 渲染空链接导航选项
 	$('.content-nav table td').each((idx, item) => {
 		// console.log(item.innerHTML);
 		if (!item.innerHTML) {
 			item.innerHTML = `<a style='border: 1px dashed #3333;'><span style='opacity: 0;'>.</span></a>`;
+		} else {
+			// console.log(item.innerText);
+			if (item.innerText.startsWith('>')) {
+				// console.log(item.innerHTML);
+				$(item).addClass('frequtent')
+				let _text = item.innerText.slice(1).trim();
+				item.children[0].innerText = _text;
+				
+				let _color = getMD5Color(_text) + '66';	// '66' 为透明度 00 ~ FF
+				let _ele = $(item.children[0]).clone().append(`<div class="color-ball" style="background: ${_color};"></div>`)
+				// _ele[0].style = `background: ${_color};`
+				// _ele[0].style = `border: 2px solid ${_color};`
+				// _ele[0].style = `box-shadow: 1px 1px 3px ${_color};`
+				// _ele[0].style = `background: linear-gradient(45deg,#dd669922, ${getMD5Color(_text)}22 50%, #8cc6d122);`
+				// _ele[0].style = `background: linear-gradient(45deg,#77889922 10%, ${getMD5Color(_text)}22 50%, #aabbcc22 90%);`
+
+				$('.freq').append(_ele)
+			}
 		}
 	})
 
