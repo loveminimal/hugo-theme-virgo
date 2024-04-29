@@ -125,7 +125,8 @@
                     width: 136px;
                     border: 1px solid $gray-white-900;
                     padding: 4px 6px;
-                    border-radius: 1px 5px 1px 5px;
+                    // border-radius: 1px 5px 1px 5px;
+                    border-radius: 5px;
                     transition: 0.1s padding linear;
                     white-space: nowrap;
                     overflow: hidden;

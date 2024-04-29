@@ -25,7 +25,7 @@ export default function () {
 
 				let _color = getMD5Color(_text) + '66';	// '66' 为透明度 00 ~ FF
 				let _ele = $(item.children[0]).clone().append(`<div class="color-ball" style="background: ${_color};"></div>`)
-				item.children[0].style = `border-left: 3px solid ${_color};`
+				item.children[0].style = `border-left: 5px solid ${getMD5Color(_text)}99;`
 				// _ele[0].style = `background: ${_color};`
 				// _ele[0].style = `border: 2px solid ${_color};`
 				// _ele[0].style = `box-shadow: 1px 1px 3px ${_color};`
