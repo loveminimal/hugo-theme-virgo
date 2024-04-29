@@ -77,26 +77,27 @@
             }
 
             hr {
-                border: 1px dashed #ccc;
-                margin: 8px 0;
+                border: 1px solid $gray-200;
+                margin: 16px 0;
             }
         }
     }
 
     .list {
         .item {
-			background: $white-600;
+            background: $white-300;
             margin-right: 32px;
             margin-top: 48px;
             overflow: hidden;
             margin: 24px auto;
-			border-radius: 4px;
+            border-radius: 4px;
+            animation: fadeInUp 2s;
 
             > a {
                 box-sizing: border-box;
                 width: 100%;
                 display: block;
-                background: $white-600;
+                background: $white-300;
                 margin-bottom: 8px;
                 padding: 6px 4px;
                 white-space: nowrap;
@@ -106,6 +107,11 @@
 
                 &:hover {
                     padding-left: 16px;
+
+                    &::before {
+                        // content: '➭ ';
+                        content: '📖 ';
+                    }
                 }
 
                 .date {
@@ -119,7 +125,8 @@
             .summary {
                 font-size: 0.15rem;
                 padding: 8px;
-                color: $gray-800;
+                color: $gray-600;
+                transition: 0.3s padding ease;
             }
         }
     }

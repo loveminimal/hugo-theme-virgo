@@ -32,7 +32,7 @@ function search(e) {
 			let _arrIndex = scanStr(item.content, scVal);
 			let strRes = '';
 			let _radius = 100;  // 搜索字符前后截取的长度
-			let _strStyle0 = '<span style="background: yellow;">'
+			let _strStyle0 = '<span style="background: #ffff0099;">'
 			let _strStyle1 = '</span>'
 			let _strSeparator = '<hr>'
 
