@@ -22,8 +22,10 @@ timeZone = 'Asia/Shanghai'
     hasActiveFloatingBox = true
     # 文章页是否显示其相关系列文章（页面左侧区域）
     isShowRelativePosts = true
-    # 导航页是否显示顶部搜索栏
+    # 导航页是否显示顶部搜索区域
     isShowShipBoxOfNav = true
+    # 导航页是否显示站内搜索（站内文章内容检索）
+    isShowLocalSearch = true
 
     # 激活 cool 模式，酷爽但是消耗资源也更多，
     # 浏览器有缓存，更换后强制页面刷新（快捷键为 Ctrl+Shift+R）一下或重启本地服务即可，
@@ -78,12 +80,12 @@ timeZone = 'Asia/Shanghai'
         # facebook = 'loveminimal'                  # e.g. https://facebook.com/loveminimal
         # instagram = 'loveminimal163'              # e.g. https://www.instagram.com/loveminimal163
         youtube = 'aituyaa'                       # e.g. https://www.youtube.com/@aituyaa
-        telegram = 'loveminimal'                  # e.g. https://web.telegram.org/k/#@loveminimal
+        telegram = 'aituyaa'                      # e.g. https://web.telegram.org/k/#@aituyaa
 
         [params.contact.config]
             color = '#696969'                         # 图标颜色，默认为浅灰色
             slogan = ''                               # 联系标语，不想显示，可以置空
-            isShowNavLink = true                      # 是否在联系栏左侧显示快捷导航链接（PS：站点首页总会显示）
+            # isShowNavLink = true                      # 是否在联系栏左侧显示快捷导航链接（PS：站点首页总会显示）
             target = '_self'                          # 定义左侧快捷导航链接打开方式，_blank 在新标签页 _self 在当前标签页
             ship = ''                                 # 联系栏 icon ，允许自定义该图标链接（/ship 为外链的个人定制化搜索页）；隐藏，设置为 '' 空即可
 
