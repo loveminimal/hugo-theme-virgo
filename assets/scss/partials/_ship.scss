@@ -15,6 +15,10 @@
         }
     }
 
+    .sc-icon img {
+        border-radius: 0;
+    }
+
     .ship {
         > #local-search {
             text-align: center;
