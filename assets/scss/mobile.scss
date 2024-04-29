@@ -163,9 +163,11 @@
                 padding: 0 8px 16px;
 
                 .ship {
-                    #search #sc-input {
-                        max-width: 80%;
-                        min-width: 260px;
+                    #local-search #sc-input, 
+                    #search #ship-input {
+                        // max-width: 80%;
+                        // min-width: 260px;
+                        width: 80%;
                     }
                 }
 

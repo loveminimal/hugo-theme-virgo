@@ -16,19 +16,24 @@
     }
 
     .ship {
+        > #local-search {
+            text-align: center;
+        }
+
         > #search {
             text-align: center;
-            padding: 16px 0;
+            padding: 8px 0 16px 0;
             position: relative;
 
-            #sc-clear {
+            #ship-clear {
                 cursor: pointer;
                 transition: 0.5s opacity ease;
                 position: absolute;
-                top: 45px;
+                top: 16px;
+                // right: 48px;
             }
 
-            #sc-input {
+            #ship-input {
                 text-align: center;
                 font-family: $font-family--base;
                 color: #333;

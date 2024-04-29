@@ -12,11 +12,19 @@
 	</div>
 
 	<div class="ship">
+		{{ if .Site.Params.isShowLocalSearch }}
+		<div id="local-search">
+			{{- partial "partials/_search.html" . -}}
+		</div>
+		{{ end }}
+
 		<div id="search">
 			<!-- 🔎 -->
 			<!-- <span class="sc-icon"><img src="/imgs/icons/search.svg" width="48"> </span> -->
-			<input id="sc-input" type="text" placeholder="here search search..." autocomplete="off" />
-			<span id="sc-clear">&nbsp;✖</span>
+			<span class="sc-icon"><img src="/imgs/icons/search-2-line.svg" width="22"> </span>
+			<!-- 🚀  -->
+			<input id="ship-input" type="text" placeholder="site out search search..." autocomplete="off" />
+			<span id="ship-clear">&nbsp;✖</span>
 		</div>
 
 		<div id="engine">

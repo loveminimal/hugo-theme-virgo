@@ -6,8 +6,8 @@ const config = {
 	engine: 'by'
 }
 
-let scClear = document.querySelector('#sc-clear');
-let scInput = document.querySelector('#sc-input');
+let scClear = document.querySelector('#ship-clear');
+let scInput = document.querySelector('#ship-input');
 let scVal = '';
 
 let eby = document.querySelector('#by');

@@ -6,6 +6,7 @@ import toggleToc from 'js/utils/toggleToc';
 import toggleColor from "../utils/toggleColor";
 import viewImage from "../utils/viewImage";
 import ship from "../utils/ship";
+import search from "../utils/search";
 
 
 
@@ -17,6 +18,11 @@ export default function initEventBinding() {
 
 	// 快捷 ship 事件绑定
 	$('#engine').bind('click', ship.select);
-	$('#sc-clear').bind('click', ship.clearVal);
-	$('#sc-input').bind('input', ship.reactive).bind('keypress', ship.search);
+	$('#ship-clear').bind('click', ship.clearVal);
+	$('#ship-input').bind('input', ship.reactive).bind('keypress', ship.search);
+
+	$('#sc-clear').bind('click', search.clearInputVal);
+	// $('#sc-input').bind('input', search.search).bind('keypress', search.search);
+	// $('#sc-input').bind('input', search.search);
+	$('#sc-input').bind('keypress', search.search);
 }
