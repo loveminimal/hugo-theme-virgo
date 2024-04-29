@@ -51,8 +51,6 @@
             flex-shrink: 0;
             display: block;
             box-sizing: border-box;
-            text-align: center;
-            line-height: 92px;
 
             background: $gray-white-500;
             // border: 1px solid #f00000;
@@ -62,6 +60,14 @@
             height: 100px;
             margin: 4px 8px 4px 0;
             padding: 4px 8px;
+            text-align: center;
+            line-height: 92px;
+            white-space: nowrap;
+            overflow: hidden;
+
+            &:hover {
+                overflow-x: auto;
+            }
 
             &:nth-child(4n + 0) {
                 margin-right: 0;

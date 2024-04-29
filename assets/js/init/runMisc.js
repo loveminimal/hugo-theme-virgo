@@ -22,10 +22,17 @@ export default function () {
 				$(item).addClass('frequtent')
 				let _text = item.innerText.slice(1).trim();
 				item.children[0].innerText = _text;
+				let _aClone = $(item.children[0]).clone();
+				// 考虑到将 `>` 放在链接前而不是链接内的情况，以
+				// 满足 `> [[ obsidian 内链 ]]` 这种形式，以
+				// 方便将常用文章链接也 PIN 在顶部，这里
+				// 我们移除多余信息，只保留链接（清除内部所有元素）
+				$(item).empty().append(_aClone);
+				
 
 				let _color = getMD5Color(_text) + '66';	// '66' 为透明度 00 ~ FF
 				let _ele = $(item.children[0]).clone().append(`<div class="color-ball" style="background: ${_color};"></div>`)
-				item.children[0].style = `border-left: 5px solid ${getMD5Color(_text)}99;`
+				item.children[0].style = `border-left: 5px solid ${_color};`
 				// _ele[0].style = `background: ${_color};`
 				// _ele[0].style = `border: 2px solid ${_color};`
 				// _ele[0].style = `box-shadow: 1px 1px 3px ${_color};`
