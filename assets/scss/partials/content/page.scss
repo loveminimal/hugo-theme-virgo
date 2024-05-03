@@ -168,12 +168,26 @@
         }
     }
 
+    // 统一处理语言标识
+    .lang {
+        box-sizing: border-box;
+        position: absolute;
+        right: 0;
+        padding-right: 8px;
+        font-family: $font-family--some;
+        text-align: right;
+        // background: #f003;
+        color: $gray-500;
+        // width: 100%;
+        min-width: 48px;
+        cursor: pointer;
+        z-index: 9999;
+    }
+
     .highlight {
+        position: relative;
         margin: 16px 0;
-        // border-top: 1px solid $highlight-color;
-        // border-bottom: 2px solid $highlight-color;
         border-radius: 8px;
-        // padding: 2px 0;
         font-size: 0.14rem;
         overflow: hidden;
         &:hover {
@@ -200,8 +214,6 @@
     pre {
         background: $gray-white-500 !important;
         font-size: 0.14rem;
-        // border-top: 1px solid $highlight-color;
-        // border-bottom: 1px solid $highlight-color;
         border-radius: 8px;
 
         padding: 20px 10px;
@@ -210,18 +222,6 @@
 
         &:hover {
             overflow: auto;
-        }
-
-        .lang {
-            position: absolute;
-            right: 0;
-            top: 0;
-            padding: 4px 12px;
-            font-family: $font-family--some;
-            font-weight: 700;
-            color: #999;
-            z-index: 9999;
-            // text-shadow: 0 0 2px #333;
         }
     }
 

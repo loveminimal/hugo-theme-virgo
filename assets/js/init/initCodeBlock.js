@@ -9,6 +9,7 @@ export default function initCodeBlock() {
 
 		if (!_lang) return;
 
-		$(this).before(`<div class="lang">${!isMobile() ? _lang : ''}</div>`) //  ✡︎
+		// $(this).parents('.highlight').before(`<div class="lang">${!isMobile() ? _lang : '✡︎'}</div>`) //  ✡︎
+		$(this).parents('.highlight').before(`<div class="lang">${_lang}</div>`) //  ✡︎
 	})
 }

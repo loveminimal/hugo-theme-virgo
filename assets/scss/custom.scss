@@ -23,6 +23,7 @@ h5,
 h6 {
     // background: $headline-bg-color;
     padding: 16px 0;
+    margin: 16px 0;
 
     a {
         display: inline-block;
@@ -32,13 +33,15 @@ h6 {
 }
 
 h1 {
-    &, & code {
+    &,
+    & code {
         font-size: 0.32rem;
     }
 }
 
 h2 {
-    &, & code {
+    &,
+    & code {
         font-size: 0.28rem;
     }
 
@@ -48,7 +51,8 @@ h2 {
 }
 
 h3 {
-    &, & code {
+    &,
+    & code {
         font-size: 0.24rem;
     }
 
@@ -58,7 +62,8 @@ h3 {
 }
 
 h4 {
-    &, & code {
+    &,
+    & code {
         font-size: 0.2rem;
     }
 
@@ -68,7 +73,8 @@ h4 {
 }
 
 h5 {
-    &, & code {
+    &,
+    & code {
         font-size: 0.2rem;
     }
 
@@ -78,7 +84,8 @@ h5 {
 }
 
 h6 {
-    &, & code {
+    &,
+    & code {
         font-size: 0.2rem;
     }
 
@@ -116,7 +123,7 @@ hr {
 table {
     margin: 0.24rem 0;
     width: 100%;
-    
+
     thead tr {
         border-top: 2px solid $table-color;
     }
@@ -207,8 +214,8 @@ ol {
     border-left: 0px dashed $essay-color;
     font-size: 0.15rem;
     // color: $essay-color;
-    
-   @include light;
+
+    @include light;
 
     padding: 16px;
     border-radius: 8px;
