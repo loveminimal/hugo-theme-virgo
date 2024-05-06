@@ -62,6 +62,20 @@ body.cool {
                 }
             }
 
+            .recentf {
+                background: $white-500;
+
+                @include bg-cool;
+                .rec-post-item a {
+                    background: $white-300;
+                    box-shadow: 0px 0px 3px $gray-200;
+                }
+            }
+
+            .freq a {
+                @include bg-cool;
+            }
+
             .content-nav {
                 .freq a {
                     background: $white-500;
@@ -77,6 +91,7 @@ body.cool {
                     td {
                         a {
                             background: $white-500;
+                            @include bg-cool;
                         }
                     }
                 }
@@ -154,6 +169,7 @@ body.cool {
 
         .container-ship {
             background: $white-500;
+            @include bg-cool;
 
             .ship > #engine .activated {
                 background: $gray-300;
