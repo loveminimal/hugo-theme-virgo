@@ -24,5 +24,5 @@ export default function initEventBinding() {
 	$('#sc-clear').bind('click', search.clearInputVal);
 	// $('#sc-input').bind('input', search.search).bind('keypress', search.search);
 	// $('#sc-input').bind('input', search.search);
-	$('#sc-input').bind('keypress', search.search);
+	$('#sc-input').bind('keypress blur', search.search);
 }

@@ -1,3 +1,6 @@
+import isMobile from './isMobile';
+const IS_MOBILE = isMobile();
+
 let data = document.querySelector('#data') && document.querySelector('#data').innerText.trim();
 data = data && data.slice(0, data.length - 2) + ']';
 data = data && data.replace(/\]\s+\[/g, '');
@@ -15,7 +18,8 @@ scClear && (scClear.style = 'opacity: 0;')
 
 
 function search(e) {
-	if (e && e.keyCode !== 13) return;
+	// console.log('is mobile ?', isMobile())
+	if (!IS_MOBILE && e && e.keyCode !== 13) return;
 	console.log('search....');
 
 	let post = '';
