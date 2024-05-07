@@ -32,14 +32,15 @@ body.cool {
     }
 
     #header {
-        .container-header {
-            .container-breadcrumb-nav .breadcrumb-nav-bar a {
-                @include bg-cool;
-            }
-        }
+        // .container-header {
+        //     .container-breadcrumb-nav .breadcrumb-nav-bar a {
+        //         @include bg-cool;
+        //     }
+        // }
     }
 
     #content {
+        // === 首页
         .container-home {
             .menu .item a {
                 @include bg-cool;
@@ -54,6 +55,7 @@ body.cool {
             }
         }
 
+        // === 导航页
         .container-nav {
             .toc {
                 ul > li > ul > li {
@@ -62,24 +64,25 @@ body.cool {
                 }
             }
 
+            // --- 最近文章
             .recentf {
-                background: $white-500;
-
                 @include bg-cool;
+
                 .rec-post-item a {
-                    background: $white-300;
-                    box-shadow: 0px 0px 3px $gray-200;
+                    @include bg-cool;
                 }
             }
 
+            // --- 固定链接
             .freq a {
                 @include bg-cool;
             }
 
+            // --- 导航主体
             .content-nav {
-                .freq a {
-                    background: $white-500;
-                }
+                // .freq a {
+                //     background: $white-500;
+                // }
 
                 table {
                     tr:nth-child(odd) {
@@ -90,7 +93,6 @@ body.cool {
 
                     td {
                         a {
-                            background: $white-500;
                             @include bg-cool;
                         }
                     }
@@ -104,6 +106,16 @@ body.cool {
             }
         }
 
+        // === 导航页搜索插件
+        .container-ship {
+            @include bg-cool;
+
+            .ship > #engine .activated {
+                @include bg-cool;
+            }
+        }
+
+        // === 归档页
         .container-archive {
             .rec-post .rec-post-item {
                 a {
@@ -127,14 +139,15 @@ body.cool {
             }
         }
 
+        // === 标签/文章列表页
         .container-list {
             .list {
-                .recentf {
-                    @include bg-cool;
-                    .rec-post-item a {
-                        background: $white-300;
-                    }
-                }
+                // .recentf {
+                //     @include bg-cool;
+                //     .rec-post-item a {
+                //         background: $white-300;
+                //     }
+                // }
 
                 .item-term {
                     border-radius: 0 16px 0 16px;
@@ -146,6 +159,7 @@ body.cool {
             }
         }
 
+        // === 文章页
         .container-page {
             pre {
                 padding: 12px 16px;
@@ -156,6 +170,7 @@ body.cool {
             }
         }
 
+        // === 文章页中的分类/标签
         .container-ctgtag {
             .taxonomy {
                 .ctg,
@@ -164,15 +179,6 @@ body.cool {
                         @include bg-cool;
                     }
                 }
-            }
-        }
-
-        .container-ship {
-            background: $white-500;
-            @include bg-cool;
-
-            .ship > #engine .activated {
-                background: $gray-300;
             }
         }
     }
