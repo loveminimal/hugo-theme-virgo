@@ -72,7 +72,7 @@
 
         #sc-res {
             .statistics {
-                padding: 16px 0 0 56px;
+                padding: 16px 0 8px 56px;
                 color: $gray-500;
             }
 
@@ -84,6 +84,10 @@
     }
 
     .list {
+        // background: #0003;
+        max-height: 400px;
+        overflow: auto;
+
         .item {
             background: $white-300;
             margin-right: 32px;
@@ -92,6 +96,18 @@
             margin: 24px auto;
             border-radius: 4px;
             animation: fadeInUp 2s;
+
+            .num {
+                position: absolute;
+                top: 0;
+                left: 16px;
+                width: 20px;
+                height: 20px;
+                border-radius: 0 0 50% 50%;
+                font-size: 0.12rem;
+                // background: #D49BCE99;
+                background: #ffd6d999;
+            }
 
             > a {
                 box-sizing: border-box;
@@ -127,6 +143,17 @@
                 padding: 8px;
                 color: $gray-700;
                 transition: 0.3s padding ease;
+            }
+
+            &:last-child::after {
+                content: '⇨ 🚫 最后一条了 ⇦';
+                display: inline-block;
+                color: $gray-500;
+                margin: 24px 0;
+                padding: 8px 0;
+                border-top: 1px solid #0d6efd99;
+                border-bottom: 1px solid #0d6efd99;
+                font-size: .12rem;
             }
         }
     }
