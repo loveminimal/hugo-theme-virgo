@@ -11,26 +11,30 @@
 
 <div class="container-main container-page {{if $IsNav}}container-nav{{ end }}">
 
-    <!-- 搜索区域（仅作用于导航页） -->
-    {{ if and $IsNav .Site.Params.isShowShipBoxOfNav }}
-    <div class="ship">
-        {{- partial "partials/_ship.html" . -}}
-    </div>
-
-    <!-- 最近文章 -->
-    <div class="recentf">
-        <span class="desc">- 最近更新 ➭</span>
-        {{ range first 8 .Site.RegularPages.ByLastmod.Reverse }}
-        <!-- {{.Type}} -->
-        {{ if eq .Type "page" }}
-        <div class="rec-post">
-            <div class="rec-post-item">
-                <a href="{{.Permalink}}">{{ .Title }}</a>
-            </div>
+    {{ if and $IsNav }}
+        <!-- 搜索区域（仅作用于导航页） -->
+        {{ if .Site.Params.isShowShipBoxOfNav }}
+        <div class="ship">
+            {{- partial "partials/_ship.html" . -}}
         </div>
         {{ end }}
+
+        <!-- 最近文章 -->
+        {{ if .Site.Params.isShowRecentPostsOfNav}}
+        <div class="recentf">
+            <span class="desc">- 最近更新 ➭</span>
+            {{ range first 8 .Site.RegularPages.ByLastmod.Reverse }}
+            <!-- {{.Type}} -->
+            {{ if eq .Type "page" }}
+            <div class="rec-post">
+                <div class="rec-post-item">
+                    <a href="{{.Permalink}}">{{ .Title }}</a>
+                </div>
+            </div>
+            {{ end }}
+            {{ end }}
+        </div>
         {{ end }}
-    </div>
     {{ end }}
 
     <!-- 同一标签下的系列文章（按名称排序） -->

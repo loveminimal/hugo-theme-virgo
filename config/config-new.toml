@@ -26,6 +26,8 @@ timeZone = 'Asia/Shanghai'
     isShowShipBoxOfNav = true
     # 导航页是否显示站内搜索（站内文章内容检索）
     isShowLocalSearch = true
+    # 导航页是否显示最近文章列表
+    isShowRecentPostsOfNav = true
 
     # 激活 cool 模式，酷爽但是消耗资源也更多，
     # 浏览器有缓存，更换后强制页面刷新（快捷键为 Ctrl+Shift+R）一下或重启本地服务即可，
