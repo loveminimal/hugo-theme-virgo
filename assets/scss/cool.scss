@@ -115,6 +115,13 @@ body.cool {
             }
         }
 
+        // === 导航页本地检索
+        .container-search {
+            .list .item {
+                @include bg-cool;
+            }
+        }
+
         // === 归档页
         .container-archive {
             .rec-post .rec-post-item {
