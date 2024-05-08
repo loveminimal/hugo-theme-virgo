@@ -131,12 +131,19 @@
                 transition: 0.3s padding ease;
 
                 &:hover {
-                    padding-left: 16px;
+                    // padding-left: 16px;
+                    // padding: 16px;
 
-                    &::before {
-                        // content: '➭ ';
-                        content: '📖 ';
-                    }
+                    // &::before {
+                    //     // content: '➭ ';
+                    //     // content: '📖 ';
+                    //     content: '⇨ ';
+                    // }
+                    // &::after {
+                    //     // content: '➭ ';
+                    //     // content: '📖 ';
+                    //     content: ' ⇦';
+                    // }
                 }
 
                 .date {
