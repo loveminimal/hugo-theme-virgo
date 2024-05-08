@@ -87,6 +87,15 @@
         // background: #0003;
         max-height: 400px;
         overflow: auto;
+        &::-webkit-scrollbar {
+            width: 1px;
+            width: 0px;
+            height: 1px;
+        }
+
+        // &::-webkit-scrollbar-thumb {
+        //     background-color: $gray-300;
+        // }
 
         .item {
             background: $white-300;
