@@ -1,0 +1,52 @@
+.container-miniship {
+	position: fixed;
+	// background: #f003;
+	width: 158px;
+	right: 114px;
+	top: 496px;
+	// top: 76px;
+
+	> #search {
+		text-align: center;
+		position: relative;
+
+		#miniship-input {
+			text-align: center;
+			font-family: $font-family--base;
+			color: #333;
+			outline-style: none;
+			border: 0px;
+			border-bottom: 1px solid #0d6efd;
+			padding: 12px 0;
+			width: 100%;
+			background: rgba(255, 255, 255, 0);
+
+			&:focus {
+				border-color: #0dcaf0;
+				animation: oh-my-line 0.8s;
+
+				&::placeholder {
+					// color: $gray-300;
+					opacity: 0;
+				}
+			}
+
+			&::placeholder {
+				color: $gray-400;
+				font-family: $font-family--some;
+			}
+
+			@keyframes oh-my-line {
+				0% {
+				}
+				50% {
+					width: 0px;
+					border-color: #0d6efd;
+				}
+				100% {
+					border-color: #0dcaf0;
+				}
+			}
+		}
+	}
+}

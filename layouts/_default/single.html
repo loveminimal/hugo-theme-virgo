@@ -12,6 +12,11 @@
 <div class="container-main container-page {{if $IsNav}}container-nav{{ end }}">
 
     {{ if and $IsNav }}
+        <!-- 小型便捷外部搜索区域 -->
+        {{ if .Site.Params.isShowMinishipBoxOfNav }}
+		{{- partial "partials/_miniship.html" . -}}
+        {{ end }}
+
         <!-- 搜索区域（仅作用于导航页） -->
         {{ if .Site.Params.isShowShipBoxOfNav }}
         <div class="ship">

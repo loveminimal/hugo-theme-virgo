@@ -11,6 +11,8 @@ paginate = 10000
 enableGitInfo = true
 timeZone = 'Asia/Shanghai'
 
+ignoreFiles = ['\\.obsidian/*']
+
 [params]
     dark = false                             # 默认开启暗色主题
     author = 'Jack'
@@ -22,6 +24,8 @@ timeZone = 'Asia/Shanghai'
     hasActiveFloatingBox = true
     # 文章页是否显示其相关系列文章（页面左侧区域）
     isShowRelativePosts = true
+    # 导航页右侧是否显示迷你必应搜索
+    isShowMinishipBoxOfNav = true
     # 导航页是否显示顶部搜索区域
     isShowShipBoxOfNav = true
     # 导航页是否显示站内搜索（站内文章内容检索）
@@ -77,7 +81,7 @@ timeZone = 'Asia/Shanghai'
         douyin = 'self'                           # e.g. https://www.douyin.com/user/self
         xiaohongshu = '60004c750000000001002065'  # e.g. https://www.xiaohongshu.com/user/profile/60004c750000000001002065
         # reddit = 'aituyaa'                        # e.g. https://www.reddit.com/user/aituyaa
-        twitter = 'loveminimal163'                # e.g. https://twitter.com/loveminimal163
+        twitter = 'aituyaa'                       # e.g. https://twitter.com/aituyaa
         # mastodon = 'loveminimal'                  #e.g. https://mastodon.social/@loveminimal
         # facebook = 'loveminimal'                  # e.g. https://facebook.com/loveminimal
         # instagram = 'loveminimal163'              # e.g. https://www.instagram.com/loveminimal163

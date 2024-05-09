@@ -1,0 +1,26 @@
+<div class="container-miniship">
+	<div id="search">
+		<input id="miniship-input" type="text" placeholder="bing search" autocomplete="off" onkeypress="search(event)" />
+	</div>
+</div>
+<script>
+	let urlRegexp = /^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\*\+,;=.]+$/;
+	let scInput = document.querySelector('#miniship-input');
+	let scVal = '';
+	function search(e) {
+		scVal = document.querySelector('#miniship-input').value.trim();
+		if (e && e.keyCode !== 13) return;
+
+		if (urlRegexp.test(scVal)) {
+			scVal = (scVal.indexOf('http') === 0) ? scVal : ('https://' + scVal)
+
+			window.open(scVal);
+			scInput.value = '';
+			return;
+		}
+
+		window.open('https://cn.bing.com/search?q=' + scVal);
+		scInput.value = '';
+		// clearVal();	// 事实证明，需要重新选择引擎的频率挺高的	
+	}
+</script>
