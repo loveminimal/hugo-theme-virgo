@@ -59,8 +59,12 @@ body.cool {
         .container-nav {
             .toc {
                 ul > li > ul > li {
-                    border: 1px solid rgba(255, 255, 255, 0);
+                    // border: 1px solid rgba(255, 255, 255, 0);
                     @include bg-cool;
+
+					a {
+						background: $gray-white-500;
+					}
                 }
             }
 
