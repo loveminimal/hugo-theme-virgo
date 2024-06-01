@@ -29,6 +29,7 @@
                 padding: 4px 8px;
                 transition: 0.1s padding linear;
                 color: #666;
+				background: $white;
 
                 &:hover {
                     padding-left: 28px;
@@ -52,7 +53,7 @@
             display: block;
             box-sizing: border-box;
 
-            background: $gray-white-500;
+            background: $gray-100;
             // border: 1px solid #f00000;
             // background : linear-gradient(45deg, #dd669966, #eedbdb66 50%, #8cc6d166);
             border-radius: 8px;
@@ -88,7 +89,7 @@
         display: flex;
         flex-wrap: wrap;
         box-sizing: border-box;
-        background: $gray-white-500;
+        background: $gray-100;
         border-radius: 10px;
         padding: 16px;
 
@@ -136,11 +137,14 @@
             tr,
             td {
                 border-width: 0;
+				a {
+					background: $white;
+				}
             }
 
             tr:nth-child(odd) {
                 a {
-                    background: $gray-white-600;
+                    background: $gray-100;
                 }
             }
 
@@ -199,7 +203,7 @@
                 }
 
                 &:nth-child(even) {
-                    background: $gray-white-600;
+                    background: $gray-100;
                 }
             }
         }
