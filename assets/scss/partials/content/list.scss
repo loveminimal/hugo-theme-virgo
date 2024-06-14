@@ -42,7 +42,8 @@
             right: 114px;
             a {
                 cursor: pointer;
-                img, svg {
+                img,
+                svg {
                     padding: 2px;
                     width: 20px;
                     height: 20px;
@@ -69,7 +70,7 @@
             .item-term {
                 margin: 0;
                 padding: 0;
-                
+
                 a {
                     height: 48px;
                     color: $gray-600;
@@ -78,7 +79,8 @@
         }
 
         .list {
-            .item, .item-term {
+            .item,
+            .item-term {
                 margin-bottom: 8px;
             }
         }
@@ -111,7 +113,7 @@
 
             .rec-post .rec-post-item {
                 a {
-                    font-size: .14rem;
+                    font-size: 0.14rem;
                     display: inline-block;
                     background: $gray-white-300;
                     margin: 4px;
@@ -119,9 +121,7 @@
                     border-radius: 4px;
                 }
             }
-    
         }
-
 
         .desc .date {
             color: #999;
@@ -133,9 +133,8 @@
         }
 
         .item {
-            // box-shadow: 3px 3px 5px #eee;
-			position: relative;
-			padding-bottom: 32px;
+            position: relative;
+            padding-bottom: 32px;
             background: $post-item-bg-color;
 
             margin-right: 32px;
@@ -143,18 +142,15 @@
             width: $item-width;
             overflow: hidden;
 
-            >a {
+            > a {
                 box-sizing: border-box;
                 width: 100%;
                 display: block;
                 background: $gray-white-200;
-
-                // margin-bottom: 8px;
                 padding: 6px 4px;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                // border-radius: 0 16px 0 8px;
                 transition: 0.3s padding ease;
 
                 &:hover {
@@ -170,36 +166,41 @@
             }
 
             .summary {
-                font-size: .15rem;
+                font-size: 0.15rem;
                 padding: 8px;
                 color: $gray-600;
 
-                h1, h2, h3, h4, h5, h6 {
-                    font-size: .16rem;
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6 {
+                    font-size: 0.16rem;
                 }
             }
 
-			.read-more {
-                font-size: .13rem;
-				text-align: right;
-				background: $gray-white-200;
-				width: 100%;
-				position: absolute;
-				bottom: 0;
+            .read-more {
+                font-size: 0.13rem;
+                text-align: right;
+                background: $gray-white-200;
+                width: 100%;
+                position: absolute;
+                bottom: 0;
 
                 animation: breath-animate 3s infinite linear;
 
-				a {
-					display: block;
-					padding: 2px 6px;
-					transition: 0.3s padding ease;
-					color: $gray-400;
+                a {
+                    display: block;
+                    padding: 2px 6px;
+                    transition: 0.3s padding ease;
+                    color: $gray-400;
 
-					&:hover {
-						padding-right: 16px;
-					}
-				}
-			}
+                    &:hover {
+                        padding-right: 16px;
+                    }
+                }
+            }
         }
 
         .item-term {
@@ -210,8 +211,6 @@
                 height: 86px;
                 display: block;
                 background: $gray-white-300;
-
-                // margin-bottom: 8px;
                 padding: 8px;
                 white-space: nowrap;
                 overflow: hidden;
@@ -240,11 +239,9 @@
     .list-single-col {
         display: block;
         width: 776px;
-        // padding: 0 24% 0 16%;
         margin: 0 auto;
 
-        border-left: 2px dotted $gray-300;
-        
+        // border-left: 1px dotted $gray-300;
 
         .recentf {
             width: 760px;
@@ -256,8 +253,6 @@
         .item {
             width: 700px;
             margin: 24px auto;
-
-            // border-top: 1px solid #333;
             position: relative;
             overflow: visible;
 
@@ -267,14 +262,12 @@
 
             .c-date {
                 position: absolute;
-                top: 8px;
-                left: -160px;
-                // z-index: 99;
-                // font-size: .18rem;
                 color: $gray-500;
-                // font-weight: 900;
-                // font-style: italic;
-
+                top: 6px;
+                // left: -160px;
+                right: 8px;
+                font-size: 0.12rem;
+				// font-family: $font-josefin;
             }
         }
 
