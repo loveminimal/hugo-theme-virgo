@@ -21,7 +21,7 @@ ignoreFiles = ['\\.obsidian/*']
     # 激活页面加载时的过渡动画
     hasActiveAnimate = true
     # 激活页面浮动盒子动画
-    hasActiveFloatingBox = true
+    # hasActiveFloatingBox = true
     # 文章页是否显示其相关系列文章（页面左侧区域）
     isShowRelativePosts = true
     # 导航页右侧是否显示迷你必应搜索
@@ -29,7 +29,7 @@ ignoreFiles = ['\\.obsidian/*']
     # 导航页是否显示顶部搜索区域
     isShowShipBoxOfNav = true
     # 导航页是否显示站内搜索（站内文章内容检索）
-    isShowLocalSearch = true
+    # isShowLocalSearch = true
     # 导航页是否显示最近文章列表
     isShowRecentPostsOfNav = true
 
@@ -41,7 +41,7 @@ ignoreFiles = ['\\.obsidian/*']
     # - coolOpacity 默认为 0.81 ，背景色彩透明度，在 0 ~ 1 之间
     # - coolSaturate 默认为 180% ，背景色彩饱和度，在 0% ~ 200% 之间
     # - coolBlur 默认为 6px ，背景色彩模糊度，数值越大越模糊
-    hasActiveCool = true
+    # hasActiveCool = true
     coolBackground = 'color.jpg'
     coolOpacity = 0.69 # 0.86
     coolSaturate = '180%'
@@ -86,7 +86,9 @@ ignoreFiles = ['\\.obsidian/*']
         # facebook = 'loveminimal'                  # e.g. https://facebook.com/loveminimal
         # instagram = 'loveminimal163'              # e.g. https://www.instagram.com/loveminimal163
         youtube = 'aituyaa'                       # e.g. https://www.youtube.com/@aituyaa
-        telegram = 'aituyaa'                      # e.g. https://web.telegram.org/k/#@aituyaa
+        webtelegram = 'aituyaa'                   # e.g. https://web.telegram.org/k/#@aituyaa
+        # telegram = 'aituyaa'                      # e.g. https://t.me/aituyaa
+        # discord = 'me'                            # e.g. 'https://discord.com/channels/@me'
 
         [params.contact.config]
             color = '#696969'                         # 图标颜色，默认为浅灰色
