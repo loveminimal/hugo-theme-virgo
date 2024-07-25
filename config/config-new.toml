@@ -71,6 +71,7 @@ ignoreFiles = ['\\.obsidian/*']
         icplink = '//beian.miit.gov.cn'           # 备案链接
         beian = '豫公网安备 41092802000242号'     # 公安备案，如果你不想显示，设置为 '' 空即可
         beiancode = '41092802000242'              # 公安备案识别码
+        github_user = 'loveminimal'               # Github 用户名，导航页 github 小组件使用
         # wechat = 'imgs/bg/wechat.jpg'             # 微信二维码地址
         weibo = 'https://weibo.com/u/6867589681'
         zhihu = 'https://www.zhihu.com/people/loveminimal'
