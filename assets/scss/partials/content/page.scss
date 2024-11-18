@@ -8,14 +8,17 @@
     .rel {
         position: fixed;
         width: 260px;
-        max-height: 566px;
-        top: 176px;
+        max-height: 496px;
+        top: 132px;
         left: 16px;
         font-size: 0.14rem;
         overflow: scroll;
         z-index: 999;
-
+    
         .curtag-desc {
+            // position: sticky;
+            // top: 0;
+            // background: #fff;
             padding-bottom: 12px;
             a {
                 color: $gray-500;
