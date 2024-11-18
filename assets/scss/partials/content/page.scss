@@ -8,7 +8,7 @@
     .rel {
         position: fixed;
         width: 260px;
-        max-height: 496px;
+        max-height: 508px;
         top: 136px;
         left: 16px;
         font-size: 0.14rem;
@@ -54,7 +54,7 @@
 
         // 滚动条宽度、颜色
         &::-webkit-scrollbar {
-            width: 2px;
+            width: 1px;
         }
         &::-webkit-scrollbar-thumb {
             background-color: $gray-300;
