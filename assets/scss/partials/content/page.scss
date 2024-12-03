@@ -8,11 +8,9 @@
     .rel {
         position: fixed;
         width: 260px;
-        max-height: 508px;
         top: 136px;
         left: 16px;
         font-size: 0.14rem;
-        overflow: scroll;
         z-index: 999;
     
         .curtag-desc {
@@ -27,6 +25,17 @@
         }
 
         .curtag-post {
+            max-height: 508px;
+            overflow: scroll;
+
+            // 滚动条宽度、颜色
+            &::-webkit-scrollbar {
+                width: 1px;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: $gray-300;
+            }
+
             .curtag-post-item {
                 // border-top: 1px solid $gray-white-300;
                 // background: $gray-white-300;
@@ -52,13 +61,6 @@
             }
         }
 
-        // 滚动条宽度、颜色
-        &::-webkit-scrollbar {
-            width: 1px;
-        }
-        &::-webkit-scrollbar-thumb {
-            background-color: $gray-300;
-        }
 
         // 条目节点样式
         // li {
@@ -81,7 +83,7 @@
         position: fixed;
         border-left: 1px solid $gray-300;
         width: 260px;
-        max-height: 566px;
+        max-height: 514px;
         top: 176px;
         right: 16px;
         font-size: 0.14rem;
