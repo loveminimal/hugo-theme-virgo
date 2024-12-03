@@ -204,6 +204,24 @@ ol {
     // padding-left: 28px;
 }
 
+details {
+    margin: 16px 0;
+}
+
+details[open] {
+    summary {
+        font-weight: 700;
+        color: blueviolet;
+        margin: 16px 0;
+    }
+
+    blockquote, pre {
+        border: 1px dotted blueviolet;
+        border-radius: 8px;
+        padding: 16px;
+    }
+}
+
 .some {
     font-family: $font-family--some;
 }
