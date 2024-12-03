@@ -84,12 +84,11 @@
         position: fixed;
         border-left: 1px solid $gray-300;
         width: 260px;
-        max-height: 514px;
+        max-height: 508px;
         top: 176px;
         right: 16px;
         font-size: 0.14rem;
         overflow: scroll;
-        padding-top: 8px;
 
         // 滚动条宽度、颜色
         &::-webkit-scrollbar {
@@ -134,7 +133,7 @@
         #TableOfContents {
             ul,
             ol {
-                margin-bottom: 4px;
+                margin-bottom: 0px;
             }
 
             li a:not(:first-child) {
