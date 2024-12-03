@@ -4,7 +4,7 @@ import $ from '../libs/jquery.min';
 
 // 为大纲中的 `<a>` 设置一个 `id`
 export default function initToc() {
-	$('h2, h3').addClass('headline');
+	$('h2, h3, h4').addClass('headline');
 
 	$('#TableOfContents a').each(function () {
 		let _id = 'id-' + $(this).attr('href').split('#')[1];
