@@ -27,6 +27,7 @@
         .curtag-post {
             max-height: 508px;
             overflow: scroll;
+            padding-top: 6px;
 
             // 滚动条宽度、颜色
             &::-webkit-scrollbar {
@@ -88,6 +89,7 @@
         right: 16px;
         font-size: 0.14rem;
         overflow: scroll;
+        padding-top: 8px;
 
         // 滚动条宽度、颜色
         &::-webkit-scrollbar {
