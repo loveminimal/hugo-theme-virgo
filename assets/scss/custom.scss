@@ -206,6 +206,11 @@ ol {
 
 details {
     margin: 16px 0;
+    &:hover {
+        summary {
+            cursor: pointer;
+        }
+    }
 }
 
 details[open] {
@@ -222,7 +227,8 @@ details[open] {
     }
 
     blockquote {
-        white-space: pre-line;
+        // font-size: .14rem;
+        white-space: pre-wrap;
     }
 }
 
