@@ -4,21 +4,11 @@
     .toc {
         padding-right: 6px;
         position: fixed;
-        border-left: 1px solid $gray-300;
         width: 260px;
-        max-height: 386px;
         top: 156px;
         right: 16px;
         font-size: 0.14rem;
-        overflow: scroll;
 
-        // 滚动条宽度、颜色
-        &::-webkit-scrollbar {
-            width: 2px;
-        }
-        &::-webkit-scrollbar-thumb {
-            background-color: $gray-300;
-        }
 
         // 条目节点样式
         li {
@@ -54,8 +44,24 @@
         .post-list {
             padding-left: 8px;
 
+            .wrapper-item {
+                max-height: 386px;
+                overflow-y: scroll;
+                overflow-x: hidden;
+                border-left: 1px solid $gray-300;
+                padding-left: 6px;
+
+                // 滚动条宽度、颜色
+                &::-webkit-scrollbar {
+                    width: 2px;
+                }
+                &::-webkit-scrollbar-thumb {
+                    background-color: $gray-300;
+                }
+            }
+
             .count {
-                margin: 8px 0;
+                margin: 8px 6px;
             }
 
             .item {
