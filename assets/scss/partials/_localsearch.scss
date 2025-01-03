@@ -101,12 +101,14 @@
         .item {
             background: $white-300;
             margin-right: 32px;
-            margin-top: 48px;
             overflow: hidden;
-            margin: 24px auto;
             margin: 0px auto;
             border-radius: 4px;
             animation: fadeInUp 2s;
+
+            &:not(:first-child) {
+                margin-top: 24px !important;
+            }
 
             .num {
                 position: absolute;
