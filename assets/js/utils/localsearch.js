@@ -1,21 +1,58 @@
 import isMobile from './isMobile';
 const IS_MOBILE = isMobile();
 
-let data = document.querySelector('#data') && document.querySelector('#data').innerText.trim();
-data = data && data.slice(0, data.length - 2) + ']';
-data = data && data.replace(/\]\s+\[/g, '');
-let map = JSON.parse(data);
-// console.log(map);
-
+let map = [];
 let scClear = document.querySelector('#sc-clear');
 let scInput = document.querySelector('#sc-input');
-let scRes = document.querySelector('#sc-res')
+let scRes = document.querySelector('#sc-res');
 let scVal = '';
+
+map = getDocMap();
 
 // 自动聚集搜索框
 // scInput.focus();
 scClear && (scClear.style = 'opacity: 0;')
 
+// 每次加载页面都重新解析获取全站点内容映射有些消耗性能
+// 我们这里设置每 24 小时最多重新解析一次
+// 并且允许强制重新获取最新内容映射 - 通过点击左侧图标
+function getDocMap() {
+	let today = Date.now()
+	let _today = localStorage.getItem('today')
+
+	if (!_today) {
+		let _docData = getDocData()
+		localStorage.setItem('today', today)
+		localStorage.setItem('data', _docData)
+		return JSON.parse(_docData)
+	}
+	
+	// 24*60*60*1000 → 86400000
+	// 桌面端设为每天自动更新一次缓存
+	// 移动端设为每月自动更新一次缓存
+	if (today - _today > !IS_MOBILE ? 86400000 : 30 * 86400000) {
+		let _docData = getDocData()
+		localStorage.setItem('data', _docData)
+		return JSON.parse(_docData)
+	}
+	
+	return JSON.parse(localStorage.getItem('data'))
+}
+
+function getDocData() {
+	// alert('just get doc data once')
+	let data = document.querySelector('#data') && document.querySelector('#data').innerText.trim();
+	data = data && data.slice(0, data.length - 2) + ']';
+	data = data && data.replace(/\]\s+\[/g, '');
+
+	return data;
+}
+
+
+function forceSearch() {
+	localStorage.removeItem('today')
+	map = getDocMap()
+}
 
 function search(e) {
 	// console.log('is mobile ?', isMobile())
@@ -147,4 +184,4 @@ function clearInputVal() {
 	search();
 }
 
-export default { search, clearInputVal };
+export default { search, forceSearch, clearInputVal };

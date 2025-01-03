@@ -85,11 +85,12 @@
 
     .list {
         // background: #0003;
+        // margin: 24px auto;
         max-height: 400px;
         overflow: auto;
         &::-webkit-scrollbar {
             width: 1px;
-            width: 0px;
+            width: 3px;
             height: 1px;
         }
 
@@ -103,6 +104,7 @@
             margin-top: 48px;
             overflow: hidden;
             margin: 24px auto;
+            margin: 0px auto;
             border-radius: 4px;
             animation: fadeInUp 2s;
 
