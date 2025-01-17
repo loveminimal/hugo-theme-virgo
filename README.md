@@ -6,7 +6,7 @@
 | 使用指南 | [📘 如何使用 hugo-theme-virgo 主题](https://aituyaa.com/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-hugo-theme-virgo-%E4%B8%BB%E9%A2%98/) |        |
 | 主题仓库 | [🎨 hugo-theme-virgo](https://themes.gohugo.io/themes/hugo-theme-virgo/) |        |
 | 新版预览 | [👀 新版本预览](https://aituyaa.com)                          | 精简版 |
-| 旧版预览 | [👀 旧版本预览](https://loveminimal.github.io)                | 完整版 |
+| 旧版预览 | [👀 旧版本预览](https://aituyaa.github.io)                | 完整版 |
 
 
 > **为什么要把使用指南单独列出，而不是放在 README 中？**
@@ -31,7 +31,7 @@
 - ……
 
 
-[**> 旧版本预览**](https://loveminimal.github.io)
+[**> 旧版本预览**](https://aituyaa.github.io)
 
 ![旧版](images/preview.png)
 
