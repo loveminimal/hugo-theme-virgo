@@ -101,10 +101,11 @@
         .item {
             background: $white-300;
             margin-right: 32px;
-            overflow: hidden;
+            // overflow: hidden;
             margin: 0px auto;
             border-radius: 4px;
             animation: fadeInUp 2s;
+            position: relative;
 
             &:not(:first-child) {
                 margin-top: 24px !important;
@@ -126,13 +127,15 @@
                 box-sizing: border-box;
                 width: 100%;
                 display: block;
-                background: $white-300;
+                background: $white;
                 margin-bottom: 8px;
                 padding: 6px 4px;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 transition: 0.3s padding ease;
+                position: sticky;
+                top: 0;
 
                 &:hover {
                     // padding-left: 16px;
