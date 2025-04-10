@@ -1,4 +1,8 @@
 import isMobile from './isMobile';
+import notyf from './notyf';
+
+
+
 const IS_MOBILE = isMobile();
 
 let map = [];
@@ -68,6 +72,7 @@ function search(e) {
 
 
 	map.forEach(item => {
+		// console.log(!scVal)
 		if (!scVal) return;
 		if (item.content.indexOf(scVal) > -1 || item.title.indexOf(scVal) > -1) {
 			let _arrIndex = scanStr(item.content, scVal);
@@ -133,6 +138,13 @@ function search(e) {
 			// <div>${item.summary}</div>
 		}
 	})
+
+	if (scVal && !post) {
+		notyf.open({
+			type: 'warning',
+			message: '未找到相关内容',
+		});
+	}
 
 	let _total = '条目',
 		_times = '次数';
