@@ -11,10 +11,10 @@ paginate = 10000
 enableGitInfo = true
 timeZone = 'Asia/Shanghai'
 
-ignoreFiles = ['\\.obsidian/*']
+ignoreFiles = ['content/.obsidian/*', 'content/__snippets/*', 'content/_mine/*']
 
 [params]
-    dark = false                             # 默认开启暗色主题
+    dark = false                            # 默认开启暗色主题
     author = 'Jack'
     slogan = 'Life should be interesting.'  # 'Life is just a joker.'
     startDate = 2016                        # 'Copyright © 2016 - now'
@@ -29,7 +29,10 @@ ignoreFiles = ['\\.obsidian/*']
     # 导航页是否显示顶部搜索区域
     isShowShipBoxOfNav = true
     # 导航页是否显示站内搜索（站内文章内容检索）
-    # isShowLocalSearch = true
+    # ... 桌面端每天自动更新站内文章缓存
+    # ... 移动端每月自动更新站内文章缓存
+    # ... 可以点左侧图标强制更新最新缓存
+    isShowLocalSearch = true
     # 导航页是否显示最近文章列表
     isShowRecentPostsOfNav = true
 
@@ -41,7 +44,7 @@ ignoreFiles = ['\\.obsidian/*']
     # - coolOpacity 默认为 0.81 ，背景色彩透明度，在 0 ~ 1 之间
     # - coolSaturate 默认为 180% ，背景色彩饱和度，在 0% ~ 200% 之间
     # - coolBlur 默认为 6px ，背景色彩模糊度，数值越大越模糊
-    # hasActiveCool = true
+    hasActiveCool = true
     coolBackground = 'color.jpg'
     coolOpacity = 0.69 # 0.86
     coolSaturate = '180%'
@@ -60,19 +63,19 @@ ignoreFiles = ['\\.obsidian/*']
         # 将 background 设置为 ''，默认为 `#000`
         # ！ 为保证显示效果，建议选用 1：1 比例图片
         # src = 'cat.svg'
-        src = 'manyi1.jpg'
+        src = 'us-cartoon--mustache.png'
         background = '#0003'
         # 为该图片附加一个点击链接功能，缺省为 `/about`，当然
         # 你也可以定义为任何你相要的超链接
         link = '/about'
 
     [params.contact]
-        icp = '豫ICP备2023017189号-2'             # 备案号，如果你不想显示，设置为 '' 空即可
-        icplink = '//beian.miit.gov.cn'           # 备案链接
-        beian = '豫公网安备 41092802000242号'     # 公安备案，如果你不想显示，设置为 '' 空即可
-        beiancode = '41092802000242'              # 公安备案识别码
-        github_user = 'loveminimal'               # Github 用户名，导航页 github 小组件使用
-        # wechat = 'imgs/bg/wechat.jpg'             # 微信二维码地址
+        icp = '将喜欢的一切留在身边，这便是努力的意义'                  # 备案号，如果你不想显示，设置为 '' 空即可
+        icplink = '/about'                                              # 备案链接
+        beian = ''                                                      # 公安备案，如果你不想显示，设置为 '' 空即可
+        beiancode = ''                                                  # 公安备案识别码
+        github_user = 'loveminimal'                                     # Github 用户名，导航页 github 小组件使用
+        # wechat = 'imgs/bg/wechat.jpg'                                 # 微信二维码地址
         weibo = 'https://weibo.com/u/6867589681'
         zhihu = 'https://www.zhihu.com/people/loveminimal'
         jianshu = 'https://www.jianshu.com/u/eebcc2974936'
@@ -84,7 +87,7 @@ ignoreFiles = ['\\.obsidian/*']
         # reddit = 'https://www.reddit.com/user/aituyaa'
         twitter = 'https://twitter.com/aituyaa'
         # mastodon = 'https://mastodon.social/@loveminimal'
-        # instagram = 'https://www.instagram.com/loveminimal163'
+        instagram = 'https://www.instagram.com/aituyaa'
         youtube = 'https://www.youtube.com/@aituyaa'
         telegram = 'https://web.telegram.org/k/#@aituyaa'	# 'https://t.me/aituyaa'
         # discord = 'https://discord.com/channels/@me'
@@ -135,7 +138,7 @@ ignoreFiles = ['\\.obsidian/*']
         style = "github"
         lineNos = true
     [markup.tableOfContents]
-        endLevel = 3
+        endLevel = 4
         ordered = false
         startLevel = 2
     [markup.goldmark]
