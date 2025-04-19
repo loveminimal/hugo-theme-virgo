@@ -56,6 +56,10 @@ function getDocData() {
 function forceSearch() {
 	localStorage.removeItem('today')
 	map = getDocMap()
+	notyf.open({
+		type: 'success',
+		message: '站点缓存更新成功',
+	});
 }
 
 function search(e) {
