@@ -47,6 +47,7 @@ export default function viewImage(e) {
 						box-sizing: border-box; 
 						margin: 0 auto; 
 						padding: 8px; 
+						transition: all 0.3s ease;
 						" 
 					onclick="document.getElementById('img').width += DELTA;"
 					ondblclick="document.body.removeChild(document.getElementById('mask')); document.body.style='';"
