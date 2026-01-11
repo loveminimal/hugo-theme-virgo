@@ -189,7 +189,7 @@
                 border-radius: 1px 5px 1px 5px;
                 padding-left: 4px;
 
-                &::before {
+                &:nth-child(n+2):before {
                     content: '➣ ';
                 }
                 &:hover {
