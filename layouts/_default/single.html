@@ -6,7 +6,7 @@
 <!-- 正常博文 -->
 {{ $IsPostPage := and (not $IsNav) }}
 
-{{ $IS_DEV_ENV := eq .Site.BaseURL "http://localhost:1313/"}}
+{{ $IS_DEV_ENV := or (eq .Site.BaseURL "http://localhost:1313/") (eq .Site.BaseURL "http://localhost:3170/")}}
 
 
 <div class="container-main container-page {{if $IsNav}}container-nav{{ end }}">
