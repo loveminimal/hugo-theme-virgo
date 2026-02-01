@@ -7,7 +7,8 @@ theme = 'virgo'
 
 hasCJKLanguage = true
 summaryLength = 80
-paginate = 10000
+# paginate = 10000
+pagination.pagerSize = 10000
 enableGitInfo = true
 timeZone = 'Asia/Shanghai'
 
