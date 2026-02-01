@@ -14,13 +14,13 @@
     {{ if and $IsNav }}
         <!-- 小型便捷外部搜索区域 -->
         {{ if .Site.Params.isShowMinishipBoxOfNav }}
-		{{- partial "partials/_miniship.html" . -}}
+		{{- partial "_miniship.html" . -}}
         {{ end }}
 
         <!-- 搜索区域（仅作用于导航页） -->
         {{ if .Site.Params.isShowShipBoxOfNav }}
         <div class="ship">
-            {{- partial "partials/_ship.html" . -}}
+            {{- partial "_ship.html" . -}}
         </div>
         {{ end }}
 
@@ -119,14 +119,14 @@
             </svg>
             {{ .ReadingTime }} 分钟</span>
         {{ if not $IsSecrets}}
-        {{- partial "partials/_ctgtag.html" . -}}
+        {{- partial "_ctgtag.html" . -}}
         {{ end }}
         {{ end }}
     </div>
 
     <div class="toc">
         {{ if and .IsPage (not $IsSecrets) }}
-        {{- partial "partials/_page-operation.html" . -}}
+        {{- partial "_page-operation.html" . -}}
         {{end}}
         {{ $.TableOfContents }}
     </div>
@@ -136,11 +136,11 @@
     </div>
 
     {{ if and .IsPage $IsPostPage (not $IsSecrets) .Site.Params.utterances.active (not $IS_DEV_ENV) }}
-    {{- partial "partials/_comment.html" . -}}
+    {{- partial "_comment.html" . -}}
     {{ end }}
 
     {{ if and .IsPage $IsPostPage (not $IsSecrets) .Site.Params.giscus.active (not $IS_DEV_ENV) }}
-    {{- partial "partials/_comment-giscus.html" . -}}
+    {{- partial "_comment-giscus.html" . -}}
     {{ end }}
 </div>
 {{ end }}

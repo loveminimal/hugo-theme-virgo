@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="container-main container-list">
     <div class="toc">
-        {{- partial "partials/_page-operation.html" . -}}
+        {{- partial "_page-operation.html" . -}}
 
         <div class="list post-list">
             {{ if ne .Kind "taxonomy"}} 
@@ -64,7 +64,7 @@
             {{end}}
             
             {{ if .IsPage }}
-                {{- partial "partials/_ctgtag.html" . -}}
+                {{- partial "_ctgtag.html" . -}}
                 <div class="summary">{{ .Summary | markdownify  }}</div>
 				{{ if .Truncated }}
 				<!-- This <div> includes a read more link, but only if the summary is truncated... -->

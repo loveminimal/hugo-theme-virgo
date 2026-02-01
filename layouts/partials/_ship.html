@@ -9,13 +9,13 @@
 	{{ end }}
 
 	<div class="contact">
-		{{- partial "partials/_contact.html" . -}}
+		{{- partial "_contact.html" . -}}
 	</div>
 
 	<div class="ship">
 		{{ if .Site.Params.isShowLocalSearch }}
 		<div id="local-search">
-			{{- partial "partials/_localsearch.html" . -}}
+			{{- partial "_localsearch.html" . -}}
 		</div>
 		{{ end }}
 
